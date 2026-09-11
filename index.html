@@ -1,1 +1,836 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Actyrom | Automatisme, Maintenance & Expertise industrielle</title>
+
+  <meta name="description" content="Actyrom accompagne les industriels dans le dépannage, l'automatisme, la maintenance, l'amélioration des équipements, l'industrie 4.0 et l'expertise technique.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #080808;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1180px, 90%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(5,5,5,.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #222;
+    }
+
+    nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 3px;
+    }
+
+    .logo span {
+      color: #999;
+      font-weight: 300;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 26px;
+      list-style: none;
+      font-size: .92rem;
+      color: #ccc;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,.08), transparent 68%);
+      right: -120px;
+      top: 40px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #aaa;
+      font-size: .78rem;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 7vw, 6.8rem);
+      line-height: .95;
+      letter-spacing: -4px;
+      margin-bottom: 30px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: #bbb;
+      font-size: 1.18rem;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: .95rem;
+      transition: .25s ease;
+    }
+
+    .btn-primary {
+      background: white;
+      color: black;
+    }
+
+    .btn-primary:hover {
+      background: #d9d9d9;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 1px solid #444;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      border-color: white;
+    }
+
+    /* INTRO */
+
+    .intro {
+      padding: 100px 0;
+      border-top: 1px solid #1b1b1b;
+      border-bottom: 1px solid #1b1b1b;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 70px;
+    }
+
+    .section-label {
+      color: #777;
+      font-size: .75rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.6rem);
+      line-height: 1.05;
+      margin-bottom: 24px;
+    }
+
+    .intro-text p {
+      color: #aaa;
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
+
+    /* SERVICES */
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-header {
+      max-width: 760px;
+      margin-bottom: 55px;
+    }
+
+    .section-header p {
+      color: #999;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: #101010;
+      border: 1px solid #202020;
+      padding: 32px;
+      min-height: 245px;
+      border-radius: 10px;
+      transition: .25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #555;
+      background: #121212;
+    }
+
+    .card-number {
+      color: #666;
+      font-size: .78rem;
+      margin-bottom: 35px;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 14px;
+    }
+
+    .card p {
+      color: #8f8f8f;
+      font-size: .95rem;
+    }
+
+    /* EXPERTISE */
+
+    .expertise {
+      background: #0d0d0d;
+    }
+
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid #222;
+    }
+
+    .expertise-item {
+      padding: 35px 25px;
+      border-right: 1px solid #222;
+    }
+
+    .expertise-item:last-child {
+      border-right: none;
+    }
+
+    .expertise-item strong {
+      display: block;
+      font-size: 1.15rem;
+      margin-bottom: 9px;
+    }
+
+    .expertise-item span {
+      color: #777;
+      font-size: .9rem;
+    }
+
+    /* APPROCHE */
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .steps {
+      display: grid;
+      gap: 10px;
+    }
+
+    .step {
+      border-bottom: 1px solid #242424;
+      padding: 20px 0;
+    }
+
+    .step strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    .step span {
+      color: #888;
+    }
+
+    /* FUTUR */
+
+    .future {
+      border-top: 1px solid #1b1b1b;
+    }
+
+    .future-box {
+      border: 1px solid #292929;
+      padding: 55px;
+      border-radius: 12px;
+      background:
+        linear-gradient(120deg, #111 0%, #080808 70%);
+    }
+
+    .future-box p {
+      max-width: 850px;
+      color: #999;
+      font-size: 1.05rem;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      text-align: center;
+      padding: 120px 0;
+      background: #f1f1f1;
+      color: #080808;
+    }
+
+    .contact h2 {
+      max-width: 850px;
+      margin: 0 auto 22px;
+    }
+
+    .contact p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .contact .btn-primary {
+      background: #080808;
+      color: white;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 35px 0;
+      background: #050505;
+      color: #666;
+      font-size: .85rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .intro-grid,
+      .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .expertise-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .expertise-item {
+        border-bottom: 1px solid #222;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .services-grid,
+      .expertise-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 80vh;
+      }
+
+      section,
+      .intro {
+        padding: 75px 0;
+      }
+
+      .future-box {
+        padding: 30px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+
+      <a href="#" class="logo">
+        ACTYROM<span>.</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#approche">Approche</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          Expertise technique • Industrie • Automatisme
+        </div>
+
+        <h1>
+          COMPRENDRE.<br>
+          FIABILISER.<br>
+          OPTIMISER.
+        </h1>
+
+        <p>
+          Actyrom accompagne les entreprises et les industriels dans
+          l'analyse de problèmes techniques, le dépannage, l'automatisme,
+          la maintenance, l'amélioration des équipements et le développement
+          de solutions industrielles performantes.
+        </p>
+
+        <div class="buttons">
+
+          <a href="#contact" class="btn btn-primary">
+            Parler de votre projet
+          </a>
+
+          <a href="#services" class="btn btn-secondary">
+            Découvrir nos services
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRESENTATION -->
+
+  <div class="intro">
+
+    <div class="container intro-grid">
+
+      <div>
+
+        <div class="section-label">
+          Actyrom Consulting
+        </div>
+
+        <h2>
+          Une expertise terrain au service de l'industrie.
+        </h2>
+
+      </div>
+
+      <div class="intro-text">
+
+        <p>
+          Actyrom intervient sur des problématiques techniques nécessitant
+          analyse, méthode et compréhension globale des installations.
+        </p>
+
+        <p>
+          L'objectif n'est pas uniquement de résoudre une panne :
+          il s'agit également d'en comprendre l'origine, de fiabiliser
+          l'installation et d'identifier les améliorations permettant
+          de réduire les arrêts et les pertes de performance.
+        </p>
+
+        <p>
+          Les interventions peuvent être réalisées directement sur site,
+          à distance selon le besoin, ou dans le cadre d'une mission
+          d'assistance technique plus longue.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- SERVICES -->
+
+  <section id="services">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <div class="section-label">
+          Nos services
+        </div>
+
+        <h2>
+          Des compétences transversales pour vos équipements industriels.
+        </h2>
+
+        <p>
+          Une approche adaptée aux besoins ponctuels comme aux missions
+          d'accompagnement de plus longue durée.
+        </p>
+
+      </div>
+
+
+      <div class="services-grid">
+
+
+        <article class="card">
+
+          <div class="card-number">01</div>
+
+          <h3>Dépannage & diagnostic</h3>
+
+          <p>
+            Recherche de panne, analyse méthodique, diagnostic de systèmes
+            automatisés et accompagnement des équipes techniques.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-number">02</div>
+
+          <h3>Automatisme industriel</h3>
+
+          <p>
+            Diagnostic automate, analyse programme, amélioration de systèmes,
+            modifications et accompagnement sur installations automatisées.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-number">03</div>
+
+          <h3>Maintenance & fiabilité</h3>
+
+          <p>
+            Analyse de défaillances, amélioration du préventif,
+            optimisation des méthodes et recherche des causes racines.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-number">04</div>
+
+          <h3>Industrie 4.0 & données</h3>
+
+          <p>
+            Collecte de données machines, historisation, suivi d'indicateurs,
+            tableaux de bord et exploitation des données industrielles.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-number">05</div>
+
+          <h3>Conseil & expertise</h3>
+
+          <p>
+            Assistance technique, analyse d'installation, accompagnement
+            projet, organisation de maintenance et amélioration continue.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-number">06</div>
+
+          <h3>Formation & accompagnement</h3>
+
+          <p>
+            Coaching technique, méthodologie de recherche de panne,
+            tutorat, transmission de compétences et accompagnement des équipes.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EXPERTISE -->
+
+  <section class="expertise" id="expertise">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <div class="section-label">
+          Domaines d'intervention
+        </div>
+
+        <h2>
+          Une vision globale de l'installation.
+        </h2>
+
+      </div>
+
+
+      <div class="expertise-grid">
+
+        <div class="expertise-item">
+          <strong>Automatisme</strong>
+          <span>API, équipements automatisés, diagnostic.</span>
+        </div>
+
+        <div class="expertise-item">
+          <strong>Maintenance</strong>
+          <span>Correctif, préventif, analyse de défaillances.</span>
+        </div>
+
+        <div class="expertise-item">
+          <strong>Électricité industrielle</strong>
+          <span>Diagnostic et analyse des systèmes électriques.</span>
+        </div>
+
+        <div class="expertise-item">
+          <strong>Réseaux & données</strong>
+          <span>Communication industrielle, acquisition et supervision.</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- APPROCHE -->
+
+  <section id="approche">
+
+    <div class="container approach-grid">
+
+      <div>
+
+        <div class="section-label">
+          Notre approche
+        </div>
+
+        <h2>
+          Une méthode centrée sur le terrain et les résultats.
+        </h2>
+
+        <p style="color:#999">
+          Chaque problème technique est étudié dans son environnement réel :
+          machine, procédé, exploitation, maintenance et organisation.
+        </p>
+
+      </div>
+
+
+      <div class="steps">
+
+        <div class="step">
+          <strong>01 — Comprendre</strong>
+          <span>Collecte des informations et compréhension du fonctionnement.</span>
+        </div>
+
+        <div class="step">
+          <strong>02 — Analyser</strong>
+          <span>Recherche structurée des causes et des dysfonctionnements.</span>
+        </div>
+
+        <div class="step">
+          <strong>03 — Corriger</strong>
+          <span>Mise en œuvre ou proposition des solutions adaptées.</span>
+        </div>
+
+        <div class="step">
+          <strong>04 — Fiabiliser</strong>
+          <span>Prévenir la répétition du problème et améliorer la disponibilité.</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MAINTENANCE PREDICTIVE -->
+
+  <section class="future">
+
+    <div class="container">
+
+      <div class="future-box">
+
+        <div class="section-label">
+          Industrie de demain
+        </div>
+
+        <h2>
+          Vers une maintenance plus prédictive.
+        </h2>
+
+        <p>
+          Actyrom développe progressivement des solutions permettant
+          d'exploiter davantage les données générées par les équipements :
+          collecte de mesures, historisation, analyse de tendances,
+          détection d'anomalies et création d'indicateurs utiles aux équipes
+          de maintenance et de production.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <div class="section-label">
+        Contact
+      </div>
+
+      <h2>
+        Un problème technique ou un projet industriel ?
+      </h2>
+
+      <p>
+        Présentez votre besoin à Actyrom pour étudier la solution la plus adaptée.
+      </p>
+
+      <a href="mailto:contact@actyrom.com" class="btn btn-primary">
+        Contacter Actyrom
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-content">
+
+    <div>
+      © 2026 ACTYROM
+    </div>
+
+    <div>
+      Automatisme • Maintenance • Expertise industrielle
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
