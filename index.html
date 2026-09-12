@@ -2,2490 +2,1043 @@
 <html lang="fr">
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>
-Actyrom Consulting | Industrie, Habitat & expertise technique
-</title>
-
-<meta
-name="description"
-content="Actyrom Consulting accompagne les industriels, professionnels et particuliers en automatisme, maintenance, dépannage, domotique, réseaux, supervision et solutions techniques sur mesure."
->
-
-<meta name="robots" content="index, follow">
-
-<link rel="canonical" href="https://actyrom.fr/">
-
-<style>
-
-/* =========================================================
-   ACTYROM CONSULTING
-   VERSION ACCUEIL
-========================================================= */
-
-:root{
-
-  --bg:#050505;
-  --bg2:#080808;
-
-  --panel:#0b0b0b;
-  --panel2:#101010;
-
-  --line:#292929;
-
-  --text:#f5f5f5;
-
-  --muted:#a0a0a0;
-  --muted2:#707070;
-
-  --green:#59d02f;
-  --green2:#75ff45;
-
-  --green-glow:
-  rgba(89,208,47,.45);
-
-  --max:1180px;
-
-}
-
-
-/* =========================================================
-   RESET
-========================================================= */
-
-*{
-
-  margin:0;
-
-  padding:0;
-
-  box-sizing:border-box;
-
-}
-
-
-html{
-
-  scroll-behavior:smooth;
-
-}
-
-
-body{
-
-  font-family:
-  Arial,
-  Helvetica,
-  sans-serif;
-
-  background:var(--bg);
-
-  color:var(--text);
-
-  line-height:1.65;
-
-  overflow-x:hidden;
-
-}
-
-
-a{
-
-  color:inherit;
-
-  text-decoration:none;
-
-}
-
-
-button{
-
-  font:inherit;
-
-}
-
-
-.container{
-
-  width:min(
-    var(--max),
-    92%
-  );
-
-  margin:auto;
-
-}
-
-
-/* =========================================================
-   HEADER
-========================================================= */
-
-header{
-
-  position:sticky;
-
-  top:0;
-
-  z-index:1000;
-
-  background:
-  rgba(5,5,5,.96);
-
-  backdrop-filter:
-  blur(15px);
-
-  border-bottom:
-  1px solid #171717;
-
-}
-
-
-.nav{
-
-  min-height:78px;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:space-between;
-
-  gap:28px;
-
-}
-
-
-/* =========================================================
-   LOGO HEADER
-========================================================= */
-
-.brand{
-
-  display:flex;
-
-  align-items:baseline;
-
-  gap:4px;
-
-  white-space:nowrap;
-
-}
-
-
-.brand-main{
-
-  font-size:1.55rem;
-
-  font-weight:900;
-
-  letter-spacing:-1px;
-
-  color:#ffffff;
-
-}
-
-
-.brand-consulting{
-
-  color:var(--green);
-
-  font-size:1.08rem;
-
-  font-weight:800;
-
-}
-
-
-/* =========================================================
-   MENU
-========================================================= */
-
-.nav-links{
-
-  display:flex;
-
-  align-items:center;
-
-  gap:25px;
-
-  list-style:none;
-
-  color:#d0d0d0;
-
-  font-size:.90rem;
-
-}
-
-
-.nav-links a{
-
-  transition:.2s ease;
-
-}
-
-
-.nav-links a:hover{
-
-  color:var(--green2);
-
-}
-
-
-/* =========================================================
-   BOUTON CONNEXION IRON MAN
-========================================================= */
-
-.iron-button{
-
-  position:relative;
-
-  display:inline-flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  gap:10px;
-
-  min-height:46px;
-
-  padding:
-  0 17px;
-
-  border-radius:10px;
-
-  border:
-  1px solid
-  rgba(89,208,47,.55);
-
-  background:
-
-  radial-gradient(
-    circle at 20% 50%,
-    rgba(117,255,69,.18),
-    transparent 35%
-  ),
-
-  rgba(8,16,7,.75);
-
-  color:#dcffd3 !important;
-
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
-
-  font-size:.78rem;
-
-  font-weight:700;
-
-  letter-spacing:1px;
-
-  overflow:hidden;
-
-  box-shadow:
-
-  inset 0 0 12px
-  rgba(89,208,47,.08),
-
-  0 0 10px
-  rgba(89,208,47,.20),
-
-  0 0 25px
-  rgba(89,208,47,.08);
-
-  transition:
-  .25s ease;
-
-}
-
-
-/* PETIT REACTEUR */
-
-.arc-core{
-
-  position:relative;
-
-  width:19px;
-
-  height:19px;
-
-  border-radius:50%;
-
-  border:
-  1px solid
-  var(--green2);
-
-  background:
-
-  radial-gradient(
-    circle,
-    #f1ffe9 0 15%,
-    var(--green2) 18% 32%,
-    rgba(89,208,47,.25) 38% 55%,
-    transparent 58%
-  );
-
-  box-shadow:
-
-  0 0 5px
-  var(--green2),
-
-  0 0 13px
-  var(--green),
-
-  0 0 25px
-  rgba(89,208,47,.45);
-
-}
-
-
-.arc-core::before{
-
-  content:"";
-
-  position:absolute;
-
-  inset:3px;
-
-  border:
-
-  1px solid
-  rgba(255,255,255,.8);
-
-  border-radius:50%;
-
-}
-
-
-.iron-button::after{
-
-  content:"";
-
-  position:absolute;
-
-  top:-20%;
-
-  left:-70%;
-
-  width:50%;
-
-  height:140%;
-
-  background:
-
-  linear-gradient(
-    90deg,
-    transparent,
-    rgba(255,255,255,.25),
-    transparent
-  );
-
-  transform:
-  skewX(-25deg);
-
-  transition:
-  .6s;
-
-}
-
-
-.iron-button:hover{
-
-  color:#ffffff !important;
-
-  border-color:
-  var(--green2);
-
-  transform:
-  translateY(-2px);
-
-  box-shadow:
-
-  inset 0 0 15px
-  rgba(89,208,47,.12),
-
-  0 0 12px
-  rgba(89,208,47,.45),
-
-  0 0 32px
-  rgba(89,208,47,.22);
-
-}
-
-
-.iron-button:hover::after{
-
-  left:130%;
-
-}
-
-
-/* =========================================================
-   MOBILE MENU BUTTON
-========================================================= */
-
-.menu-button{
-
-  display:none;
-
-  padding:
-  8px 11px;
-
-  color:#fff;
-
-  background:#080808;
-
-  border:
-  1px solid #333;
-
-  border-radius:7px;
-
-  cursor:pointer;
-
-}
-
-
-/* =========================================================
-   HERO
-========================================================= */
-
-.hero{
-
-  position:relative;
-
-  min-height:720px;
-
-  display:flex;
-
-  align-items:center;
-
-  overflow:hidden;
-
-  border-bottom:
-  1px solid #181818;
-
-  background:
-
-  radial-gradient(
-    circle at 88% 13%,
-    rgba(89,208,47,.06),
-    transparent 22%
-  ),
-
-  #050505;
-
-}
-
-
-/* LIGNE TECHNIQUE GAUCHE */
-
-.hero::before{
-
-  content:"";
-
-  position:absolute;
-
-  left:0;
-
-  top:105px;
-
-  width:260px;
-
-  height:2px;
-
-  background:
-
-  linear-gradient(
-    90deg,
-    var(--green) 0 22%,
-    #505050 22% 100%
-  );
-
-}
-
-
-/* CERCLES TECHNIQUES */
-
-.hero::after{
-
-  content:"";
-
-  position:absolute;
-
-  width:430px;
-
-  height:430px;
-
-  right:-175px;
-
-  top:-155px;
-
-  border-radius:50%;
-
-  border:
-
-  1px solid
-  rgba(89,208,47,.16);
-
-  box-shadow:
-
-  0 0 0 55px
-  rgba(89,208,47,.035),
-
-  0 0 0 110px
-  rgba(255,255,255,.018);
-
-}
-
-
-/* =========================================================
-   HERO GRID
-========================================================= */
-
-.hero-grid{
-
-  position:relative;
-
-  z-index:2;
-
-  display:grid;
-
-  grid-template-columns:
-
-  minmax(0,1fr)
-
-  500px;
-
-  gap:82px;
-
-  align-items:center;
-
-  padding:
-  110px 0 90px;
-
-}
-
-
-.hero-left{
-
-  max-width:730px;
-
-  min-width:0;
-
-}
-
-
-/* =========================================================
-   GRAND LOGO
-========================================================= */
-
-.hero-title{
-
-  font-size:
-  clamp(
-    3.6rem,
-    6.6vw,
-    6.2rem
-  );
-
-  line-height:.92;
-
-  letter-spacing:-4px;
-
-  font-weight:900;
-
-  white-space:nowrap;
-
-}
-
-
-.hero-title .consulting{
-
-  color:var(--green);
-
-}
-
-
-/* =========================================================
-   SOUS TITRE
-========================================================= */
-
-.hero-subtitle{
-
-  margin-top:24px;
-
-  color:#e0e0e0;
-
-  text-transform:uppercase;
-
-  letter-spacing:2.7px;
-
-  font-size:.77rem;
-
-  max-width:700px;
-
-}
-
-
-/* =========================================================
-   SLOGAN
-========================================================= */
-
-.hero-tagline{
-
-  margin:
-  31px 0 28px;
-
-  color:var(--green);
-
-  text-transform:uppercase;
-
-  letter-spacing:6px;
-
-  font-size:1rem;
-
-}
-
-
-/* =========================================================
-   TEXTE
-========================================================= */
-
-.hero-copy{
-
-  color:#b0b0b0;
-
-  max-width:690px;
-
-  font-size:1.02rem;
-
-}
-
-
-/* =========================================================
-   ACTIONS HERO
-========================================================= */
-
-.hero-actions{
-
-  display:flex;
-
-  flex-wrap:wrap;
-
-  gap:12px;
-
-  margin-top:34px;
-
-}
-
-
-.btn{
-
-  display:inline-flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  min-height:50px;
-
-  padding:
-  0 22px;
-
-  border-radius:7px;
-
-  font-weight:700;
-
-  transition:.2s ease;
-
-}
-
-
-.btn-primary{
-
-  background:var(--green);
-
-  color:#050505;
-
-  border:
-  1px solid
-  var(--green);
-
-}
-
-
-.btn-primary:hover{
-
-  background:var(--green2);
-
-  transform:
-  translateY(-2px);
-
-}
-
-
-.btn-secondary{
-
-  border:
-  1px solid #373737;
-
-  background:#060606;
-
-}
-
-
-.btn-secondary:hover{
-
-  border-color:var(--green);
-
-  color:var(--green2);
-
-}
-
-
-/* =========================================================
-   CADRE TECHNIQUE DROITE
-========================================================= */
-
-.tech-panel{
-
-  position:relative;
-
-  top:42px;
-
-  padding:27px;
-
-  border:
-
-  1px solid
-  rgba(255,255,255,.10);
-
-  border-radius:18px;
-
-  background:
-
-  linear-gradient(
-    180deg,
-    rgba(255,255,255,.018),
-    rgba(255,255,255,.005)
-  ),
-
-  rgba(8,8,8,.93);
-
-  box-shadow:
-
-  0 35px 90px
-  rgba(0,0,0,.45),
-
-  inset 0 0 40px
-  rgba(89,208,47,.025);
-
-}
-
-
-.tech-panel::before{
-
-  content:"";
-
-  position:absolute;
-
-  inset:0;
-
-  border-radius:18px;
-
-  pointer-events:none;
-
-  background:
-
-  linear-gradient(
-    135deg,
-    rgba(89,208,47,.05),
-    transparent 30%
-  );
-
-}
-
-
-/* =========================================================
-   PANEL HEADER
-========================================================= */
-
-.tech-header{
-
-  position:relative;
-
-  z-index:2;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:space-between;
-
-  gap:12px;
-
-  flex-wrap:wrap;
-
-  padding-bottom:16px;
-
-  margin-bottom:18px;
-
-  border-bottom:
-
-  1px solid
-  rgba(255,255,255,.08);
-
-}
-
-
-.tech-header-title{
-
-  color:#999;
-
-  font-size:.77rem;
-
-  letter-spacing:1.6px;
-
-}
-
-
-/* =========================================================
-   ONLINE
-========================================================= */
-
-.online{
-
-  display:flex;
-
-  align-items:center;
-
-  gap:8px;
-
-  color:var(--green2);
-
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
-
-  font-weight:700;
-
-  font-size:.76rem;
-
-  text-shadow:
-
-  0 0 8px
-  rgba(89,208,47,.45);
-
-}
-
-
-.online-dot{
-
-  width:9px;
-
-  height:9px;
-
-  border-radius:50%;
-
-  background:var(--green2);
-
-  box-shadow:
-
-  0 0 6px
-  var(--green2),
-
-  0 0 16px
-  rgba(89,208,47,.55);
-
-}
-
-
-/* =========================================================
-   TECH GRID
-========================================================= */
-
-.tech-grid{
-
-  position:relative;
-
-  z-index:2;
-
-  display:grid;
-
-  grid-template-columns:
-
-  repeat(
-    2,
-    minmax(0,1fr)
-  );
-
-  gap:13px;
-
-}
-
-
-.tech-card{
-
-  min-height:150px;
-
-  padding:19px;
-
-  border:
-
-  1px solid
-  rgba(255,255,255,.08);
-
-  border-radius:12px;
-
-  background:
-  rgba(8,8,8,.9);
-
-  transition:.2s;
-
-}
-
-
-.tech-card:hover{
-
-  border-color:
-  rgba(89,208,47,.25);
-
-  background:#0b0b0b;
-
-}
-
-
-.tech-number{
-
-  display:block;
-
-  margin-bottom:14px;
-
-  color:var(--green2);
-
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
-
-  font-weight:700;
-
-  letter-spacing:2px;
-
-  text-shadow:
-
-  0 0 8px
-  rgba(89,208,47,.35);
-
-}
-
-
-.tech-card h3{
-
-  font-size:.97rem;
-
-  margin-bottom:7px;
-
-}
-
-
-.tech-card p{
-
-  color:#888;
-
-  font-size:.84rem;
-
-}
-
-
-/* =========================================================
-   SECTION GENERIQUE
-========================================================= */
-
-section{
-
-  padding:
-  90px 0;
-
-}
-
-
-.alt{
-
-  background:#080808;
-
-  border-top:
-  1px solid #181818;
-
-  border-bottom:
-  1px solid #181818;
-
-}
-
-
-.section-label{
-
-  color:var(--green);
-
-  text-transform:uppercase;
-
-  letter-spacing:4px;
-
-  font-size:.7rem;
-
-  margin-bottom:14px;
-
-}
-
-
-.section-title{
-
-  font-size:
-  clamp(
-    2.1rem,
-    4vw,
-    3.55rem
-  );
-
-  line-height:1.06;
-
-  letter-spacing:-2px;
-
-}
-
-
-.section-intro{
-
-  max-width:780px;
-
-  color:#999;
-
-  margin-top:18px;
-
-}
-
-
-/* =========================================================
-   UNIVERS
-========================================================= */
-
-.universe-grid{
-
-  display:grid;
-
-  grid-template-columns:
-  repeat(
-    2,
-    minmax(0,1fr)
-  );
-
-  gap:15px;
-
-  margin-top:42px;
-
-}
-
-
-.universe-card{
-
-  padding:30px;
-
-  border:
-  1px solid #292929;
-
-  border-radius:12px;
-
-  background:#0a0a0a;
-
-  transition:.2s;
-
-}
-
-
-.universe-card:hover{
-
-  border-color:#444;
-
-  transform:
-  translateY(-3px);
-
-}
-
-
-.universe-number{
-
-  color:var(--green2);
-
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
-
-  letter-spacing:2px;
-
-  font-weight:700;
-
-}
-
-
-.universe-card h3{
-
-  margin:
-  14px 0 10px;
-
-  font-size:1.28rem;
-
-}
-
-
-.universe-card p{
-
-  color:#909090;
-
-}
-
-
-.universe-link{
-
-  display:inline-block;
-
-  margin-top:20px;
-
-  color:var(--green2);
-
-  font-weight:700;
-
-}
-
-
-/* =========================================================
-   APPROCHE
-========================================================= */
-
-.split{
-
-  display:grid;
-
-  grid-template-columns:
-  .9fr 1.15fr;
-
-  gap:75px;
-
-}
-
-
-.copy p{
-
-  color:#a2a2a2;
-
-  margin-bottom:17px;
-
-}
-
-
-/* =========================================================
-   DATA
-========================================================= */
-
-.data-tags{
-
-  display:flex;
-
-  flex-wrap:wrap;
-
-  gap:8px;
-
-  margin-top:26px;
-
-}
-
-
-.data-tag{
-
-  padding:
-  8px 11px;
-
-  border:
-  1px solid #303030;
-
-  border-radius:7px;
-
-  color:#929292;
-
-  font-size:.8rem;
-
-}
-
-
-/* =========================================================
-   CTA
-========================================================= */
-
-.cta-box{
-
-  padding:43px;
-
-  border:
-  1px solid #292929;
-
-  border-radius:13px;
-
-  background:
-
-  radial-gradient(
-    circle at 90% 0%,
-    rgba(89,208,47,.08),
-    transparent 28%
-  ),
-
-  #0a0a0a;
-
-}
-
-
-.cta-box h2{
-
-  font-size:
-  clamp(
-    2rem,
-    4vw,
-    3.2rem
-  );
-
-  line-height:1.05;
-
-}
-
-
-.cta-box p{
-
-  max-width:730px;
-
-  margin-top:15px;
-
-  color:#999;
-
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer{
-
-  padding:
-  31px 0;
-
-  background:#030303;
-
-  border-top:
-  1px solid #171717;
-
-  color:#747474;
-
-  font-size:.8rem;
-
-}
-
-
-.footer{
-
-  display:flex;
-
-  justify-content:space-between;
-
-  flex-wrap:wrap;
-
-  gap:20px;
-
-}
-
-
-.footer a:hover{
-
-  color:var(--green);
-
-}
-
-
-/* =========================================================
-   RESPONSIVE TABLETTE
-========================================================= */
-
-@media(max-width:1050px){
-
-  .hero-grid{
-
-    grid-template-columns:1fr;
-
-    gap:40px;
-
-  }
-
-
-  .hero-left{
-
-    max-width:800px;
-
-  }
-
-
-  .tech-panel{
-
-    top:0;
-
-    max-width:760px;
-
-  }
-
-
-  .hero-title{
-
-    white-space:normal;
-
-  }
-
-
-  .split{
-
-    grid-template-columns:1fr;
-
-    gap:32px;
-
-  }
-
-}
-
-
-/* =========================================================
-   MENU MOBILE
-========================================================= */
-
-@media(max-width:820px){
-
-  .nav{
-
-    min-height:68px;
-
-  }
-
-
-  .menu-button{
-
-    display:block;
-
-  }
-
-
-  .nav-links{
-
-    display:none;
-
-    position:absolute;
-
-    top:68px;
-
-    left:0;
-
-    right:0;
-
-    background:#070707;
-
-    border-bottom:
-    1px solid #222;
-
-    padding:
-    15px 4%;
-
-    flex-direction:column;
-
-    align-items:stretch;
-
-    gap:4px;
-
-  }
-
-
-  .nav-links.open{
-
-    display:flex;
-
-  }
-
-
-  .nav-links li{
-
-    width:100%;
-
-  }
-
-
-  .nav-links a{
-
-    display:block;
-
-    width:100%;
-
-    padding:
-    10px 0;
-
-  }
-
-
-  .iron-button{
-
-    width:100%;
-
-    justify-content:flex-start;
-
-    padding-left:14px !important;
-
-  }
-
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media(max-width:620px){
-
-  .container{
-
-    width:94%;
-
-  }
-
-
-  .brand-main{
-
-    font-size:1.22rem;
-
-  }
-
-
-  .brand-consulting{
-
-    font-size:.93rem;
-
-  }
-
-
-  .hero{
-
-    min-height:auto;
-
-  }
-
-
-  .hero-grid{
-
-    padding:
-    58px 0 65px;
-
-  }
-
-
-  .hero-title{
-
-    font-size:2.85rem;
-
-    line-height:.98;
-
-    letter-spacing:-2px;
-
-    white-space:normal;
-
-  }
-
-
-  .hero-title .consulting{
-
-    display:block;
-
-    margin-top:5px;
-
-    font-size:.68em;
-
-  }
-
-
-  .hero-subtitle{
-
-    font-size:.66rem;
-
-    line-height:1.8;
-
-    letter-spacing:1.35px;
-
-  }
-
-
-  .hero-tagline{
-
-    margin:
-    25px 0 22px;
-
-    font-size:.82rem;
-
-    letter-spacing:3px;
-
-  }
-
-
-  .hero-copy{
-
-    font-size:.94rem;
-
-  }
-
-
-  .hero-actions{
-
-    display:grid;
-
-    grid-template-columns:1fr;
-
-  }
-
-
-  .hero-actions .btn{
-
-    width:100%;
-
-  }
-
-
-  .tech-panel{
-
-    padding:19px;
-
-  }
-
-
-  .tech-grid{
-
-    grid-template-columns:1fr;
-
-  }
-
-
-  .tech-card{
-
-    min-height:auto;
-
-  }
-
-
-  section{
-
-    padding:
-    66px 0;
-
-  }
-
-
-  .section-title{
-
-    font-size:2rem;
-
-    letter-spacing:-1px;
-
-  }
-
-
-  .universe-grid{
-
-    grid-template-columns:1fr;
-
-  }
-
-
-  .universe-card{
-
-    padding:22px;
-
-  }
-
-
-  .cta-box{
-
-    padding:
-    27px 21px;
-
-  }
-
-
-  .footer{
-
-    display:block;
-
-    text-align:center;
-
-  }
-
-
-  .footer div + div{
-
-    margin-top:7px;
-
-  }
-
-}
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actyrom Consulting | Industrie, Habitat & expertise technique</title>
+  <meta name="description" content="Actyrom Consulting accompagne les industriels, professionnels et particuliers en automatisme, maintenance, dépannage, domotique, réseaux, supervision et solutions techniques sur mesure.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://actyrom.fr/">
+
+  <style>
+    :root{
+      --bg:#050505;
+      --bg2:#080808;
+      --panel:#0b0b0b;
+      --panel2:#101010;
+      --line:#292929;
+      --text:#f5f5f5;
+      --muted:#a0a0a0;
+      --muted2:#707070;
+      --green:#59d02f;
+      --green2:#75ff45;
+      --max:1180px;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+      overflow-x:hidden;
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    button{
+      font:inherit;
+      cursor:pointer;
+    }
+
+    .container{
+      width:min(var(--max), 92%);
+      margin:auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+    header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(5,5,5,.96);
+      backdrop-filter:blur(15px);
+      border-bottom:1px solid #171717;
+    }
+
+    .nav{
+      min-height:78px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:28px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:baseline;
+      gap:4px;
+      white-space:nowrap;
+    }
+
+    .brand-main{
+      font-size:1.55rem;
+      font-weight:900;
+      letter-spacing:-1px;
+      color:#fff;
+    }
+
+    .brand-consulting{
+      color:var(--green);
+      font-size:1.08rem;
+      font-weight:800;
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:25px;
+      list-style:none;
+      color:#d0d0d0;
+      font-size:.90rem;
+    }
+
+    .nav-links a{
+      transition:.2s ease;
+    }
+
+    .nav-links a:hover{
+      color:var(--green2);
+    }
+
+    /* bouton connexion sans voyant */
+    .connexion-button{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:48px;
+      padding:0 22px;
+      border-radius:12px;
+      border:1px solid rgba(89,208,47,.45);
+      background:linear-gradient(180deg, rgba(89,208,47,.12), rgba(89,208,47,.04));
+      color:#e7ffd8 !important;
+      font-family:"Courier New", Consolas, monospace;
+      font-size:.82rem;
+      font-weight:700;
+      letter-spacing:1px;
+      box-shadow:
+        inset 0 0 10px rgba(89,208,47,.07),
+        0 0 10px rgba(89,208,47,.18),
+        0 0 24px rgba(89,208,47,.08);
+      transition:.25s ease;
+      overflow:hidden;
+      position:relative;
+    }
+
+    .connexion-button::after{
+      content:"";
+      position:absolute;
+      top:-10%;
+      left:-85%;
+      width:50%;
+      height:120%;
+      background:linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent);
+      transform:skewX(-25deg);
+      transition:.6s;
+    }
+
+    .connexion-button:hover{
+      transform:translateY(-2px);
+      border-color:var(--green2);
+      color:#fff !important;
+      box-shadow:
+        inset 0 0 12px rgba(89,208,47,.1),
+        0 0 14px rgba(89,208,47,.3),
+        0 0 30px rgba(89,208,47,.14);
+    }
+
+    .connexion-button:hover::after{
+      left:130%;
+    }
+
+    .menu-button{
+      display:none;
+      padding:8px 11px;
+      color:#fff;
+      background:#080808;
+      border:1px solid #333;
+      border-radius:7px;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+    .hero{
+      position:relative;
+      min-height:760px;
+      display:flex;
+      align-items:center;
+      overflow:hidden;
+      border-bottom:1px solid #181818;
+      background:
+        radial-gradient(circle at 88% 13%, rgba(89,208,47,.06), transparent 22%),
+        #050505;
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:105px;
+      width:260px;
+      height:2px;
+      background:linear-gradient(90deg, var(--green) 0 22%, #505050 22% 100%);
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      width:430px;
+      height:430px;
+      right:-175px;
+      top:-155px;
+      border-radius:50%;
+      border:1px solid rgba(89,208,47,.16);
+      box-shadow:
+        0 0 0 55px rgba(89,208,47,.035),
+        0 0 0 110px rgba(255,255,255,.018);
+    }
+
+    .hero-grid{
+      position:relative;
+      z-index:2;
+      display:grid;
+      grid-template-columns:minmax(0, 1fr) 470px;
+      gap:120px;
+      align-items:start;
+      padding:120px 0 90px;
+    }
+
+    .hero-left{
+      max-width:690px;
+      min-width:0;
+      padding-top:40px;
+      position:relative;
+      z-index:3;
+    }
+
+    .hero-title{
+      font-size:clamp(3.2rem, 6vw, 5.7rem);
+      line-height:.94;
+      letter-spacing:-4px;
+      font-weight:900;
+      word-break:break-word;
+    }
+
+    .hero-title .consulting{
+      color:var(--green);
+      display:inline-block;
+    }
+
+    .hero-subtitle{
+      margin-top:24px;
+      color:#e0e0e0;
+      text-transform:uppercase;
+      letter-spacing:2.7px;
+      font-size:.77rem;
+      max-width:700px;
+    }
+
+    .hero-tagline{
+      margin:31px 0 28px;
+      color:var(--green);
+      text-transform:uppercase;
+      letter-spacing:6px;
+      font-size:1rem;
+    }
+
+    .hero-copy{
+      color:#b0b0b0;
+      max-width:650px;
+      font-size:1.02rem;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:34px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:50px;
+      padding:0 22px;
+      border-radius:7px;
+      font-weight:700;
+      transition:.2s ease;
+    }
+
+    .btn-primary{
+      background:var(--green);
+      color:#050505;
+      border:1px solid var(--green);
+    }
+
+    .btn-primary:hover{
+      background:var(--green2);
+      transform:translateY(-2px);
+    }
+
+    .btn-secondary{
+      border:1px solid #373737;
+      background:#060606;
+      color:#fff;
+    }
+
+    .btn-secondary:hover{
+      border-color:var(--green);
+      color:var(--green2);
+    }
+
+    /* voyant online séparé */
+    .hero-status{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      margin-top:28px;
+      padding:10px 16px;
+      border:1px solid rgba(89,208,47,.18);
+      border-radius:999px;
+      background:rgba(10,18,10,.55);
+      color:var(--green2);
+      font-family:"Courier New", Consolas, monospace;
+      font-size:.82rem;
+      font-weight:700;
+      letter-spacing:1px;
+      box-shadow:
+        inset 0 0 10px rgba(89,208,47,.05),
+        0 0 12px rgba(89,208,47,.12);
+      width:max-content;
+    }
+
+    .hero-status-dot{
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background:var(--green2);
+      box-shadow:
+        0 0 6px var(--green2),
+        0 0 18px rgba(89,208,47,.55);
+    }
+
+    /* =========================
+       PANEL DROITE
+    ========================= */
+    .tech-panel-wrap{
+      position:relative;
+      z-index:1;
+      padding-top:140px; /* descend clairement le bloc */
+    }
+
+    .tech-panel{
+      position:relative;
+      padding:27px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:18px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.018), rgba(255,255,255,.005)),
+        rgba(8,8,8,.93);
+      box-shadow:
+        0 35px 90px rgba(0,0,0,.45),
+        inset 0 0 40px rgba(89,208,47,.025);
+    }
+
+    .tech-panel::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius:18px;
+      pointer-events:none;
+      background:linear-gradient(135deg, rgba(89,208,47,.05), transparent 30%);
+    }
+
+    .tech-header{
+      position:relative;
+      z-index:2;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      padding-bottom:16px;
+      margin-bottom:18px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .tech-header-title{
+      color:#999;
+      font-size:.77rem;
+      letter-spacing:1.6px;
+    }
+
+    .online{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      color:var(--green2);
+      font-family:"Courier New", Consolas, monospace;
+      font-weight:700;
+      font-size:.76rem;
+      text-shadow:0 0 8px rgba(89,208,47,.45);
+    }
+
+    .online-dot{
+      width:9px;
+      height:9px;
+      border-radius:50%;
+      background:var(--green2);
+      box-shadow:
+        0 0 6px var(--green2),
+        0 0 16px rgba(89,208,47,.55);
+    }
+
+    .tech-grid{
+      position:relative;
+      z-index:2;
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:13px;
+    }
+
+    .tech-card{
+      min-height:150px;
+      padding:19px;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:12px;
+      background:rgba(8,8,8,.9);
+      transition:.2s;
+    }
+
+    .tech-card:hover{
+      border-color:rgba(89,208,47,.25);
+      background:#0b0b0b;
+    }
+
+    .tech-number{
+      display:block;
+      margin-bottom:14px;
+      color:var(--green2);
+      font-family:"Courier New", Consolas, monospace;
+      font-weight:700;
+      letter-spacing:2px;
+      text-shadow:0 0 8px rgba(89,208,47,.35);
+    }
+
+    .tech-card h3{
+      font-size:.97rem;
+      margin-bottom:7px;
+    }
+
+    .tech-card p{
+      color:#888;
+      font-size:.84rem;
+    }
+
+    /* =========================
+       SECTIONS
+    ========================= */
+    section{
+      padding:90px 0;
+    }
+
+    .alt{
+      background:#080808;
+      border-top:1px solid #181818;
+      border-bottom:1px solid #181818;
+    }
+
+    .section-label{
+      color:var(--green);
+      text-transform:uppercase;
+      letter-spacing:4px;
+      font-size:.7rem;
+      margin-bottom:14px;
+    }
+
+    .section-title{
+      font-size:clamp(2.1rem, 4vw, 3.55rem);
+      line-height:1.06;
+      letter-spacing:-2px;
+    }
+
+    .section-intro{
+      max-width:780px;
+      color:#999;
+      margin-top:18px;
+    }
+
+    .universe-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:15px;
+      margin-top:42px;
+    }
+
+    .universe-card{
+      padding:30px;
+      border:1px solid #292929;
+      border-radius:12px;
+      background:#0a0a0a;
+      transition:.2s;
+    }
+
+    .universe-card:hover{
+      border-color:#444;
+      transform:translateY(-3px);
+    }
+
+    .universe-number{
+      color:var(--green2);
+      font-family:"Courier New", Consolas, monospace;
+      letter-spacing:2px;
+      font-weight:700;
+    }
+
+    .universe-card h3{
+      margin:14px 0 10px;
+      font-size:1.28rem;
+    }
+
+    .universe-card p{
+      color:#909090;
+    }
+
+    .universe-link{
+      display:inline-block;
+      margin-top:20px;
+      color:var(--green2);
+      font-weight:700;
+    }
+
+    .split{
+      display:grid;
+      grid-template-columns:.9fr 1.15fr;
+      gap:75px;
+    }
+
+    .copy p{
+      color:#a2a2a2;
+      margin-bottom:17px;
+    }
+
+    .data-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:26px;
+    }
+
+    .data-tag{
+      padding:8px 11px;
+      border:1px solid #303030;
+      border-radius:7px;
+      color:#929292;
+      font-size:.8rem;
+    }
+
+    .cta-box{
+      padding:43px;
+      border:1px solid #292929;
+      border-radius:13px;
+      background:
+        radial-gradient(circle at 90% 0%, rgba(89,208,47,.08), transparent 28%),
+        #0a0a0a;
+    }
+
+    .cta-box h2{
+      font-size:clamp(2rem, 4vw, 3.2rem);
+      line-height:1.05;
+    }
+
+    .cta-box p{
+      max-width:730px;
+      margin-top:15px;
+      color:#999;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+    footer{
+      padding:31px 0;
+      background:#030303;
+      border-top:1px solid #171717;
+      color:#747474;
+      font-size:.8rem;
+    }
+
+    .footer{
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .footer a:hover{
+      color:var(--green);
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+    @media(max-width:1100px){
+      .hero-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+      }
+
+      .hero-left{
+        max-width:800px;
+        padding-top:0;
+      }
+
+      .tech-panel-wrap{
+        padding-top:0;
+        max-width:760px;
+      }
+
+      .split{
+        grid-template-columns:1fr;
+        gap:32px;
+      }
+    }
+
+    @media(max-width:820px){
+      .nav{
+        min-height:68px;
+      }
+
+      .menu-button{
+        display:block;
+      }
+
+      .nav-links{
+        display:none;
+        position:absolute;
+        top:68px;
+        left:0;
+        right:0;
+        background:#070707;
+        border-bottom:1px solid #222;
+        padding:15px 4%;
+        flex-direction:column;
+        align-items:stretch;
+        gap:4px;
+      }
+
+      .nav-links.open{
+        display:flex;
+      }
+
+      .nav-links li{
+        width:100%;
+      }
+
+      .nav-links a{
+        display:block;
+        width:100%;
+        padding:10px 0;
+      }
+
+      .connexion-button{
+        width:100%;
+        justify-content:center;
+      }
+    }
+
+    @media(max-width:620px){
+      .container{
+        width:94%;
+      }
+
+      .brand-main{
+        font-size:1.22rem;
+      }
+
+      .brand-consulting{
+        font-size:.93rem;
+      }
+
+      .hero{
+        min-height:auto;
+      }
+
+      .hero-grid{
+        padding:58px 0 65px;
+      }
+
+      .hero-title{
+        font-size:2.85rem;
+        line-height:.98;
+        letter-spacing:-2px;
+      }
+
+      .hero-title .consulting{
+        display:block;
+        margin-top:5px;
+        font-size:.72em;
+      }
+
+      .hero-subtitle{
+        font-size:.66rem;
+        line-height:1.8;
+        letter-spacing:1.35px;
+      }
+
+      .hero-tagline{
+        margin:25px 0 22px;
+        font-size:.82rem;
+        letter-spacing:3px;
+      }
+
+      .hero-copy{
+        font-size:.94rem;
+      }
+
+      .hero-actions{
+        display:grid;
+        grid-template-columns:1fr;
+      }
+
+      .hero-actions .btn{
+        width:100%;
+      }
+
+      .hero-status{
+        width:100%;
+        justify-content:center;
+      }
+
+      .tech-panel{
+        padding:19px;
+      }
+
+      .tech-grid{
+        grid-template-columns:1fr;
+      }
+
+      .tech-card{
+        min-height:auto;
+      }
+
+      section{
+        padding:66px 0;
+      }
+
+      .section-title{
+        font-size:2rem;
+        letter-spacing:-1px;
+      }
+
+      .universe-grid{
+        grid-template-columns:1fr;
+      }
+
+      .universe-card{
+        padding:22px;
+      }
+
+      .cta-box{
+        padding:27px 21px;
+      }
+
+      .footer{
+        display:block;
+        text-align:center;
+      }
+
+      .footer div + div{
+        margin-top:7px;
+      }
+    }
+  </style>
 </head>
-
 
 <body>
 
-
-<!-- =========================================================
-     HEADER
-========================================================= -->
-
-<header>
-
-<div class="container">
-
-<nav class="nav">
-
-
-<a
-href="index.html"
-class="brand"
->
-
-<span class="brand-main">
-Actyrom
-</span>
-
-<span class="brand-consulting">
-Consulting
-</span>
-
-</a>
-
-
-
-<button
-class="menu-button"
-id="menuButton"
-type="button"
-aria-label="Ouvrir le menu"
-aria-expanded="false"
->
-
-☰
-
-</button>
-
-
-
-<ul
-class="nav-links"
-id="navLinks"
->
-
-
-<li>
-
-<a href="index.html">
-Accueil
-</a>
-
-</li>
-
-
-<li>
-
-<a href="industrie.html">
-Industrie
-</a>
-
-</li>
-
-
-<li>
-
-<a href="habitat.html">
-Habitat
-</a>
-
-</li>
-
-
-<li>
-
-<a href="industrie40.html">
-Industrie 4.0
-</a>
-
-</li>
-
-
-<li>
-
-<a href="accompagnement.html">
-Accompagnement
-</a>
-
-</li>
-
-
-<li>
-
-<a
-href="contact.html"
-class="iron-button"
->
-
-<span class="arc-core"></span>
-
-CONNEXION
-
-</a>
-
-</li>
-
-
-</ul>
-
-
-</nav>
-
-</div>
-
-</header>
-
-
-
-<main>
-
-
-<!-- =========================================================
-     HERO
-========================================================= -->
-
-<section class="hero">
-
-
-<div class="container hero-grid">
-
-
-
-<!-- =========================================================
-     GAUCHE
-========================================================= -->
-
-<div class="hero-left">
-
-
-<h1 class="hero-title">
-
-Actyrom<span class="consulting">Consulting</span>
-
-</h1>
-
-
-
-<div class="hero-subtitle">
-
-EXPERTISE TECHNIQUE
-&nbsp;•&nbsp;
-AUTOMATISME
-&nbsp;•&nbsp;
-MAINTENANCE
-&nbsp;•&nbsp;
-SOLUTIONS SUR MESURE
-
-</div>
-
-
-
-<div class="hero-tagline">
-
-DES SOLUTIONS POUR DEMAIN
-
-</div>
-
-
-
-<p class="hero-copy">
-
-Actyrom Consulting accompagne les industriels,
-professionnels et particuliers dans l’analyse,
-le dépannage, l’automatisation, la fiabilisation,
-les réseaux, la supervision et le développement
-de solutions techniques adaptées à leur besoin.
-
-</p>
-
-
-
-<div class="hero-actions">
-
-
-<a
-class="btn btn-primary"
-href="contact.html"
->
-
-Présenter votre besoin
-
-</a>
-
-
-<a
-class="btn btn-secondary"
-href="#univers"
->
-
-Découvrir Actyrom
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-<!-- =========================================================
-     CADRE DROITE
-========================================================= -->
-
-<div class="tech-panel">
-
-
-<div class="tech-header">
-
-
-<div class="tech-header-title">
-
-ACTYROM // TECHNICAL SYSTEM
-
-</div>
-
-
-<div class="online">
-
-<span class="online-dot"></span>
-
-SYSTEM ONLINE
-
-</div>
-
-
-</div>
-
-
-
-<div class="tech-grid">
-
-
-
-<div class="tech-card">
-
-<span class="tech-number">
-01
-</span>
-
-<h3>
-DIAGNOSTIC
-</h3>
-
-<p>
-
-Comprendre avant de remplacer.
-
-</p>
-
-</div>
-
-
-
-<div class="tech-card">
-
-<span class="tech-number">
-02
-</span>
-
-<h3>
-AUTOMATISME
-</h3>
-
-<p>
-
-Industrie,
-habitat
-et systèmes techniques.
-
-</p>
-
-</div>
-
-
-
-<div class="tech-card">
-
-<span class="tech-number">
-03
-</span>
-
-<h3>
-RÉSEAUX & DATA
-</h3>
-
-<p>
-
-Communication,
-supervision
-et historisation.
-
-</p>
-
-</div>
-
-
-
-<div class="tech-card">
-
-<span class="tech-number">
-04
-</span>
-
-<h3>
-FIABILISATION
-</h3>
-
-<p>
-
-Des solutions durables
-et adaptées au terrain.
-
-</p>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-<!-- =========================================================
-     INDUSTRIE / HABITAT
-========================================================= -->
-
-<section
-class="alt"
-id="univers"
->
-
-
-<div class="container">
-
-
-<div class="section-label">
-
-UNE SEULE IDENTITÉ,
-PLUSIEURS UNIVERS
-
-</div>
-
-
-<h2 class="section-title">
-
-Actyrom Consulting
-comme interface unique.
-
-</h2>
-
-
-<p class="section-intro">
-
-« Industrie » et « Habitat »
-sont des qualificatifs de prestations.
-
-Ils permettent d’identifier rapidement
-le contexte d’intervention tout en conservant
-Actyrom Consulting comme identité principale.
-
-</p>
-
-
-
-<div class="universe-grid">
-
-
-
-<article class="universe-card">
-
-
-<span class="universe-number">
-
-01
-
-</span>
-
-
-<h3>
-
-Actyrom • Industrie
-
-</h3>
-
-
-<p>
-
-Dépannage,
-automatisme,
-maintenance,
-fiabilisation,
-électricité industrielle,
-méthodes,
-données machines,
-réseaux industriels,
-assistance projet
-et renfort technique.
-
-</p>
-
-
-<a
-class="universe-link"
-href="industrie.html"
->
-
-Voir les prestations Industrie →
-
-</a>
-
-
-</article>
-
-
-
-<article class="universe-card">
-
-
-<span class="universe-number">
-
-02
-
-</span>
-
-
-<h3>
-
-Actyrom • Habitat
-
-</h3>
-
-
-<p>
-
-Domotique,
-réseaux,
-informatique,
-automatismes,
-énergie,
-sécurité technique,
-supervision,
-dépannage
-et solutions sur mesure.
-
-</p>
-
-
-<a
-class="universe-link"
-href="habitat.html"
->
-
-Voir les prestations Habitat →
-
-</a>
-
-
-</article>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-<!-- =========================================================
-     APPROCHE
-========================================================= -->
-
-<section>
-
-
-<div class="container split">
-
-
-<div>
-
-
-<div class="section-label">
-
-NOTRE APPROCHE
-
-</div>
-
-
-<h2 class="section-title">
-
-Comprendre.
-Analyser.
-Corriger.
-Fiabiliser.
-
-</h2>
-
-
-</div>
-
-
-
-<div class="copy">
-
-
-<p>
-
-Actyrom part du fonctionnement réel
-de l’installation et du besoin utilisateur.
-
-L’objectif n’est pas uniquement
-de remettre en service,
-mais de comprendre l’origine
-du problème et de rechercher
-une solution durable.
-
-</p>
-
-
-<p>
-
-Cette logique s’applique aussi bien
-à une ligne de production
-qu’à une installation domotique,
-un réseau local,
-un système de supervision
-ou un équipement automatisé.
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-<!-- =========================================================
-     DATA
-========================================================= -->
-
-<section class="alt">
-
-
-<div class="container">
-
-
-<div class="section-label">
-
-DONNÉES & SUPERVISION
-
-</div>
-
-
-<h2 class="section-title">
-
-Faire remonter
-l’information utile.
-
-</h2>
-
-
-<p class="section-intro">
-
-Actyrom développe progressivement
-des solutions de collecte,
-historisation,
-visualisation
-et analyse de données.
-
-L’objectif est de disposer
-d’informations exploitables
-pour mieux comprendre
-le fonctionnement réel
-des installations.
-
-</p>
-
-
-
-<div class="data-tags">
-
-
-<span class="data-tag">
-KPI
-</span>
-
-<span class="data-tag">
-Historisation
-</span>
-
-<span class="data-tag">
-Supervision
-</span>
-
-<span class="data-tag">
-Alertes
-</span>
-
-<span class="data-tag">
-Analyse de tendances
-</span>
-
-<span class="data-tag">
-Maintenance prédictive
-</span>
-
-<span class="data-tag">
-Réseaux dédiés
-</span>
-
-<span class="data-tag">
-Accès distant sécurisé
-</span>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-<!-- =========================================================
-     CTA
-========================================================= -->
-
-<section>
-
-
-<div class="container">
-
-
-<div class="cta-box">
-
-
-<div class="section-label">
-
-UN BESOIN TECHNIQUE ?
-
-</div>
-
-
-<h2>
-
-Parlons de votre projet.
-
-</h2>
-
-
-<p>
-
-Industrie,
-habitat,
-réseau,
-automatisme,
-dépannage,
-supervision
-ou besoin atypique :
-
-présentez votre situation
-et Actyrom étudiera
-la solution la plus adaptée.
-
-</p>
-
-
-<div class="hero-actions">
-
-
-<a
-class="btn btn-primary"
-href="contact.html"
->
-
-Contacter Actyrom
-
-</a>
-
-
-<a
-class="btn btn-secondary"
-href="habitat.html"
->
-
-Découvrir Habitat
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-</main>
-
-
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
-<footer>
-
-
-<div class="container footer">
-
-
-<div>
-
-© 2026 Actyrom Consulting
-
-</div>
-
-
-<div>
-
-<a href="mentions-legales.html">
-Mentions légales
-</a>
-
-&nbsp;•&nbsp;
-
-<a href="contact.html">
-Contact
-</a>
-
-</div>
-
-
-</div>
-
-
-</footer>
-
-
-
-<!-- =========================================================
-     JAVASCRIPT MENU MOBILE
-========================================================= -->
-
-<script>
-
-const menuButton =
-document.getElementById("menuButton");
-
-const navLinks =
-document.getElementById("navLinks");
-
-
-menuButton.addEventListener(
-"click",
-function(){
-
-  const opened =
-  navLinks.classList.toggle("open");
-
-  menuButton.setAttribute(
-    "aria-expanded",
-    opened ? "true" : "false"
-  );
-
-}
-);
-
-
-/* ferme le menu après un clic mobile */
-
-document
-.querySelectorAll(
-".nav-links a"
-)
-.forEach(
-function(link){
-
-  link.addEventListener(
-  "click",
-  function(){
-
-    navLinks
-    .classList
-    .remove("open");
-
-    menuButton
-    .setAttribute(
-      "aria-expanded",
-      "false"
-    );
-
-  }
-  );
-
-}
-);
-
-</script>
-
+  <header>
+    <div class="container">
+      <nav class="nav">
+
+        <a href="index.html" class="brand">
+          <span class="brand-main">Actyrom</span>
+          <span class="brand-consulting">Consulting</span>
+        </a>
+
+        <button class="menu-button" id="menuButton" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+          ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="industrie.html">Industrie</a></li>
+          <li><a href="habitat.html">Habitat</a></li>
+          <li><a href="industrie40.html">Industrie 4.0</a></li>
+          <li><a href="accompagnement.html">Accompagnement</a></li>
+          <li><a href="contact.html" class="connexion-button">CONNEXION</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-left">
+
+          <h1 class="hero-title">
+            Actyrom <span class="consulting">Consulting</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            EXPERTISE TECHNIQUE
+            &nbsp;•&nbsp;
+            AUTOMATISME
+            &nbsp;•&nbsp;
+            MAINTENANCE
+            &nbsp;•&nbsp;
+            SOLUTIONS SUR MESURE
+          </div>
+
+          <div class="hero-tagline">
+            DES SOLUTIONS POUR DEMAIN
+          </div>
+
+          <p class="hero-copy">
+            Actyrom Consulting accompagne les industriels, professionnels et particuliers
+            dans l’analyse, le dépannage, l’automatisation, la fiabilisation, les réseaux,
+            la supervision et le développement de solutions techniques adaptées à leur besoin.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contact.html">Présenter votre besoin</a>
+            <a class="btn btn-secondary" href="#univers">Découvrir Actyrom</a>
+          </div>
+
+          <div class="hero-status">
+            <span class="hero-status-dot"></span>
+            ONLINE
+          </div>
+
+        </div>
+
+        <div class="tech-panel-wrap">
+          <div class="tech-panel">
+
+            <div class="tech-header">
+              <div class="tech-header-title">ACTYROM // TECHNICAL SYSTEM</div>
+              <div class="online">
+                <span class="online-dot"></span>
+                SYSTEM ONLINE
+              </div>
+            </div>
+
+            <div class="tech-grid">
+
+              <div class="tech-card">
+                <span class="tech-number">01</span>
+                <h3>DIAGNOSTIC</h3>
+                <p>Comprendre avant de remplacer.</p>
+              </div>
+
+              <div class="tech-card">
+                <span class="tech-number">02</span>
+                <h3>AUTOMATISME</h3>
+                <p>Industrie, habitat et systèmes techniques.</p>
+              </div>
+
+              <div class="tech-card">
+                <span class="tech-number">03</span>
+                <h3>RÉSEAUX & DATA</h3>
+                <p>Communication, supervision et historisation.</p>
+              </div>
+
+              <div class="tech-card">
+                <span class="tech-number">04</span>
+                <h3>FIABILISATION</h3>
+                <p>Des solutions durables et adaptées au terrain.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="alt" id="univers">
+      <div class="container">
+
+        <div class="section-label">
+          UNE SEULE IDENTITÉ, PLUSIEURS UNIVERS
+        </div>
+
+        <h2 class="section-title">
+          Actyrom Consulting comme interface unique.
+        </h2>
+
+        <p class="section-intro">
+          « Industrie » et « Habitat » sont des qualificatifs de prestations.
+          Ils permettent d’identifier rapidement le contexte d’intervention
+          tout en conservant Actyrom Consulting comme identité principale.
+        </p>
+
+        <div class="universe-grid">
+
+          <article class="universe-card">
+            <span class="universe-number">01</span>
+            <h3>Actyrom • Industrie</h3>
+            <p>
+              Dépannage, automatisme, maintenance, fiabilisation,
+              électricité industrielle, méthodes, données machines,
+              réseaux industriels, assistance projet et renfort technique.
+            </p>
+            <a class="universe-link" href="industrie.html">Voir les prestations Industrie →</a>
+          </article>
+
+          <article class="universe-card">
+            <span class="universe-number">02</span>
+            <h3>Actyrom • Habitat</h3>
+            <p>
+              Domotique, réseaux, informatique, automatismes, énergie,
+              sécurité technique, supervision, dépannage et solutions sur mesure.
+            </p>
+            <a class="universe-link" href="habitat.html">Voir les prestations Habitat →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+
+        <div>
+          <div class="section-label">NOTRE APPROCHE</div>
+          <h2 class="section-title">
+            Comprendre.<br>
+            Analyser.<br>
+            Corriger.<br>
+            Fiabiliser.
+          </h2>
+        </div>
+
+        <div class="copy">
+          <p>
+            Actyrom part du fonctionnement réel de l’installation et du besoin utilisateur.
+            L’objectif n’est pas uniquement de remettre en service, mais de comprendre l’origine
+            du problème et de rechercher une solution durable.
+          </p>
+
+          <p>
+            Cette logique s’applique aussi bien à une ligne de production qu’à une installation
+            domotique, un réseau local, un système de supervision ou un équipement automatisé.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+
+        <div class="section-label">DONNÉES & SUPERVISION</div>
+
+        <h2 class="section-title">
+          Faire remonter l’information utile.
+        </h2>
+
+        <p class="section-intro">
+          Actyrom développe progressivement des solutions de collecte, historisation,
+          visualisation et analyse de données. L’objectif est de disposer d’informations
+          exploitables pour mieux comprendre le fonctionnement réel des installations.
+        </p>
+
+        <div class="data-tags">
+          <span class="data-tag">KPI</span>
+          <span class="data-tag">Historisation</span>
+          <span class="data-tag">Supervision</span>
+          <span class="data-tag">Alertes</span>
+          <span class="data-tag">Analyse de tendances</span>
+          <span class="data-tag">Maintenance prédictive</span>
+          <span class="data-tag">Réseaux dédiés</span>
+          <span class="data-tag">Accès distant sécurisé</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-box">
+
+          <div class="section-label">UN BESOIN TECHNIQUE ?</div>
+
+          <h2>Parlons de votre projet.</h2>
+
+          <p>
+            Industrie, habitat, réseau, automatisme, dépannage, supervision
+            ou besoin atypique : présentez votre situation et Actyrom étudiera
+            la solution la plus adaptée.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contact.html">Contacter Actyrom</a>
+            <a class="btn btn-secondary" href="habitat.html">Découvrir Habitat</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <div>© 2026 Actyrom Consulting</div>
+      <div>
+        <a href="mentions-legales.html">Mentions légales</a>
+        &nbsp;•&nbsp;
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const navLinks = document.getElementById("navLinks");
+
+    menuButton.addEventListener("click", function(){
+      const opened = navLinks.classList.toggle("open");
+      menuButton.setAttribute("aria-expanded", opened ? "true" : "false");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(function(link){
+      link.addEventListener("click", function(){
+        navLinks.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
 
 </body>
-
 </html>
