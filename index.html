@@ -17,111 +17,48 @@ content="Actyrom Consulting accompagne les industriels, professionnels et partic
 
 <style>
 
-/* =========================================================
-   ACTYROM CONSULTING
-========================================================= */
-
 :root{
-
-  --bg:#050505;
-  --bg2:#080808;
-
-  --panel:#0a0a0a;
-  --panel2:#0e0e0e;
-
-  --line:#28282d;
-  --line2:#38383e;
-
-  --white:#f5f5f5;
-
-  --grey:#9d9da4;
-  --grey2:#73737a;
-
-  --green:#59d02f;
-  --green2:#78ff49;
-
-  --green-soft:rgba(89,208,47,.10);
-  --green-border:rgba(89,208,47,.24);
-
-  --max:1180px;
-
+    --bg:#050505;
+    --bg2:#080808;
+    --panel:#0a0a0a;
+    --line:#28282d;
+    --white:#f5f5f5;
+    --grey:#9d9da4;
+    --green:#59d02f;
+    --green2:#78ff49;
+    --max:1180px;
 }
-
-
-/* =========================================================
-   RESET
-========================================================= */
 
 *{
-
-  margin:0;
-
-  padding:0;
-
-  box-sizing:border-box;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-
 
 html{
-
-  scroll-behavior:smooth;
-
+    scroll-behavior:smooth;
 }
-
 
 body{
-
-  font-family:
-  Arial,
-  Helvetica,
-  sans-serif;
-
-  background:
-  var(--bg);
-
-  color:
-  var(--white);
-
-  line-height:
-  1.65;
-
-  overflow-x:
-  hidden;
-
+    font-family:Arial,Helvetica,sans-serif;
+    background:var(--bg);
+    color:var(--white);
+    line-height:1.65;
+    overflow-x:hidden;
 }
-
 
 a{
-
-  color:
-  inherit;
-
-  text-decoration:
-  none;
-
+    color:inherit;
+    text-decoration:none;
 }
-
 
 button{
-
-  font:
-  inherit;
-
+    font:inherit;
 }
 
-
 .container{
-
-  width:
-  min(
-    var(--max),
-    92%
-  );
-
-  margin:
-  auto;
-
+    width:min(var(--max),92%);
+    margin:auto;
 }
 
 
@@ -130,229 +67,141 @@ button{
 ========================================================= */
 
 header{
+    position:sticky;
+    top:0;
+    z-index:1000;
 
-  position:
-  sticky;
+    background:
+    rgba(5,5,5,.96);
 
-  top:
-  0;
+    backdrop-filter:
+    blur(15px);
 
-  z-index:
-  1000;
-
-  background:
-  rgba(5,5,5,.96);
-
-  backdrop-filter:
-  blur(15px);
-
-  border-bottom:
-  1px solid #171717;
-
+    border-bottom:
+    1px solid #171717;
 }
-
 
 .nav{
+    min-height:78px;
 
-  min-height:
-  78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 
-  display:
-  flex;
-
-  align-items:
-  center;
-
-  justify-content:
-  space-between;
-
-  gap:
-  28px;
-
+    gap:24px;
 }
 
 
-/* =========================================================
-   LOGO
-========================================================= */
+/* LOGO */
 
 .brand{
+    display:flex;
+    align-items:baseline;
 
-  display:
-  flex;
+    gap:4px;
 
-  align-items:
-  baseline;
-
-  gap:
-  4px;
-
-  white-space:
-  nowrap;
-
+    white-space:nowrap;
 }
-
 
 .brand-main{
-
-  font-size:
-  1.55rem;
-
-  font-weight:
-  900;
-
-  letter-spacing:
-  -1px;
-
+    font-size:1.52rem;
+    font-weight:900;
+    letter-spacing:-1px;
 }
-
 
 .brand-consulting{
+    color:var(--green);
 
-  color:
-  var(--green);
-
-  font-size:
-  1.08rem;
-
-  font-weight:
-  800;
-
+    font-size:1.06rem;
+    font-weight:800;
 }
 
 
-/* =========================================================
-   MENU
-========================================================= */
+/* MENU */
 
 .nav-links{
+    display:flex;
+    align-items:center;
 
-  display:
-  flex;
+    gap:19px;
 
-  align-items:
-  center;
+    list-style:none;
 
-  gap:
-  25px;
+    color:#d0d0d0;
 
-  list-style:
-  none;
-
-  color:
-  #d0d0d0;
-
-  font-size:
-  .90rem;
-
+    font-size:.86rem;
 }
-
 
 .nav-links a{
-
-  transition:
-  .2s ease;
-
+    transition:.2s ease;
 }
-
 
 .nav-links a:hover{
-
-  color:
-  var(--green2);
-
+    color:var(--green2);
 }
 
 
-/* =========================================================
-   CONNEXION
-========================================================= */
+/* CONNEXION */
 
 .connection{
+    padding:10px 17px !important;
 
-  padding:
-  10px 18px !important;
+    border:
+    1px solid
+    rgba(89,208,47,.45);
 
-  border:
-  1px solid
-  rgba(89,208,47,.45);
+    border-radius:10px;
 
-  border-radius:
-  10px;
+    background:
+    linear-gradient(
+        180deg,
+        rgba(89,208,47,.10),
+        rgba(89,208,47,.02)
+    );
 
-  background:
+    color:#e4ffd9 !important;
 
-  linear-gradient(
-    180deg,
-    rgba(89,208,47,.10),
-    rgba(89,208,47,.02)
-  );
+    font-family:
+    "Courier New",
+    Consolas,
+    monospace;
 
-  color:
-  #e4ffd9 !important;
+    font-size:.78rem;
 
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
+    font-weight:700;
 
-  font-size:
-  .80rem;
+    letter-spacing:1px;
 
-  font-weight:
-  700;
-
-  letter-spacing:
-  1px;
-
-  box-shadow:
-
-  0 0 12px
-  rgba(89,208,47,.14);
-
+    box-shadow:
+    0 0 12px
+    rgba(89,208,47,.14);
 }
-
 
 .connection:hover{
+    border-color:var(--green2);
 
-  border-color:
-  var(--green2);
-
-  box-shadow:
-
-  0 0 15px
-  rgba(89,208,47,.28),
-
-  0 0 30px
-  rgba(89,208,47,.10);
-
+    box-shadow:
+    0 0 15px rgba(89,208,47,.28),
+    0 0 30px rgba(89,208,47,.10);
 }
 
 
-/* =========================================================
-   MENU MOBILE
-========================================================= */
+/* MENU MOBILE */
 
 .menu-button{
+    display:none;
 
-  display:
-  none;
+    background:#080808;
 
-  background:
-  #080808;
+    color:#fff;
 
-  color:
-  #fff;
+    border:1px solid #333;
 
-  border:
-  1px solid #333;
+    padding:8px 11px;
 
-  padding:
-  8px 11px;
+    border-radius:7px;
 
-  border-radius:
-  7px;
-
+    cursor:pointer;
 }
 
 
@@ -361,218 +210,145 @@ header{
 ========================================================= */
 
 .hero{
+    position:relative;
 
-  position:
-  relative;
+    overflow:hidden;
 
-  overflow:
-  hidden;
+    padding:
+    100px 0
+    90px;
 
-  padding:
+    border-bottom:
+    1px solid #181818;
 
-  100px 0
-  90px;
+    background:
 
-  border-bottom:
-  1px solid #181818;
+    radial-gradient(
+        circle at 93% 0%,
+        rgba(89,208,47,.07),
+        transparent 25%
+    ),
 
-  background:
-
-  radial-gradient(
-    circle at 93% 0%,
-    rgba(89,208,47,.07),
-    transparent 25%
-  ),
-
-  #050505;
-
+    #050505;
 }
-
-
-/* TRAIT DECORATIF */
 
 .hero::before{
+    content:"";
 
-  content:"";
+    position:absolute;
 
-  position:
-  absolute;
+    left:0;
 
-  left:
-  0;
+    top:70px;
 
-  top:
-  70px;
+    width:260px;
 
-  width:
-  260px;
+    height:1px;
 
-  height:
-  1px;
+    background:
 
-  background:
-
-  linear-gradient(
-    90deg,
-    var(--green) 0 22%,
-    #555 22% 100%
-  );
-
+    linear-gradient(
+        90deg,
+        var(--green) 0 22%,
+        #555 22% 100%
+    );
 }
-
-
-/* CERCLES DECORATIFS */
 
 .hero::after{
+    content:"";
 
-  content:"";
+    position:absolute;
 
-  position:
-  absolute;
+    width:430px;
 
-  width:
-  430px;
+    height:430px;
 
-  height:
-  430px;
+    right:-175px;
 
-  right:
-  -175px;
+    top:-180px;
 
-  top:
-  -180px;
+    border-radius:50%;
 
-  border-radius:
-  50%;
+    border:
+    1px solid
+    rgba(89,208,47,.15);
 
-  border:
-  1px solid
-  rgba(89,208,47,.15);
-
-  box-shadow:
-
-  0 0 0 60px
-  rgba(89,208,47,.03),
-
-  0 0 0 120px
-  rgba(255,255,255,.015);
-
+    box-shadow:
+    0 0 0 60px rgba(89,208,47,.03),
+    0 0 0 120px rgba(255,255,255,.015);
 }
-
 
 .hero-main{
+    position:relative;
 
-  position:
-  relative;
+    z-index:2;
 
-  z-index:
-  2;
-
-  max-width:
-  980px;
-
+    max-width:980px;
 }
 
 
-/* =========================================================
-   GRAND TITRE
-========================================================= */
+/* TITRE */
 
 .hero-title{
+    font-size:
+    clamp(
+        4rem,
+        7vw,
+        6.8rem
+    );
 
-  font-size:
+    font-weight:900;
 
-  clamp(
-    4rem,
-    7vw,
-    6.8rem
-  );
+    line-height:.92;
 
-  font-weight:
-  900;
-
-  line-height:
-  .92;
-
-  letter-spacing:
-  -5px;
-
+    letter-spacing:-5px;
 }
-
 
 .hero-title span{
-
-  color:
-  var(--green);
-
+    color:var(--green);
 }
 
 
-/* =========================================================
-   SOUS TITRE
-========================================================= */
+/* SOUS TITRE */
 
 .hero-subtitle{
+    margin-top:25px;
 
-  margin-top:
-  25px;
+    color:#e1e1e1;
 
-  color:
-  #e1e1e1;
+    text-transform:uppercase;
 
-  text-transform:
-  uppercase;
+    letter-spacing:2.8px;
 
-  letter-spacing:
-  2.8px;
-
-  font-size:
-  .79rem;
-
+    font-size:.79rem;
 }
 
 
-/* =========================================================
-   SLOGAN
-========================================================= */
+/* SLOGAN */
 
 .hero-tagline{
+    margin:
+    32px 0
+    28px;
 
-  margin:
+    color:var(--green);
 
-  32px 0
-  28px;
+    text-transform:uppercase;
 
-  color:
-  var(--green);
+    letter-spacing:6px;
 
-  text-transform:
-  uppercase;
-
-  letter-spacing:
-  6px;
-
-  font-size:
-  1rem;
-
+    font-size:1rem;
 }
 
 
-/* =========================================================
-   HERO TEXTE
-========================================================= */
+/* TEXTE */
 
 .hero-copy{
+    max-width:780px;
 
-  max-width:
-  780px;
+    color:#b1b1b1;
 
-  color:
-  #b1b1b1;
-
-  font-size:
-  1.03rem;
-
+    font-size:1.03rem;
 }
 
 
@@ -581,96 +357,61 @@ header{
 ========================================================= */
 
 .actions{
+    display:flex;
 
-  display:
-  flex;
+    flex-wrap:wrap;
 
-  flex-wrap:
-  wrap;
+    gap:12px;
 
-  gap:
-  12px;
-
-  margin-top:
-  33px;
-
+    margin-top:33px;
 }
-
 
 .btn{
+    display:inline-flex;
 
-  display:
-  inline-flex;
+    align-items:center;
 
-  align-items:
-  center;
+    justify-content:center;
 
-  justify-content:
-  center;
+    min-height:50px;
 
-  min-height:
-  50px;
+    padding:0 22px;
 
-  padding:
-  0 22px;
+    border-radius:7px;
 
-  border-radius:
-  7px;
+    font-weight:700;
 
-  font-weight:
-  700;
-
-  transition:
-  .2s ease;
-
+    transition:.2s ease;
 }
-
 
 .btn-primary{
+    background:var(--green);
 
-  background:
-  var(--green);
+    color:#050505;
 
-  color:
-  #050505;
-
-  border:
-  1px solid
-  var(--green);
-
+    border:
+    1px solid
+    var(--green);
 }
-
 
 .btn-primary:hover{
+    background:var(--green2);
 
-  background:
-  var(--green2);
-
-  transform:
-  translateY(-2px);
-
+    transform:
+    translateY(-2px);
 }
-
 
 .btn-secondary{
+    border:
+    1px solid #383838;
 
-  border:
-  1px solid #383838;
-
-  background:
-  #060606;
-
+    background:#060606;
 }
 
-
 .btn-secondary:hover{
+    border-color:var(--green);
 
-  border-color:
-  var(--green);
-
-  color:
-  var(--green2);
-
+    color:var(--green2);
 }
 
 
@@ -679,391 +420,274 @@ header{
 ========================================================= */
 
 .system-zone{
+    position:relative;
 
-  position:
-  relative;
+    z-index:2;
 
-  z-index:
-  2;
-
-  margin-top:
-  80px;
-
+    margin-top:80px;
 }
-
 
 .system-status-bar{
+    display:flex;
 
-  display:
-  flex;
+    align-items:center;
 
-  align-items:
-  center;
+    justify-content:space-between;
 
-  justify-content:
-  space-between;
+    gap:20px;
 
-  gap:
-  20px;
-
-  margin-bottom:
-  16px;
-
+    margin-bottom:16px;
 }
-
 
 .system-label{
+    color:#777;
 
-  color:
-  #777;
+    font-size:.74rem;
 
-  font-size:
-  .74rem;
+    letter-spacing:2px;
 
-  letter-spacing:
-  2px;
-
-  text-transform:
-  uppercase;
-
+    text-transform:uppercase;
 }
-
 
 .online-system{
+    display:flex;
 
-  display:
-  flex;
+    align-items:center;
 
-  align-items:
-  center;
+    gap:13px;
 
-  gap:
-  13px;
+    color:var(--green2);
 
-  color:
-  var(--green2);
+    font-family:
+    "Courier New",
+    Consolas,
+    monospace;
 
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
+    font-size:.80rem;
 
-  font-size:
-  .80rem;
+    font-weight:700;
 
-  font-weight:
-  700;
-
-  letter-spacing:
-  1px;
-
+    letter-spacing:1px;
 }
 
 
-/* REACTEUR */
+/* VOYANT */
 
 .online-reactor{
+    position:relative;
 
-  position:
-  relative;
+    width:28px;
 
-  width:
-  28px;
+    height:28px;
 
-  height:
-  28px;
+    border-radius:50%;
 
-  border-radius:
-  50%;
+    border:
+    1px solid
+    rgba(124,255,77,.75);
 
-  border:
-  1px solid
-  rgba(124,255,77,.75);
+    background:
 
-  background:
+    radial-gradient(
+        circle,
+        #ffffff 0 8%,
+        #c8ffb7 10% 16%,
+        #7cff4d 18% 30%,
+        #209b09 33% 43%,
+        rgba(89,208,47,.20) 46% 62%,
+        transparent 64%
+    );
 
-  radial-gradient(
-    circle,
-    #ffffff 0 8%,
-    #c8ffb7 10% 16%,
-    #7cff4d 18% 30%,
-    #209b09 33% 43%,
-    rgba(89,208,47,.20) 46% 62%,
-    transparent 64%
-  );
+    box-shadow:
 
-  box-shadow:
+    0 0 5px var(--green2),
 
-  0 0 5px
-  var(--green2),
+    0 0 14px var(--green),
 
-  0 0 14px
-  var(--green),
+    0 0 28px rgba(89,208,47,.45);
 
-  0 0 28px
-  rgba(89,208,47,.45);
-
-  animation:
-  reactorPulse
-  2.2s
-  infinite;
-
+    animation:
+    reactorPulse
+    2.2s
+    infinite;
 }
-
 
 .online-reactor::before{
+    content:"";
 
-  content:"";
+    position:absolute;
 
-  position:
-  absolute;
+    inset:5px;
 
-  inset:
-  5px;
+    border-radius:50%;
 
-  border-radius:
-  50%;
-
-  border:
-  1px solid
-  rgba(255,255,255,.9);
-
+    border:
+    1px solid
+    rgba(255,255,255,.9);
 }
-
 
 @keyframes reactorPulse{
 
-  0%,
-  100%{
+    0%,
+    100%{
 
-    box-shadow:
+        box-shadow:
 
-    0 0 5px
-    var(--green2),
+        0 0 5px var(--green2),
 
-    0 0 12px
-    var(--green),
+        0 0 12px var(--green),
 
-    0 0 22px
-    rgba(89,208,47,.35);
+        0 0 22px rgba(89,208,47,.35);
 
-  }
+    }
 
-  50%{
+    50%{
 
-    box-shadow:
+        box-shadow:
 
-    0 0 8px
-    var(--green2),
+        0 0 8px var(--green2),
 
-    0 0 20px
-    var(--green),
+        0 0 20px var(--green),
 
-    0 0 42px
-    rgba(89,208,47,.55);
+        0 0 42px rgba(89,208,47,.55);
 
-  }
+    }
 
 }
 
 
 /* =========================================================
-   SYSTEM PANEL
+   PANNEAU SERVICES
 ========================================================= */
 
 .system-panel{
+    border:
+    1px solid
+    rgba(255,255,255,.09);
 
-  border:
-  1px solid
-  rgba(255,255,255,.09);
+    border-radius:17px;
 
-  border-radius:
-  17px;
+    padding:22px;
 
-  padding:
-  22px;
+    background:
 
-  background:
+    linear-gradient(
+        180deg,
+        rgba(255,255,255,.015),
+        transparent
+    ),
 
-  linear-gradient(
-    180deg,
-    rgba(255,255,255,.015),
-    transparent
-  ),
+    rgba(8,8,8,.94);
 
-  rgba(8,8,8,.94);
+    box-shadow:
 
-  box-shadow:
+    0 28px 70px rgba(0,0,0,.35),
 
-  0 28px 70px
-  rgba(0,0,0,.35),
-
-  inset 0 0 35px
-  rgba(89,208,47,.02);
-
+    inset 0 0 35px rgba(89,208,47,.02);
 }
-
 
 .system-grid{
+    display:grid;
 
-  display:
-  grid;
+    grid-template-columns:
+    repeat(4,minmax(0,1fr));
 
-  grid-template-columns:
-
-  repeat(
-    4,
-    minmax(0,1fr)
-  );
-
-  gap:
-  13px;
-
+    gap:13px;
 }
-
 
 .system-card{
+    min-height:185px;
 
-  min-height:
-  170px;
+    padding:20px;
 
-  padding:
-  20px;
+    border:
+    1px solid
+    rgba(255,255,255,.075);
 
-  border:
-  1px solid
-  rgba(255,255,255,.075);
+    border-radius:12px;
 
-  border-radius:
-  12px;
+    background:
+    rgba(5,5,5,.82);
 
-  background:
-  rgba(5,5,5,.82);
-
-  transition:
-  .25s;
-
+    transition:.25s;
 }
-
 
 .system-card:hover{
+    transform:
+    translateY(-3px);
 
-  transform:
-  translateY(-3px);
-
-  border-color:
-  rgba(89,208,47,.30);
-
+    border-color:
+    rgba(89,208,47,.30);
 }
 
 
-/* =========================================================
-   ICONES
-========================================================= */
+/* ICONES */
 
 .system-icon{
+    width:52px;
 
-  width:
-  52px;
+    height:52px;
 
-  height:
-  52px;
+    display:flex;
 
-  display:
-  flex;
+    align-items:center;
 
-  align-items:
-  center;
+    justify-content:center;
 
-  justify-content:
-  center;
+    border-radius:13px;
 
-  border-radius:
-  13px;
+    margin-bottom:17px;
 
-  margin-bottom:
-  17px;
+    background:
+    rgba(89,208,47,.07);
 
-  background:
-  rgba(89,208,47,.07);
-
-  border:
-  1px solid
-  rgba(89,208,47,.20);
-
+    border:
+    1px solid
+    rgba(89,208,47,.20);
 }
-
 
 .system-icon svg{
+    width:27px;
 
-  width:
-  27px;
+    height:27px;
 
-  height:
-  27px;
+    stroke:var(--green2);
 
-  stroke:
-  var(--green2);
+    fill:none;
 
-  fill:
-  none;
+    stroke-width:1.8;
 
-  stroke-width:
-  1.8;
+    stroke-linecap:round;
 
-  stroke-linecap:
-  round;
-
-  stroke-linejoin:
-  round;
-
+    stroke-linejoin:round;
 }
-
 
 .system-number{
+    display:block;
 
-  display:
-  block;
+    margin-bottom:10px;
 
-  margin-bottom:
-  10px;
+    color:var(--green2);
 
-  color:
-  var(--green2);
+    font-family:
+    "Courier New",
+    monospace;
 
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
+    font-weight:700;
 
-  font-weight:
-  700;
-
-  letter-spacing:
-  2px;
-
+    letter-spacing:2px;
 }
-
 
 .system-card h3{
+    font-size:1rem;
 
-  font-size:
-  1rem;
-
-  margin-bottom:
-  8px;
-
+    margin-bottom:8px;
 }
 
-
 .system-card p{
+    color:#858585;
 
-  color:
-  #858585;
-
-  font-size:
-  .85rem;
-
+    font-size:.85rem;
 }
 
 
@@ -1072,384 +696,283 @@ header{
 ========================================================= */
 
 section.content{
-
-  padding:
-  90px 0;
-
+    padding:90px 0;
 }
-
 
 .alt{
+    background:#080808;
 
-  background:
-  #080808;
+    border-top:
+    1px solid #181818;
 
-  border-top:
-  1px solid #181818;
-
-  border-bottom:
-  1px solid #181818;
-
+    border-bottom:
+    1px solid #181818;
 }
-
 
 .section-label{
+    color:var(--green);
 
-  color:
-  var(--green);
+    text-transform:uppercase;
 
-  text-transform:
-  uppercase;
+    letter-spacing:4px;
 
-  letter-spacing:
-  4px;
+    font-size:.70rem;
 
-  font-size:
-  .70rem;
-
-  margin-bottom:
-  14px;
-
+    margin-bottom:14px;
 }
-
 
 .section-title{
+    font-size:
+    clamp(
+        2.1rem,
+        4vw,
+        3.55rem
+    );
 
-  font-size:
+    line-height:1.06;
 
-  clamp(
-    2.1rem,
-    4vw,
-    3.55rem
-  );
-
-  line-height:
-  1.06;
-
-  letter-spacing:
-  -2px;
-
+    letter-spacing:-2px;
 }
 
-
 .section-intro{
+    max-width:790px;
 
-  max-width:
-  790px;
+    color:#999;
 
-  color:
-  #999;
-
-  margin-top:
-  18px;
-
+    margin-top:18px;
 }
 
 
 /* =========================================================
-   UNIVERS INDUSTRIE / HABITAT
+   QUI SOMMES-NOUS APERÇU
+========================================================= */
+
+.about-home{
+    display:grid;
+
+    grid-template-columns:
+    .9fr 1.15fr;
+
+    gap:75px;
+
+    align-items:start;
+}
+
+.about-home-text p{
+    color:#9d9d9d;
+
+    margin-bottom:17px;
+}
+
+.about-home-highlight{
+    color:#e7e7e7 !important;
+
+    font-size:1.08rem;
+}
+
+
+/* =========================================================
+   INDUSTRIE / HABITAT
 ========================================================= */
 
 .universe-grid{
+    display:grid;
 
-  display:
-  grid;
+    grid-template-columns:
+    repeat(2,minmax(0,1fr));
 
-  grid-template-columns:
+    gap:18px;
 
-  repeat(
-    2,
-    minmax(0,1fr)
-  );
-
-  gap:
-  18px;
-
-  margin-top:
-  42px;
-
+    margin-top:42px;
 }
-
 
 .universe-card{
+    padding:28px;
 
-  padding:
-  28px;
+    border:
+    1px solid #292929;
 
-  border:
-  1px solid #292929;
+    border-radius:14px;
 
-  border-radius:
-  14px;
+    background:#0a0a0a;
 
-  background:
-  #0a0a0a;
-
-  transition:
-  .25s;
-
+    transition:.25s;
 }
-
 
 .universe-card:hover{
+    transform:
+    translateY(-3px);
 
-  transform:
-  translateY(-3px);
-
-  border-color:
-  rgba(89,208,47,.35);
-
+    border-color:
+    rgba(89,208,47,.35);
 }
-
 
 .universe-top{
+    display:flex;
 
-  display:
-  flex;
+    align-items:center;
 
-  align-items:
-  center;
+    gap:17px;
 
-  gap:
-  17px;
-
-  margin-bottom:
-  20px;
-
+    margin-bottom:20px;
 }
-
 
 .universe-icon{
+    flex:0 0 auto;
 
-  flex:
-  0 0 auto;
+    width:66px;
 
-  width:
-  66px;
+    height:66px;
 
-  height:
-  66px;
+    display:flex;
 
-  display:
-  flex;
+    align-items:center;
 
-  align-items:
-  center;
+    justify-content:center;
 
-  justify-content:
-  center;
+    border-radius:16px;
 
-  border-radius:
-  16px;
+    background:
+    rgba(89,208,47,.07);
 
-  background:
-  rgba(89,208,47,.07);
-
-  border:
-  1px solid
-  rgba(89,208,47,.22);
-
+    border:
+    1px solid
+    rgba(89,208,47,.22);
 }
-
 
 .universe-icon svg{
+    width:34px;
 
-  width:
-  34px;
+    height:34px;
 
-  height:
-  34px;
+    stroke:var(--green2);
 
-  stroke:
-  var(--green2);
+    fill:none;
 
-  fill:
-  none;
+    stroke-width:1.8;
 
-  stroke-width:
-  1.8;
+    stroke-linecap:round;
 
-  stroke-linecap:
-  round;
-
-  stroke-linejoin:
-  round;
-
+    stroke-linejoin:round;
 }
-
 
 .universe-tech{
+    color:var(--green);
 
-  color:
-  var(--green);
+    font-family:
+    "Courier New",
+    Consolas,
+    monospace;
 
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
+    font-size:.75rem;
 
-  font-size:
-  .75rem;
-
-  letter-spacing:
-  1px;
-
+    letter-spacing:1px;
 }
-
 
 .universe-card h3{
-
-  font-size:
-  1.3rem;
-
+    font-size:1.3rem;
 }
-
 
 .universe-card p{
-
-  color:
-  #919199;
-
+    color:#919199;
 }
 
-
 .universe-link{
+    display:inline-block;
 
-  display:
-  inline-block;
+    margin-top:18px;
 
-  margin-top:
-  18px;
+    color:var(--green2);
 
-  color:
-  var(--green2);
-
-  font-weight:
-  700;
-
+    font-weight:700;
 }
 
 
 /* =========================================================
-   EXEMPLES VISUELS
+   APPLICATIONS
 ========================================================= */
 
 .examples-grid{
+    display:grid;
 
-  display:
-  grid;
+    grid-template-columns:
+    repeat(3,minmax(0,1fr));
 
-  grid-template-columns:
+    gap:15px;
 
-  repeat(
-    3,
-    minmax(0,1fr)
-  );
-
-  gap:
-  15px;
-
-  margin-top:
-  40px;
-
+    margin-top:40px;
 }
-
 
 .example-card{
+    padding:24px;
 
-  padding:
-  24px;
+    border:
+    1px solid #292929;
 
-  border:
-  1px solid #292929;
+    border-radius:12px;
 
-  border-radius:
-  12px;
+    background:#090909;
 
-  background:
-  #090909;
-
+    transition:.25s;
 }
 
+.example-card:hover{
+    transform:
+    translateY(-3px);
+
+    border-color:
+    rgba(89,208,47,.28);
+}
 
 .example-icon{
+    width:56px;
 
-  width:
-  56px;
+    height:56px;
 
-  height:
-  56px;
+    border-radius:14px;
 
-  border-radius:
-  14px;
+    display:flex;
 
-  display:
-  flex;
+    align-items:center;
 
-  align-items:
-  center;
+    justify-content:center;
 
-  justify-content:
-  center;
+    margin-bottom:18px;
 
-  margin-bottom:
-  18px;
+    background:
+    rgba(89,208,47,.07);
 
-  background:
-  rgba(89,208,47,.07);
-
-  border:
-  1px solid
-  rgba(89,208,47,.20);
-
+    border:
+    1px solid
+    rgba(89,208,47,.20);
 }
-
 
 .example-icon svg{
+    width:29px;
 
-  width:
-  29px;
+    height:29px;
 
-  height:
-  29px;
+    stroke:var(--green2);
 
-  stroke:
-  var(--green2);
+    fill:none;
 
-  fill:
-  none;
+    stroke-width:1.8;
 
-  stroke-width:
-  1.8;
+    stroke-linecap:round;
 
-  stroke-linecap:
-  round;
-
-  stroke-linejoin:
-  round;
-
+    stroke-linejoin:round;
 }
-
 
 .example-card h3{
+    font-size:1.1rem;
 
-  font-size:
-  1.1rem;
-
-  margin-bottom:
-  9px;
-
+    margin-bottom:9px;
 }
 
-
 .example-card p{
+    color:#8e8e95;
 
-  color:
-  #8e8e95;
-
-  font-size:
-  .90rem;
-
+    font-size:.90rem;
 }
 
 
@@ -1458,78 +981,51 @@ section.content{
 ========================================================= */
 
 .split{
+    display:grid;
 
-  display:
-  grid;
+    grid-template-columns:
+    .9fr 1.15fr;
 
-  grid-template-columns:
-  .9fr 1.15fr;
-
-  gap:
-  75px;
-
+    gap:75px;
 }
-
 
 .feature-list{
-
-  border-top:
-  1px solid #292929;
-
+    border-top:
+    1px solid #292929;
 }
-
 
 .feature{
+    display:grid;
 
-  display:
-  grid;
+    grid-template-columns:
+    60px 1fr;
 
-  grid-template-columns:
-  60px 1fr;
+    gap:16px;
 
-  gap:
-  16px;
+    padding:21px 0;
 
-  padding:
-  21px 0;
-
-  border-bottom:
-  1px solid #292929;
-
+    border-bottom:
+    1px solid #292929;
 }
-
 
 .feature-number{
+    color:var(--green2);
 
-  color:
-  var(--green2);
+    font-family:
+    "Courier New",
+    monospace;
 
-  font-family:
-  "Courier New",
-  monospace;
-
-  font-weight:
-  700;
-
+    font-weight:700;
 }
-
 
 .feature strong{
+    display:block;
 
-  display:
-  block;
-
-  margin-bottom:
-  4px;
-
+    margin-bottom:4px;
 }
 
-
 .feature span{
-
-  color:
-  #858585;
-
+    color:#858585;
 }
 
 
@@ -1538,39 +1034,26 @@ section.content{
 ========================================================= */
 
 .data-tags{
+    display:flex;
 
-  display:
-  flex;
+    flex-wrap:wrap;
 
-  flex-wrap:
-  wrap;
+    gap:8px;
 
-  gap:
-  8px;
-
-  margin-top:
-  26px;
-
+    margin-top:26px;
 }
 
-
 .data-tag{
+    padding:8px 11px;
 
-  padding:
-  8px 11px;
+    border:
+    1px solid #303030;
 
-  border:
-  1px solid #303030;
+    border-radius:7px;
 
-  border-radius:
-  7px;
+    color:#929292;
 
-  color:
-  #929292;
-
-  font-size:
-  .80rem;
-
+    font-size:.80rem;
 }
 
 
@@ -1579,40 +1062,30 @@ section.content{
 ========================================================= */
 
 .cta-box{
+    padding:43px;
 
-  padding:
-  43px;
+    border:
+    1px solid #292929;
 
-  border:
-  1px solid #292929;
+    border-radius:13px;
 
-  border-radius:
-  13px;
+    background:
 
-  background:
+    radial-gradient(
+        circle at 90% 0%,
+        rgba(89,208,47,.08),
+        transparent 28%
+    ),
 
-  radial-gradient(
-    circle at 90% 0%,
-    rgba(89,208,47,.08),
-    transparent 28%
-  ),
-
-  #0a0a0a;
-
+    #0a0a0a;
 }
 
-
 .cta-box p{
+    max-width:740px;
 
-  max-width:
-  740px;
+    margin-top:15px;
 
-  margin-top:
-  15px;
-
-  color:
-  #999;
-
+    color:#999;
 }
 
 
@@ -1621,47 +1094,30 @@ section.content{
 ========================================================= */
 
 footer{
+    padding:31px 0;
 
-  padding:
-  31px 0;
+    background:#030303;
 
-  background:
-  #030303;
+    border-top:
+    1px solid #171717;
 
-  border-top:
-  1px solid #171717;
+    color:#747474;
 
-  color:
-  #747474;
-
-  font-size:
-  .80rem;
-
+    font-size:.80rem;
 }
-
 
 .footer{
+    display:flex;
 
-  display:
-  flex;
+    justify-content:space-between;
 
-  justify-content:
-  space-between;
+    flex-wrap:wrap;
 
-  flex-wrap:
-  wrap;
-
-  gap:
-  20px;
-
+    gap:20px;
 }
 
-
 .footer a:hover{
-
-  color:
-  var(--green);
-
+    color:var(--green);
 }
 
 
@@ -1669,125 +1125,93 @@ footer{
    TABLETTE
 ========================================================= */
 
+@media(max-width:1080px){
+
+    .nav-links{
+        gap:14px;
+
+        font-size:.82rem;
+    }
+
+}
+
+
 @media(max-width:1000px){
 
-  .system-grid{
+    .system-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
 
-    grid-template-columns:
-    repeat(2,1fr);
+    .examples-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
 
-  }
+    .split,
+    .about-home{
+        grid-template-columns:1fr;
 
-
-  .examples-grid{
-
-    grid-template-columns:
-    repeat(2,1fr);
-
-  }
-
-
-  .split{
-
-    grid-template-columns:
-    1fr;
-
-    gap:
-    32px;
-
-  }
+        gap:32px;
+    }
 
 }
 
 
 /* =========================================================
-   MENU MOBILE
+   MOBILE MENU
 ========================================================= */
 
-@media(max-width:820px){
+@media(max-width:850px){
 
-  .nav{
+    .nav{
+        min-height:68px;
+    }
 
-    min-height:
-    68px;
+    .menu-button{
+        display:block;
+    }
 
-  }
+    .nav-links{
+        display:none;
 
+        position:absolute;
 
-  .menu-button{
+        top:68px;
 
-    display:
-    block;
+        left:0;
 
-  }
+        right:0;
 
+        padding:15px 4%;
 
-  .nav-links{
+        background:#070707;
 
-    display:
-    none;
+        border-bottom:
+        1px solid #222;
 
-    position:
-    absolute;
+        flex-direction:column;
 
-    top:
-    68px;
+        align-items:stretch;
 
-    left:
-    0;
+        gap:4px;
+    }
 
-    right:
-    0;
+    .nav-links.open{
+        display:flex;
+    }
 
-    padding:
-    15px 4%;
+    .nav-links a{
+        display:block;
 
-    background:
-    #070707;
+        width:100%;
 
-    border-bottom:
-    1px solid #222;
+        padding:10px 0;
+    }
 
-    flex-direction:
-    column;
-
-    align-items:
-    stretch;
-
-    gap:
-    4px;
-
-  }
-
-
-  .nav-links.open{
-
-    display:
-    flex;
-
-  }
-
-
-  .nav-links a{
-
-    display:
-    block;
-
-    width:
-    100%;
-
-    padding:
-    10px 0;
-
-  }
-
-
-  .connection{
-
-    text-align:
-    center;
-
-  }
+    .connection{
+        text-align:center;
+    }
 
 }
 
@@ -1798,223 +1222,117 @@ footer{
 
 @media(max-width:620px){
 
-  .container{
+    .container{
+        width:94%;
+    }
 
-    width:
-    94%;
+    .brand-main{
+        font-size:1.2rem;
+    }
 
-  }
+    .brand-consulting{
+        font-size:.92rem;
+    }
 
+    .hero{
+        padding:
+        65px 0
+        60px;
+    }
 
-  .brand-main{
+    .hero-title{
+        font-size:3rem;
 
-    font-size:
-    1.2rem;
+        line-height:.98;
 
-  }
+        letter-spacing:-2px;
+    }
 
+    .hero-title span{
+        display:block;
 
-  .brand-consulting{
+        font-size:.72em;
 
-    font-size:
-    .92rem;
+        margin-top:6px;
+    }
 
-  }
+    .hero-subtitle{
+        font-size:.65rem;
 
+        line-height:1.8;
 
-  .hero{
+        letter-spacing:1.4px;
+    }
 
-    padding:
+    .hero-tagline{
+        font-size:.82rem;
 
-    65px 0
-    60px;
+        letter-spacing:3px;
+    }
 
-  }
+    .hero-copy{
+        font-size:.94rem;
+    }
 
+    .actions{
+        display:grid;
 
-  .hero-title{
+        grid-template-columns:1fr;
+    }
 
-    font-size:
-    3rem;
+    .actions .btn{
+        width:100%;
+    }
 
-    line-height:
-    .98;
+    .system-zone{
+        margin-top:60px;
+    }
 
-    letter-spacing:
-    -2px;
+    .system-status-bar{
+        flex-direction:column;
 
-  }
+        align-items:flex-start;
+    }
 
+    .system-grid{
+        grid-template-columns:1fr;
+    }
 
-  .hero-title span{
+    .system-card{
+        min-height:auto;
+    }
 
-    display:
-    block;
+    .universe-grid{
+        grid-template-columns:1fr;
+    }
 
-    font-size:
-    .72em;
+    .examples-grid{
+        grid-template-columns:1fr;
+    }
 
-    margin-top:
-    6px;
+    section.content{
+        padding:66px 0;
+    }
 
-  }
+    .section-title{
+        font-size:2rem;
 
+        letter-spacing:-1px;
+    }
 
-  .hero-subtitle{
+    .cta-box{
+        padding:28px 21px;
+    }
 
-    font-size:
-    .65rem;
+    .footer{
+        display:block;
 
-    line-height:
-    1.8;
+        text-align:center;
+    }
 
-    letter-spacing:
-    1.4px;
-
-  }
-
-
-  .hero-tagline{
-
-    font-size:
-    .82rem;
-
-    letter-spacing:
-    3px;
-
-  }
-
-
-  .hero-copy{
-
-    font-size:
-    .94rem;
-
-  }
-
-
-  .actions{
-
-    display:
-    grid;
-
-    grid-template-columns:
-    1fr;
-
-  }
-
-
-  .actions .btn{
-
-    width:
-    100%;
-
-  }
-
-
-  .system-zone{
-
-    margin-top:
-    60px;
-
-  }
-
-
-  .system-status-bar{
-
-    flex-direction:
-    column;
-
-    align-items:
-    flex-start;
-
-  }
-
-
-  .system-grid{
-
-    grid-template-columns:
-    1fr;
-
-  }
-
-
-  .system-card{
-
-    min-height:
-    auto;
-
-  }
-
-
-  .universe-grid{
-
-    grid-template-columns:
-    1fr;
-
-  }
-
-
-  .examples-grid{
-
-    grid-template-columns:
-    1fr;
-
-  }
-
-
-  .universe-top{
-
-    align-items:
-    flex-start;
-
-  }
-
-
-  section.content{
-
-    padding:
-    66px 0;
-
-  }
-
-
-  .section-title{
-
-    font-size:
-    2rem;
-
-    letter-spacing:
-    -1px;
-
-  }
-
-
-  .cta-box{
-
-    padding:
-    28px 21px;
-
-  }
-
-
-  .footer{
-
-    display:
-    block;
-
-    text-align:
-    center;
-
-  }
-
-
-  .footer div + div{
-
-    margin-top:
-    7px;
-
-  }
+    .footer div + div{
+        margin-top:7px;
+    }
 
 }
 
@@ -2037,10 +1355,7 @@ footer{
 <nav class="nav">
 
 
-<a
-href="index.html"
-class="brand"
->
+<a href="index.html" class="brand">
 
 <span class="brand-main">
 Actyrom
@@ -2053,103 +1368,74 @@ Consulting
 </a>
 
 
-
 <button
 class="menu-button"
 id="menuButton"
 type="button"
 aria-label="Ouvrir le menu"
->
+aria-expanded="false">
 
 ☰
 
 </button>
 
 
-
-<ul
-class="nav-links"
-id="navLinks"
->
+<ul class="nav-links" id="navLinks">
 
 
 <li>
-
 <a href="index.html">
-
 Accueil
-
 </a>
-
 </li>
 
 
 <li>
+<a href="qui-sommes-nous.html">
+Qui sommes-nous ?
+</a>
+</li>
 
+
+<li>
 <a href="industrie.html">
-
 Industrie
-
 </a>
-
 </li>
 
 
 <li>
-
 <a href="habitat.html">
-
 Habitat
-
 </a>
-
 </li>
 
 
 <li>
-
 <a href="industrie40.html">
-
 Industrie 4.0
-
 </a>
-
 </li>
 
 
 <li>
-
 <a href="accompagnement.html">
-
 Accompagnement
-
 </a>
-
 </li>
 
 
 <li>
-
 <a href="contact.html">
-
 Contact
-
 </a>
-
 </li>
 
 
 <li>
-
-<a
-href="contact.html"
-class="connection"
->
-
+<a href="contact.html" class="connection">
 CONNEXION
-
 </a>
-
 </li>
 
 
@@ -2187,25 +1473,17 @@ Actyrom <span>Consulting</span>
 </h1>
 
 
-
 <div class="hero-subtitle">
 
 EXPERTISE TECHNIQUE
-
 &nbsp;•&nbsp;
-
 AUTOMATISME
-
 &nbsp;•&nbsp;
-
 MAINTENANCE
-
 &nbsp;•&nbsp;
-
 SOLUTIONS SUR MESURE
 
 </div>
-
 
 
 <div class="hero-tagline">
@@ -2213,7 +1491,6 @@ SOLUTIONS SUR MESURE
 DES SOLUTIONS POUR DEMAIN
 
 </div>
-
 
 
 <p class="hero-copy">
@@ -2227,14 +1504,12 @@ de solutions techniques adaptées à leur besoin.
 </p>
 
 
-
 <div class="actions">
 
 
 <a
 href="contact.html"
-class="btn btn-primary"
->
+class="btn btn-primary">
 
 Présenter votre besoin
 
@@ -2243,8 +1518,7 @@ Présenter votre besoin
 
 <a
 href="#univers"
-class="btn btn-secondary"
->
+class="btn btn-secondary">
 
 Découvrir Actyrom
 
@@ -2259,7 +1533,7 @@ Découvrir Actyrom
 
 
 <!-- =========================================================
-     DOMAINES PRINCIPAUX
+     SYSTEM
 ========================================================= -->
 
 <div class="system-zone">
@@ -2304,23 +1578,13 @@ SYSTEM ONLINE
 
 <svg viewBox="0 0 24 24">
 
-<circle
-cx="10"
-cy="10"
-r="6">
-</circle>
+<circle cx="10" cy="10" r="6"></circle>
 
-<path
-d="M14.5 14.5L21 21">
-</path>
+<path d="M14.5 14.5L21 21"></path>
 
-<path
-d="M10 7v6">
-</path>
+<path d="M10 7v6"></path>
 
-<path
-d="M7 10h6">
-</path>
+<path d="M7 10h6"></path>
 
 </svg>
 
@@ -2328,16 +1592,12 @@ d="M7 10h6">
 
 
 <span class="system-number">
-
 01
-
 </span>
 
 
 <h3>
-
 DIAGNOSTIC
-
 </h3>
 
 
@@ -2362,29 +1622,25 @@ avant de remplacer.
 
 <svg viewBox="0 0 24 24">
 
-<rect
-x="5"
-y="5"
-width="14"
-height="14"
-rx="2">
-</rect>
+<rect x="5" y="5" width="14" height="14" rx="2"></rect>
 
 <path d="M9 2v3"></path>
+
 <path d="M15 2v3"></path>
+
 <path d="M9 19v3"></path>
+
 <path d="M15 19v3"></path>
+
 <path d="M2 9h3"></path>
+
 <path d="M2 15h3"></path>
+
 <path d="M19 9h3"></path>
+
 <path d="M19 15h3"></path>
 
-<rect
-x="9"
-y="9"
-width="6"
-height="6">
-</rect>
+<rect x="9" y="9" width="6" height="6"></rect>
 
 </svg>
 
@@ -2392,16 +1648,12 @@ height="6">
 
 
 <span class="system-number">
-
 02
-
 </span>
 
 
 <h3>
-
 AUTOMATISME
-
 </h3>
 
 
@@ -2418,7 +1670,7 @@ et systèmes techniques.
 
 
 
-<!-- DATA -->
+<!-- RESEAUX -->
 
 <div class="system-card">
 
@@ -2427,31 +1679,15 @@ et systèmes techniques.
 
 <svg viewBox="0 0 24 24">
 
-<circle
-cx="5"
-cy="12"
-r="2">
-</circle>
+<circle cx="5" cy="12" r="2"></circle>
 
-<circle
-cx="19"
-cy="6"
-r="2">
-</circle>
+<circle cx="19" cy="6" r="2"></circle>
 
-<circle
-cx="19"
-cy="18"
-r="2">
-</circle>
+<circle cx="19" cy="18" r="2"></circle>
 
-<path
-d="M7 12l10-6">
-</path>
+<path d="M7 12l10-6"></path>
 
-<path
-d="M7 12l10 6">
-</path>
+<path d="M7 12l10 6"></path>
 
 </svg>
 
@@ -2459,16 +1695,12 @@ d="M7 12l10 6">
 
 
 <span class="system-number">
-
 03
-
 </span>
 
 
 <h3>
-
 RÉSEAUX & DATA
-
 </h3>
 
 
@@ -2494,13 +1726,9 @@ et historisation.
 
 <svg viewBox="0 0 24 24">
 
-<path
-d="M12 3l7 3v5c0 5-3.2 8-7 10-3.8-2-7-5-7-10V6l7-3z">
-</path>
+<path d="M12 3l7 3v5c0 5-3.2 8-7 10-3.8-2-7-5-7-10V6l7-3z"></path>
 
-<path
-d="M9 12l2 2 4-4">
-</path>
+<path d="M9 12l2 2 4-4"></path>
 
 </svg>
 
@@ -2508,16 +1736,12 @@ d="M9 12l2 2 4-4">
 
 
 <span class="system-number">
-
 04
-
 </span>
 
 
 <h3>
-
 FIABILISATION
-
 </h3>
 
 
@@ -2549,13 +1773,107 @@ et adaptées au terrain.
 
 
 <!-- =========================================================
+     QUI SOMMES-NOUS APERCU
+========================================================= -->
+
+<section class="content">
+
+
+<div class="container about-home">
+
+
+<div>
+
+
+<div class="section-label">
+
+QUI SOMMES-NOUS ?
+
+</div>
+
+
+<h2 class="section-title">
+
+La technique
+au service
+de la solution.
+
+</h2>
+
+
+</div>
+
+
+
+<div class="about-home-text">
+
+
+<p class="about-home-highlight">
+
+Actyrom Consulting est une structure indépendante
+dédiée à l’analyse,
+à la résolution de problèmes techniques
+et au développement de solutions sur mesure.
+
+</p>
+
+
+<p>
+
+Notre démarche repose sur une idée simple :
+comprendre le fonctionnement réel
+d’une installation avant de proposer
+une solution.
+
+</p>
+
+
+<p>
+
+Industrie,
+habitat,
+automatismes,
+réseaux,
+données
+ou supervision :
+les technologies peuvent être différentes,
+mais la méthode reste la même.
+
+</p>
+
+
+<div class="actions">
+
+
+<a
+href="qui-sommes-nous.html"
+class="btn btn-primary">
+
+Découvrir Actyrom
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
      INDUSTRIE / HABITAT
 ========================================================= -->
 
 <section
 class="content alt"
-id="univers"
->
+id="univers">
 
 
 <div class="container">
@@ -2579,11 +1897,13 @@ une même approche technique.
 
 <p class="section-intro">
 
-Actyrom Consulting reste l’identité principale.
+Actyrom Consulting reste
+l’identité principale.
 
-Les termes Industrie et Habitat
-permettent simplement d’identifier
-le contexte de la prestation.
+Industrie et Habitat
+permettent simplement
+d’identifier le contexte
+de la prestation.
 
 </p>
 
@@ -2606,33 +1926,19 @@ le contexte de la prestation.
 
 <svg viewBox="0 0 24 24">
 
-<path
-d="M3 20h18">
-</path>
+<path d="M3 20h18"></path>
 
-<path
-d="M5 20V10l4-3 4 3v10">
-</path>
+<path d="M5 20V10l4-3 4 3v10"></path>
 
-<path
-d="M13 20V6l6 3v11">
-</path>
+<path d="M13 20V6l6 3v11"></path>
 
-<path
-d="M8 12h1">
-</path>
+<path d="M8 12h1"></path>
 
-<path
-d="M8 15h1">
-</path>
+<path d="M8 15h1"></path>
 
-<path
-d="M16 11h1">
-</path>
+<path d="M16 11h1"></path>
 
-<path
-d="M16 14h1">
-</path>
+<path d="M16 14h1"></path>
 
 </svg>
 
@@ -2663,7 +1969,6 @@ SYSTEM // INDUSTRIAL
 </div>
 
 
-
 <p>
 
 Dépannage,
@@ -2682,8 +1987,7 @@ et renfort technique.
 
 <a
 href="industrie.html"
-class="universe-link"
->
+class="universe-link">
 
 Découvrir Industrie →
 
@@ -2707,25 +2011,13 @@ Découvrir Industrie →
 
 <svg viewBox="0 0 24 24">
 
-<path
-d="M3 11.5L12 4l9 7.5">
-</path>
+<path d="M3 11.5L12 4l9 7.5"></path>
 
-<path
-d="M5 10.5V20h14v-9.5">
-</path>
+<path d="M5 10.5V20h14v-9.5"></path>
 
-<path
-d="M9 20v-5h6v5">
-</path>
+<path d="M9 20v-5h6v5"></path>
 
-<path
-d="M15.5 8.5c1.5-1.5 3.5-1.5 5 0">
-</path>
-
-<path
-d="M17 10c.8-.8 1.7-.8 2.5 0">
-</path>
+<path d="M15.5 8.5c1.5-1.5 3.5-1.5 5 0"></path>
 
 </svg>
 
@@ -2756,7 +2048,6 @@ SYSTEM // HABITAT
 </div>
 
 
-
 <p>
 
 Domotique,
@@ -2774,8 +2065,7 @@ et solutions sur mesure.
 
 <a
 href="habitat.html"
-class="universe-link"
->
+class="universe-link">
 
 Découvrir Habitat →
 
@@ -2796,7 +2086,7 @@ Découvrir Habitat →
 
 
 <!-- =========================================================
-     EXEMPLES VISUELS
+     EXEMPLES
 ========================================================= -->
 
 <section class="content">
@@ -2823,8 +2113,8 @@ Des applications concrètes.
 
 Quelques exemples permettent
 de visualiser rapidement
-ce qu’Actyrom peut apporter
-selon le contexte.
+les domaines sur lesquels
+Actyrom peut intervenir.
 
 </p>
 
@@ -2841,41 +2131,21 @@ selon le contexte.
 
 <div class="example-icon">
 
-
 <svg viewBox="0 0 24 24">
 
-<rect
-x="4"
-y="5"
-width="16"
-height="12"
-rx="1">
-</rect>
+<rect x="4" y="5" width="16" height="12" rx="1"></rect>
 
-<path
-d="M7 17v3">
-</path>
+<path d="M7 17v3"></path>
 
-<path
-d="M17 17v3">
-</path>
+<path d="M17 17v3"></path>
 
-<circle
-cx="9"
-cy="11"
-r="2">
-</circle>
+<circle cx="9" cy="11" r="2"></circle>
 
-<path
-d="M13 9h4">
-</path>
+<path d="M13 9h4"></path>
 
-<path
-d="M13 12h4">
-</path>
+<path d="M13 12h4"></path>
 
 </svg>
-
 
 </div>
 
@@ -2890,9 +2160,8 @@ Diagnostic machine
 <p>
 
 Analyse d’un défaut,
-d’une panne intermittente,
-d’un fonctionnement anormal
-ou d’une perte de performance.
+d’une panne intermittente
+ou d’un fonctionnement anormal.
 
 </p>
 
@@ -2908,29 +2177,17 @@ ou d’une perte de performance.
 
 <div class="example-icon">
 
-
 <svg viewBox="0 0 24 24">
 
-<path
-d="M4 9c4.5-4 11.5-4 16 0">
-</path>
+<path d="M4 9c4.5-4 11.5-4 16 0"></path>
 
-<path
-d="M7 12c3-2.7 7-2.7 10 0">
-</path>
+<path d="M7 12c3-2.7 7-2.7 10 0"></path>
 
-<path
-d="M10 15c1.2-1 2.8-1 4 0">
-</path>
+<path d="M10 15c1.2-1 2.8-1 4 0"></path>
 
-<circle
-cx="12"
-cy="18"
-r="1">
-</circle>
+<circle cx="12" cy="18" r="1"></circle>
 
 </svg>
-
 
 </div>
 
@@ -2946,8 +2203,7 @@ Réseau & Wi-Fi
 
 Couverture,
 stabilité,
-Ethernet,
-équipements réseau
+Ethernet
 et amélioration
 de la communication locale.
 
@@ -2965,36 +2221,24 @@ de la communication locale.
 
 <div class="example-icon">
 
-
 <svg viewBox="0 0 24 24">
 
-<path
-d="M3 11.5L12 4l9 7.5">
-</path>
+<path d="M3 11.5L12 4l9 7.5"></path>
 
-<path
-d="M5 10.5V20h14v-9.5">
-</path>
+<path d="M5 10.5V20h14v-9.5"></path>
 
-<path
-d="M10 20v-5h4v5">
-</path>
+<path d="M10 20v-5h4v5"></path>
 
-<circle
-cx="17"
-cy="8"
-r="1.5">
-</circle>
+<circle cx="17" cy="8" r="1.5"></circle>
 
 </svg>
-
 
 </div>
 
 
 <h3>
 
-Domotique & habitat
+Domotique
 
 </h3>
 
@@ -3002,11 +2246,10 @@ Domotique & habitat
 <p>
 
 Automatisation,
-éclairage,
 capteurs,
-remontées d’état,
 scénarios
-et supervision locale.
+et remontées d’état
+dans l’habitat.
 
 </p>
 
@@ -3022,27 +2265,17 @@ et supervision locale.
 
 <div class="example-icon">
 
-
 <svg viewBox="0 0 24 24">
 
-<path
-d="M4 20V10">
-</path>
+<path d="M4 20V10"></path>
 
-<path
-d="M9 20V5">
-</path>
+<path d="M9 20V5"></path>
 
-<path
-d="M14 20v-7">
-</path>
+<path d="M14 20v-7"></path>
 
-<path
-d="M19 20V8">
-</path>
+<path d="M19 20V8"></path>
 
 </svg>
-
 
 </div>
 
@@ -3058,8 +2291,7 @@ KPI & historique
 
 Collecte de données,
 tendances,
-indicateurs,
-historisation
+indicateurs
 et aide au diagnostic.
 
 </p>
@@ -3076,15 +2308,11 @@ et aide au diagnostic.
 
 <div class="example-icon">
 
-
 <svg viewBox="0 0 24 24">
 
-<path
-d="M13 2L5 14h6l-1 8 9-13h-6z">
-</path>
+<path d="M13 2L5 14h6l-1 8 9-13h-6z"></path>
 
 </svg>
-
 
 </div>
 
@@ -3099,10 +2327,9 @@ d="M13 2L5 14h6l-1 8 9-13h-6z">
 <p>
 
 Mesure,
-suivi des consommations,
-alertes
+suivi des consommations
 et compréhension
-du fonctionnement énergétique.
+des usages énergétiques.
 
 </p>
 
@@ -3118,41 +2345,23 @@ du fonctionnement énergétique.
 
 <div class="example-icon">
 
-
 <svg viewBox="0 0 24 24">
 
-<circle
-cx="12"
-cy="12"
-r="3">
-</circle>
+<circle cx="12" cy="12" r="3"></circle>
 
-<path
-d="M12 2v4">
-</path>
+<path d="M12 2v4"></path>
 
-<path
-d="M12 18v4">
-</path>
+<path d="M12 18v4"></path>
 
-<path
-d="M2 12h4">
-</path>
+<path d="M2 12h4"></path>
 
-<path
-d="M18 12h4">
-</path>
+<path d="M18 12h4"></path>
 
-<path
-d="M5 5l3 3">
-</path>
+<path d="M5 5l3 3"></path>
 
-<path
-d="M16 16l3 3">
-</path>
+<path d="M16 16l3 3"></path>
 
 </svg>
-
 
 </div>
 
@@ -3166,11 +2375,9 @@ Solutions sur mesure
 
 <p>
 
-Combinaison de plusieurs domaines :
-réseaux,
+Combiner réseau,
 automatisme,
 données,
-capteurs,
 informatique
 et supervision.
 
@@ -3191,7 +2398,7 @@ et supervision.
 
 
 <!-- =========================================================
-     DEROULEMENT
+     METHODE
 ========================================================= -->
 
 <section class="content alt">
@@ -3220,11 +2427,10 @@ Du besoin
 
 <p class="section-intro">
 
-Une intervention structurée
-permet de réduire
-les essais inutiles
-et de mieux comprendre
-les causes réelles.
+Une démarche structurée
+pour comprendre,
+analyser
+et agir efficacement.
 
 </p>
 
@@ -3236,36 +2442,26 @@ les causes réelles.
 <div class="feature-list">
 
 
-
 <div class="feature">
 
-
 <div class="feature-number">
-
 01
-
 </div>
-
 
 <div>
 
 <strong>
-
 Prise de contact
-
 </strong>
 
 <span>
-
 Contexte,
 besoin,
 contraintes
-et objectif recherché.
-
+et objectif.
 </span>
 
 </div>
-
 
 </div>
 
@@ -3273,31 +2469,22 @@ et objectif recherché.
 
 <div class="feature">
 
-
 <div class="feature-number">
-
 02
-
 </div>
-
 
 <div>
 
 <strong>
-
 Analyse
-
 </strong>
 
 <span>
-
 Première lecture technique
-et définition de la démarche.
-
+de la situation.
 </span>
 
 </div>
-
 
 </div>
 
@@ -3305,33 +2492,23 @@ et définition de la démarche.
 
 <div class="feature">
 
-
 <div class="feature-number">
-
 03
-
 </div>
-
 
 <div>
 
 <strong>
-
 Diagnostic / étude
-
 </strong>
 
 <span>
-
 Mesures,
-vérifications,
-recherche des causes
-ou étude de solution.
-
+vérifications
+et recherche des causes.
 </span>
 
 </div>
-
 
 </div>
 
@@ -3339,33 +2516,23 @@ ou étude de solution.
 
 <div class="feature">
 
-
 <div class="feature-number">
-
 04
-
 </div>
-
 
 <div>
 
 <strong>
-
 Proposition
-
 </strong>
 
 <span>
-
 Solution,
-priorités,
-limites
-et étapes éventuelles.
-
+priorités
+et étapes.
 </span>
 
 </div>
-
 
 </div>
 
@@ -3373,31 +2540,22 @@ et étapes éventuelles.
 
 <div class="feature">
 
-
 <div class="feature-number">
-
 05
-
 </div>
-
 
 <div>
 
 <strong>
-
 Intervention
-
 </strong>
 
 <span>
-
 Mise en œuvre
-dans le périmètre convenu.
-
+dans le périmètre défini.
 </span>
 
 </div>
-
 
 </div>
 
@@ -3405,33 +2563,22 @@ dans le périmètre convenu.
 
 <div class="feature">
 
-
 <div class="feature-number">
-
 06
-
 </div>
-
 
 <div>
 
 <strong>
-
 Suivi
-
 </strong>
 
 <span>
-
-Retour d’expérience,
-documents,
-KPI
-ou pistes de fiabilisation.
-
+Retour d’expérience
+et pistes de fiabilisation.
 </span>
 
 </div>
-
 
 </div>
 
@@ -3483,7 +2630,6 @@ et analyse des données.
 </p>
 
 
-
 <div class="data-tags">
 
 
@@ -3523,7 +2669,7 @@ Réseaux dédiés
 
 
 <span class="data-tag">
-Accès distant sécurisé
+Accès distant
 </span>
 
 
@@ -3581,14 +2727,12 @@ la solution la plus adaptée.
 </p>
 
 
-
 <div class="actions">
 
 
 <a
 href="contact.html"
-class="btn btn-primary"
->
+class="btn btn-primary">
 
 Contacter Actyrom
 
@@ -3596,11 +2740,10 @@ Contacter Actyrom
 
 
 <a
-href="habitat.html"
-class="btn btn-secondary"
->
+href="qui-sommes-nous.html"
+class="btn btn-secondary">
 
-Découvrir Habitat
+Qui sommes-nous ?
 
 </a>
 
@@ -3640,23 +2783,21 @@ Découvrir Habitat
 
 <div>
 
-
-<a href="mentions-legales.html">
-
-Mentions légales
-
+<a href="qui-sommes-nous.html">
+Qui sommes-nous ?
 </a>
-
 
 &nbsp;•&nbsp;
 
-
-<a href="contact.html">
-
-Contact
-
+<a href="mentions-legales.html">
+Mentions légales
 </a>
 
+&nbsp;•&nbsp;
+
+<a href="contact.html">
+Contact
+</a>
 
 </div>
 
@@ -3668,58 +2809,57 @@ Contact
 
 
 
-<!-- =========================================================
-     JS MOBILE
-========================================================= -->
-
 <script>
 
 const menuButton =
-document.getElementById(
-"menuButton"
-);
+document.getElementById("menuButton");
 
 const navLinks =
-document.getElementById(
-"navLinks"
-);
+document.getElementById("navLinks");
 
 
 menuButton.addEventListener(
 "click",
 function(){
 
-  navLinks
-  .classList
-  .toggle(
-    "open"
-  );
+    const opened =
+    navLinks
+    .classList
+    .toggle("open");
+
+    menuButton
+    .setAttribute(
+        "aria-expanded",
+        opened ? "true" : "false"
+    );
 
 }
 );
 
 
-/* fermeture après clic */
-
 document
 .querySelectorAll(
-".nav-links a"
+    ".nav-links a"
 )
 .forEach(
 function(link){
 
-  link.addEventListener(
-  "click",
-  function(){
+    link.addEventListener(
+    "click",
+    function(){
 
-    navLinks
-    .classList
-    .remove(
-      "open"
+        navLinks
+        .classList
+        .remove("open");
+
+        menuButton
+        .setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+    }
     );
-
-  }
-  );
 
 }
 );
