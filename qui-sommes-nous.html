@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Qui sommes-nous ? | Actyrom Consulting</title>
+
+<meta name="description"
+content="Découvrez Actyrom Consulting, sa philosophie, son approche terrain et sa vision de l'expertise technique pour l'industrie, l'habitat et les solutions connectées.">
+
+<style>
+
+:root{
+    --bg:#050505;
+    --bg2:#080808;
+    --panel:#0b0b0b;
+    --line:#292929;
+    --text:#f5f5f5;
+    --muted:#9c9c9c;
+    --green:#59d02f;
+    --green2:#78ff49;
+    --max:1180px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.65;
+    overflow-x:hidden;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.container{
+    width:min(var(--max),92%);
+    margin:auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(5,5,5,.96);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid #181818;
+}
+
+.nav{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.brand{
+    display:flex;
+    align-items:baseline;
+    gap:4px;
+}
+
+.brand-main{
+    font-size:1.5rem;
+    font-weight:900;
+}
+
+.brand-consulting{
+    color:var(--green);
+    font-weight:800;
+    font-size:1.05rem;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    gap:22px;
+    color:#d0d0d0;
+    font-size:.88rem;
+}
+
+.nav-links a{
+    transition:.2s;
+}
+
+.nav-links a:hover{
+    color:var(--green2);
+}
+
+.connection{
+    padding:10px 17px!important;
+    border:1px solid rgba(89,208,47,.45);
+    border-radius:10px;
+    background:rgba(89,208,47,.06);
+    color:#e5ffdc!important;
+    font-family:"Courier New",monospace;
+    font-size:.78rem;
+    font-weight:700;
+}
+
+.menu-button{
+    display:none;
+    background:#080808;
+    color:#fff;
+    border:1px solid #333;
+    border-radius:7px;
+    padding:8px 11px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+    padding:100px 0 90px;
+    border-bottom:1px solid #181818;
+
+    background:
+    radial-gradient(
+        circle at 92% 0%,
+        rgba(89,208,47,.08),
+        transparent 25%
+    ),
+    #050505;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:70px;
+    left:0;
+    width:250px;
+    height:1px;
+
+    background:
+    linear-gradient(
+        90deg,
+        var(--green) 0 22%,
+        #555 22% 100%
+    );
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:430px;
+    height:430px;
+    right:-170px;
+    top:-180px;
+    border-radius:50%;
+
+    border:
+    1px solid rgba(89,208,47,.15);
+
+    box-shadow:
+    0 0 0 60px rgba(89,208,47,.03),
+    0 0 0 120px rgba(255,255,255,.015);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+}
+
+.eyebrow{
+    color:var(--green);
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-size:.72rem;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:clamp(3.5rem,7vw,6.4rem);
+    line-height:.95;
+    letter-spacing:-4px;
+    font-weight:900;
+}
+
+.hero h1 span{
+    color:var(--green);
+}
+
+.hero-text{
+    max-width:760px;
+    margin-top:28px;
+    color:#aaa;
+    font-size:1.05rem;
+}
+
+
+/* =========================================================
+   GENERIQUE
+========================================================= */
+
+section.content{
+    padding:90px 0;
+}
+
+.alt{
+    background:#080808;
+    border-top:1px solid #181818;
+    border-bottom:1px solid #181818;
+}
+
+.section-label{
+    color:var(--green);
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-size:.7rem;
+    margin-bottom:14px;
+}
+
+.section-title{
+    font-size:clamp(2.1rem,4vw,3.6rem);
+    line-height:1.06;
+    letter-spacing:-2px;
+}
+
+.section-intro{
+    color:#999;
+    max-width:800px;
+    margin-top:18px;
+}
+
+
+/* =========================================================
+   QUI SOMMES NOUS
+========================================================= */
+
+.identity-grid{
+    display:grid;
+    grid-template-columns:.9fr 1.15fr;
+    gap:80px;
+    align-items:start;
+}
+
+.identity-text p{
+    color:#aaa;
+    margin-bottom:18px;
+}
+
+.highlight{
+    color:#fff!important;
+    font-size:1.14rem;
+}
+
+
+/* =========================================================
+   VALEURS
+========================================================= */
+
+.values-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:12px;
+    margin-top:40px;
+}
+
+.value-card{
+    padding:25px 20px;
+    border:1px solid #292929;
+    border-radius:12px;
+    background:#0a0a0a;
+    min-height:180px;
+}
+
+.value-number{
+    display:block;
+    margin-bottom:22px;
+
+    color:var(--green2);
+
+    font-family:"Courier New",monospace;
+    font-weight:700;
+}
+
+.value-card h3{
+    margin-bottom:8px;
+    font-size:1rem;
+}
+
+.value-card p{
+    color:#858585;
+    font-size:.87rem;
+}
+
+
+/* =========================================================
+   PHILOSOPHIE
+========================================================= */
+
+.philosophy{
+    margin-top:42px;
+    border:1px solid rgba(89,208,47,.20);
+    border-radius:14px;
+    padding:32px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(89,208,47,.06),
+        transparent 45%
+    ),
+    #090909;
+}
+
+.philosophy-line{
+    color:var(--green2);
+    font-family:"Courier New",monospace;
+    letter-spacing:1px;
+    font-size:.85rem;
+}
+
+.philosophy h3{
+    margin:16px 0 12px;
+    font-size:1.7rem;
+}
+
+.philosophy p{
+    color:#999;
+    max-width:850px;
+}
+
+
+/* =========================================================
+   DOMAINES
+========================================================= */
+
+.domain-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin-top:40px;
+}
+
+.domain-card{
+    padding:27px;
+    background:#0a0a0a;
+    border:1px solid #292929;
+    border-radius:12px;
+    transition:.25s;
+}
+
+.domain-card:hover{
+    transform:translateY(-3px);
+    border-color:rgba(89,208,47,.35);
+}
+
+.domain-icon{
+    width:58px;
+    height:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:20px;
+
+    border-radius:14px;
+    border:1px solid rgba(89,208,47,.22);
+    background:rgba(89,208,47,.07);
+}
+
+.domain-icon svg{
+    width:30px;
+    height:30px;
+    stroke:var(--green2);
+    fill:none;
+    stroke-width:1.8;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.domain-card h3{
+    margin-bottom:9px;
+}
+
+.domain-card p{
+    color:#8e8e8e;
+    font-size:.9rem;
+}
+
+
+/* =========================================================
+   STRUCTURE
+========================================================= */
+
+.structure-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin-top:40px;
+}
+
+.structure-card{
+    padding:27px;
+    border:1px solid #292929;
+    border-radius:12px;
+    background:#0a0a0a;
+}
+
+.structure-card span{
+    display:block;
+    margin-bottom:20px;
+
+    color:var(--green2);
+    font-family:"Courier New",monospace;
+}
+
+.structure-card h3{
+    margin-bottom:9px;
+}
+
+.structure-card p{
+    color:#8e8e8e;
+}
+
+
+/* =========================================================
+   VISION
+========================================================= */
+
+.vision-box{
+    padding:45px;
+    border:1px solid #292929;
+    border-radius:14px;
+
+    background:
+    radial-gradient(
+        circle at 90% 0%,
+        rgba(89,208,47,.09),
+        transparent 30%
+    ),
+    #0a0a0a;
+}
+
+.vision-box p{
+    color:#999;
+    max-width:850px;
+    margin-top:18px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.actions{
+    margin-top:30px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.btn{
+    min-height:50px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 22px;
+    border-radius:7px;
+    font-weight:700;
+}
+
+.btn-primary{
+    background:var(--green);
+    color:#050505;
+}
+
+.btn-primary:hover{
+    background:var(--green2);
+}
+
+.btn-secondary{
+    border:1px solid #383838;
+}
+
+.btn-secondary:hover{
+    color:var(--green2);
+    border-color:var(--green);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    padding:31px 0;
+    border-top:1px solid #171717;
+    background:#030303;
+    color:#747474;
+    font-size:.8rem;
+}
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1050px){
+
+    .values-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .identity-grid{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+}
+
+
+@media(max-width:850px){
+
+    .menu-button{
+        display:block;
+    }
+
+    .nav{
+        min-height:68px;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        left:0;
+        right:0;
+        top:68px;
+
+        flex-direction:column;
+        align-items:stretch;
+
+        padding:15px 4%;
+
+        background:#070707;
+
+        border-bottom:1px solid #222;
+    }
+
+    .nav-links.open{
+        display:flex;
+    }
+
+    .nav-links a{
+        display:block;
+        padding:10px 0;
+    }
+
+    .connection{
+        text-align:center;
+    }
+
+    .domain-grid,
+    .structure-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:620px){
+
+    .container{
+        width:94%;
+    }
+
+    .hero{
+        padding:65px 0;
+    }
+
+    .hero h1{
+        font-size:3rem;
+        letter-spacing:-2px;
+    }
+
+    .hero h1 span{
+        display:block;
+        font-size:.72em;
+        margin-top:5px;
+    }
+
+    section.content{
+        padding:65px 0;
+    }
+
+    .values-grid,
+    .domain-grid,
+    .structure-grid{
+        grid-template-columns:1fr;
+    }
+
+    .vision-box{
+        padding:28px 22px;
+    }
+
+    .actions{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .footer{
+        display:block;
+        text-align:center;
+    }
+
+    .footer div + div{
+        margin-top:7px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
+
+<div class="container">
+
+<nav class="nav">
+
+
+<a href="index.html" class="brand">
+
+<span class="brand-main">
+Actyrom
+</span>
+
+<span class="brand-consulting">
+Consulting
+</span>
+
+</a>
+
+
+<button
+class="menu-button"
+id="menuButton"
+type="button"
+aria-label="Ouvrir le menu">
+
+☰
+
+</button>
+
+
+<ul class="nav-links" id="navLinks">
+
+
+<li>
+<a href="index.html">
+Accueil
+</a>
+</li>
+
+
+<li>
+<a href="industrie.html">
+Industrie
+</a>
+</li>
+
+
+<li>
+<a href="habitat.html">
+Habitat
+</a>
+</li>
+
+
+<li>
+<a href="industrie40.html">
+Industrie 4.0
+</a>
+</li>
+
+
+<li>
+<a href="accompagnement.html">
+Accompagnement
+</a>
+</li>
+
+
+<li>
+<a href="qui-sommes-nous.html">
+Qui sommes-nous ?
+</a>
+</li>
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+<li>
+
+<a
+href="contact.html"
+class="connection">
+
+CONNEXION
+
+</a>
+
+</li>
+
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+<div class="container">
+
+
+<div class="hero-content">
+
+
+<div class="eyebrow">
+
+ACTYROM // IDENTITY
+
+</div>
+
+
+<h1>
+
+Qui sommes-<span>nous ?</span>
+
+</h1>
+
+
+<p class="hero-text">
+
+Actyrom Consulting est une structure indépendante
+dédiée à l’analyse,
+à la résolution de problèmes techniques
+et au développement de solutions adaptées
+aux besoins réels du terrain.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     IDENTITE
+========================================================= -->
+
+<section class="content">
+
+
+<div class="container identity-grid">
+
+
+<div>
+
+
+<div class="section-label">
+
+NOTRE IDENTITÉ
+
+</div>
+
+
+<h2 class="section-title">
+
+La technique
+au service
+de la solution.
+
+</h2>
+
+
+</div>
+
+
+
+<div class="identity-text">
+
+
+<p class="highlight">
+
+Actyrom Consulting est né d’une volonté :
+proposer une approche technique
+pragmatique,
+ouverte
+et orientée vers la résolution réelle
+des problèmes.
+
+</p>
+
+
+<p>
+
+L’objectif n’est pas simplement
+de remplacer un équipement,
+d’ajouter une technologie
+ou d’appliquer une solution standard.
+
+Il s’agit d’abord
+de comprendre le fonctionnement
+d’une installation,
+son environnement,
+ses contraintes
+et le besoin de son utilisateur.
+
+</p>
+
+
+<p>
+
+Cette approche permet
+d’intervenir sur des domaines variés :
+automatisme,
+maintenance,
+électricité,
+réseaux,
+informatique,
+domotique,
+données,
+supervision
+et organisation technique.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PHILOSOPHIE
+========================================================= -->
+
+<section class="content alt">
+
+
+<div class="container">
+
+
+<div class="section-label">
+
+NOTRE LIGNE DIRECTRICE
+
+</div>
+
+
+<h2 class="section-title">
+
+Action.
+Analyse.
+Résolution.
+Organisation.
+Méthode.
+
+</h2>
+
+
+<div class="philosophy">
+
+
+<div class="philosophy-line">
+
+ACTYROM // METHOD
+
+</div>
+
+
+<h3>
+
+Comprendre avant d’agir.
+
+</h3>
+
+
+<p>
+
+Chaque intervention commence
+par l’observation,
+le questionnement
+et l’analyse.
+
+La technologie doit rester
+un moyen de résoudre un problème,
+et non devenir une fin en soi.
+
+Une solution pertinente
+doit être compréhensible,
+maintenable,
+évolutive
+et adaptée au contexte réel.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     DOMAINES
+========================================================= -->
+
+<section class="content">
+
+
+<div class="container">
+
+
+<div class="section-label">
+
+NOS UNIVERS
+
+</div>
+
+
+<h2 class="section-title">
+
+Une expertise transversale.
+
+</h2>
+
+
+<p class="section-intro">
+
+Actyrom Consulting constitue
+l’interface unique.
+
+Industrie,
+Habitat
+et Data
+permettent simplement
+de qualifier les différents contextes d’intervention.
+
+</p>
+
+
+
+<div class="domain-grid">
+
+
+
+<!-- INDUSTRIE -->
+
+<div class="domain-card">
+
+
+<div class="domain-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M3 20h18"></path>
+
+<path d="M5 20V10l4-3 4 3v10"></path>
+
+<path d="M13 20V6l6 3v11"></path>
+
+<path d="M8 12h1"></path>
+
+<path d="M16 11h1"></path>
+
+</svg>
+
+</div>
+
+
+<h3>
+
+Industrie
+
+</h3>
+
+
+<p>
+
+Automatisme,
+maintenance,
+diagnostic,
+fiabilisation,
+électricité industrielle,
+méthodes,
+réseaux
+et assistance projet.
+
+</p>
+
+
+</div>
+
+
+
+<!-- HABITAT -->
+
+<div class="domain-card">
+
+
+<div class="domain-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M3 11.5L12 4l9 7.5"></path>
+
+<path d="M5 10.5V20h14v-9.5"></path>
+
+<path d="M9 20v-5h6v5"></path>
+
+<path d="M16 8c1.2-1 2.8-1 4 0"></path>
+
+</svg>
+
+</div>
+
+
+<h3>
+
+Habitat
+
+</h3>
+
+
+<p>
+
+Domotique,
+réseaux,
+informatique,
+automatismes,
+énergie,
+supervision
+et solutions techniques personnalisées.
+
+</p>
+
+
+</div>
+
+
+
+<!-- DATA -->
+
+<div class="domain-card">
+
+
+<div class="domain-icon">
+
+<svg viewBox="0 0 24 24">
+
+<circle cx="5" cy="12" r="2"></circle>
+
+<circle cx="19" cy="6" r="2"></circle>
+
+<circle cx="19" cy="18" r="2"></circle>
+
+<path d="M7 12l10-6"></path>
+
+<path d="M7 12l10 6"></path>
+
+</svg>
+
+</div>
+
+
+<h3>
+
+Data & supervision
+
+</h3>
+
+
+<p>
+
+Collecte,
+historisation,
+KPI,
+visualisation,
+analyse de tendances
+et développement progressif
+de solutions prédictives.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     STRUCTURE
+========================================================= -->
+
+<section class="content alt">
+
+
+<div class="container">
+
+
+<div class="section-label">
+
+NOTRE ORGANISATION
+
+</div>
+
+
+<h2 class="section-title">
+
+Une structure agile.
+
+</h2>
+
+
+<p class="section-intro">
+
+Actyrom Consulting débute
+avec une organisation volontairement légère
+afin de conserver
+réactivité,
+souplesse
+et proximité.
+
+</p>
+
+
+
+<div class="structure-grid">
+
+
+
+<div class="structure-card">
+
+<span>
+01 // EXPERTISE
+</span>
+
+<h3>
+
+Un interlocuteur principal
+
+</h3>
+
+<p>
+
+Une approche directe
+permettant de comprendre rapidement
+le besoin
+et de conserver une vision globale
+du projet.
+
+</p>
+
+</div>
+
+
+
+<div class="structure-card">
+
+<span>
+02 // NETWORK
+</span>
+
+<h3>
+
+Des compétences complémentaires
+
+</h3>
+
+<p>
+
+Lorsque le projet le nécessite,
+des professionnels indépendants
+aux compétences complémentaires
+peuvent être mobilisés ponctuellement.
+
+</p>
+
+</div>
+
+
+
+<div class="structure-card">
+
+<span>
+03 // SCALE
+</span>
+
+<h3>
+
+Une évolution progressive
+
+</h3>
+
+<p>
+
+L’objectif à terme
+est de développer
+un réseau de spécialistes
+capable de répondre
+à une gamme toujours plus large
+de besoins techniques.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     POURQUOI ACTYROM
+========================================================= -->
+
+<section class="content">
+
+
+<div class="container">
+
+
+<div class="section-label">
+
+NOTRE DIFFÉRENCE
+
+</div>
+
+
+<h2 class="section-title">
+
+Ne pas vendre une solution
+avant d’avoir compris le problème.
+
+</h2>
+
+
+<div class="structure-grid">
+
+
+
+<div class="structure-card">
+
+<span>
+01
+</span>
+
+<h3>
+
+Vision terrain
+
+</h3>
+
+<p>
+
+Observer
+le fonctionnement réel
+des équipements
+et les contraintes des utilisateurs.
+
+</p>
+
+</div>
+
+
+
+<div class="structure-card">
+
+<span>
+02
+</span>
+
+<h3>
+
+Approche transversale
+
+</h3>
+
+<p>
+
+Croiser plusieurs domaines
+plutôt que d’analyser
+chaque technologie
+de manière isolée.
+
+</p>
+
+</div>
+
+
+
+<div class="structure-card">
+
+<span>
+03
+</span>
+
+<h3>
+
+Solutions durables
+
+</h3>
+
+<p>
+
+Rechercher
+la fiabilité,
+la maintenabilité
+et la simplicité
+avant la complexité inutile.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     VISION
+========================================================= -->
+
+<section class="content alt">
+
+
+<div class="container">
+
+
+<div class="vision-box">
+
+
+<div class="section-label">
+
+NOTRE VISION
+
+</div>
+
+
+<h2 class="section-title">
+
+Construire aujourd’hui
+les solutions techniques
+de demain.
+
+</h2>
+
+
+<p>
+
+Actyrom souhaite progressivement
+faire converger
+maintenance,
+automatisme,
+réseaux,
+données
+et outils numériques.
+
+L’objectif est de permettre
+aux équipements
+de mieux communiquer,
+de mieux comprendre
+leur fonctionnement
+et d’utiliser les données disponibles
+pour anticiper davantage
+les problèmes.
+
+</p>
+
+
+<div class="actions">
+
+
+<a
+href="contact.html"
+class="btn btn-primary">
+
+Présenter votre projet
+
+</a>
+
+
+<a
+href="index.html"
+class="btn btn-secondary">
+
+Retour à l’accueil
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+
+<div class="container footer">
+
+
+<div>
+
+© 2026 Actyrom Consulting
+
+</div>
+
+
+<div>
+
+<a href="mentions-legales.html">
+
+Mentions légales
+
+</a>
+
+&nbsp;•&nbsp;
+
+<a href="contact.html">
+
+Contact
+
+</a>
+
+</div>
+
+
+</div>
+
+
+</footer>
+
+
+
+<script>
+
+const menuButton =
+document.getElementById("menuButton");
+
+const navLinks =
+document.getElementById("navLinks");
+
+
+menuButton.addEventListener(
+"click",
+function(){
+
+    navLinks
+    .classList
+    .toggle("open");
+
+}
+);
+
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(
+function(link){
+
+    link.addEventListener(
+    "click",
+    function(){
+
+        navLinks
+        .classList
+        .remove("open");
+
+    }
+    );
+
+}
+);
+
+</script>
+
+
+</body>
+
+</html>
