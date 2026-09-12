@@ -1,15 +1,41 @@
 
-document.addEventListener('DOMContentLoaded',()=>{
- const btn=document.querySelector('.menu-btn'), nav=document.querySelector('.nav-links');
- if(btn&&nav) btn.addEventListener('click',()=>{nav.classList.toggle('open');btn.setAttribute('aria-expanded',nav.classList.contains('open'))});
- const form=document.querySelector('#contact-form');
- if(form) form.addEventListener('submit',e=>{
-  e.preventDefault();
-  const g=id=>document.querySelector(id).value.trim();
-  const subject=encodeURIComponent('[Actyrom.fr] '+(g('#subject')||'Demande de contact'));
-  const body=encodeURIComponent(`Nom / entreprise : ${g('#name')}\nE-mail : ${g('#email')}\nProfil : ${document.querySelector('#profile').value}\n\nMessage :\n${g('#message')}`);
-  location.href=`mailto:contact@actyrom.fr?subject=${subject}&body=${body}`;
- });
- const copy=document.querySelector('#copy-email');
- if(copy&&navigator.clipboard) copy.addEventListener('click',async()=>{await navigator.clipboard.writeText('contact@actyrom.fr');copy.textContent='Adresse copiée';setTimeout(()=>copy.textContent='Copier l’adresse',1600)});
+document.addEventListener("DOMContentLoaded", function(){
+  const menuButton = document.getElementById("menuButton");
+  const navLinks = document.getElementById("navLinks");
+  if(menuButton && navLinks){
+    menuButton.addEventListener("click", function(){
+      const opened = navLinks.classList.toggle("open");
+      menuButton.setAttribute("aria-expanded", opened ? "true" : "false");
+    });
+    document.querySelectorAll(".nav-links a").forEach(function(link){
+      link.addEventListener("click", function(){
+        navLinks.classList.remove("open");
+        menuButton.setAttribute("aria-expanded","false");
+      });
+    });
+  }
+
+  const form = document.getElementById("contact-form");
+  if(form){
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const profile = document.getElementById("profile").value;
+      const service = document.getElementById("service").value;
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const mailSubject = encodeURIComponent("[Actyrom.fr] " + (subject || service || "Demande de contact"));
+      const body = encodeURIComponent(
+`Nom / entreprise : ${name}
+E-mail : ${email}
+Profil : ${profile}
+Besoin : ${service}
+
+Message :
+${message}`
+      );
+      window.location.href = `mailto:contact@actyrom.fr?subject=${mailSubject}&body=${body}`;
+    });
+  }
 });

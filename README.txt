@@ -1,22 +1,20 @@
-ACTYROM CONSULTING — SITE GITHUB PAGES
+ACTYROM CONSULTING — MENU UNIFIÉ
 
-À envoyer à la racine du dépôt ACTYROM-SITE :
-- index.html
-- industrie.html
-- habitat.html
-- industrie40.html
-- accompagnement.html
-- contact.html
-- mentions-legales.html
-- 404.html
-- CNAME
-- robots.txt
-- sitemap.xml
-- dossier assets/ avec style.css et app.js
+Cette version contient :
+- Accueil avec illustrations
+- Rubrique Qui sommes-nous ?
+- Industrie
+- Habitat
+- Industrie 4.0
+- Accompagnement
+- Contact
+- Mentions légales
+- Menu identique sur toutes les pages
+- Responsive mobile
 
-IMPORTANT :
-1. index.html doit rester à la racine du dépôt.
-2. Conservez CNAME : il contient actyrom.fr.
-3. GitHub Pages : main / (root).
-4. La page Mentions légales contient des informations à compléter après immatriculation.
-5. Le formulaire Contact ouvre l'application e-mail avec un message prérempli.
+Installation :
+1. Décompressez l'archive.
+2. Dans GitHub > ACTYROM-SITE > Add file > Upload files.
+3. Envoyez TOUS les fichiers à la racine, ainsi que le dossier assets.
+4. Remplacez les fichiers existants.
+5. Conservez GitHub Pages sur main / (root).

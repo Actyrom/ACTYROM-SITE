@@ -4,62 +4,55 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Actyrom Consulting</title>
-<meta name="description" content="Contactez Actyrom Consulting pour un besoin en industrie, habitat, automatisme, maintenance, réseaux, supervision ou dépannage.">
+<meta name="description" content="Contactez Actyrom Consulting pour une étude, un dépannage ou une mission Industrie ou Habitat.">
 <meta name="robots" content="index, follow">
+<meta name="theme-color" content="#050505">
 <link rel="canonical" href="https://actyrom.fr/contact.html">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
 <header>
-  <div class="container">
-    <nav class="nav" aria-label="Navigation principale">
-      <a href="index.html" class="brand">
-        <span class="brand-main">Actyrom</span><span class="brand-consulting">Consulting</span>
-      </a>
-      <button class="menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="industrie.html">Industrie</a></li>
-        <li><a href="habitat.html">Habitat</a></li>
-        <li><a href="industrie40.html">Industrie 4.0</a></li>
-        <li><a href="accompagnement.html">Accompagnement</a></li>
-        <li><a href="contact.html" class="nav-contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+<div class="container">
+<nav class="nav">
+<a href="index.html" class="brand"><span class="brand-main">Actyrom</span><span class="brand-consulting">Consulting</span></a>
+<button class="menu-button" id="menuButton" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+<ul class="nav-links" id="navLinks"><li><a href="index.html">Accueil</a></li><li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li><li><a href="industrie.html">Industrie</a></li><li><a href="habitat.html">Habitat</a></li><li><a href="industrie40.html">Industrie 4.0</a></li><li><a href="accompagnement.html">Accompagnement</a></li><li><a href="contact.html" class="active">Contact</a></li><li><a href="contact.html" class="connection">CONNEXION</a></li></ul>
+</nav>
+</div>
 </header>
 
 <main>
-<section class="page-hero"><div class="container"><div class="section-label">CONTACT</div><h1>Présentez votre besoin.</h1><p>Industrie, habitat, dépannage, automatisme, réseau, supervision ou projet atypique : donnez quelques éléments de contexte pour permettre un premier échange utile.</p></div></section>
-<section><div class="container contact-grid">
+<section class="page-hero"><div class="container inner">
+<div class="section-label">CONTACT</div>
+<h1>Présentez votre <span>besoin.</span></h1>
+<p>Industrie, habitat, dépannage, automatisme, réseau, supervision ou projet atypique : quelques informations suffisent pour démarrer l’échange.</p>
+</div></section>
+
+<section class="content"><div class="container contact-grid">
 <div>
 <div class="section-label">ACTYROM CONSULTING</div><h2 class="section-title">Des solutions pour demain.</h2>
-<div class="contact-info">
-<div class="contact-line"><div class="contact-icon">◎</div><div><strong>Site</strong><br><a href="https://actyrom.fr">actyrom.fr</a></div></div>
-<div class="contact-line"><div class="contact-icon">✉</div><div><strong>E-mail</strong><br><a href="mailto:contact@actyrom.fr">contact@actyrom.fr</a></div></div>
-<div class="contact-line"><div class="contact-icon">⌖</div><div><strong>Zone</strong><br>Normandie • France</div></div>
+<p class="section-intro">Décrivez le contexte, l’installation et ce que vous souhaitez obtenir. Vous pourrez joindre photos et documents depuis votre messagerie après avoir préparé l’e-mail.</p>
+<div class="actions"><a class="btn btn-primary" href="mailto:contact@actyrom.fr">contact@actyrom.fr</a></div>
 </div>
-<div class="actions"><a class="btn btn-primary" href="mailto:contact@actyrom.fr">Écrire directement</a><button class="btn btn-secondary" id="copy-email" type="button">Copier l’adresse</button></div>
-</div>
+
 <form class="contact-form" id="contact-form">
-<div class="field"><label for="name">Nom / entreprise</label><input id="name" autocomplete="name" required></div>
-<div class="field"><label for="email">Votre e-mail</label><input id="email" type="email" autocomplete="email" required></div>
-<div class="field"><label for="profile">Votre besoin concerne</label><select id="profile"><option>Industrie</option><option>Habitat / particulier</option><option>Professionnel / petit local</option><option>Autre</option></select></div>
-<div class="field"><label for="subject">Objet</label><input id="subject" placeholder="Ex. dépannage automatisme"></div>
-<div class="field"><label for="message">Votre message</label><textarea id="message" required placeholder="Décrivez le contexte, le problème ou votre projet."></textarea></div>
+<div class="field"><label for="name">Nom / entreprise</label><input id="name" required></div>
+<div class="field"><label for="email">Votre e-mail</label><input id="email" type="email" required></div>
+<div class="field"><label for="profile">Profil</label><select id="profile"><option>Entreprise / industrie</option><option>Professionnel</option><option>Particulier</option><option>Autre</option></select></div>
+<div class="field"><label for="service">Type de besoin</label><select id="service"><option>Dépannage / diagnostic</option><option>Automatisme</option><option>Maintenance / fiabilisation</option><option>Réseau / informatique</option><option>Domotique / habitat</option><option>Supervision / données / KPI</option><option>Coaching / tutorat</option><option>Renfort / mission</option><option>Solution sur mesure</option></select></div>
+<div class="field"><label for="subject">Objet</label><input id="subject" placeholder="Ex. panne récurrente sur machine"></div>
+<div class="field"><label for="message">Description</label><textarea id="message" required placeholder="Décrivez la situation, les symptômes ou le projet."></textarea></div>
 <button class="btn btn-primary" type="submit">Préparer l’e-mail</button>
-<p class="form-note">Le formulaire ouvre l’application e-mail de votre appareil avec le message prérempli. Aucune donnée n’est stockée par le site.</p>
+<p class="form-note">Le site n’enregistre pas les données saisies. Le bouton ouvre votre application e-mail.</p>
 </form>
 </div></section>
 </main>
 
-<footer>
-  <div class="container footer">
-    <div>© 2026 Actyrom Consulting</div>
-    <div><a href="mentions-legales.html">Mentions légales</a> • <a href="contact.html">Contact</a></div>
-  </div>
-</footer>
+<footer><div class="container footer">
+<div>© 2026 Actyrom Consulting</div>
+<div><a href="qui-sommes-nous.html">Qui sommes-nous ?</a> • <a href="mentions-legales.html">Mentions légales</a> • <a href="contact.html">Contact</a></div>
+</div></footer>
 <script src="assets/app.js"></script>
 
 </body>
