@@ -8,43 +8,40 @@
 
 <title>Qui sommes-nous ? | Actyrom Consulting</title>
 
-<meta name="description"
-content="Découvrez Actyrom Consulting, son approche terrain et ses cinq principes : Action, Analyse, Résolution, Organisation et Méthode.">
+<meta
+name="description"
+content="Découvrez Actyrom Consulting : expertise technique de terrain, diagnostic, maintenance, automatisme, méthodes, projets et réseau de professionnels partenaires.">
 
 <meta name="robots" content="index, follow">
+<meta name="theme-color" content="#06130d">
 
-<link rel="canonical" href="https://actyrom.fr/qui-sommes-nous.html">
+<link
+rel="canonical"
+href="https://actyrom.fr/qui-sommes-nous.html">
 
 <style>
 
 /* =========================================================
-   ACTYROM CONSULTING
-   QUI SOMMES-NOUS
+   VARIABLES
 ========================================================= */
 
 :root{
 
-  --bg:#050505;
-  --bg2:#080808;
-  --panel:#0a0a0a;
-  --panel2:#0e0e0e;
+  --bg:#04100a;
+  --bg-deep:#020805;
 
-  --line:#292929;
-  --line2:#393939;
+  --panel:#07170f;
+  --panel2:#0a1d14;
 
-  --white:#f5f5f5;
+  --line:rgba(255,255,255,.12);
+  --green-line:rgba(143,255,61,.27);
 
-  --grey:#9d9da4;
-  --grey2:#73737a;
+  --text:#f5f7f4;
+  --muted:#adb8b0;
+  --soft:#7e9084;
 
-  --green:#59d02f;
-  --green2:#78ff49;
-
-  --green-soft:
-  rgba(89,208,47,.08);
-
-  --green-border:
-  rgba(89,208,47,.24);
+  --green:#89ef3f;
+  --green2:#b3ff67;
 
   --max:1180px;
 
@@ -56,22 +53,14 @@ content="Découvrez Actyrom Consulting, son approche terrain et ses cinq princip
 ========================================================= */
 
 *{
-
-  margin:0;
-
-  padding:0;
-
   box-sizing:border-box;
-
+  margin:0;
+  padding:0;
 }
-
 
 html{
-
   scroll-behavior:smooth;
-
 }
-
 
 body{
 
@@ -81,49 +70,97 @@ body{
   sans-serif;
 
   background:
-  var(--bg);
 
-  color:
-  var(--white);
+  radial-gradient(
+    circle at 85% 5%,
+    rgba(49,135,68,.10),
+    transparent 28%
+  ),
 
-  line-height:
-  1.65;
+  linear-gradient(
+    180deg,
+    #06110c,
+    #030a06 60%,
+    #020704
+  );
 
-  overflow-x:
-  hidden;
+  color:var(--text);
+
+  line-height:1.65;
+
+  overflow-x:hidden;
 
 }
-
 
 a{
-
-  color:
-  inherit;
-
-  text-decoration:
-  none;
-
+  color:inherit;
+  text-decoration:none;
 }
-
 
 button{
-
-  font:
-  inherit;
-
+  font:inherit;
 }
 
+img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
 
 .container{
 
-  width:
-  min(
+  width:min(
     var(--max),
     92%
   );
 
-  margin:
-  auto;
+  margin:auto;
+
+}
+
+.green{
+  color:var(--green);
+}
+
+.kicker{
+
+  color:var(--green2);
+
+  text-transform:uppercase;
+
+  font-size:.72rem;
+
+  font-weight:700;
+
+  letter-spacing:4px;
+
+}
+
+.section-title{
+
+  margin-top:12px;
+
+  font-size:
+  clamp(
+    2.1rem,
+    4vw,
+    3.8rem
+  );
+
+  line-height:1.03;
+
+  letter-spacing:-2px;
+
+}
+
+.section-intro{
+
+  max-width:780px;
+
+  margin-top:17px;
+
+  color:var(--muted);
 
 }
 
@@ -134,43 +171,35 @@ button{
 
 header{
 
-  position:
-  sticky;
+  position:sticky;
 
-  top:
-  0;
+  top:0;
 
-  z-index:
-  1000;
+  z-index:1000;
 
   background:
-  rgba(5,5,5,.96);
+  rgba(3,11,7,.84);
 
   backdrop-filter:
-  blur(15px);
+  blur(18px);
 
   border-bottom:
-  1px solid #171717;
+  1px solid
+  rgba(255,255,255,.08);
 
 }
 
-
 .nav{
 
-  min-height:
-  78px;
+  min-height:78px;
 
-  display:
-  flex;
+  display:flex;
 
-  align-items:
-  center;
+  align-items:center;
 
-  justify-content:
-  space-between;
+  justify-content:space-between;
 
-  gap:
-  24px;
+  gap:25px;
 
 }
 
@@ -181,45 +210,33 @@ header{
 
 .brand{
 
-  display:
-  flex;
+  display:flex;
 
-  align-items:
-  baseline;
+  align-items:baseline;
 
-  gap:
-  4px;
+  gap:5px;
 
-  white-space:
-  nowrap;
+  white-space:nowrap;
 
 }
-
 
 .brand-main{
 
-  font-size:
-  1.52rem;
+  font-size:1.52rem;
 
-  font-weight:
-  900;
+  font-weight:900;
 
-  letter-spacing:
-  -1px;
+  letter-spacing:-1px;
 
 }
 
+.brand-sub{
 
-.brand-consulting{
+  color:var(--green);
 
-  color:
-  var(--green);
+  font-size:1.03rem;
 
-  font-size:
-  1.06rem;
-
-  font-weight:
-  800;
+  font-weight:800;
 
 }
 
@@ -230,54 +247,32 @@ header{
 
 .nav-links{
 
-  display:
-  flex;
+  list-style:none;
 
-  align-items:
-  center;
+  display:flex;
 
-  gap:
-  19px;
+  align-items:center;
 
-  list-style:
-  none;
+  gap:20px;
 
-  color:
-  #d0d0d0;
+  color:#dce4dd;
 
-  font-size:
-  .86rem;
+  font-size:.86rem;
 
 }
-
 
 .nav-links a{
 
-  transition:
-  .2s ease;
+  transition:.22s ease;
 
 }
 
-
-.nav-links a:hover{
-
-  color:
-  var(--green2);
-
-}
-
-
+.nav-links a:hover,
 .nav-links a.active{
 
-  color:
-  var(--green2);
+  color:var(--green2);
 
 }
-
-
-/* =========================================================
-   CONNEXION
-========================================================= */
 
 .connection{
 
@@ -286,86 +281,53 @@ header{
 
   border:
   1px solid
-  rgba(89,208,47,.45);
+  rgba(137,239,63,.44);
 
-  border-radius:
-  10px;
+  border-radius:999px;
 
   background:
+  rgba(72,150,53,.08);
 
-  linear-gradient(
-    180deg,
-    rgba(89,208,47,.10),
-    rgba(89,208,47,.02)
-  );
-
-  color:
-  #e4ffd9 !important;
+  color:#eaffdc !important;
 
   font-family:
   "Courier New",
   Consolas,
   monospace;
 
-  font-size:
-  .78rem;
+  font-weight:700;
 
-  font-weight:
-  700;
-
-  letter-spacing:
-  1px;
+  letter-spacing:1px;
 
   box-shadow:
-
-  0 0 12px
-  rgba(89,208,47,.14);
-
-}
-
-
-.connection:hover{
-
-  border-color:
-  var(--green2);
-
-  box-shadow:
-
-  0 0 15px
-  rgba(89,208,47,.28),
-
-  0 0 30px
-  rgba(89,208,47,.10);
+  0 0 22px
+  rgba(82,228,73,.10);
 
 }
 
 
 /* =========================================================
-   MENU MOBILE
+   MOBILE MENU
 ========================================================= */
 
-.menu-button{
+.menu-btn{
 
-  display:
-  none;
-
-  background:
-  #080808;
-
-  color:
-  #fff;
-
-  border:
-  1px solid #333;
+  display:none;
 
   padding:
-  8px 11px;
+  9px 12px;
 
-  border-radius:
-  7px;
+  border:
+  1px solid
+  rgba(255,255,255,.16);
 
-  cursor:
-  pointer;
+  border-radius:10px;
+
+  background:#07130d;
+
+  color:white;
+
+  cursor:pointer;
 
 }
 
@@ -376,186 +338,270 @@ header{
 
 .hero{
 
-  position:
-  relative;
+  position:relative;
 
-  overflow:
-  hidden;
+  min-height:660px;
 
-  padding:
+  display:flex;
 
-  100px 0
-  90px;
+  align-items:center;
+
+  overflow:hidden;
 
   border-bottom:
-  1px solid #181818;
-
-  background:
-
-  radial-gradient(
-    circle at 93% 0%,
-    rgba(89,208,47,.08),
-    transparent 25%
-  ),
-
-  #050505;
+  1px solid
+  rgba(255,255,255,.08);
 
 }
 
+.hero-media{
 
-/* TRAIT */
+  position:absolute;
 
-.hero::before{
+  inset:0;
+
+}
+
+.hero-media img{
+
+  filter:
+  saturate(.65)
+  contrast(1.06)
+  brightness(.52);
+
+}
+
+.hero-media::after{
 
   content:"";
 
-  position:
-  absolute;
+  position:absolute;
 
-  left:
-  0;
-
-  top:
-  70px;
-
-  width:
-  260px;
-
-  height:
-  1px;
+  inset:0;
 
   background:
 
   linear-gradient(
     90deg,
-    var(--green) 0 22%,
-    #555 22% 100%
+    rgba(2,9,5,.98),
+    rgba(3,12,7,.92) 42%,
+    rgba(4,16,9,.62) 72%,
+    rgba(3,10,6,.70)
+  ),
+
+  linear-gradient(
+    180deg,
+    transparent,
+    rgba(2,8,5,.78)
   );
 
 }
 
+.hero-halo{
 
-/* CERCLES */
+  position:absolute;
 
-.hero::after{
+  width:600px;
 
-  content:"";
+  height:600px;
 
-  position:
-  absolute;
+  top:-220px;
 
-  width:
-  430px;
+  right:-150px;
 
-  height:
-  430px;
+  border-radius:50%;
 
-  right:
-  -175px;
+  background:
+  radial-gradient(
+    circle,
+    rgba(137,239,63,.14),
+    rgba(55,159,62,.05) 40%,
+    transparent 70%
+  );
 
-  top:
-  -180px;
-
-  border-radius:
-  50%;
-
-  border:
-  1px solid
-  rgba(89,208,47,.15);
-
-  box-shadow:
-
-  0 0 0 60px
-  rgba(89,208,47,.03),
-
-  0 0 0 120px
-  rgba(255,255,255,.015);
+  animation:
+  haloMove
+  10s
+  ease-in-out
+  infinite
+  alternate;
 
 }
 
+@keyframes haloMove{
+
+  from{
+
+    transform:
+    translate(-20px,10px)
+    scale(.96);
+
+  }
+
+  to{
+
+    transform:
+    translate(20px,-12px)
+    scale(1.05);
+
+  }
+
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
 
 .hero-content{
 
-  position:
-  relative;
+  position:relative;
 
-  z-index:
-  2;
+  z-index:2;
 
-  max-width:
-  950px;
+  max-width:850px;
+
+  padding:
+  110px 0
+  90px;
 
 }
 
-
 .hero-label{
 
-  color:
-  var(--green);
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:12px;
+
+  color:#dfe7df;
+
+  text-transform:uppercase;
+
+  letter-spacing:4px;
+
+  font-size:.72rem;
+
+}
+
+.hero-label::before{
+
+  content:"";
+
+  width:40px;
+
+  height:2px;
+
+  background:var(--green);
+
+  box-shadow:
+  0 0 14px
+  rgba(137,239,63,.55);
+
+}
+
+.hero h1{
+
+  margin-top:23px;
+
+  font-size:
+  clamp(
+    4rem,
+    8vw,
+    7rem
+  );
+
+  line-height:.89;
+
+  letter-spacing:-5px;
+
+}
+
+.hero h1 span{
+
+  display:block;
+
+  color:var(--green);
+
+}
+
+.hero-text{
+
+  max-width:700px;
+
+  margin-top:27px;
+
+  color:#d3ddd5;
+
+  font-size:1.08rem;
+
+}
+
+.status{
+
+  margin-top:27px;
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  color:var(--green2);
 
   font-family:
   "Courier New",
   Consolas,
   monospace;
 
-  text-transform:
-  uppercase;
+  font-size:.76rem;
 
-  letter-spacing:
-  3px;
-
-  font-size:
-  .74rem;
-
-  margin-bottom:
-  18px;
+  font-weight:700;
 
 }
 
+.status-dot{
 
-.hero h1{
+  width:13px;
 
-  font-size:
+  height:13px;
 
-  clamp(
-    3.8rem,
-    7vw,
-    6.6rem
-  );
+  border-radius:50%;
 
-  line-height:
-  .93;
+  background:#77f34f;
 
-  letter-spacing:
-  -4px;
+  box-shadow:
 
-  font-weight:
-  900;
+  0 0 6px
+  #77f34f,
 
-}
+  0 0 20px
+  rgba(119,243,79,.6);
 
-
-.hero h1 span{
-
-  color:
-  var(--green);
+  animation:
+  pulse
+  2s
+  ease-in-out
+  infinite;
 
 }
 
+@keyframes pulse{
 
-.hero-text{
+  50%{
 
-  max-width:
-  790px;
+    transform:scale(1.1);
 
-  margin-top:
-  29px;
+    box-shadow:
 
-  color:
-  #aaa;
+    0 0 10px
+    #a7ff80,
 
-  font-size:
-  1.05rem;
+    0 0 32px
+    rgba(119,243,79,.7);
+
+  }
 
 }
 
@@ -564,704 +610,546 @@ header{
    SECTIONS
 ========================================================= */
 
-section.content{
+.section{
 
   padding:
-  90px 0;
+  88px 0;
 
 }
 
-
-.alt{
+.section-dark{
 
   background:
-  #080808;
+  rgba(2,8,5,.52);
 
   border-top:
-  1px solid #181818;
+  1px solid
+  rgba(255,255,255,.07);
 
   border-bottom:
-  1px solid #181818;
-
-}
-
-
-.section-label{
-
-  color:
-  var(--green);
-
-  text-transform:
-  uppercase;
-
-  letter-spacing:
-  4px;
-
-  font-size:
-  .70rem;
-
-  margin-bottom:
-  14px;
-
-}
-
-
-.section-title{
-
-  font-size:
-
-  clamp(
-    2.1rem,
-    4vw,
-    3.6rem
-  );
-
-  line-height:
-  1.06;
-
-  letter-spacing:
-  -2px;
-
-}
-
-
-.section-intro{
-
-  max-width:
-  820px;
-
-  margin-top:
-  18px;
-
-  color:
-  #999;
+  1px solid
+  rgba(255,255,255,.07);
 
 }
 
 
 /* =========================================================
-   IDENTITE
+   INTRO EXPERTISE
 ========================================================= */
 
-.identity-grid{
+.intro-grid{
 
-  display:
-  grid;
+  display:grid;
 
   grid-template-columns:
-  .9fr 1.15fr;
+  .85fr
+  1.15fr;
 
-  gap:
-  80px;
+  gap:70px;
 
-  align-items:
-  start;
-
-}
-
-
-.identity-copy p{
-
-  color:
-  #a5a5a5;
-
-  margin-bottom:
-  18px;
+  align-items:start;
 
 }
 
+.intro-copy p{
 
-.identity-copy .lead{
+  margin-bottom:18px;
 
-  color:
-  #eeeeee;
+  color:var(--muted);
 
-  font-size:
-  1.12rem;
+}
+
+.intro-copy .lead{
+
+  color:#edf2ee;
+
+  font-size:1.12rem;
 
 }
 
 
 /* =========================================================
-   5 PRINCIPES ACTYROM
+   EXPERIENCE CARDS
 ========================================================= */
 
-.principles-intro{
+.expertise-grid{
 
-  max-width:
-  850px;
+  margin-top:40px;
 
-}
-
-
-.principles-code{
-
-  display:
-  inline-block;
-
-  margin-top:
-  28px;
-
-  padding:
-  10px 14px;
-
-  border:
-  1px solid
-  rgba(89,208,47,.22);
-
-  border-radius:
-  7px;
-
-  background:
-  rgba(89,208,47,.035);
-
-  color:
-  var(--green2);
-
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
-
-  font-size:
-  .78rem;
-
-  letter-spacing:
-  1px;
-
-}
-
-
-.principles-grid{
-
-  display:
-  grid;
+  display:grid;
 
   grid-template-columns:
   repeat(
-    5,
+    3,
     minmax(0,1fr)
   );
 
-  gap:
-  13px;
-
-  margin-top:
-  42px;
+  gap:15px;
 
 }
 
+.expertise-card{
 
-.principle-card{
-
-  position:
-  relative;
-
-  min-height:
-  300px;
-
-  padding:
-  25px 21px;
+  padding:28px;
 
   border:
   1px solid
-  #292929;
+  rgba(255,255,255,.11);
 
-  border-radius:
-  13px;
-
-  background:
-
-  linear-gradient(
-    180deg,
-    rgba(255,255,255,.015),
-    transparent
-  ),
-
-  #090909;
-
-  overflow:
-  hidden;
-
-  transition:
-  .25s ease;
-
-}
-
-
-.principle-card::after{
-
-  content:"";
-
-  position:
-  absolute;
-
-  width:
-  120px;
-
-  height:
-  120px;
-
-  right:
-  -70px;
-
-  bottom:
-  -70px;
-
-  border-radius:
-  50%;
-
-  background:
-  rgba(89,208,47,.04);
-
-}
-
-
-.principle-card:hover{
-
-  transform:
-  translateY(-4px);
-
-  border-color:
-  rgba(89,208,47,.35);
-
-  box-shadow:
-
-  0 18px 35px
-  rgba(0,0,0,.25);
-
-}
-
-
-.principle-icon{
-
-  width:
-  58px;
-
-  height:
-  58px;
-
-  display:
-  flex;
-
-  align-items:
-  center;
-
-  justify-content:
-  center;
-
-  margin-bottom:
-  22px;
-
-  border-radius:
-  14px;
-
-  background:
-  rgba(89,208,47,.07);
-
-  border:
-  1px solid
-  rgba(89,208,47,.23);
-
-}
-
-
-.principle-icon svg{
-
-  width:
-  30px;
-
-  height:
-  30px;
-
-  stroke:
-  var(--green2);
-
-  fill:
-  none;
-
-  stroke-width:
-  1.8;
-
-  stroke-linecap:
-  round;
-
-  stroke-linejoin:
-  round;
-
-}
-
-
-.principle-number{
-
-  display:
-  block;
-
-  margin-bottom:
-  10px;
-
-  color:
-  var(--green2);
-
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
-
-  font-size:
-  .79rem;
-
-  font-weight:
-  700;
-
-  letter-spacing:
-  1px;
-
-}
-
-
-.principle-card h3{
-
-  margin-bottom:
-  11px;
-
-  font-size:
-  1.12rem;
-
-}
-
-
-.principle-card p{
-
-  color:
-  #909098;
-
-  font-size:
-  .90rem;
-
-}
-
-
-.principles-conclusion{
-
-  margin-top:
-  32px;
-
-  padding:
-  24px 26px;
-
-  border-left:
-  3px solid
-  var(--green);
-
-  background:
-  #0a0a0a;
-
-  color:
-  #aaa;
-
-}
-
-
-.principles-conclusion strong{
-
-  color:
-  #fff;
-
-}
-
-
-/* =========================================================
-   PHILOSOPHIE
-========================================================= */
-
-.philosophy-box{
-
-  padding:
-  38px;
-
-  border:
-  1px solid
-  rgba(89,208,47,.20);
-
-  border-radius:
-  14px;
+  border-radius:20px;
 
   background:
 
   radial-gradient(
     circle at 100% 0%,
-    rgba(89,208,47,.08),
+    rgba(70,170,66,.07),
+    transparent 32%
+  ),
+
+  #07130d;
+
+  transition:.25s ease;
+
+}
+
+.expertise-card:hover{
+
+  transform:
+  translateY(-4px);
+
+  border-color:
+  rgba(137,239,63,.34);
+
+}
+
+.card-number{
+
+  color:var(--green2);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  font-size:.74rem;
+
+  letter-spacing:2px;
+
+}
+
+.expertise-card h3{
+
+  margin-top:15px;
+
+  font-size:1.25rem;
+
+}
+
+.expertise-card p{
+
+  margin-top:9px;
+
+  color:var(--muted);
+
+  font-size:.91rem;
+
+}
+
+
+/* =========================================================
+   EXPERIENCE LARGE
+========================================================= */
+
+.experience{
+
+  margin-top:44px;
+
+  display:grid;
+
+  grid-template-columns:
+  1fr
+  1fr;
+
+  gap:18px;
+
+}
+
+.experience-box{
+
+  padding:31px;
+
+  border-radius:21px;
+
+  border:
+  1px solid
+  var(--green-line);
+
+  background:
+
+  radial-gradient(
+    circle at 90% 0%,
+    rgba(82,190,73,.10),
     transparent 35%
   ),
 
-  #090909;
+  #07150e;
+
+}
+
+.experience-box h3{
+
+  font-size:1.45rem;
+
+}
+
+.experience-box p{
+
+  margin-top:12px;
+
+  color:var(--muted);
+
+}
+
+.skills{
+
+  margin-top:20px;
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:8px;
+
+}
+
+.skill{
+
+  padding:
+  8px 11px;
+
+  border:
+  1px solid
+  rgba(137,239,63,.18);
+
+  border-radius:9px;
+
+  background:
+  rgba(52,130,47,.05);
+
+  color:#d8e4da;
+
+  font-size:.78rem;
 
 }
 
 
-.philosophy-code{
+/* =========================================================
+   METHOD
+========================================================= */
 
-  color:
-  var(--green2);
+.method-grid{
+
+  margin-top:40px;
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(
+    5,
+    1fr
+  );
+
+  border:
+  1px solid
+  var(--green-line);
+
+  border-radius:22px;
+
+  overflow:hidden;
+
+  background:#07150e;
+
+}
+
+.method-card{
+
+  padding:
+  24px 18px;
+
+  border-right:
+  1px solid
+  rgba(255,255,255,.08);
+
+  min-height:175px;
+
+}
+
+.method-card:last-child{
+
+  border-right:0;
+
+}
+
+.method-icon{
+
+  width:42px;
+
+  height:42px;
+
+  display:grid;
+
+  place-items:center;
+
+  border-radius:50%;
+
+  color:var(--green2);
+
+  border:
+  1px solid
+  rgba(137,239,63,.35);
+
+}
+
+.method-icon svg{
+
+  width:21px;
+
+  height:21px;
+
+  stroke:currentColor;
+
+  fill:none;
+
+  stroke-width:1.8;
+
+  stroke-linecap:round;
+
+  stroke-linejoin:round;
+
+}
+
+.method-card h3{
+
+  margin-top:14px;
+
+}
+
+.method-card p{
+
+  margin-top:6px;
+
+  color:var(--soft);
+
+  font-size:.8rem;
+
+}
+
+
+/* =========================================================
+   NETWORK
+========================================================= */
+
+.network-layout{
+
+  display:grid;
+
+  grid-template-columns:
+  1fr
+  1fr;
+
+  gap:22px;
+
+  align-items:stretch;
+
+}
+
+.network-copy{
+
+  padding:38px;
+
+  border:
+  1px solid
+  var(--green-line);
+
+  border-radius:24px;
+
+  background:
+
+  radial-gradient(
+    circle at 85% 0%,
+    rgba(70,180,66,.10),
+    transparent 35%
+  ),
+
+  #07150e;
+
+}
+
+.network-copy p{
+
+  margin-top:16px;
+
+  color:var(--muted);
+
+}
+
+.network-list{
+
+  margin-top:26px;
+
+  display:grid;
+
+  grid-template-columns:
+  1fr 1fr;
+
+  gap:10px;
+
+}
+
+.network-item{
+
+  padding:
+  14px;
+
+  border-radius:11px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.09);
+
+  background:
+  rgba(3,10,6,.42);
+
+  color:#d7e3d9;
+
+  font-size:.82rem;
+
+}
+
+.network-photo{
+
+  position:relative;
+
+  min-height:480px;
+
+  overflow:hidden;
+
+  border-radius:24px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.12);
+
+}
+
+.network-photo img{
+
+  filter:
+  saturate(.68)
+  brightness(.75);
+
+}
+
+.network-photo::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+  linear-gradient(
+    180deg,
+    transparent 35%,
+    rgba(2,9,5,.88)
+  );
+
+}
+
+.photo-caption{
+
+  position:absolute;
+
+  z-index:2;
+
+  left:25px;
+
+  right:25px;
+
+  bottom:25px;
+
+}
+
+.photo-caption span{
+
+  color:var(--green2);
 
   font-family:
   "Courier New",
   Consolas,
   monospace;
 
-  font-size:
-  .80rem;
-
-  letter-spacing:
-  1px;
+  font-size:.75rem;
 
 }
 
+.photo-caption strong{
 
-.philosophy-box h3{
+  display:block;
 
-  margin:
+  margin-top:5px;
 
-  17px 0
-  13px;
-
-  font-size:
-  1.8rem;
-
-}
-
-
-.philosophy-box p{
-
-  max-width:
-  880px;
-
-  color:
-  #999;
+  font-size:1.2rem;
 
 }
 
 
 /* =========================================================
-   UNIVERS
+   DIFFERENCE
 ========================================================= */
 
-.domain-grid{
+.difference-grid{
 
-  display:
-  grid;
+  margin-top:38px;
+
+  display:grid;
 
   grid-template-columns:
   repeat(
     3,
-    minmax(0,1fr)
+    1fr
   );
 
-  gap:
-  15px;
-
-  margin-top:
-  40px;
+  gap:15px;
 
 }
 
+.difference-card{
 
-.domain-card{
-
-  padding:
-  28px;
+  padding:28px;
 
   border:
   1px solid
-  #292929;
+  rgba(255,255,255,.10);
 
-  border-radius:
-  13px;
+  border-radius:18px;
 
-  background:
-  #0a0a0a;
-
-  transition:
-  .25s ease;
+  background:#07130d;
 
 }
 
+.difference-card h3{
 
-.domain-card:hover{
-
-  transform:
-  translateY(-3px);
-
-  border-color:
-  rgba(89,208,47,.32);
+  font-size:1.12rem;
 
 }
 
+.difference-card p{
 
-.domain-icon{
+  margin-top:9px;
 
-  width:
-  60px;
-
-  height:
-  60px;
-
-  display:
-  flex;
-
-  align-items:
-  center;
-
-  justify-content:
-  center;
-
-  margin-bottom:
-  20px;
-
-  border-radius:
-  15px;
-
-  background:
-  rgba(89,208,47,.07);
-
-  border:
-  1px solid
-  rgba(89,208,47,.22);
-
-}
-
-
-.domain-icon svg{
-
-  width:
-  31px;
-
-  height:
-  31px;
-
-  stroke:
-  var(--green2);
-
-  fill:
-  none;
-
-  stroke-width:
-  1.8;
-
-  stroke-linecap:
-  round;
-
-  stroke-linejoin:
-  round;
-
-}
-
-
-.domain-card h3{
-
-  font-size:
-  1.15rem;
-
-  margin-bottom:
-  9px;
-
-}
-
-
-.domain-card p{
-
-  color:
-  #8e8e95;
-
-  font-size:
-  .91rem;
-
-}
-
-
-/* =========================================================
-   ORGANISATION
-========================================================= */
-
-.structure-grid{
-
-  display:
-  grid;
-
-  grid-template-columns:
-  repeat(
-    3,
-    minmax(0,1fr)
-  );
-
-  gap:
-  15px;
-
-  margin-top:
-  40px;
-
-}
-
-
-.structure-card{
-
-  padding:
-  28px;
-
-  border:
-  1px solid
-  #292929;
-
-  border-radius:
-  12px;
-
-  background:
-  #0a0a0a;
-
-}
-
-
-.structure-number{
-
-  display:
-  block;
-
-  margin-bottom:
-  20px;
-
-  color:
-  var(--green2);
-
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
-
-  font-size:
-  .80rem;
-
-  letter-spacing:
-  1px;
-
-}
-
-
-.structure-card h3{
-
-  margin-bottom:
-  10px;
-
-  font-size:
-  1.12rem;
-
-}
-
-
-.structure-card p{
-
-  color:
-  #8e8e95;
+  color:var(--muted);
 
 }
 
@@ -1270,140 +1158,162 @@ section.content{
    VISION
 ========================================================= */
 
-.vision-box{
+.vision{
 
-  padding:
-  45px;
+  padding:48px;
 
   border:
   1px solid
-  #292929;
+  var(--green-line);
 
-  border-radius:
-  14px;
+  border-radius:26px;
 
   background:
 
   radial-gradient(
-    circle at 92% 0%,
-    rgba(89,208,47,.10),
+    circle at 90% 15%,
+    rgba(117,255,69,.13),
     transparent 30%
   ),
 
-  #0a0a0a;
+  linear-gradient(
+    135deg,
+    #0a2115,
+    #06120c
+  );
 
 }
 
+.vision h2{
 
-.vision-box p{
+  max-width:840px;
 
-  max-width:
-  880px;
+  font-size:
+  clamp(
+    2.5rem,
+    5vw,
+    4.5rem
+  );
 
-  margin-top:
-  18px;
+  line-height:1;
 
-  color:
-  #999;
+  letter-spacing:-3px;
+
+}
+
+.vision p{
+
+  max-width:760px;
+
+  margin-top:18px;
+
+  color:#b7c5bb;
 
 }
 
 
 /* =========================================================
-   BOUTONS
+   BUTTONS
 ========================================================= */
 
 .actions{
 
-  display:
-  flex;
+  margin-top:28px;
 
-  flex-wrap:
-  wrap;
+  display:flex;
 
-  gap:
-  12px;
+  flex-wrap:wrap;
 
-  margin-top:
-  31px;
+  gap:11px;
 
 }
 
-
 .btn{
 
-  min-height:
-  50px;
+  min-height:50px;
 
-  display:
-  inline-flex;
+  display:inline-flex;
 
-  align-items:
-  center;
+  align-items:center;
 
-  justify-content:
-  center;
+  justify-content:center;
 
   padding:
   0 22px;
 
-  border-radius:
-  7px;
+  border-radius:12px;
 
-  font-weight:
-  700;
+  font-weight:800;
 
-  transition:
-  .2s ease;
+  transition:.25s ease;
 
 }
-
 
 .btn-primary{
 
   background:
-  var(--green);
+  linear-gradient(
+    180deg,
+    var(--green2),
+    var(--green)
+  );
 
-  color:
-  #050505;
-
-  border:
-  1px solid
-  var(--green);
+  color:#092008;
 
 }
 
-
 .btn-primary:hover{
-
-  background:
-  var(--green2);
 
   transform:
   translateY(-2px);
 
 }
 
-
 .btn-secondary{
 
   border:
   1px solid
-  #383838;
+  rgba(255,255,255,.18);
 
   background:
-  #060606;
+  rgba(3,10,6,.45);
+
+}
+
+.btn-secondary:hover{
+
+  border-color:var(--green);
+
+  color:var(--green2);
 
 }
 
 
-.btn-secondary:hover{
+/* =========================================================
+   REVEAL
+========================================================= */
 
-  color:
-  var(--green2);
+.reveal{
 
-  border-color:
-  var(--green);
+  opacity:0;
+
+  transform:
+  translateY(25px);
+
+  transition:
+
+  opacity .75s ease,
+
+  transform .75s ease;
+
+}
+
+.reveal.visible{
+
+  opacity:1;
+
+  transform:
+  translateY(0);
 
 }
 
@@ -1415,44 +1325,43 @@ section.content{
 footer{
 
   padding:
-  31px 0;
-
-  background:
-  #030303;
+  32px 0;
 
   border-top:
-  1px solid #171717;
+  1px solid
+  rgba(255,255,255,.08);
 
-  color:
-  #747474;
+  color:#718077;
 
-  font-size:
-  .80rem;
+  font-size:.79rem;
 
 }
-
 
 .footer{
 
-  display:
-  flex;
+  display:flex;
 
-  justify-content:
-  space-between;
+  align-items:center;
 
-  flex-wrap:
-  wrap;
+  justify-content:space-between;
 
-  gap:
-  20px;
+  gap:20px;
+
+  flex-wrap:wrap;
 
 }
 
+.footer-links{
+
+  display:flex;
+
+  gap:14px;
+
+}
 
 .footer a:hover{
 
-  color:
-  var(--green);
+  color:var(--green2);
 
 }
 
@@ -1461,298 +1370,279 @@ footer{
    RESPONSIVE
 ========================================================= */
 
-@media(max-width:1100px){
+@media(max-width:1050px){
 
   .nav-links{
 
-    gap:
-    14px;
+    gap:13px;
 
-    font-size:
-    .82rem;
+    font-size:.81rem;
 
   }
 
-
-  .principles-grid{
-
-    grid-template-columns:
-    repeat(3,1fr);
-
-  }
-
-}
-
-
-@media(max-width:950px){
-
-  .identity-grid{
-
-    grid-template-columns:
-    1fr;
-
-    gap:
-    35px;
-
-  }
-
-
-  .domain-grid,
-  .structure-grid{
+  .expertise-grid{
 
     grid-template-columns:
     repeat(2,1fr);
 
   }
 
+  .method-grid{
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+  }
+
+  .method-card{
+
+    border-bottom:
+    1px solid
+    rgba(255,255,255,.08);
+
+  }
+
 }
 
 
-/* =========================================================
-   MOBILE MENU
-========================================================= */
+@media(max-width:860px){
 
-@media(max-width:850px){
+  .menu-btn{
+    display:block;
+  }
 
   .nav{
-
-    min-height:
-    68px;
-
+    min-height:68px;
   }
-
-
-  .menu-button{
-
-    display:
-    block;
-
-  }
-
 
   .nav-links{
 
-    display:
-    none;
+    display:none;
 
-    position:
-    absolute;
+    position:absolute;
 
-    top:
-    68px;
+    top:68px;
 
-    left:
-    0;
+    left:0;
 
-    right:
-    0;
+    right:0;
 
     padding:
-    15px 4%;
+    14px 4%
+    18px;
 
     background:
-    #070707;
+    rgba(3,11,7,.98);
 
     border-bottom:
-    1px solid #222;
+    1px solid
+    rgba(255,255,255,.1);
 
-    flex-direction:
-    column;
+    flex-direction:column;
 
-    align-items:
-    stretch;
+    align-items:stretch;
 
-    gap:
-    4px;
+    gap:3px;
 
   }
-
 
   .nav-links.open{
-
-    display:
-    flex;
-
+    display:flex;
   }
-
 
   .nav-links a{
 
-    display:
-    block;
-
-    width:
-    100%;
+    display:block;
 
     padding:
-    10px 0;
+    9px 0;
 
   }
 
-
   .connection{
 
-    text-align:
-    center;
+    text-align:center;
+
+  }
+
+  .intro-grid,
+  .experience,
+  .network-layout{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .difference-grid{
+
+    grid-template-columns:1fr 1fr;
 
   }
 
 }
 
-
-/* =========================================================
-   MOBILE
-========================================================= */
 
 @media(max-width:620px){
 
   .container{
-
-    width:
-    94%;
-
+    width:94%;
   }
-
 
   .brand-main{
-
-    font-size:
-    1.2rem;
-
+    font-size:1.18rem;
   }
 
-
-  .brand-consulting{
-
-    font-size:
-    .92rem;
-
+  .brand-sub{
+    font-size:.88rem;
   }
-
 
   .hero{
-
-    padding:
-
-    65px 0
-    60px;
-
+    min-height:auto;
   }
 
+  .hero-content{
+
+    padding:
+    78px 0
+    64px;
+
+  }
 
   .hero h1{
 
-    font-size:
-    3rem;
+    font-size:3.55rem;
 
-    letter-spacing:
-    -2px;
+    letter-spacing:-3px;
 
   }
-
-
-  .hero h1 span{
-
-    display:
-    block;
-
-    font-size:
-    .72em;
-
-    margin-top:
-    5px;
-
-  }
-
 
   .hero-text{
 
-    font-size:
-    .95rem;
+    font-size:.95rem;
 
   }
 
-
-  section.content{
+  .section{
 
     padding:
-    66px 0;
+    64px 0;
 
   }
-
 
   .section-title{
 
-    font-size:
-    2rem;
+    font-size:2.15rem;
 
-    letter-spacing:
-    -1px;
+    letter-spacing:-1px;
 
   }
 
+  .expertise-grid,
+  .difference-grid,
+  .network-list,
+  .method-grid{
 
-  .principles-grid,
-  .domain-grid,
-  .structure-grid{
-
-    grid-template-columns:
-    1fr;
-
-  }
-
-
-  .principle-card{
-
-    min-height:
-    auto;
+    grid-template-columns:1fr;
 
   }
 
+  .method-card{
 
-  .philosophy-box,
-  .vision-box{
+    border-right:0;
+
+    border-bottom:
+    1px solid
+    rgba(255,255,255,.08);
+
+  }
+
+  .method-card:last-child{
+
+    border-bottom:0;
+
+  }
+
+  .network-copy{
+
+    padding:26px;
+
+  }
+
+  .network-photo{
+
+    min-height:360px;
+
+  }
+
+  .vision{
 
     padding:
-    28px 22px;
+    34px 25px;
 
   }
 
+  .vision h2{
+
+    font-size:2.6rem;
+
+    letter-spacing:-2px;
+
+  }
 
   .actions{
 
-    display:
-    grid;
+    display:grid;
 
-    grid-template-columns:
-    1fr;
+    grid-template-columns:1fr;
 
   }
 
+  .btn{
 
-  .actions .btn{
-
-    width:
-    100%;
+    width:100%;
 
   }
-
 
   .footer{
 
-    display:
-    block;
+    display:block;
 
-    text-align:
-    center;
+    text-align:center;
 
   }
 
+  .footer-links{
 
-  .footer div + div{
+    justify-content:center;
 
-    margin-top:
-    7px;
+    margin-top:10px;
+
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+  *,
+  *::before,
+  *::after{
+
+    animation:none!important;
+
+    transition:none!important;
+
+  }
+
+  .reveal{
+
+    opacity:1!important;
+
+    transform:none!important;
 
   }
 
@@ -1764,6 +1654,7 @@ footer{
 
 
 <body>
+
 
 
 <!-- =========================================================
@@ -1785,17 +1676,16 @@ class="brand">
 Actyrom
 </span>
 
-<span class="brand-consulting">
+<span class="brand-sub">
 Consulting
 </span>
 
 </a>
 
 
-
 <button
-class="menu-button"
-id="menuButton"
+id="menuBtn"
+class="menu-btn"
 type="button"
 aria-label="Ouvrir le menu"
 aria-expanded="false">
@@ -1805,23 +1695,19 @@ aria-expanded="false">
 </button>
 
 
-
 <ul
-class="nav-links"
-id="navLinks">
+id="navLinks"
+class="nav-links">
 
 
 <li>
-
 <a href="index.html">
 Accueil
 </a>
-
 </li>
 
 
 <li>
-
 <a
 href="qui-sommes-nous.html"
 class="active">
@@ -1829,52 +1715,41 @@ class="active">
 Qui sommes-nous ?
 
 </a>
-
 </li>
 
 
 <li>
-
 <a href="industrie.html">
 Industrie
 </a>
-
 </li>
 
 
 <li>
-
 <a href="habitat.html">
 Habitat
 </a>
-
 </li>
 
 
 <li>
-
 <a href="industrie40.html">
 Industrie 4.0
 </a>
-
 </li>
 
 
 <li>
-
 <a href="accompagnement.html">
 Accompagnement
 </a>
-
 </li>
 
 
 <li>
-
 <a href="contact.html">
 Contact
 </a>
-
 </li>
 
 
@@ -1905,11 +1780,25 @@ CONNEXION
 <main>
 
 
+
 <!-- =========================================================
      HERO
 ========================================================= -->
 
 <section class="hero">
+
+
+<div class="hero-media">
+
+<img
+src="https://images.unsplash.com/photo-1748347568194-c8cd8edd27da?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=2400"
+alt="Expertise technique de terrain">
+
+</div>
+
+
+<div class="hero-halo">
+</div>
 
 
 <div class="container">
@@ -1920,27 +1809,43 @@ CONNEXION
 
 <div class="hero-label">
 
-ACTYROM // IDENTITY
+ACTYROM // EXPERTISE
 
 </div>
 
 
 <h1>
 
-Qui sommes-<span>nous ?</span>
+L’expertise
+
+<span>
+derrière Actyrom.
+</span>
 
 </h1>
 
 
 <p class="hero-text">
 
-Actyrom Consulting est une structure indépendante
-dédiée à l’analyse,
-à la résolution de problèmes techniques
-et au développement de solutions adaptées
-aux besoins réels du terrain.
+Actyrom Consulting repose avant tout
+sur une expérience concrète du terrain :
+comprendre les installations,
+analyser les problèmes,
+organiser les interventions
+et transformer un besoin
+en solution technique fiable.
 
 </p>
+
+
+<div class="status">
+
+<span class="status-dot">
+</span>
+
+SYSTEM ONLINE
+
+</div>
 
 
 </div>
@@ -1957,16 +1862,16 @@ aux besoins réels du terrain.
      IDENTITE
 ========================================================= -->
 
-<section class="content">
+<section class="section">
 
 
-<div class="container identity-grid">
+<div class="container intro-grid reveal">
 
 
 <div>
 
 
-<div class="section-label">
+<div class="kicker">
 
 NOTRE IDENTITÉ
 
@@ -1975,9 +1880,12 @@ NOTRE IDENTITÉ
 
 <h2 class="section-title">
 
-La technique
-au service
-de la solution.
+Une approche construite
+sur le
+
+<span class="green">
+terrain.
+</span>
 
 </h2>
 
@@ -1986,53 +1894,52 @@ de la solution.
 
 
 
-<div class="identity-copy">
+<div class="intro-copy">
 
 
 <p class="lead">
 
-Actyrom Consulting est né d’une volonté :
-proposer une approche technique
-pragmatique,
-ouverte
-et orientée vers la résolution réelle
-des problèmes.
+Actyrom n’est pas né
+d’une volonté de vendre
+une technologie particulière.
+
+Le projet part d’une idée différente :
+comprendre le problème
+avant de choisir la solution.
 
 </p>
 
 
 <p>
 
-L’objectif n’est pas simplement
-de remplacer un équipement,
-d’ajouter une technologie
-ou d’appliquer une solution standard.
-
-Il s’agit d’abord
-de comprendre le fonctionnement
-d’une installation,
-son environnement,
-ses contraintes
-et le besoin réel
-de son utilisateur.
+L’expérience acquise
+dans la maintenance,
+les automatismes,
+le diagnostic,
+les méthodes,
+l’organisation
+et la gestion de projets techniques
+permet d’aborder une installation
+avec une vision globale.
 
 </p>
 
 
 <p>
 
-Cette approche permet
-d’intervenir sur des domaines variés :
+Une panne peut venir
+d’un automate,
+d’un capteur,
+d’un réseau,
+d’un réglage,
+d’une organisation,
+d’une mauvaise information
+ou simplement d’une solution
+devenue inadaptée au besoin.
 
-automatisme,
-maintenance,
-électricité,
-réseaux,
-informatique,
-domotique,
-données,
-supervision
-et organisation technique.
+C’est cette vision transversale
+qui constitue le cœur
+de l’approche Actyrom.
 
 </p>
 
@@ -2048,70 +1955,411 @@ et organisation technique.
 
 
 <!-- =========================================================
-     PRINCIPES ACTYROM
+     EXPERTISE PRINCIPALE
 ========================================================= -->
 
-<section class="content alt">
+<section class="section section-dark">
 
 
 <div class="container">
 
 
-<div class="section-label">
+<div class="reveal">
 
-ACTYROM // PRINCIPES
+
+<div class="kicker">
+
+EXPERTISE TERRAIN
 
 </div>
 
 
 <h2 class="section-title">
 
-Action.
-Analyse.
-Résolution.
-Organisation.
-Méthode.
+Comprendre.
+Diagnostiquer.
+Améliorer.
 
 </h2>
 
 
-<p class="section-intro principles-intro">
+<p class="section-intro">
 
-Ces cinq principes définissent
-la manière dont Actyrom aborde
-un problème,
-un projet
-ou une intervention technique.
-
-Ils permettent de passer
-du besoin initial
-à une solution structurée,
-compréhensible
-et durable.
+L’objectif est de pouvoir intervenir
+aussi bien sur un problème immédiat
+que sur une réflexion plus large
+autour de la fiabilité,
+de l’organisation
+ou de l’évolution d’une installation.
 
 </p>
 
-
-<div class="principles-code">
-
-ACTYROM SYSTEM // 5 PRINCIPES OPÉRATIONNELS
 
 </div>
 
 
 
-<div class="principles-grid">
+<div class="expertise-grid">
+
+
+
+<article class="expertise-card reveal">
+
+<div class="card-number">
+01 // DIAGNOSTIC
+</div>
+
+<h3>
+Diagnostic & dépannage
+</h3>
+
+<p>
+
+Recherche de panne,
+analyse de symptômes,
+mesures,
+contrôle des équipements
+et identification des causes réelles.
+
+</p>
+
+</article>
+
+
+
+<article class="expertise-card reveal">
+
+<div class="card-number">
+02 // AUTOMATISME
+</div>
+
+<h3>
+Automatismes
+</h3>
+
+<p>
+
+Analyse de systèmes automatisés,
+capteurs,
+actionneurs,
+variateurs,
+vision industrielle
+et fonctionnement machine.
+
+</p>
+
+</article>
+
+
+
+<article class="expertise-card reveal">
+
+<div class="card-number">
+03 // MAINTENANCE
+</div>
+
+<h3>
+Maintenance & fiabilité
+</h3>
+
+<p>
+
+Préventif,
+correctif,
+analyse des défaillances,
+fiabilisation
+et amélioration progressive
+des équipements.
+
+</p>
+
+</article>
+
+
+
+<article class="expertise-card reveal">
+
+<div class="card-number">
+04 // MÉTHODES
+</div>
+
+<h3>
+Méthodes & organisation
+</h3>
+
+<p>
+
+Structuration des interventions,
+préparation,
+priorisation,
+traçabilité
+et amélioration des pratiques.
+
+</p>
+
+</article>
+
+
+
+<article class="expertise-card reveal">
+
+<div class="card-number">
+05 // PROJET
+</div>
+
+<h3>
+Études & projets
+</h3>
+
+<p>
+
+Analyse du besoin,
+définition de solutions,
+coordination technique
+et accompagnement
+jusqu’à la réalisation.
+
+</p>
+
+</article>
+
+
+
+<article class="expertise-card reveal">
+
+<div class="card-number">
+06 // HUMAIN
+</div>
+
+<h3>
+Accompagnement
+</h3>
+
+<p>
+
+Transmission d’expérience,
+analyse de panne,
+tutorat,
+appui technique
+et accompagnement
+des équipes.
+
+</p>
+
+</article>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
 
 
 <!-- =========================================================
-     ACTION
+     EXPERIENCE
 ========================================================= -->
 
-<article class="principle-card">
+<section class="section">
 
 
-<div class="principle-icon">
+<div class="container">
 
+
+<div class="reveal">
+
+
+<div class="kicker">
+
+PARCOURS PROFESSIONNEL
+
+</div>
+
+
+<h2 class="section-title">
+
+Une expérience
+à la croisée
+
+<span class="green">
+de la technique et de l’organisation.
+</span>
+
+</h2>
+
+
+</div>
+
+
+
+<div class="experience">
+
+
+
+<div class="experience-box reveal">
+
+
+<h3>
+
+Maintenance & management technique
+
+</h3>
+
+
+<p>
+
+Expérience de terrain
+dans la maintenance industrielle,
+le diagnostic,
+le pilotage d’interventions,
+le suivi du préventif et du correctif,
+l’organisation d’équipes
+et la coordination de travaux techniques.
+
+</p>
+
+
+<div class="skills">
+
+<span class="skill">
+Diagnostic
+</span>
+
+<span class="skill">
+Maintenance
+</span>
+
+<span class="skill">
+Fiabilité
+</span>
+
+<span class="skill">
+Organisation
+</span>
+
+<span class="skill">
+Management
+</span>
+
+<span class="skill">
+Sécurité
+</span>
+
+</div>
+
+
+</div>
+
+
+
+<div class="experience-box reveal">
+
+
+<h3>
+
+Automatisme & projets industriels
+
+</h3>
+
+
+<p>
+
+Expérience dans les automatismes,
+les variateurs,
+la vision industrielle,
+les modifications d’installations,
+les projets techniques
+et l’accompagnement
+des équipes lors de pannes complexes.
+
+</p>
+
+
+<div class="skills">
+
+<span class="skill">
+Automatisme
+</span>
+
+<span class="skill">
+Variateurs
+</span>
+
+<span class="skill">
+Vision
+</span>
+
+<span class="skill">
+Réseaux
+</span>
+
+<span class="skill">
+Études
+</span>
+
+<span class="skill">
+Projets
+</span>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     METHODE
+========================================================= -->
+
+<section class="section section-dark">
+
+
+<div class="container">
+
+
+<div class="reveal">
+
+
+<div class="kicker">
+
+ACTYROM // MÉTHODE
+
+</div>
+
+
+<h2 class="section-title">
+
+Cinq principes
+pour guider chaque intervention.
+
+</h2>
+
+
+</div>
+
+
+
+<div class="method-grid reveal">
+
+
+
+<div class="method-card">
+
+
+<div class="method-icon">
 
 <svg viewBox="0 0 24 24">
 
@@ -2121,49 +2369,31 @@ d="M13 2L5 14h6l-1 8 9-13h-6z">
 
 </svg>
 
-
 </div>
 
 
-<span class="principle-number">
-
-01 // ACTION
-
-</span>
-
-
 <h3>
-
 Action
-
 </h3>
 
 
 <p>
 
 Intervenir concrètement
-sur le terrain,
-transformer l’analyse
-en actions
 et faire avancer
 les projets.
 
 </p>
 
 
-</article>
+</div>
 
 
 
-<!-- =========================================================
-     ANALYSE
-========================================================= -->
-
-<article class="principle-card">
+<div class="method-card">
 
 
-<div class="principle-icon">
-
+<div class="method-icon">
 
 <svg viewBox="0 0 24 24">
 
@@ -2177,61 +2407,32 @@ r="6">
 d="M14.5 14.5L21 21">
 </path>
 
-<path
-d="M8 10h4">
-</path>
-
-<path
-d="M10 8v4">
-</path>
-
 </svg>
-
 
 </div>
 
 
-<span class="principle-number">
-
-02 // ANALYSE
-
-</span>
-
-
 <h3>
-
 Analyse
-
 </h3>
 
 
 <p>
 
-Comprendre une panne,
-un besoin
-ou une situation
+Comprendre la situation
 avant d’agir.
-
-Observer,
-mesurer
-et rechercher les causes.
 
 </p>
 
 
-</article>
+</div>
 
 
 
-<!-- =========================================================
-     RESOLUTION
-========================================================= -->
-
-<article class="principle-card">
+<div class="method-card">
 
 
-<div class="principle-icon">
-
+<div class="method-icon">
 
 <svg viewBox="0 0 24 24">
 
@@ -2245,49 +2446,30 @@ d="M9 12l2 2 4-4">
 
 </svg>
 
-
 </div>
 
 
-<span class="principle-number">
-
-03 // RÉSOLUTION
-
-</span>
-
-
 <h3>
-
 Résolution
-
 </h3>
 
 
 <p>
 
-Rechercher
-une solution efficace,
-fiable,
-durable
-et réellement adaptée
-au contexte.
+Trouver une solution
+fiable et adaptée.
 
 </p>
 
 
-</article>
+</div>
 
 
 
-<!-- =========================================================
-     ORGANISATION
-========================================================= -->
-
-<article class="principle-card">
+<div class="method-card">
 
 
-<div class="principle-icon">
-
+<div class="method-icon">
 
 <svg viewBox="0 0 24 24">
 
@@ -2316,58 +2498,36 @@ rx="1">
 </rect>
 
 <path
-d="M7 9v3h10V9">
-</path>
-
-<path
-d="M12 12v3">
+d="M7 9v3h10V9M12 12v3">
 </path>
 
 </svg>
 
-
 </div>
 
 
-<span class="principle-number">
-
-04 // ORGANISATION
-
-</span>
-
-
 <h3>
-
 Organisation
-
 </h3>
 
 
 <p>
 
-Structurer
-les interventions,
-les projets,
-la maintenance
-et les ressources
-pour gagner en efficacité.
+Structurer les moyens,
+les étapes
+et les ressources.
 
 </p>
 
 
-</article>
+</div>
 
 
 
-<!-- =========================================================
-     METHODE
-========================================================= -->
-
-<article class="principle-card">
+<div class="method-card">
 
 
-<div class="principle-icon">
-
+<div class="method-icon">
 
 <svg viewBox="0 0 24 24">
 
@@ -2380,123 +2540,194 @@ rx="2">
 </rect>
 
 <path
-d="M9 2h6v4H9z">
-</path>
-
-<path
-d="M8 11l2 2 4-4">
-</path>
-
-<path
-d="M8 17h8">
+d="M9 2h6v4H9zM8 11l2 2 4-4M8 17h8">
 </path>
 
 </svg>
 
-
 </div>
 
 
-<span class="principle-number">
-
-05 // MÉTHODE
-
-</span>
-
-
 <h3>
-
 Méthode
-
 </h3>
 
 
 <p>
 
 Travailler avec rigueur,
-logique,
-traçabilité
-et amélioration continue.
+logique
+et traçabilité.
 
 </p>
 
 
-</article>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     RESEAU PROFESSIONNEL
+========================================================= -->
+
+<section class="section">
+
+
+<div class="container network-layout">
+
+
+
+<div class="network-copy reveal">
+
+
+<div class="kicker">
+
+RÉSEAU PROFESSIONNEL
+
+</div>
+
+
+<h2 class="section-title">
+
+Une expertise centrale,
+des compétences
+
+<span class="green">
+mobilisables.
+</span>
+
+</h2>
+
+
+<p>
+
+Actyrom conserve
+un interlocuteur principal
+et une vision globale du projet.
+
+Lorsque le besoin
+nécessite une compétence complémentaire,
+des professionnels indépendants
+peuvent être mobilisés
+pour intervenir sur leur domaine.
+
+</p>
+
+
+<p>
+
+Ce fonctionnement permet
+de rester agile
+tout en élargissant
+les capacités disponibles
+selon les projets.
+
+</p>
+
+
+
+<div class="network-list">
+
+
+<div class="network-item">
+
+Automatisme & électricité industrielle
+
+</div>
+
+
+<div class="network-item">
+
+Maintenance & méthodes
+
+</div>
+
+
+<div class="network-item">
+
+Énergie
+
+</div>
+
+
+<div class="network-item">
+
+Informatique & électronique
+
+</div>
+
+
+<div class="network-item">
+
+Menuiserie & intégration
+
+</div>
+
+
+<div class="network-item">
+
+Aménagement technique
+
+</div>
+
+
+<div class="network-item">
+
+Réseaux & systèmes connectés
+
+</div>
+
+
+<div class="network-item">
+
+Compétences spécifiques selon projet
+
+</div>
+
+
+</div>
 
 
 </div>
 
 
 
-<div class="principles-conclusion">
+<div class="network-photo reveal">
+
+
+<img
+src="https://images.unsplash.com/photo-1780034766243-044492794729?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=2000"
+alt="Intervention technique et expertise professionnelle">
+
+
+<div class="photo-caption">
+
+
+<span>
+
+ACTYROM // NETWORK
+
+</span>
+
 
 <strong>
 
-Ces cinq principes structurent
-l’approche Actyrom :
+Les bonnes compétences,
+au bon moment.
 
 </strong>
 
-comprendre avant d’agir,
-agir avec méthode
-et rechercher une solution durable
-plutôt qu’une réponse provisoire.
 
 </div>
-
-
-</div>
-
-
-</section>
-
-
-
-<!-- =========================================================
-     PHILOSOPHIE
-========================================================= -->
-
-<section class="content">
-
-
-<div class="container">
-
-
-<div class="philosophy-box">
-
-
-<div class="philosophy-code">
-
-ACTYROM // METHOD
-
-</div>
-
-
-<h3>
-
-Comprendre avant d’agir.
-
-</h3>
-
-
-<p>
-
-Chaque intervention commence
-par l’observation,
-le questionnement
-et l’analyse.
-
-La technologie doit rester
-un moyen de résoudre un problème,
-et non devenir une fin en soi.
-
-Une bonne solution
-doit être compréhensible,
-maintenable,
-évolutive
-et adaptée au contexte réel.
-
-</p>
 
 
 </div>
@@ -2510,393 +2741,19 @@ et adaptée au contexte réel.
 
 
 <!-- =========================================================
-     UNIVERS
+     DIFFERENCE
 ========================================================= -->
 
-<section class="content alt">
+<section class="section section-dark">
 
 
 <div class="container">
 
 
-<div class="section-label">
+<div class="reveal">
 
-NOS UNIVERS
 
-</div>
-
-
-<h2 class="section-title">
-
-Une expertise transversale.
-
-</h2>
-
-
-<p class="section-intro">
-
-Actyrom Consulting constitue
-l’interface principale.
-
-Industrie
-et Habitat
-permettent d’identifier
-les différents contextes d’intervention,
-tandis que les données
-et la supervision
-peuvent compléter ces deux univers.
-
-</p>
-
-
-
-<div class="domain-grid">
-
-
-
-<!-- INDUSTRIE -->
-
-<article class="domain-card">
-
-
-<div class="domain-icon">
-
-
-<svg viewBox="0 0 24 24">
-
-<path d="M3 20h18"></path>
-
-<path d="M5 20V10l4-3 4 3v10"></path>
-
-<path d="M13 20V6l6 3v11"></path>
-
-<path d="M8 12h1"></path>
-
-<path d="M16 11h1"></path>
-
-</svg>
-
-
-</div>
-
-
-<h3>
-
-Industrie
-
-</h3>
-
-
-<p>
-
-Automatisme,
-maintenance,
-diagnostic,
-fiabilisation,
-électricité industrielle,
-méthodes,
-réseaux
-et assistance projet.
-
-</p>
-
-
-</article>
-
-
-
-<!-- HABITAT -->
-
-<article class="domain-card">
-
-
-<div class="domain-icon">
-
-
-<svg viewBox="0 0 24 24">
-
-<path
-d="M3 11.5L12 4l9 7.5">
-</path>
-
-<path
-d="M5 10.5V20h14v-9.5">
-</path>
-
-<path
-d="M9 20v-5h6v5">
-</path>
-
-<path
-d="M16 8c1.2-1 2.8-1 4 0">
-</path>
-
-</svg>
-
-
-</div>
-
-
-<h3>
-
-Habitat
-
-</h3>
-
-
-<p>
-
-Domotique,
-réseaux,
-informatique,
-automatismes,
-énergie,
-supervision
-et solutions techniques personnalisées.
-
-</p>
-
-
-</article>
-
-
-
-<!-- DATA -->
-
-<article class="domain-card">
-
-
-<div class="domain-icon">
-
-
-<svg viewBox="0 0 24 24">
-
-<circle
-cx="5"
-cy="12"
-r="2">
-</circle>
-
-<circle
-cx="19"
-cy="6"
-r="2">
-</circle>
-
-<circle
-cx="19"
-cy="18"
-r="2">
-</circle>
-
-<path
-d="M7 12l10-6">
-</path>
-
-<path
-d="M7 12l10 6">
-</path>
-
-</svg>
-
-
-</div>
-
-
-<h3>
-
-Data & supervision
-
-</h3>
-
-
-<p>
-
-Collecte,
-historisation,
-KPI,
-visualisation,
-analyse de tendances
-et développement progressif
-de solutions prédictives.
-
-</p>
-
-
-</article>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-<!-- =========================================================
-     ORGANISATION
-========================================================= -->
-
-<section class="content">
-
-
-<div class="container">
-
-
-<div class="section-label">
-
-NOTRE ORGANISATION
-
-</div>
-
-
-<h2 class="section-title">
-
-Une structure agile.
-
-</h2>
-
-
-<p class="section-intro">
-
-Actyrom Consulting débute
-avec une organisation volontairement légère
-afin de conserver
-réactivité,
-souplesse
-et proximité.
-
-</p>
-
-
-
-<div class="structure-grid">
-
-
-
-<article class="structure-card">
-
-
-<span class="structure-number">
-
-01 // EXPERTISE
-
-</span>
-
-
-<h3>
-
-Un interlocuteur principal
-
-</h3>
-
-
-<p>
-
-Une approche directe
-permettant de comprendre rapidement
-le besoin
-et de conserver
-une vision globale
-du projet.
-
-</p>
-
-
-</article>
-
-
-
-<article class="structure-card">
-
-
-<span class="structure-number">
-
-02 // NETWORK
-
-</span>
-
-
-<h3>
-
-Des compétences complémentaires
-
-</h3>
-
-
-<p>
-
-Lorsque le projet
-le nécessite,
-des professionnels indépendants
-aux compétences complémentaires
-peuvent être mobilisés
-ponctuellement
-et de manière anticipée.
-
-</p>
-
-
-</article>
-
-
-
-<article class="structure-card">
-
-
-<span class="structure-number">
-
-03 // SCALE
-
-</span>
-
-
-<h3>
-
-Une évolution progressive
-
-</h3>
-
-
-<p>
-
-À terme,
-Actyrom souhaite développer
-un réseau de spécialistes
-permettant de répondre
-à un éventail toujours plus large
-de besoins techniques.
-
-</p>
-
-
-</article>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-<!-- =========================================================
-     NOTRE DIFFERENCE
-========================================================= -->
-
-<section class="content alt">
-
-
-<div class="container">
-
-
-<div class="section-label">
+<div class="kicker">
 
 NOTRE DIFFÉRENCE
 
@@ -2905,110 +2762,92 @@ NOTRE DIFFÉRENCE
 
 <h2 class="section-title">
 
-Ne pas proposer une solution
-avant d’avoir compris le problème.
+La technologie
+reste un moyen,
+
+<span class="green">
+jamais une finalité.
+</span>
 
 </h2>
 
 
-
-<div class="structure-grid">
-
+</div>
 
 
-<article class="structure-card">
+
+<div class="difference-grid">
 
 
-<span class="structure-number">
 
-01 // TERRAIN
-
-</span>
+<div class="difference-card reveal">
 
 
 <h3>
-
-Vision terrain
-
+Comprendre avant de remplacer
 </h3>
 
 
 <p>
 
-Observer
-le fonctionnement réel
-des équipements,
-les contraintes
-et les habitudes
-des utilisateurs.
+Un équipement en panne
+n’est pas forcément
+un équipement à remplacer.
+
+Le diagnostic
+reste la première étape.
 
 </p>
 
 
-</article>
+</div>
 
 
 
-<article class="structure-card">
-
-
-<span class="structure-number">
-
-02 // GLOBAL
-
-</span>
+<div class="difference-card reveal">
 
 
 <h3>
-
-Approche transversale
-
+Adapter la solution
 </h3>
 
 
 <p>
 
-Croiser plusieurs domaines
-plutôt que d’analyser
-chaque technologie
-de manière isolée.
+Une solution efficace
+doit correspondre
+au besoin réel,
+au budget,
+aux contraintes
+et aux utilisateurs.
 
 </p>
 
 
-</article>
+</div>
 
 
 
-<article class="structure-card">
-
-
-<span class="structure-number">
-
-03 // DURABLE
-
-</span>
+<div class="difference-card reveal">
 
 
 <h3>
-
-Solutions durables
-
+Penser dans la durée
 </h3>
 
 
 <p>
 
-Rechercher
-la fiabilité,
-la maintenabilité
-et la simplicité
-avant la complexité inutile.
+Fiabilité,
+maintenabilité,
+documentation
+et possibilité d’évolution
+font partie de la réflexion.
 
 </p>
 
 
-</article>
+</div>
 
 
 </div>
@@ -3025,27 +2864,33 @@ avant la complexité inutile.
      VISION
 ========================================================= -->
 
-<section class="content">
+<section class="section">
 
 
 <div class="container">
 
 
-<div class="vision-box">
+<div class="vision reveal">
 
 
-<div class="section-label">
+<div class="kicker">
 
 NOTRE VISION
 
 </div>
 
 
-<h2 class="section-title">
+<h2>
 
-Construire aujourd’hui
-les solutions techniques
-de demain.
+Faire converger
+
+<span class="green">
+
+terrain,
+technologie
+et humain.
+
+</span>
 
 </h2>
 
@@ -3053,23 +2898,18 @@ de demain.
 <p>
 
 Actyrom souhaite progressivement
-faire converger
-maintenance,
-automatisme,
+faire converger maintenance,
+automatismes,
 réseaux,
-données
-et outils numériques.
-
-L’objectif est de mieux comprendre
-le fonctionnement des installations,
-de disposer d’informations utiles,
-d’améliorer leur fiabilité
-et,
-lorsque cela est pertinent,
-d’anticiper certaines défaillances.
+données,
+habitat
+et outils numériques
+pour construire des solutions
+plus simples,
+plus compréhensibles
+et plus utiles.
 
 </p>
-
 
 
 <div class="actions">
@@ -3079,7 +2919,7 @@ d’anticiper certaines défaillances.
 href="contact.html"
 class="btn btn-primary">
 
-Présenter votre projet
+Parler de votre projet
 
 </a>
 
@@ -3122,37 +2962,26 @@ Retour à l’accueil
 <div>
 
 © 2026 Actyrom Consulting
+— Des solutions pour demain
 
 </div>
 
 
-<div>
+<div class="footer-links">
 
 
 <a href="qui-sommes-nous.html">
-
 Qui sommes-nous ?
-
 </a>
-
-
-&nbsp;•&nbsp;
 
 
 <a href="mentions-legales.html">
-
 Mentions légales
-
 </a>
 
 
-&nbsp;•&nbsp;
-
-
 <a href="contact.html">
-
 Contact
-
 </a>
 
 
@@ -3167,14 +2996,17 @@ Contact
 
 
 <!-- =========================================================
-     JS MOBILE
+     JAVASCRIPT
 ========================================================= -->
 
 <script>
 
-const menuButton =
+
+/* MENU MOBILE */
+
+const menuBtn =
 document.getElementById(
-"menuButton"
+"menuBtn"
 );
 
 const navLinks =
@@ -3183,22 +3015,24 @@ document.getElementById(
 );
 
 
-menuButton.addEventListener(
+menuBtn.addEventListener(
 "click",
-function(){
+() => {
 
-    const opened =
-    navLinks
-    .classList
-    .toggle(
-        "open"
-    );
+  const opened =
+  navLinks
+  .classList
+  .toggle(
+    "open"
+  );
 
-    menuButton
-    .setAttribute(
-        "aria-expanded",
-        opened ? "true" : "false"
-    );
+  menuBtn
+  .setAttribute(
+    "aria-expanded",
+    opened
+    ? "true"
+    : "false"
+  );
 
 }
 );
@@ -3209,30 +3043,88 @@ document
 ".nav-links a"
 )
 .forEach(
-function(link){
+link => {
 
-    link
-    .addEventListener(
-    "click",
-    function(){
+  link
+  .addEventListener(
+  "click",
+  () => {
 
-        navLinks
-        .classList
-        .remove(
-            "open"
-        );
-
-        menuButton
-        .setAttribute(
-            "aria-expanded",
-            "false"
-        );
-
-    }
+    navLinks
+    .classList
+    .remove(
+      "open"
     );
+
+    menuBtn
+    .setAttribute(
+      "aria-expanded",
+      "false"
+    );
+
+  }
+  );
 
 }
 );
+
+
+/* APPARITION AU SCROLL */
+
+const observer =
+new IntersectionObserver(
+
+(entries) => {
+
+  entries
+  .forEach(
+  entry => {
+
+    if(
+      entry.isIntersecting
+    ){
+
+      entry
+      .target
+      .classList
+      .add(
+        "visible"
+      );
+
+      observer
+      .unobserve(
+        entry.target
+      );
+
+    }
+
+  }
+  );
+
+},
+
+{
+  threshold:.12
+}
+
+);
+
+
+document
+.querySelectorAll(
+".reveal"
+)
+.forEach(
+element => {
+
+  observer
+  .observe(
+    element
+  );
+
+}
+);
+
 
 </script>
 
