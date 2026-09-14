@@ -1,1 +1,1642 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>404 | Actyrom Consulting</title><link rel="stylesheet" href="assets/style.css"></head><body><main class="page-hero"><div class="container inner"><div class="section-label">SYSTEM // 404</div><h1>Page <span>introuvable.</span></h1><p>La ressource demandée n’existe pas ou a été déplacée.</p><div class="actions"><a class="btn btn-primary" href="index.html">Retour à l’accueil</a></div></div></main></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Page introuvable | Actyrom Consulting</title>
+
+<meta
+name="description"
+content="La page demandée n'existe pas ou n'est plus disponible. Retrouvez les principaux services d'Actyrom Consulting.">
+
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#06130d">
+
+<style>
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root{
+
+  --bg:#04100a;
+  --bg2:#020805;
+
+  --panel:#07170f;
+
+  --line:rgba(255,255,255,.11);
+  --green-line:rgba(143,255,61,.27);
+
+  --text:#f5f7f4;
+  --muted:#adb8b0;
+  --soft:#7d8d82;
+
+  --green:#89ef3f;
+  --green2:#b3ff67;
+
+  --max:1180px;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html,
+body{
+  min-height:100%;
+}
+
+body{
+
+  font-family:
+  Arial,
+  Helvetica,
+  sans-serif;
+
+  background:
+
+  radial-gradient(
+    circle at 80% 10%,
+    rgba(59,153,69,.13),
+    transparent 28%
+  ),
+
+  radial-gradient(
+    circle at 20% 85%,
+    rgba(31,104,54,.08),
+    transparent 30%
+  ),
+
+  linear-gradient(
+    180deg,
+    #06110c 0%,
+    #030a06 60%,
+    #020704 100%
+  );
+
+  color:var(--text);
+
+  line-height:1.6;
+
+  overflow-x:hidden;
+
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font:inherit;
+}
+
+.container{
+
+  width:min(
+    var(--max),
+    92%
+  );
+
+  margin:auto;
+
+}
+
+.green{
+  color:var(--green);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+
+  position:relative;
+
+  z-index:1000;
+
+  background:
+  rgba(3,11,7,.82);
+
+  backdrop-filter:
+  blur(18px);
+
+  border-bottom:
+  1px solid
+  rgba(255,255,255,.08);
+
+}
+
+.nav{
+
+  min-height:78px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:25px;
+
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.brand{
+
+  display:flex;
+
+  align-items:baseline;
+
+  gap:5px;
+
+  white-space:nowrap;
+
+}
+
+.brand-main{
+
+  font-size:1.52rem;
+
+  font-weight:900;
+
+  letter-spacing:-1px;
+
+}
+
+.brand-sub{
+
+  color:var(--green);
+
+  font-size:1.03rem;
+
+  font-weight:800;
+
+}
+
+
+/* =========================================================
+   MENU
+========================================================= */
+
+.nav-links{
+
+  list-style:none;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:20px;
+
+  color:#dce4dd;
+
+  font-size:.86rem;
+
+}
+
+.nav-links a{
+
+  transition:.22s ease;
+
+}
+
+.nav-links a:hover{
+
+  color:var(--green2);
+
+}
+
+.connection{
+
+  padding:
+  10px 17px !important;
+
+  border:
+  1px solid
+  rgba(137,239,63,.44);
+
+  border-radius:999px;
+
+  background:
+  rgba(72,150,53,.08);
+
+  color:#eaffdc !important;
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  font-weight:700;
+
+  letter-spacing:1px;
+
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+.menu-btn{
+
+  display:none;
+
+  padding:
+  9px 12px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.16);
+
+  border-radius:10px;
+
+  background:#07130d;
+
+  color:#fff;
+
+  cursor:pointer;
+
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.error-page{
+
+  position:relative;
+
+  min-height:
+  calc(
+    100vh - 78px
+  );
+
+  display:flex;
+
+  align-items:center;
+
+  overflow:hidden;
+
+}
+
+.error-page::before{
+
+  content:"";
+
+  position:absolute;
+
+  width:680px;
+  height:680px;
+
+  right:-230px;
+  top:-230px;
+
+  border-radius:50%;
+
+  background:
+
+  radial-gradient(
+    circle,
+    rgba(137,239,63,.17),
+    rgba(61,170,61,.05) 38%,
+    transparent 70%
+  );
+
+  animation:
+  haloMove
+  9s
+  ease-in-out
+  infinite
+  alternate;
+
+}
+
+.error-page::after{
+
+  content:"";
+
+  position:absolute;
+
+  width:440px;
+  height:440px;
+
+  left:-220px;
+  bottom:-230px;
+
+  border-radius:50%;
+
+  border:
+  1px solid
+  rgba(137,239,63,.08);
+
+  box-shadow:
+
+  0 0 0 60px
+  rgba(137,239,63,.016),
+
+  0 0 0 120px
+  rgba(137,239,63,.008);
+
+}
+
+@keyframes haloMove{
+
+  from{
+
+    transform:
+    translate(-18px,12px)
+    scale(.96);
+
+  }
+
+  to{
+
+    transform:
+    translate(22px,-12px)
+    scale(1.05);
+
+  }
+
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.error-grid{
+
+  position:relative;
+
+  z-index:2;
+
+  display:grid;
+
+  grid-template-columns:
+  1.15fr
+  .85fr;
+
+  gap:70px;
+
+  align-items:center;
+
+  padding:
+  80px 0;
+
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.error-label{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:12px;
+
+  color:#dce5de;
+
+  text-transform:uppercase;
+
+  letter-spacing:4px;
+
+  font-size:.72rem;
+
+}
+
+.error-label::before{
+
+  content:"";
+
+  width:40px;
+  height:2px;
+
+  background:var(--green);
+
+  box-shadow:
+  0 0 14px
+  rgba(137,239,63,.55);
+
+}
+
+.error-code{
+
+  margin-top:12px;
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  font-size:
+  clamp(
+    7rem,
+    17vw,
+    13rem
+  );
+
+  line-height:.85;
+
+  letter-spacing:-12px;
+
+  color:var(--green);
+
+  text-shadow:
+
+  0 0 15px
+  rgba(137,239,63,.10),
+
+  0 0 55px
+  rgba(137,239,63,.09);
+
+}
+
+.error-title{
+
+  margin-top:18px;
+
+  max-width:760px;
+
+  font-size:
+  clamp(
+    2.5rem,
+    5vw,
+    4.8rem
+  );
+
+  line-height:.98;
+
+  letter-spacing:-3px;
+
+}
+
+.error-text{
+
+  margin-top:20px;
+
+  max-width:650px;
+
+  color:var(--muted);
+
+  font-size:1.02rem;
+
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status{
+
+  margin-top:24px;
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  color:var(--green2);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  font-size:.74rem;
+
+  font-weight:700;
+
+}
+
+.status-dot{
+
+  width:13px;
+  height:13px;
+
+  border-radius:50%;
+
+  background:#78f452;
+
+  box-shadow:
+
+  0 0 6px
+  #78f452,
+
+  0 0 20px
+  rgba(120,244,82,.6);
+
+  animation:
+  pulse
+  2s
+  ease-in-out
+  infinite;
+
+}
+
+@keyframes pulse{
+
+  50%{
+
+    transform:
+    scale(1.1);
+
+    box-shadow:
+
+    0 0 10px
+    #a8ff85,
+
+    0 0 32px
+    rgba(120,244,82,.72);
+
+  }
+
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.actions{
+
+  margin-top:30px;
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:11px;
+
+}
+
+.btn{
+
+  min-height:50px;
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:
+  0 22px;
+
+  border-radius:12px;
+
+  font-weight:800;
+
+  transition:.25s ease;
+
+}
+
+.btn-primary{
+
+  background:
+
+  linear-gradient(
+    180deg,
+    var(--green2),
+    var(--green)
+  );
+
+  color:#092008;
+
+}
+
+.btn-primary:hover{
+
+  transform:
+  translateY(-2px);
+
+  box-shadow:
+  0 12px 30px
+  rgba(100,230,70,.18);
+
+}
+
+.btn-secondary{
+
+  border:
+  1px solid
+  rgba(255,255,255,.18);
+
+  background:
+  rgba(3,10,6,.45);
+
+  color:#fff;
+
+}
+
+.btn-secondary:hover{
+
+  border-color:var(--green);
+
+  color:var(--green2);
+
+}
+
+
+/* =========================================================
+   SYSTEM PANEL
+========================================================= */
+
+.system-panel{
+
+  padding:31px;
+
+  border:
+  1px solid
+  var(--green-line);
+
+  border-radius:24px;
+
+  background:
+
+  radial-gradient(
+    circle at 100% 0%,
+    rgba(80,190,70,.10),
+    transparent 32%
+  ),
+
+  rgba(7,21,14,.84);
+
+  box-shadow:
+
+  inset 0 0 35px
+  rgba(80,190,70,.025),
+
+  0 28px 70px
+  rgba(0,0,0,.22);
+
+}
+
+.panel-header{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:15px;
+
+  padding-bottom:18px;
+
+  border-bottom:
+  1px solid
+  rgba(255,255,255,.08);
+
+}
+
+.panel-title{
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  color:#dce6df;
+
+  font-size:.78rem;
+
+}
+
+.panel-state{
+
+  color:var(--green2);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  font-size:.7rem;
+
+}
+
+
+/* =========================================================
+   SYSTEM LINES
+========================================================= */
+
+.system-lines{
+
+  margin-top:16px;
+
+}
+
+.system-line{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:20px;
+
+  padding:
+  15px 0;
+
+  border-bottom:
+  1px solid
+  rgba(255,255,255,.07);
+
+}
+
+.system-line:last-child{
+
+  border-bottom:0;
+
+}
+
+.system-line span:first-child{
+
+  color:var(--muted);
+
+  font-size:.82rem;
+
+}
+
+.system-line span:last-child{
+
+  color:var(--green2);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  font-size:.72rem;
+
+}
+
+
+/* =========================================================
+   QUICK LINKS
+========================================================= */
+
+.quick-title{
+
+  margin-top:28px;
+
+  color:#dbe5dd;
+
+  font-size:.83rem;
+
+  font-weight:700;
+
+}
+
+.quick-links{
+
+  margin-top:12px;
+
+  display:grid;
+
+  grid-template-columns:
+  1fr 1fr;
+
+  gap:9px;
+
+}
+
+.quick-link{
+
+  padding:
+  12px 13px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.09);
+
+  border-radius:10px;
+
+  background:
+  rgba(255,255,255,.016);
+
+  color:#c9d5cc;
+
+  font-size:.78rem;
+
+  transition:.2s ease;
+
+}
+
+.quick-link:hover{
+
+  border-color:
+  rgba(137,239,63,.35);
+
+  color:var(--green2);
+
+  background:
+  rgba(65,150,55,.04);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+  position:relative;
+
+  z-index:2;
+
+  padding:
+  27px 0;
+
+  border-top:
+  1px solid
+  rgba(255,255,255,.08);
+
+  color:#718077;
+
+  font-size:.78rem;
+
+}
+
+.footer{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+
+}
+
+.footer-links{
+
+  display:flex;
+
+  gap:14px;
+
+  flex-wrap:wrap;
+
+}
+
+.footer a:hover{
+
+  color:var(--green2);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1050px){
+
+  .nav-links{
+
+    gap:13px;
+
+    font-size:.81rem;
+
+  }
+
+  .error-grid{
+
+    grid-template-columns:1fr;
+
+    gap:45px;
+
+  }
+
+  .system-panel{
+
+    max-width:680px;
+
+  }
+
+}
+
+
+@media(max-width:860px){
+
+  .menu-btn{
+    display:block;
+  }
+
+  .nav{
+    min-height:68px;
+  }
+
+  .nav-links{
+
+    display:none;
+
+    position:absolute;
+
+    top:68px;
+
+    left:0;
+    right:0;
+
+    padding:
+    14px 4%
+    18px;
+
+    background:
+    rgba(3,11,7,.98);
+
+    border-bottom:
+    1px solid
+    rgba(255,255,255,.10);
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+    gap:3px;
+
+  }
+
+  .nav-links.open{
+    display:flex;
+  }
+
+  .nav-links a{
+
+    display:block;
+
+    padding:
+    9px 0;
+
+  }
+
+  .connection{
+    text-align:center;
+  }
+
+  .error-page{
+
+    min-height:auto;
+
+  }
+
+}
+
+
+@media(max-width:620px){
+
+  .container{
+    width:94%;
+  }
+
+  .brand-main{
+    font-size:1.18rem;
+  }
+
+  .brand-sub{
+    font-size:.88rem;
+  }
+
+  .error-grid{
+
+    padding:
+    65px 0;
+
+  }
+
+  .error-code{
+
+    font-size:7rem;
+
+    letter-spacing:-7px;
+
+  }
+
+  .error-title{
+
+    font-size:2.65rem;
+
+    letter-spacing:-2px;
+
+  }
+
+  .error-text{
+
+    font-size:.93rem;
+
+  }
+
+  .actions{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+  }
+
+  .btn{
+    width:100%;
+  }
+
+  .system-panel{
+
+    padding:
+    24px 19px;
+
+  }
+
+  .quick-links{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .footer{
+
+    display:block;
+
+    text-align:center;
+
+  }
+
+  .footer-links{
+
+    justify-content:center;
+
+    margin-top:10px;
+
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+  *,
+  *::before,
+  *::after{
+
+    animation:none!important;
+
+    transition:none!important;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
+
+<div class="container">
+
+<nav class="nav">
+
+
+<a
+href="index.html"
+class="brand">
+
+<span class="brand-main">
+Actyrom
+</span>
+
+<span class="brand-sub">
+Consulting
+</span>
+
+</a>
+
+
+<button
+id="menuBtn"
+class="menu-btn"
+type="button"
+aria-label="Ouvrir le menu"
+aria-expanded="false">
+
+☰
+
+</button>
+
+
+<ul
+id="navLinks"
+class="nav-links">
+
+
+<li>
+<a href="index.html">
+Accueil
+</a>
+</li>
+
+
+<li>
+<a href="qui-sommes-nous.html">
+Qui sommes-nous ?
+</a>
+</li>
+
+
+<li>
+<a href="industrie.html">
+Industrie
+</a>
+</li>
+
+
+<li>
+<a href="habitat.html">
+Habitat
+</a>
+</li>
+
+
+<li>
+<a href="industrie40.html">
+Industrie 4.0
+</a>
+</li>
+
+
+<li>
+<a href="accompagnement.html">
+Accompagnement
+</a>
+</li>
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+<li>
+
+<a
+href="contact.html"
+class="connection">
+
+CONNEXION
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- =========================================================
+     ERROR PAGE
+========================================================= -->
+
+<main class="error-page">
+
+
+<div class="container error-grid">
+
+
+
+<!-- =========================================================
+     TEXT
+========================================================= -->
+
+<section>
+
+
+<div class="error-label">
+
+ACTYROM // NAVIGATION ERROR
+
+</div>
+
+
+<div class="error-code">
+
+404
+
+</div>
+
+
+<h1 class="error-title">
+
+Cette page
+
+<span class="green">
+n’existe pas.
+</span>
+
+</h1>
+
+
+<p class="error-text">
+
+L’adresse demandée
+est peut-être incorrecte,
+la page a pu être déplacée
+ou elle n’est simplement
+pas encore disponible.
+
+Le système Actyrom fonctionne normalement.
+
+</p>
+
+
+<div class="status">
+
+<span class="status-dot">
+</span>
+
+SYSTEM ONLINE
+
+</div>
+
+
+<div class="actions">
+
+
+<a
+href="index.html"
+class="btn btn-primary">
+
+Retour à l’accueil
+
+</a>
+
+
+<a
+href="contact.html"
+class="btn btn-secondary">
+
+Contacter Actyrom
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     PANEL
+========================================================= -->
+
+<aside class="system-panel">
+
+
+<div class="panel-header">
+
+
+<div class="panel-title">
+
+ACTYROM // SYSTEM DIAGNOSTIC
+
+</div>
+
+
+<div class="panel-state">
+
+ONLINE
+
+</div>
+
+
+</div>
+
+
+
+<div class="system-lines">
+
+
+<div class="system-line">
+
+<span>
+Serveur web
+</span>
+
+<span>
+ONLINE
+</span>
+
+</div>
+
+
+<div class="system-line">
+
+<span>
+Navigation
+</span>
+
+<span>
+ACTIVE
+</span>
+
+</div>
+
+
+<div class="system-line">
+
+<span>
+Page demandée
+</span>
+
+<span>
+NOT FOUND
+</span>
+
+</div>
+
+
+<div class="system-line">
+
+<span>
+Erreur
+</span>
+
+<span>
+404
+</span>
+
+</div>
+
+
+<div class="system-line">
+
+<span>
+Solution
+</span>
+
+<span>
+REDIRECT
+</span>
+
+</div>
+
+
+</div>
+
+
+
+<div class="quick-title">
+
+Accès rapide
+
+</div>
+
+
+<div class="quick-links">
+
+
+<a
+href="industrie.html"
+class="quick-link">
+
+Industrie
+
+</a>
+
+
+<a
+href="habitat.html"
+class="quick-link">
+
+Habitat
+
+</a>
+
+
+<a
+href="industrie40.html"
+class="quick-link">
+
+Industrie 4.0
+
+</a>
+
+
+<a
+href="accompagnement.html"
+class="quick-link">
+
+Accompagnement
+
+</a>
+
+
+<a
+href="qui-sommes-nous.html"
+class="quick-link">
+
+Qui sommes-nous ?
+
+</a>
+
+
+<a
+href="contact.html"
+class="quick-link">
+
+Contact
+
+</a>
+
+
+</div>
+
+
+</aside>
+
+
+</div>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+
+<div class="container footer">
+
+
+<div>
+
+© 2026 Actyrom Consulting
+— Des solutions pour demain
+
+</div>
+
+
+<div class="footer-links">
+
+
+<a href="index.html">
+Accueil
+</a>
+
+
+<a href="mentions-legales.html">
+Mentions légales
+</a>
+
+
+<a href="contact.html">
+Contact
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+
+const menuBtn =
+document.getElementById(
+"menuBtn"
+);
+
+const navLinks =
+document.getElementById(
+"navLinks"
+);
+
+
+menuBtn.addEventListener(
+"click",
+() => {
+
+  const opened =
+  navLinks
+  .classList
+  .toggle(
+    "open"
+  );
+
+  menuBtn
+  .setAttribute(
+    "aria-expanded",
+    opened
+    ? "true"
+    : "false"
+  );
+
+}
+);
+
+
+document
+.querySelectorAll(
+".nav-links a"
+)
+.forEach(
+link => {
+
+  link
+  .addEventListener(
+  "click",
+  () => {
+
+    navLinks
+    .classList
+    .remove(
+      "open"
+    );
+
+    menuBtn
+    .setAttribute(
+      "aria-expanded",
+      "false"
+    );
+
+  }
+  );
+
+}
+);
+
+
+</script>
+
+
+</body>
+
+</html>
