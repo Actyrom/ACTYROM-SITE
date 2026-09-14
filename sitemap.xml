@@ -1,37 +1,2032 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="fr">
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<head>
 
-  <url>
-    <loc>https://actyrom.fr/</loc>
-  </url>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <url>
-    <loc>https://actyrom.fr/qui-sommes-nous.html</loc>
-  </url>
+<title>Espace client | Actyrom Consulting</title>
 
-  <url>
-    <loc>https://actyrom.fr/industrie.html</loc>
-  </url>
+<meta
+name="description"
+content="L'espace client Actyrom Consulting est en préparation. Il permettra à terme de centraliser le suivi des projets, interventions, documents, rapports et données techniques.">
 
-  <url>
-    <loc>https://actyrom.fr/habitat.html</loc>
-  </url>
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#06130d">
 
-  <url>
-    <loc>https://actyrom.fr/industrie40.html</loc>
-  </url>
+<link
+rel="canonical"
+href="https://actyrom.fr/connexion.html">
 
-  <url>
-    <loc>https://actyrom.fr/accompagnement.html</loc>
-  </url>
+<style>
 
-  <url>
-    <loc>https://actyrom.fr/contact.html</loc>
-  </url>
+:root{
+  --bg:#04100a;
+  --bg-deep:#020805;
+  --panel:#07170f;
+  --panel2:#0a1d14;
+  --line:rgba(255,255,255,.11);
+  --green-line:rgba(143,255,61,.27);
+  --text:#f5f7f4;
+  --muted:#adb8b0;
+  --soft:#7d8d82;
+  --green:#89ef3f;
+  --green2:#b3ff67;
+  --max:1180px;
+}
 
-  <url>
-    <loc>https://actyrom.fr/mentions-legales.html</loc>
-  </url>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
-</urlset>
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:
+  radial-gradient(
+    circle at 82% 5%,
+    rgba(46,132,63,.12),
+    transparent 28%
+  ),
+  linear-gradient(
+    180deg,
+    #06110c,
+    #030a06 60%,
+    #020704
+  );
+  color:var(--text);
+  line-height:1.65;
+  overflow-x:hidden;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font:inherit;
+}
+
+.container{
+  width:min(var(--max),92%);
+  margin:auto;
+}
+
+.green{
+  color:var(--green);
+}
+
+.kicker{
+  color:var(--green2);
+  text-transform:uppercase;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:4px;
+}
+
+.section-title{
+  margin-top:12px;
+  font-size:clamp(2.1rem,4vw,3.8rem);
+  line-height:1.03;
+  letter-spacing:-2px;
+}
+
+.section-intro{
+  max-width:790px;
+  margin-top:17px;
+  color:var(--muted);
+}
+
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(3,11,7,.84);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav{
+  min-height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+}
+
+.brand{
+  display:flex;
+  align-items:baseline;
+  gap:5px;
+  white-space:nowrap;
+}
+
+.brand-main{
+  font-size:1.52rem;
+  font-weight:900;
+  letter-spacing:-1px;
+}
+
+.brand-sub{
+  color:var(--green);
+  font-size:1.03rem;
+  font-weight:800;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  align-items:center;
+  gap:20px;
+  color:#dce4dd;
+  font-size:.86rem;
+}
+
+.nav-links a{
+  transition:.22s ease;
+}
+
+.nav-links a:hover{
+  color:var(--green2);
+}
+
+.connection{
+  padding:10px 17px !important;
+  border:1px solid rgba(137,239,63,.58);
+  border-radius:999px;
+  background:rgba(72,150,53,.12);
+  color:var(--green2) !important;
+  font-family:"Courier New", Consolas, monospace;
+  font-weight:700;
+  letter-spacing:1px;
+  box-shadow:0 0 24px rgba(82,228,73,.13);
+}
+
+/* MOBILE MENU */
+
+.menu-btn{
+  display:none;
+  padding:9px 12px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:10px;
+  background:#07130d;
+  color:#fff;
+  cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+  position:relative;
+  min-height:680px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.hero-grid{
+  position:relative;
+  z-index:3;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:65px;
+  align-items:center;
+  width:100%;
+  padding:105px 0 85px;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  width:700px;
+  height:700px;
+  right:-220px;
+  top:-250px;
+  border-radius:50%;
+  background:
+  radial-gradient(
+    circle,
+    rgba(137,239,63,.18),
+    rgba(55,159,62,.06) 38%,
+    transparent 70%
+  );
+  animation:haloMove 10s ease-in-out infinite alternate;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  width:470px;
+  height:470px;
+  left:-250px;
+  bottom:-280px;
+  border-radius:50%;
+  border:1px solid rgba(137,239,63,.08);
+  box-shadow:
+  0 0 0 70px rgba(137,239,63,.014),
+  0 0 0 140px rgba(137,239,63,.007);
+}
+
+@keyframes haloMove{
+  from{
+    transform:translate(-20px,12px) scale(.96);
+  }
+  to{
+    transform:translate(22px,-14px) scale(1.05);
+  }
+}
+
+.hero-label{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  color:#dfe7df;
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:.72rem;
+}
+
+.hero-label::before{
+  content:"";
+  width:40px;
+  height:2px;
+  background:var(--green);
+  box-shadow:0 0 14px rgba(137,239,63,.55);
+}
+
+.hero h1{
+  margin-top:23px;
+  font-size:clamp(4rem,8vw,7rem);
+  line-height:.87;
+  letter-spacing:-5px;
+}
+
+.hero h1 span{
+  display:block;
+  color:var(--green);
+}
+
+.hero-text{
+  max-width:680px;
+  margin-top:27px;
+  color:#d2ddd5;
+  font-size:1.06rem;
+}
+
+/* STATUS */
+
+.status{
+  margin-top:25px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  color:var(--green2);
+  font-family:"Courier New", Consolas, monospace;
+  font-size:.75rem;
+  font-weight:700;
+}
+
+.status-dot{
+  width:13px;
+  height:13px;
+  border-radius:50%;
+  background:#78f452;
+  box-shadow:
+  0 0 6px #78f452,
+  0 0 20px rgba(120,244,82,.6);
+  animation:pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse{
+  50%{
+    transform:scale(1.1);
+    box-shadow:
+    0 0 10px #a8ff85,
+    0 0 32px rgba(120,244,82,.72);
+  }
+}
+
+/* BUTTONS */
+
+.actions{
+  margin-top:29px;
+  display:flex;
+  gap:11px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  min-height:50px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 22px;
+  border-radius:12px;
+  font-weight:800;
+  transition:.25s ease;
+}
+
+.btn-primary{
+  background:linear-gradient(180deg,var(--green2),var(--green));
+  color:#092008;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 30px rgba(100,230,70,.18);
+}
+
+.btn-secondary{
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(3,10,6,.45);
+}
+
+.btn-secondary:hover{
+  border-color:var(--green);
+  color:var(--green2);
+}
+
+/* ACCESS PANEL */
+
+.access-panel{
+  padding:32px;
+  border:1px solid var(--green-line);
+  border-radius:25px;
+  background:
+  radial-gradient(
+    circle at 100% 0%,
+    rgba(80,190,70,.10),
+    transparent 32%
+  ),
+  rgba(7,21,14,.86);
+  box-shadow:
+  inset 0 0 40px rgba(80,190,70,.025),
+  0 30px 80px rgba(0,0,0,.24);
+}
+
+.access-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  padding-bottom:18px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.access-title{
+  color:#dce6df;
+  font-family:"Courier New", Consolas, monospace;
+  font-size:.78rem;
+}
+
+.access-state{
+  color:var(--green2);
+  font-family:"Courier New", Consolas, monospace;
+  font-size:.7rem;
+}
+
+/* LOCK */
+
+.lock-zone{
+  padding:38px 10px 30px;
+  text-align:center;
+}
+
+.lock{
+  width:92px;
+  height:92px;
+  margin:auto;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  border:1px solid rgba(137,239,63,.34);
+  background:
+  radial-gradient(
+    circle,
+    rgba(137,239,63,.10),
+    rgba(7,21,14,.92)
+  );
+  box-shadow:0 0 38px rgba(90,210,60,.08);
+}
+
+.lock svg{
+  width:38px;
+  height:38px;
+  fill:none;
+  stroke:var(--green2);
+  stroke-width:1.7;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.lock-zone h2{
+  margin-top:22px;
+  font-size:1.5rem;
+}
+
+.lock-zone p{
+  max-width:430px;
+  margin:10px auto 0;
+  color:var(--muted);
+  font-size:.87rem;
+}
+
+/* SYSTEM LINES */
+
+.system-lines{
+  margin-top:13px;
+}
+
+.system-line{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:14px 0;
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+
+.system-line:last-child{
+  border-bottom:0;
+}
+
+.system-line span:first-child{
+  color:var(--muted);
+  font-size:.8rem;
+}
+
+.system-line span:last-child{
+  color:var(--green2);
+  font-family:"Courier New", Consolas, monospace;
+  font-size:.7rem;
+}
+
+/* SECTIONS */
+
+.section{
+  padding:88px 0;
+}
+
+.section-dark{
+  background:rgba(2,8,5,.52);
+  border-top:1px solid rgba(255,255,255,.07);
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+
+/* FEATURES */
+
+.features-grid{
+  margin-top:40px;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:15px;
+}
+
+.feature-card{
+  padding:29px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:20px;
+  background:
+  radial-gradient(
+    circle at 100% 0%,
+    rgba(70,170,66,.075),
+    transparent 32%
+  ),
+  #07130d;
+  transition:.25s ease;
+}
+
+.feature-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(137,239,63,.35);
+}
+
+.feature-num{
+  color:var(--green2);
+  font-family:"Courier New", Consolas, monospace;
+  font-size:.72rem;
+  letter-spacing:2px;
+}
+
+.feature-icon{
+  width:48px;
+  height:48px;
+  margin-top:18px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  border:1px solid rgba(137,239,63,.31);
+  color:var(--green2);
+}
+
+.feature-icon svg{
+  width:24px;
+  height:24px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.feature-card h3{
+  margin-top:17px;
+  font-size:1.17rem;
+}
+
+.feature-card p{
+  margin-top:8px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+
+/* PORTAL */
+
+.portal-layout{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+  align-items:stretch;
+}
+
+.portal-copy{
+  padding:39px;
+  border:1px solid var(--green-line);
+  border-radius:24px;
+  background:
+  radial-gradient(
+    circle at 85% 0%,
+    rgba(70,180,66,.11),
+    transparent 35%
+  ),
+  #07150e;
+}
+
+.portal-copy p{
+  margin-top:16px;
+  color:var(--muted);
+}
+
+.portal-list{
+  margin-top:25px;
+  display:grid;
+  gap:9px;
+}
+
+.portal-item{
+  padding:13px 14px;
+  border-radius:11px;
+  border:1px solid rgba(255,255,255,.09);
+  background:rgba(3,10,6,.42);
+  color:#d7e3d9;
+  font-size:.82rem;
+}
+
+/* MOCKUP */
+
+.portal-mockup{
+  padding:28px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:24px;
+  background:#06120c;
+}
+
+.mockup-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  padding-bottom:17px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.mockup-title{
+  font-family:"Courier New", Consolas, monospace;
+  color:#dfe8e0;
+  font-size:.76rem;
+}
+
+.mockup-status{
+  color:var(--green2);
+  font-family:"Courier New", Consolas, monospace;
+  font-size:.68rem;
+}
+
+.mockup-grid{
+  margin-top:16px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.mockup-card{
+  padding:16px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:12px;
+  background:rgba(255,255,255,.018);
+}
+
+.mockup-card small{
+  color:var(--soft);
+  font-size:.67rem;
+}
+
+.mockup-card strong{
+  display:block;
+  margin-top:5px;
+  font-size:1.1rem;
+}
+
+.mockup-card span{
+  display:block;
+  margin-top:4px;
+  color:var(--green2);
+  font-family:"Courier New", Consolas, monospace;
+  font-size:.64rem;
+}
+
+.project-list{
+  margin-top:15px;
+}
+
+.project-row{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:16px;
+  padding:14px 0;
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+
+.project-row:last-child{
+  border-bottom:0;
+}
+
+.project-name{
+  color:#dbe5dd;
+  font-size:.81rem;
+}
+
+.project-state{
+  color:var(--green2);
+  font-family:"Courier New", Consolas, monospace;
+  font-size:.68rem;
+}
+
+/* SECURITY */
+
+.security-grid{
+  margin-top:39px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+
+.security-card{
+  padding:28px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:18px;
+  background:#07130d;
+}
+
+.security-card h3{
+  font-size:1.1rem;
+}
+
+.security-card p{
+  margin-top:8px;
+  color:var(--muted);
+  font-size:.86rem;
+}
+
+/* INFO */
+
+.info-box{
+  padding:48px;
+  border:1px solid var(--green-line);
+  border-radius:26px;
+  background:
+  radial-gradient(
+    circle at 90% 15%,
+    rgba(117,255,69,.13),
+    transparent 30%
+  ),
+  linear-gradient(
+    135deg,
+    #0a2115,
+    #06120c
+  );
+}
+
+.info-box h2{
+  max-width:850px;
+  font-size:clamp(2.5rem,5vw,4.5rem);
+  line-height:1;
+  letter-spacing:-3px;
+}
+
+.info-box p{
+  max-width:760px;
+  margin-top:18px;
+  color:#b8c6bc;
+}
+
+/* REVEAL */
+
+.reveal{
+  opacity:0;
+  transform:translateY(26px);
+  transition:
+  opacity .75s ease,
+  transform .75s ease;
+}
+
+.reveal.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* FOOTER */
+
+footer{
+  padding:32px 0;
+  border-top:1px solid rgba(255,255,255,.08);
+  color:#718077;
+  font-size:.79rem;
+}
+
+.footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.footer-links{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.footer a:hover{
+  color:var(--green2);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1050px){
+
+  .nav-links{
+    gap:13px;
+    font-size:.81rem;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:45px;
+  }
+
+  .access-panel{
+    max-width:700px;
+  }
+
+  .features-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:860px){
+
+  .menu-btn{
+    display:block;
+  }
+
+  .nav{
+    min-height:68px;
+  }
+
+  .nav-links{
+    display:none;
+    position:absolute;
+    top:68px;
+    left:0;
+    right:0;
+    padding:14px 4% 18px;
+    background:rgba(3,11,7,.98);
+    border-bottom:1px solid rgba(255,255,255,.10);
+    flex-direction:column;
+    align-items:stretch;
+    gap:3px;
+  }
+
+  .nav-links.open{
+    display:flex;
+  }
+
+  .nav-links a{
+    display:block;
+    padding:9px 0;
+  }
+
+  .connection{
+    text-align:center;
+  }
+
+  .portal-layout{
+    grid-template-columns:1fr;
+  }
+
+  .security-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media(max-width:620px){
+
+  .container{
+    width:94%;
+  }
+
+  .brand-main{
+    font-size:1.18rem;
+  }
+
+  .brand-sub{
+    font-size:.88rem;
+  }
+
+  .hero-grid{
+    padding:74px 0 62px;
+  }
+
+  .hero h1{
+    font-size:3.55rem;
+    letter-spacing:-3px;
+  }
+
+  .hero-text{
+    font-size:.95rem;
+  }
+
+  .actions{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+  .section{
+    padding:64px 0;
+  }
+
+  .section-title{
+    font-size:2.15rem;
+    letter-spacing:-1px;
+  }
+
+  .features-grid,
+  .security-grid{
+    grid-template-columns:1fr;
+  }
+
+  .access-panel{
+    padding:24px 19px;
+  }
+
+  .portal-copy{
+    padding:27px;
+  }
+
+  .mockup-grid{
+    grid-template-columns:1fr;
+  }
+
+  .info-box{
+    padding:34px 25px;
+  }
+
+  .info-box h2{
+    font-size:2.6rem;
+    letter-spacing:-2px;
+  }
+
+  .footer{
+    display:block;
+    text-align:center;
+  }
+
+  .footer-links{
+    justify-content:center;
+    margin-top:10px;
+  }
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+  *,
+  *::before,
+  *::after{
+    animation:none!important;
+    transition:none!important;
+  }
+
+  .reveal{
+    opacity:1!important;
+    transform:none!important;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="container">
+
+<nav class="nav">
+
+<a href="index.html" class="brand">
+
+<span class="brand-main">
+Actyrom
+</span>
+
+<span class="brand-sub">
+Consulting
+</span>
+
+</a>
+
+
+<button
+id="menuBtn"
+class="menu-btn"
+type="button"
+aria-label="Ouvrir le menu"
+aria-expanded="false">
+
+☰
+
+</button>
+
+
+<ul id="navLinks" class="nav-links">
+
+<li>
+<a href="index.html">
+Accueil
+</a>
+</li>
+
+<li>
+<a href="qui-sommes-nous.html">
+Qui sommes-nous ?
+</a>
+</li>
+
+<li>
+<a href="industrie.html">
+Industrie
+</a>
+</li>
+
+<li>
+<a href="habitat.html">
+Habitat
+</a>
+</li>
+
+<li>
+<a href="industrie40.html">
+Industrie 4.0
+</a>
+</li>
+
+<li>
+<a href="accompagnement.html">
+Accompagnement
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+<li>
+
+<a
+href="connexion.html"
+class="connection">
+
+CONNEXION
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+
+<div>
+
+<div class="hero-label">
+
+ACTYROM // CLIENT ACCESS
+
+</div>
+
+
+<h1>
+
+Votre espace
+
+<span>
+Actyrom.
+</span>
+
+</h1>
+
+
+<p class="hero-text">
+
+L’espace client Actyrom
+est actuellement en préparation.
+
+À terme,
+il pourra centraliser
+le suivi des projets,
+les interventions,
+les documents,
+les rapports
+et certaines données techniques.
+
+</p>
+
+
+<div class="status">
+
+<span class="status-dot"></span>
+
+PORTAL DEVELOPMENT ACTIVE
+
+</div>
+
+
+<div class="actions">
+
+<a
+href="contact.html"
+class="btn btn-primary">
+
+Contacter Actyrom
+
+</a>
+
+
+<a
+href="index.html"
+class="btn btn-secondary">
+
+Retour à l’accueil
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="access-panel">
+
+<div class="access-head">
+
+<div class="access-title">
+
+ACTYROM // SECURE ACCESS
+
+</div>
+
+<div class="access-state">
+
+PREPARATION
+
+</div>
+
+</div>
+
+
+<div class="lock-zone">
+
+<div class="lock">
+
+<svg viewBox="0 0 24 24">
+
+<rect
+x="5"
+y="10"
+width="14"
+height="11"
+rx="2">
+</rect>
+
+<path
+d="M8 10V7a4 4 0 0 1 8 0v3">
+</path>
+
+<circle
+cx="12"
+cy="15"
+r="1">
+</circle>
+
+<path
+d="M12 16v2">
+</path>
+
+</svg>
+
+</div>
+
+
+<h2>
+
+Espace client en préparation
+
+</h2>
+
+
+<p>
+
+Aucun compte client
+ni système d’authentification
+n’est actuellement actif
+sur le site public.
+
+</p>
+
+</div>
+
+
+<div class="system-lines">
+
+<div class="system-line">
+<span>Interface client</span>
+<span>DEVELOPMENT</span>
+</div>
+
+<div class="system-line">
+<span>Gestion documentaire</span>
+<span>PLANNED</span>
+</div>
+
+<div class="system-line">
+<span>Suivi interventions</span>
+<span>PLANNED</span>
+</div>
+
+<div class="system-line">
+<span>Historique projet</span>
+<span>PLANNED</span>
+</div>
+
+<div class="system-line">
+<span>Data & supervision</span>
+<span>FUTURE MODULE</span>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="section section-dark">
+
+<div class="container">
+
+
+<div class="reveal">
+
+<div class="kicker">
+
+ESPACE CLIENT // VISION
+
+</div>
+
+
+<h2 class="section-title">
+
+Centraliser
+
+<span class="green">
+la relation technique.
+</span>
+
+</h2>
+
+
+<p class="section-intro">
+
+L’objectif futur
+est de créer un point d’accès simple
+pour retrouver les informations utiles
+liées aux prestations Actyrom.
+
+</p>
+
+</div>
+
+
+<div class="features-grid">
+
+
+<div class="feature-card reveal">
+
+<div class="feature-num">
+
+01 // PROJETS
+
+</div>
+
+<div class="feature-icon">
+
+<svg viewBox="0 0 24 24">
+
+<circle cx="5" cy="6" r="2"></circle>
+<circle cx="19" cy="6" r="2"></circle>
+<circle cx="12" cy="18" r="2"></circle>
+
+<path d="M7 6h10"></path>
+<path d="M6 8l5 8"></path>
+<path d="M18 8l-5 8"></path>
+
+</svg>
+
+</div>
+
+<h3>
+Suivi des projets
+</h3>
+
+<p>
+Retrouver les principales étapes,
+actions et informations
+liées à un projet.
+</p>
+
+</div>
+
+
+<div class="feature-card reveal">
+
+<div class="feature-num">
+
+02 // INTERVENTIONS
+
+</div>
+
+<div class="feature-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M14 6l4 4"></path>
+<path d="M5 19l5-5"></path>
+<path d="M14 6l3-3 4 4-3 3"></path>
+<path d="M3 21l4-1-3-3z"></path>
+
+</svg>
+
+</div>
+
+<h3>
+Historique des interventions
+</h3>
+
+<p>
+Conserver une trace
+des interventions,
+diagnostics
+et actions réalisées.
+</p>
+
+</div>
+
+
+<div class="feature-card reveal">
+
+<div class="feature-num">
+
+03 // DOCUMENTS
+
+</div>
+
+<div class="feature-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M5 3h10l4 4v14H5z"></path>
+<path d="M15 3v5h4"></path>
+<path d="M8 12h8M8 16h6"></path>
+
+</svg>
+
+</div>
+
+<h3>
+Documents
+</h3>
+
+<p>
+Centraliser selon le projet
+les rapports,
+documents,
+éléments techniques
+et informations utiles.
+</p>
+
+</div>
+
+
+<div class="feature-card reveal">
+
+<div class="feature-num">
+
+04 // KPI
+
+</div>
+
+<div class="feature-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M4 19V9"></path>
+<path d="M10 19V5"></path>
+<path d="M16 19v-7"></path>
+<path d="M22 19V3"></path>
+
+</svg>
+
+</div>
+
+<h3>
+Indicateurs
+</h3>
+
+<p>
+Afficher certains KPI
+ou informations techniques
+lorsqu’un projet
+intègre de la supervision.
+</p>
+
+</div>
+
+
+<div class="feature-card reveal">
+
+<div class="feature-num">
+
+05 // ALERTES
+
+</div>
+
+<div class="feature-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M12 3a6 6 0 0 0-6 6v4l-2 3h16l-2-3V9a6 6 0 0 0-6-6z"></path>
+<path d="M10 20h4"></path>
+
+</svg>
+
+</div>
+
+<h3>
+Informations & alertes
+</h3>
+
+<p>
+Faire remonter
+les informations importantes
+sans multiplier
+les notifications inutiles.
+</p>
+
+</div>
+
+
+<div class="feature-card reveal">
+
+<div class="feature-num">
+
+06 // HISTORIQUE
+
+</div>
+
+<div class="feature-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M3 12a9 9 0 1 0 3-6.7"></path>
+<path d="M3 4v6h6"></path>
+<path d="M12 7v5l3 2"></path>
+
+</svg>
+
+</div>
+
+<h3>
+Mémoire technique
+</h3>
+
+<p>
+Créer progressivement
+un historique exploitable
+du matériel,
+des projets
+et des interventions.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container portal-layout">
+
+
+<div class="portal-copy reveal">
+
+<div class="kicker">
+
+PORTAIL ACTYROM
+
+</div>
+
+
+<h2 class="section-title">
+
+Une interface
+
+<span class="green">
+simple et utile.
+</span>
+
+</h2>
+
+
+<p>
+
+L’objectif n’est pas
+de créer un portail compliqué
+rempli de fonctions inutiles.
+
+Le futur espace client
+devra permettre
+de retrouver rapidement
+les informations importantes.
+
+</p>
+
+
+<p>
+
+Les fonctionnalités
+pourront évoluer
+selon les besoins réels
+des clients
+et les types de prestations développés.
+
+</p>
+
+
+<div class="portal-list">
+
+<div class="portal-item">
+Suivi des demandes et projets
+</div>
+
+<div class="portal-item">
+Rapports d’intervention
+</div>
+
+<div class="portal-item">
+Documents techniques
+</div>
+
+<div class="portal-item">
+Historique maintenance
+</div>
+
+<div class="portal-item">
+KPI et données lorsque disponibles
+</div>
+
+<div class="portal-item">
+Accès adapté au projet du client
+</div>
+
+</div>
+
+</div>
+
+
+<div class="portal-mockup reveal">
+
+<div class="mockup-header">
+
+<div class="mockup-title">
+
+CLIENT // DASHBOARD
+
+</div>
+
+<div class="mockup-status">
+
+PREVIEW
+
+</div>
+
+</div>
+
+
+<div class="mockup-grid">
+
+<div class="mockup-card">
+
+<small>
+PROJETS ACTIFS
+</small>
+
+<strong>
+02
+</strong>
+
+<span>
+TRACKING
+</span>
+
+</div>
+
+
+<div class="mockup-card">
+
+<small>
+INTERVENTIONS
+</small>
+
+<strong>
+05
+</strong>
+
+<span>
+HISTORY
+</span>
+
+</div>
+
+
+<div class="mockup-card">
+
+<small>
+DOCUMENTS
+</small>
+
+<strong>
+12
+</strong>
+
+<span>
+AVAILABLE
+</span>
+
+</div>
+
+
+<div class="mockup-card">
+
+<small>
+SYSTEM STATUS
+</small>
+
+<strong>
+ONLINE
+</strong>
+
+<span>
+CONNECTED
+</span>
+
+</div>
+
+</div>
+
+
+<div class="project-list">
+
+<div class="project-row">
+
+<div class="project-name">
+Projet technique
+</div>
+
+<div class="project-state">
+EN COURS
+</div>
+
+</div>
+
+
+<div class="project-row">
+
+<div class="project-name">
+Rapport d’intervention
+</div>
+
+<div class="project-state">
+DISPONIBLE
+</div>
+
+</div>
+
+
+<div class="project-row">
+
+<div class="project-name">
+Suivi maintenance
+</div>
+
+<div class="project-state">
+À JOUR
+</div>
+
+</div>
+
+
+<div class="project-row">
+
+<div class="project-name">
+KPI / Supervision
+</div>
+
+<div class="project-state">
+OPTIONNEL
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="section section-dark">
+
+<div class="container">
+
+
+<div class="reveal">
+
+<div class="kicker">
+
+SÉCURITÉ & CONFIDENTIALITÉ
+
+</div>
+
+
+<h2 class="section-title">
+
+L’accès client devra être
+
+<span class="green">
+réellement sécurisé.
+</span>
+
+</h2>
+
+
+<p class="section-intro">
+
+L’espace client ne sera activé
+que lorsqu’une solution technique adaptée
+permettra de gérer correctement
+l’authentification,
+les droits d’accès
+et les données.
+
+</p>
+
+</div>
+
+
+<div class="security-grid">
+
+<div class="security-card reveal">
+
+<h3>
+Authentification
+</h3>
+
+<p>
+Les accès devront être
+individualisés
+et protégés
+avant l’ouverture
+du portail aux clients.
+</p>
+
+</div>
+
+
+<div class="security-card reveal">
+
+<h3>
+Droits d’accès
+</h3>
+
+<p>
+Chaque client
+ne devra accéder
+qu’aux informations
+et projets
+qui le concernent.
+</p>
+
+</div>
+
+
+<div class="security-card reveal">
+
+<h3>
+Données maîtrisées
+</h3>
+
+<p>
+Les informations affichées
+devront être sélectionnées
+en fonction du besoin
+et du niveau d’accès autorisé.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container">
+
+
+<div class="info-box reveal">
+
+<div class="kicker">
+
+ESPACE EN PRÉPARATION
+
+</div>
+
+
+<h2>
+
+Pas encore de compte ?
+
+<span class="green">
+C’est normal.
+</span>
+
+</h2>
+
+
+<p>
+
+L’espace client Actyrom
+n’est pas encore ouvert.
+
+Aucune inscription,
+aucun identifiant
+et aucun mot de passe
+ne sont actuellement nécessaires.
+
+Pour toute demande,
+utilisez simplement
+le contact direct Actyrom.
+
+</p>
+
+
+<div class="actions">
+
+<a
+href="contact.html"
+class="btn btn-primary">
+
+Contacter Actyrom
+
+</a>
+
+
+<a
+href="index.html"
+class="btn btn-secondary">
+
+Découvrir Actyrom
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<div class="container footer">
+
+<div>
+
+© 2026 Actyrom Consulting
+— Des solutions pour demain
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="index.html">
+Accueil
+</a>
+
+<a href="mentions-legales.html">
+Mentions légales
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const navLinks =
+document.getElementById("navLinks");
+
+
+menuBtn.addEventListener(
+"click",
+() => {
+
+  const opened =
+  navLinks.classList.toggle("open");
+
+  menuBtn.setAttribute(
+    "aria-expanded",
+    opened ? "true" : "false"
+  );
+
+}
+);
+
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(
+link => {
+
+  link.addEventListener(
+  "click",
+  () => {
+
+    navLinks.classList.remove("open");
+
+    menuBtn.setAttribute(
+      "aria-expanded",
+      "false"
+    );
+
+  }
+  );
+
+}
+);
+
+
+const observer =
+new IntersectionObserver(
+
+(entries) => {
+
+  entries.forEach(
+  entry => {
+
+    if(entry.isIntersecting){
+
+      entry.target.classList.add(
+        "visible"
+      );
+
+      observer.unobserve(
+        entry.target
+      );
+
+    }
+
+  });
+
+},
+
+{
+  threshold:.12
+}
+
+);
+
+
+document
+.querySelectorAll(".reveal")
+.forEach(
+element => {
+
+  observer.observe(element);
+
+}
+);
+
+</script>
+
+</body>
+
+</html>
