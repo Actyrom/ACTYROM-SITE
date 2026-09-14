@@ -6,22 +6,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Industrie | Actyrom Consulting</title>
+<title>Habitat | Actyrom Consulting</title>
 
 <meta
 name="description"
-content="Actyrom Consulting intervient en dépannage, diagnostic, automatisme, maintenance, amélioration, méthodes, études, projets techniques et supervision industrielle.">
+content="Actyrom Consulting propose des solutions techniques pour l'habitat : domotique, réseau Wi-Fi, informatique, multimédia, mur TV, bureau connecté, home cinéma, gaming room, smart garage, énergie et projets sur mesure.">
 
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#06130d">
 
 <link
 rel="canonical"
-href="https://actyrom.fr/industrie.html">
+href="https://actyrom.fr/habitat.html">
 
 <style>
 
 :root{
+
   --bg:#04100a;
   --bg2:#020805;
 
@@ -39,6 +40,7 @@ href="https://actyrom.fr/industrie.html">
   --green2:#b3ff67;
 
   --max:1180px;
+
 }
 
 
@@ -96,10 +98,14 @@ button{
 }
 
 img{
+
   width:100%;
   height:100%;
+
   object-fit:cover;
+
   display:block;
+
 }
 
 .container{
@@ -358,10 +364,12 @@ header{
 
 .hero-media img{
 
+  object-position:center;
+
   filter:
   saturate(.72)
-  contrast(1.08)
-  brightness(.50);
+  contrast(1.05)
+  brightness(.53);
 
 }
 
@@ -378,15 +386,15 @@ header{
   linear-gradient(
     90deg,
     rgba(2,9,5,.98) 0%,
-    rgba(3,12,7,.94) 38%,
-    rgba(4,18,10,.66) 68%,
-    rgba(2,8,5,.70) 100%
+    rgba(3,12,7,.92) 38%,
+    rgba(4,18,10,.60) 68%,
+    rgba(2,8,5,.62)
   ),
 
   linear-gradient(
     180deg,
-    transparent,
-    rgba(2,8,5,.72)
+    rgba(2,8,5,.08),
+    rgba(2,8,5,.76)
   );
 
 }
@@ -396,11 +404,9 @@ header{
   position:absolute;
 
   width:600px;
-
   height:600px;
 
   top:-210px;
-
   right:-140px;
 
   border-radius:50%;
@@ -425,15 +431,19 @@ header{
 @keyframes haloMove{
 
   from{
+
     transform:
     translate(-18px,10px)
     scale(.96);
+
   }
 
   to{
+
     transform:
     translate(20px,-12px)
     scale(1.05);
+
   }
 
 }
@@ -449,7 +459,7 @@ header{
 
   z-index:2;
 
-  max-width:870px;
+  max-width:900px;
 
   padding:
   110px 0
@@ -636,7 +646,6 @@ header{
 .status-dot{
 
   width:13px;
-
   height:13px;
 
   border-radius:50%;
@@ -663,7 +672,8 @@ header{
 
   50%{
 
-    transform:scale(1.1);
+    transform:
+    scale(1.1);
 
     box-shadow:
 
@@ -792,7 +802,7 @@ header{
 
 }
 
-.service-number{
+.service-num{
 
   color:var(--green2);
 
@@ -810,7 +820,6 @@ header{
 .service-icon{
 
   width:48px;
-
   height:48px;
 
   margin-top:18px;
@@ -835,7 +844,6 @@ header{
 .service-icon svg{
 
   width:24px;
-
   height:24px;
 
   fill:none;
@@ -870,6 +878,313 @@ header{
 
 
 /* =========================================================
+   REALISATIONS
+========================================================= */
+
+.projects-grid{
+
+  margin-top:40px;
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(
+    2,
+    minmax(0,1fr)
+  );
+
+  gap:18px;
+
+}
+
+.project-card{
+
+  position:relative;
+
+  min-height:390px;
+
+  overflow:hidden;
+
+  border-radius:24px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.12);
+
+  background:#07130d;
+
+}
+
+.project-card img{
+
+  position:absolute;
+
+  inset:0;
+
+  filter:
+  saturate(.72)
+  brightness(.72);
+
+  transition:
+
+  transform .7s ease,
+
+  filter .7s ease;
+
+}
+
+.project-card:hover img{
+
+  transform:
+  scale(1.055);
+
+  filter:
+  saturate(.92)
+  brightness(.80);
+
+}
+
+.project-card::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+
+  linear-gradient(
+    180deg,
+    rgba(2,9,5,.02) 0%,
+    rgba(2,9,5,.18) 35%,
+    rgba(2,9,5,.93) 100%
+  );
+
+}
+
+.project-content{
+
+  position:absolute;
+
+  z-index:2;
+
+  left:27px;
+  right:27px;
+  bottom:27px;
+
+}
+
+.project-number{
+
+  color:var(--green2);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  font-size:.72rem;
+
+  letter-spacing:2px;
+
+}
+
+.project-card h3{
+
+  margin-top:6px;
+
+  font-size:1.55rem;
+
+}
+
+.project-card p{
+
+  margin-top:8px;
+
+  max-width:560px;
+
+  color:#ced9d0;
+
+  font-size:.9rem;
+
+}
+
+.project-tags{
+
+  margin-top:14px;
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:7px;
+
+}
+
+.project-tag{
+
+  padding:
+  6px 9px;
+
+  border-radius:999px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.14);
+
+  background:
+  rgba(3,10,6,.52);
+
+  backdrop-filter:
+  blur(9px);
+
+  color:#d8e4da;
+
+  font-size:.7rem;
+
+}
+
+
+/* =========================================================
+   SMART HOUSE
+========================================================= */
+
+.smart-layout{
+
+  display:grid;
+
+  grid-template-columns:
+  1.05fr
+  .95fr;
+
+  gap:22px;
+
+}
+
+.smart-copy{
+
+  padding:39px;
+
+  border:
+  1px solid
+  var(--green-line);
+
+  border-radius:24px;
+
+  background:
+
+  radial-gradient(
+    circle at 85% 0%,
+    rgba(70,180,66,.11),
+    transparent 35%
+  ),
+
+  #07150e;
+
+}
+
+.smart-copy p{
+
+  margin-top:16px;
+
+  color:var(--muted);
+
+}
+
+.smart-list{
+
+  margin-top:25px;
+
+  display:grid;
+
+  grid-template-columns:
+  1fr 1fr;
+
+  gap:10px;
+
+}
+
+.smart-item{
+
+  padding:
+  13px 14px;
+
+  border-radius:11px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.09);
+
+  background:
+  rgba(3,10,6,.42);
+
+  color:#d7e3d9;
+
+  font-size:.82rem;
+
+}
+
+.smart-panel{
+
+  padding:31px;
+
+  border-radius:24px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.10);
+
+  background:#07130d;
+
+}
+
+.smart-line{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:20px;
+
+  padding:
+  16px 0;
+
+  border-bottom:
+  1px solid
+  rgba(255,255,255,.08);
+
+}
+
+.smart-line:last-child{
+
+  border-bottom:0;
+
+}
+
+.smart-line span:first-child{
+
+  color:var(--muted);
+
+}
+
+.smart-line span:last-child{
+
+  color:var(--green2);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  font-size:.79rem;
+
+}
+
+
+/* =========================================================
    PROCESS
 ========================================================= */
 
@@ -885,13 +1200,13 @@ header{
     1fr
   );
 
+  overflow:hidden;
+
   border:
   1px solid
   var(--green-line);
 
   border-radius:22px;
-
-  overflow:hidden;
 
   background:#07150e;
 
@@ -899,10 +1214,10 @@ header{
 
 .process-card{
 
+  min-height:185px;
+
   padding:
   25px 20px;
-
-  min-height:190px;
 
   border-right:
   1px solid
@@ -951,34 +1266,30 @@ header{
 
 
 /* =========================================================
-   USE CASES
+   PARTENAIRES
 ========================================================= */
 
-.use-grid{
-
-  margin-top:40px;
+.partner-layout{
 
   display:grid;
 
   grid-template-columns:
-  repeat(
-    2,
-    1fr
-  );
+  .95fr
+  1.05fr;
 
-  gap:17px;
+  gap:22px;
 
 }
 
-.use-card{
+.partner-photo{
 
   position:relative;
 
-  min-height:330px;
+  min-height:470px;
 
   overflow:hidden;
 
-  border-radius:22px;
+  border-radius:24px;
 
   border:
   1px solid
@@ -986,34 +1297,15 @@ header{
 
 }
 
-.use-card img{
-
-  position:absolute;
-
-  inset:0;
+.partner-photo img{
 
   filter:
-  saturate(.68)
-  brightness(.70);
-
-  transition:
-  transform .7s ease,
-  filter .7s ease;
+  saturate(.72)
+  brightness(.72);
 
 }
 
-.use-card:hover img{
-
-  transform:
-  scale(1.05);
-
-  filter:
-  saturate(.88)
-  brightness(.78);
-
-}
-
-.use-card::after{
+.partner-photo::after{
 
   content:"";
 
@@ -1022,30 +1314,27 @@ header{
   inset:0;
 
   background:
-
   linear-gradient(
     180deg,
-    rgba(2,9,5,.04),
-    rgba(2,9,5,.91)
+    transparent 35%,
+    rgba(2,9,5,.90)
   );
 
 }
 
-.use-content{
+.partner-caption{
 
   position:absolute;
 
   z-index:2;
 
-  left:27px;
-
-  right:27px;
-
-  bottom:26px;
+  left:25px;
+  right:25px;
+  bottom:25px;
 
 }
 
-.use-content span{
+.partner-caption span{
 
   color:var(--green2);
 
@@ -1054,48 +1343,21 @@ header{
   Consolas,
   monospace;
 
-  font-size:.72rem;
+  font-size:.75rem;
 
 }
 
-.use-content h3{
+.partner-caption strong{
+
+  display:block;
 
   margin-top:5px;
 
-  font-size:1.45rem;
+  font-size:1.2rem;
 
 }
 
-.use-content p{
-
-  margin-top:7px;
-
-  max-width:550px;
-
-  color:#ccd8cf;
-
-  font-size:.9rem;
-
-}
-
-
-/* =========================================================
-   DATA
-========================================================= */
-
-.data-layout{
-
-  display:grid;
-
-  grid-template-columns:
-  1.08fr
-  .92fr;
-
-  gap:22px;
-
-}
-
-.data-copy{
+.partner-copy{
 
   padding:39px;
 
@@ -1108,8 +1370,8 @@ header{
   background:
 
   radial-gradient(
-    circle at 85% 0%,
-    rgba(70,180,66,.11),
+    circle at 90% 0%,
+    rgba(70,180,66,.10),
     transparent 35%
   ),
 
@@ -1117,7 +1379,7 @@ header{
 
 }
 
-.data-copy p{
+.partner-copy p{
 
   margin-top:16px;
 
@@ -1125,9 +1387,9 @@ header{
 
 }
 
-.data-tags{
+.partner-tags{
 
-  margin-top:25px;
+  margin-top:24px;
 
   display:flex;
 
@@ -1137,7 +1399,7 @@ header{
 
 }
 
-.data-tag{
+.partner-tag{
 
   padding:
   9px 12px;
@@ -1157,71 +1419,9 @@ header{
 
 }
 
-.data-visual{
-
-  padding:30px;
-
-  border-radius:24px;
-
-  border:
-  1px solid
-  rgba(255,255,255,.10);
-
-  background:#07130d;
-
-  display:flex;
-
-  flex-direction:column;
-
-  justify-content:center;
-
-}
-
-.data-line{
-
-  padding:
-  15px 0;
-
-  display:flex;
-
-  justify-content:space-between;
-
-  gap:20px;
-
-  border-bottom:
-  1px solid
-  rgba(255,255,255,.08);
-
-}
-
-.data-line:last-child{
-
-  border-bottom:0;
-
-}
-
-.data-line span:first-child{
-
-  color:var(--muted);
-
-}
-
-.data-line span:last-child{
-
-  color:var(--green2);
-
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
-
-  font-size:.82rem;
-
-}
-
 
 /* =========================================================
-   WHY ACTYROM
+   POURQUOI
 ========================================================= */
 
 .why-grid{
@@ -1270,6 +1470,37 @@ header{
 
 
 /* =========================================================
+   CADRE INTERVENTION
+========================================================= */
+
+.notice{
+
+  margin-top:30px;
+
+  padding:
+  21px 24px;
+
+  border-left:
+  3px solid
+  var(--green);
+
+  background:
+  rgba(7,23,15,.70);
+
+  color:#aebcb2;
+
+  font-size:.88rem;
+
+}
+
+.notice strong{
+
+  color:#eef5ef;
+
+}
+
+
+/* =========================================================
    CTA
 ========================================================= */
 
@@ -1301,7 +1532,7 @@ header{
 
 .cta h2{
 
-  max-width:820px;
+  max-width:850px;
 
   font-size:
   clamp(
@@ -1462,7 +1693,6 @@ footer{
     top:68px;
 
     left:0;
-
     right:0;
 
     padding:
@@ -1504,13 +1734,14 @@ footer{
   }
 
   .intro-grid,
-  .data-layout{
+  .smart-layout,
+  .partner-layout{
 
     grid-template-columns:1fr;
 
   }
 
-  .use-grid{
+  .projects-grid{
 
     grid-template-columns:1fr;
 
@@ -1596,8 +1827,9 @@ footer{
   }
 
   .services-grid,
+  .why-grid,
   .process-grid,
-  .why-grid{
+  .smart-list{
 
     grid-template-columns:1fr;
 
@@ -1609,9 +1841,22 @@ footer{
 
   }
 
-  .data-copy{
+  .project-card{
+
+    min-height:350px;
+
+  }
+
+  .smart-copy,
+  .partner-copy{
 
     padding:27px;
+
+  }
+
+  .partner-photo{
+
+    min-height:360px;
 
   }
 
@@ -1742,19 +1987,19 @@ Qui sommes-nous ?
 
 
 <li>
-<a
-href="industrie.html"
-class="active">
-
+<a href="industrie.html">
 Industrie
-
 </a>
 </li>
 
 
 <li>
-<a href="habitat.html">
+<a
+href="habitat.html"
+class="active">
+
 Habitat
+
 </a>
 </li>
 
@@ -1817,9 +2062,11 @@ CONNEXION
 
 <div class="hero-media">
 
+
 <img
-src="https://images.unsplash.com/photo-1780034766243-044492794729?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=2400"
-alt="Automatisme et équipement industriel">
+src="https://images.unsplash.com/photo-1774199616762-31d947dc7d35?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=2400"
+alt="Habitat moderne et solutions techniques intégrées">
+
 
 </div>
 
@@ -1836,35 +2083,36 @@ alt="Automatisme et équipement industriel">
 
 <div class="hero-label">
 
-ACTYROM // INDUSTRIE
+ACTYROM // HABITAT
 
 </div>
 
 
 <h1>
 
-Comprendre.
+La technologie
 
 <span>
-Résoudre.
+intégrée au quotidien.
 </span>
-
-Améliorer.
 
 </h1>
 
 
 <p class="hero-text">
 
-Actyrom accompagne les besoins industriels
-en dépannage,
-analyse,
-maintenance,
+Réseau,
+domotique,
+informatique,
+multimédia,
 automatismes,
-amélioration,
-méthodes,
-études
-et projets techniques.
+énergie
+et aménagement technique :
+
+des solutions pensées
+autour de votre logement,
+de vos usages
+et de vos projets.
 
 </p>
 
@@ -1876,16 +2124,16 @@ et projets techniques.
 href="contact.html"
 class="btn btn-primary">
 
-Parler de votre besoin
+Parler de votre projet
 
 </a>
 
 
 <a
-href="#prestations"
+href="#realisations"
 class="btn btn-secondary">
 
-Voir les prestations
+Découvrir les possibilités
 
 </a>
 
@@ -1898,7 +2146,7 @@ Voir les prestations
 <span class="status-dot">
 </span>
 
-INDUSTRIAL SYSTEM ONLINE
+HOME SYSTEM ONLINE
 
 </div>
 
@@ -1914,7 +2162,7 @@ INDUSTRIAL SYSTEM ONLINE
 
 
 <!-- =========================================================
-     APPROCHE
+     INTRO
 ========================================================= -->
 
 <section class="section">
@@ -1935,11 +2183,10 @@ NOTRE APPROCHE
 
 <h2 class="section-title">
 
-Intervenir sur
+La technologie doit
 
 <span class="green">
-la cause,
-pas seulement le symptôme.
+simplifier la maison.
 </span>
 
 </h2>
@@ -1954,45 +2201,38 @@ pas seulement le symptôme.
 
 <p class="lead">
 
-Une panne industrielle
-n’est pas toujours liée
-à un composant défectueux.
+Une maison connectée
+ne doit pas devenir
+plus compliquée à utiliser.
 
-Elle peut venir
-d’une dérive,
-d’un réglage,
-d’un capteur,
-d’un réseau,
-d’une logique,
-d’une organisation
-ou d’une succession
-de petits problèmes.
+La technique doit rester discrète,
+compréhensible
+et réellement utile.
 
 </p>
 
 
 <p>
 
-L’approche Actyrom consiste
-à observer l’installation,
-comprendre son fonctionnement,
-recueillir les symptômes,
-analyser les événements
-et identifier les causes probables
-avant de proposer une réponse.
+Actyrom peut intervenir
+sur un besoin précis
+comme un problème de réseau Wi-Fi,
+une installation informatique
+ou une automatisation,
+mais aussi sur un projet plus global
+mêlant plusieurs compétences.
 
 </p>
 
 
 <p>
 
-Cette logique s’applique
-aussi bien à une urgence
-qu’à un projet de fiabilisation,
-une étude technique
-ou une réflexion
-sur l’amélioration
-d’un équipement.
+L’objectif est de construire
+une solution adaptée
+à la maison,
+aux habitudes,
+aux équipements existants
+et au niveau d’automatisation souhaité.
 
 </p>
 
@@ -2008,12 +2248,10 @@ d’un équipement.
 
 
 <!-- =========================================================
-     PRESTATIONS
+     SERVICES
 ========================================================= -->
 
-<section
-class="section section-dark"
-id="prestations">
+<section class="section section-dark">
 
 
 <div class="container">
@@ -2024,17 +2262,17 @@ id="prestations">
 
 <div class="kicker">
 
-PRESTATIONS INDUSTRIE
+SOLUTIONS HABITAT
 
 </div>
 
 
 <h2 class="section-title">
 
-Des compétences concrètes
+Des solutions techniques
 
 <span class="green">
-pour le terrain.
+utiles et concrètes.
 </span>
 
 </h2>
@@ -2048,14 +2286,352 @@ pour le terrain.
 
 
 
+<!-- DOMOTIQUE -->
+
+<article class="service-card reveal">
+
+
+<div class="service-num">
+
+01 // DOMOTIQUE
+
+</div>
+
+
+<div class="service-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M3 11.5L12 4l9 7.5"></path>
+<path d="M5 10.5V20h14v-9.5"></path>
+<path d="M9 20v-5h6v5"></path>
+
+</svg>
+
+</div>
+
+
+<h3>
+
+Domotique
+
+</h3>
+
+
+<p>
+
+Éclairage,
+scénarios,
+commandes,
+automatismes
+et centralisation
+de fonctions de la maison.
+
+</p>
+
+
+</article>
+
+
+
+<!-- RESEAU -->
+
+<article class="service-card reveal">
+
+
+<div class="service-num">
+
+02 // RÉSEAU
+
+</div>
+
+
+<div class="service-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M4 10c5-4 11-4 16 0"></path>
+<path d="M7 14c3-2.5 7-2.5 10 0"></path>
+<path d="M10 18c1.4-1 2.6-1 4 0"></path>
+<circle cx="12" cy="21" r="1"></circle>
+
+</svg>
+
+</div>
+
+
+<h3>
+
+Réseau & Wi-Fi
+
+</h3>
+
+
+<p>
+
+Couverture Wi-Fi,
+réseau Ethernet,
+baie,
+équipements connectés
+et optimisation
+de la connectivité.
+
+</p>
+
+
+</article>
+
+
+
+<!-- INFORMATIQUE -->
+
+<article class="service-card reveal">
+
+
+<div class="service-num">
+
+03 // INFORMATIQUE
+
+</div>
+
+
+<div class="service-icon">
+
+<svg viewBox="0 0 24 24">
+
+<rect x="3" y="4" width="18" height="13" rx="2"></rect>
+<path d="M8 21h8"></path>
+<path d="M12 17v4"></path>
+
+</svg>
+
+</div>
+
+
+<h3>
+
+Informatique
+
+</h3>
+
+
+<p>
+
+Postes,
+équipements réseau,
+stockage,
+sauvegarde,
+connexion
+et intégration
+dans l’environnement de la maison.
+
+</p>
+
+
+</article>
+
+
+
+<!-- MULTIMEDIA -->
+
+<article class="service-card reveal">
+
+
+<div class="service-num">
+
+04 // MULTIMÉDIA
+
+</div>
+
+
+<div class="service-icon">
+
+<svg viewBox="0 0 24 24">
+
+<rect x="3" y="5" width="18" height="13" rx="2"></rect>
+<path d="M9 22h6"></path>
+<path d="M12 18v4"></path>
+<path d="M10 9l5 2.5-5 2.5z"></path>
+
+</svg>
+
+</div>
+
+
+<h3>
+
+Multimédia
+
+</h3>
+
+
+<p>
+
+TV,
+audio,
+streaming,
+réseau,
+éclairage
+et intégration esthétique
+dans les espaces de vie.
+
+</p>
+
+
+</article>
+
+
+
+<!-- ENERGIE -->
+
+<article class="service-card reveal">
+
+
+<div class="service-num">
+
+05 // ÉNERGIE
+
+</div>
+
+
+<div class="service-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M13 2L5 14h6l-1 8 9-13h-6z"></path>
+
+</svg>
+
+</div>
+
+
+<h3>
+
+Énergie & suivi
+
+</h3>
+
+
+<p>
+
+Mesures,
+suivi des consommations,
+visualisation
+et automatisations
+pour mieux comprendre
+les usages.
+
+</p>
+
+
+</article>
+
+
+
+<!-- AUTOMATISME -->
+
+<article class="service-card reveal">
+
+
+<div class="service-num">
+
+06 // AUTOMATISME
+
+</div>
+
+
+<div class="service-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M4 12h16"></path>
+<circle cx="8" cy="12" r="3"></circle>
+<circle cx="17" cy="12" r="3"></circle>
+
+</svg>
+
+</div>
+
+
+<h3>
+
+Automatismes
+
+</h3>
+
+
+<p>
+
+Portes,
+équipements,
+commandes,
+capteurs
+et solutions automatisées
+adaptées au projet.
+
+</p>
+
+
+</article>
+
+
+
+<!-- SUPERVISION -->
+
+<article class="service-card reveal">
+
+
+<div class="service-num">
+
+07 // SUPERVISION
+
+</div>
+
+
+<div class="service-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M4 19V9"></path>
+<path d="M10 19V5"></path>
+<path d="M16 19v-7"></path>
+<path d="M22 19V3"></path>
+
+</svg>
+
+</div>
+
+
+<h3>
+
+Supervision
+
+</h3>
+
+
+<p>
+
+Visualiser
+les états,
+les consommations
+ou certaines informations
+depuis une interface claire.
+
+</p>
+
+
+</article>
+
+
+
 <!-- DEPANNAGE -->
 
 <article class="service-card reveal">
 
 
-<div class="service-number">
+<div class="service-num">
 
-01 // DÉPANNAGE
+08 // DÉPANNAGE
 
 </div>
 
@@ -2076,19 +2652,19 @@ pour le terrain.
 
 <h3>
 
-Dépannage & diagnostic
+Dépannage technique
 
 </h3>
 
 
 <p>
 
-Recherche de panne,
-analyse des symptômes,
-contrôles,
-mesures
-et identification des causes
-avant intervention.
+Recherche de panne
+sur réseau,
+informatique,
+automatismes
+ou équipements techniques
+dans le périmètre d’intervention.
 
 </p>
 
@@ -2097,321 +2673,14 @@ avant intervention.
 
 
 
-<!-- ANALYSE -->
+<!-- SUR MESURE -->
 
 <article class="service-card reveal">
 
 
-<div class="service-number">
+<div class="service-num">
 
-02 // ANALYSE
-
-</div>
-
-
-<div class="service-icon">
-
-<svg viewBox="0 0 24 24">
-
-<circle
-cx="10"
-cy="10"
-r="6">
-</circle>
-
-<path
-d="M14.5 14.5L21 21">
-</path>
-
-</svg>
-
-</div>
-
-
-<h3>
-
-Analyse technique
-
-</h3>
-
-
-<p>
-
-Analyse du fonctionnement,
-des défauts récurrents,
-des événements
-et des interactions
-entre plusieurs équipements.
-
-</p>
-
-
-</article>
-
-
-
-<!-- AMELIORATION -->
-
-<article class="service-card reveal">
-
-
-<div class="service-number">
-
-03 // AMÉLIORATION
-
-</div>
-
-
-<div class="service-icon">
-
-<svg viewBox="0 0 24 24">
-
-<path d="M4 18l5-5 4 3 7-8"></path>
-<path d="M15 8h5v5"></path>
-
-</svg>
-
-</div>
-
-
-<h3>
-
-Amélioration & fiabilisation
-
-</h3>
-
-
-<p>
-
-Réduction des pannes,
-amélioration des équipements,
-optimisation du fonctionnement
-et recherche de solutions durables.
-
-</p>
-
-
-</article>
-
-
-
-<!-- AUTOMATISME -->
-
-<article class="service-card reveal">
-
-
-<div class="service-number">
-
-04 // AUTOMATISME
-
-</div>
-
-
-<div class="service-icon">
-
-<svg viewBox="0 0 24 24">
-
-<rect
-x="5"
-y="5"
-width="14"
-height="14"
-rx="2">
-</rect>
-
-<path d="M9 2v3M15 2v3M9 19v3M15 19v3"></path>
-<path d="M2 9h3M2 15h3M19 9h3M19 15h3"></path>
-
-</svg>
-
-</div>
-
-
-<h3>
-
-Automatismes
-
-</h3>
-
-
-<p>
-
-Analyse de systèmes automatisés,
-capteurs,
-actionneurs,
-variateurs,
-vision industrielle
-et fonctionnement machine.
-
-</p>
-
-
-</article>
-
-
-
-<!-- ETUDE -->
-
-<article class="service-card reveal">
-
-
-<div class="service-number">
-
-05 // ÉTUDE
-
-</div>
-
-
-<div class="service-icon">
-
-<svg viewBox="0 0 24 24">
-
-<path d="M5 3h14v18H5z"></path>
-<path d="M8 7h8M8 11h8M8 15h5"></path>
-
-</svg>
-
-</div>
-
-
-<h3>
-
-Études techniques
-
-</h3>
-
-
-<p>
-
-Analyse du besoin,
-étude de faisabilité,
-définition de solutions
-et préparation technique
-des évolutions.
-
-</p>
-
-
-</article>
-
-
-
-<!-- METHODES -->
-
-<article class="service-card reveal">
-
-
-<div class="service-number">
-
-06 // MÉTHODES
-
-</div>
-
-
-<div class="service-icon">
-
-<svg viewBox="0 0 24 24">
-
-<rect
-x="5"
-y="4"
-width="14"
-height="17"
-rx="2">
-</rect>
-
-<path
-d="M9 2h6v4H9zM8 11l2 2 4-4M8 17h8">
-</path>
-
-</svg>
-
-</div>
-
-
-<h3>
-
-Méthodes & organisation
-
-</h3>
-
-
-<p>
-
-Préparation des interventions,
-traçabilité,
-préventif,
-documentation,
-priorisation
-et amélioration des pratiques.
-
-</p>
-
-
-</article>
-
-
-
-<!-- PROJET -->
-
-<article class="service-card reveal">
-
-
-<div class="service-number">
-
-07 // PROJETS
-
-</div>
-
-
-<div class="service-icon">
-
-<svg viewBox="0 0 24 24">
-
-<circle cx="5" cy="6" r="2"></circle>
-<circle cx="19" cy="6" r="2"></circle>
-<circle cx="12" cy="18" r="2"></circle>
-
-<path d="M7 6h10"></path>
-<path d="M6 8l5 8"></path>
-<path d="M18 8l-5 8"></path>
-
-</svg>
-
-</div>
-
-
-<h3>
-
-Gestion de projet
-
-</h3>
-
-
-<p>
-
-Coordination technique,
-planification,
-suivi des actions,
-interfaces métiers
-et accompagnement
-jusqu’à la mise en service.
-
-</p>
-
-
-</article>
-
-
-
-<!-- RESEAUX -->
-
-<article class="service-card reveal">
-
-
-<div class="service-number">
-
-08 // RÉSEAUX
+09 // SUR MESURE
 
 </div>
 
@@ -2434,18 +2703,18 @@ jusqu’à la mise en service.
 
 <h3>
 
-Réseaux industriels
+Solutions sur mesure
 
 </h3>
 
 
 <p>
 
-Diagnostic réseau,
-communications,
-échanges de données
-et analyse des interactions
-entre équipements.
+Associer plusieurs technologies
+et compétences
+pour construire
+une solution qui n’existe pas
+sous forme standard.
 
 </p>
 
@@ -2453,52 +2722,667 @@ entre équipements.
 </article>
 
 
+</div>
 
-<!-- RENFORT -->
-
-<article class="service-card reveal">
-
-
-<div class="service-number">
-
-09 // RENFORT
 
 </div>
 
 
-<div class="service-icon">
+</section>
 
-<svg viewBox="0 0 24 24">
 
-<circle cx="9" cy="8" r="3"></circle>
-<path d="M3 20c0-4 2.4-7 6-7s6 3 6 7"></path>
-<path d="M17 8h4M19 6v4"></path>
 
-</svg>
+<!-- =========================================================
+     REALISATIONS
+========================================================= -->
+
+<section
+class="section"
+id="realisations">
+
+
+<div class="container">
+
+
+<div class="reveal">
+
+
+<div class="kicker">
+
+RÉALISATIONS POSSIBLES
+
+</div>
+
+
+<h2 class="section-title">
+
+Imaginer un espace
+
+<span class="green">
+autour de vos usages.
+</span>
+
+</h2>
+
+
+<p class="section-intro">
+
+Ces exemples peuvent associer
+réseau,
+éclairage,
+informatique,
+multimédia,
+domotique
+et intégration physique
+selon le projet.
+
+</p>
+
+
+</div>
+
+
+
+<div class="projects-grid">
+
+
+
+<!-- MUR TV -->
+
+<article class="project-card reveal">
+
+
+<img
+src="https://images.unsplash.com/photo-1774199616762-31d947dc7d35?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
+alt="Salon moderne avec intégration TV et éclairage">
+
+
+<div class="project-content">
+
+
+<div class="project-number">
+
+01 // MUR TV CONNECTÉ
 
 </div>
 
 
 <h3>
 
-Renfort technique
+Mur TV intégré
 
 </h3>
 
 
 <p>
 
-Appui ponctuel
-sur un diagnostic complexe,
-un projet,
-une amélioration
-ou une période nécessitant
-une expertise supplémentaire.
+Meuble,
+écran,
+câblage invisible,
+réseau,
+éclairage LED
+et scénarios
+dans une réalisation cohérente.
 
 </p>
 
 
+<div class="project-tags">
+
+<span class="project-tag">
+Multimédia
+</span>
+
+<span class="project-tag">
+Réseau
+</span>
+
+<span class="project-tag">
+Éclairage
+</span>
+
+<span class="project-tag">
+Intégration
+</span>
+
+</div>
+
+
+</div>
+
+
 </article>
+
+
+
+<!-- BUREAU -->
+
+<article class="project-card reveal">
+
+
+<img
+src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
+alt="Bureau moderne connecté">
+
+
+<div class="project-content">
+
+
+<div class="project-number">
+
+02 // BUREAU CONNECTÉ
+
+</div>
+
+
+<h3>
+
+Bureau sur mesure
+
+</h3>
+
+
+<p>
+
+Réseau,
+Wi-Fi,
+écrans,
+éclairage,
+équipements informatiques
+et intégration propre
+des câbles et périphériques.
+
+</p>
+
+
+<div class="project-tags">
+
+<span class="project-tag">
+Réseau
+</span>
+
+<span class="project-tag">
+Informatique
+</span>
+
+<span class="project-tag">
+Ergonomie
+</span>
+
+<span class="project-tag">
+Automatisation
+</span>
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- HOME CINEMA -->
+
+<article class="project-card reveal">
+
+
+<img
+src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
+alt="Salle home cinéma">
+
+
+<div class="project-content">
+
+
+<div class="project-number">
+
+03 // HOME CINÉMA
+
+</div>
+
+
+<h3>
+
+Home cinéma
+
+</h3>
+
+
+<p>
+
+Vidéo,
+réseau,
+audio,
+éclairage,
+scénarios
+et intégration des équipements
+dans un espace dédié.
+
+</p>
+
+
+<div class="project-tags">
+
+<span class="project-tag">
+Vidéo
+</span>
+
+<span class="project-tag">
+Audio
+</span>
+
+<span class="project-tag">
+Éclairage
+</span>
+
+<span class="project-tag">
+Domotique
+</span>
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- GAMING -->
+
+<article class="project-card reveal">
+
+
+<img
+src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
+alt="Gaming room avec bureau et éclairage">
+
+
+<div class="project-content">
+
+
+<div class="project-number">
+
+04 // GAMING ROOM
+
+</div>
+
+
+<h3>
+
+Gaming room
+
+</h3>
+
+
+<p>
+
+Réseau performant,
+poste informatique,
+écrans,
+éclairage,
+intégration
+et organisation complète
+de l’espace.
+
+</p>
+
+
+<div class="project-tags">
+
+<span class="project-tag">
+Gaming
+</span>
+
+<span class="project-tag">
+Réseau
+</span>
+
+<span class="project-tag">
+LED
+</span>
+
+<span class="project-tag">
+Multimédia
+</span>
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- SMART GARAGE -->
+
+<article class="project-card reveal">
+
+
+<img
+src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
+alt="Garage atelier moderne et organisé">
+
+
+<div class="project-content">
+
+
+<div class="project-number">
+
+05 // SMART GARAGE
+
+</div>
+
+
+<h3>
+
+Garage connecté
+
+</h3>
+
+
+<p>
+
+Éclairage,
+réseau,
+établi,
+équipements,
+automatismes,
+suivi énergétique
+et organisation technique.
+
+</p>
+
+
+<div class="project-tags">
+
+<span class="project-tag">
+Atelier
+</span>
+
+<span class="project-tag">
+Automatisme
+</span>
+
+<span class="project-tag">
+Réseau
+</span>
+
+<span class="project-tag">
+Énergie
+</span>
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- RESEAU MAISON -->
+
+<article class="project-card reveal">
+
+
+<img
+src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
+alt="Maison connectée et réseau domestique">
+
+
+<div class="project-content">
+
+
+<div class="project-number">
+
+06 // MAISON CONNECTÉE
+
+</div>
+
+
+<h3>
+
+Infrastructure réseau & domotique
+
+</h3>
+
+
+<p>
+
+Construire une base réseau
+fiable
+pour connecter correctement
+les équipements
+et préparer les évolutions futures.
+
+</p>
+
+
+<div class="project-tags">
+
+<span class="project-tag">
+Ethernet
+</span>
+
+<span class="project-tag">
+Wi-Fi
+</span>
+
+<span class="project-tag">
+Domotique
+</span>
+
+<span class="project-tag">
+Supervision
+</span>
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     SMART HOME
+========================================================= -->
+
+<section class="section section-dark">
+
+
+<div class="container smart-layout">
+
+
+
+<div class="smart-copy reveal">
+
+
+<div class="kicker">
+
+MAISON CONNECTÉE
+
+</div>
+
+
+<h2 class="section-title">
+
+Tout connecter ?
+
+<span class="green">
+Seulement si cela a du sens.
+</span>
+
+</h2>
+
+
+<p>
+
+La domotique doit répondre
+à un usage réel :
+simplifier une action,
+améliorer le confort,
+centraliser une information
+ou automatiser une tâche répétitive.
+
+</p>
+
+
+<p>
+
+Actyrom privilégie
+une architecture compréhensible,
+évolutive
+et adaptée
+au niveau de technologie souhaité.
+
+</p>
+
+
+<div class="smart-list">
+
+
+<div class="smart-item">
+Éclairage & scénarios
+</div>
+
+
+<div class="smart-item">
+Suivi énergétique
+</div>
+
+
+<div class="smart-item">
+Commandes centralisées
+</div>
+
+
+<div class="smart-item">
+Réseau domestique
+</div>
+
+
+<div class="smart-item">
+Multimédia
+</div>
+
+
+<div class="smart-item">
+Capteurs & automatismes
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="smart-panel reveal">
+
+
+<div class="kicker">
+
+HOME // STATUS
+
+</div>
+
+
+<div class="smart-line">
+
+<span>
+Réseau principal
+</span>
+
+<span>
+ONLINE
+</span>
+
+</div>
+
+
+<div class="smart-line">
+
+<span>
+Wi-Fi
+</span>
+
+<span>
+CONNECTED
+</span>
+
+</div>
+
+
+<div class="smart-line">
+
+<span>
+Éclairage
+</span>
+
+<span>
+AUTOMATED
+</span>
+
+</div>
+
+
+<div class="smart-line">
+
+<span>
+Énergie
+</span>
+
+<span>
+MONITORING
+</span>
+
+</div>
+
+
+<div class="smart-line">
+
+<span>
+Multimédia
+</span>
+
+<span>
+READY
+</span>
+
+</div>
+
+
+<div class="smart-line">
+
+<span>
+Évolutivité
+</span>
+
+<span>
+ENABLED
+</span>
+
+</div>
 
 
 </div>
@@ -2526,29 +3410,20 @@ une expertise supplémentaire.
 
 <div class="kicker">
 
-MÉTHODE D’INTERVENTION
+DU BESOIN À LA RÉALISATION
 
 </div>
 
 
 <h2 class="section-title">
 
-Une démarche
+Un projet construit
 
 <span class="green">
-structurée.
+étape par étape.
 </span>
 
 </h2>
-
-
-<p class="section-intro">
-
-Chaque mission peut être adaptée,
-mais l’approche reste fondée
-sur une progression logique.
-
-</p>
 
 
 </div>
@@ -2562,19 +3437,19 @@ sur une progression logique.
 <div class="process-card">
 
 <div class="process-num">
-01 // COMPRENDRE
+01 // ÉCHANGE
 </div>
 
 <h3>
-Le besoin
+Votre idée
 </h3>
 
 <p>
 
-Écouter,
-observer
-et comprendre
-le contexte réel.
+Comprendre
+le besoin,
+les habitudes
+et le résultat attendu.
 
 </p>
 
@@ -2585,18 +3460,19 @@ le contexte réel.
 <div class="process-card">
 
 <div class="process-num">
-02 // ANALYSER
+02 // VISITE
 </div>
 
 <h3>
-Le fonctionnement
+Le lieu
 </h3>
 
 <p>
 
-Étudier les équipements,
-les données
-et les symptômes.
+Observer
+les contraintes,
+l’existant
+et les possibilités.
 
 </p>
 
@@ -2607,29 +3483,7 @@ et les symptômes.
 <div class="process-card">
 
 <div class="process-num">
-03 // IDENTIFIER
-</div>
-
-<h3>
-Les causes
-</h3>
-
-<p>
-
-Éviter de traiter
-uniquement
-les conséquences visibles.
-
-</p>
-
-</div>
-
-
-
-<div class="process-card">
-
-<div class="process-num">
-04 // RÉSOUDRE
+03 // CONCEPTION
 </div>
 
 <h3>
@@ -2638,10 +3492,10 @@ La solution
 
 <p>
 
-Choisir une réponse
-adaptée,
-fiable
-et maintenable.
+Choisir
+les technologies
+et définir
+l’intégration.
 
 </p>
 
@@ -2652,7 +3506,30 @@ et maintenable.
 <div class="process-card">
 
 <div class="process-num">
-05 // AMÉLIORER
+04 // RÉALISATION
+</div>
+
+<h3>
+Le projet
+</h3>
+
+<p>
+
+Préparer,
+installer,
+coordonner
+et mettre en service.
+
+</p>
+
+</div>
+
+
+
+<div class="process-card">
+
+<div class="process-num">
+05 // ÉVOLUTION
 </div>
 
 <h3>
@@ -2662,9 +3539,9 @@ La suite
 <p>
 
 Documenter,
-suivre
-et améliorer
-si nécessaire.
+adapter
+et permettre
+les évolutions futures.
 
 </p>
 
@@ -2682,177 +3559,137 @@ si nécessaire.
 
 
 <!-- =========================================================
-     EXEMPLES
+     PARTENAIRES
 ========================================================= -->
 
 <section class="section section-dark">
 
 
-<div class="container">
+<div class="container partner-layout">
 
 
-<div class="reveal">
+
+<div class="partner-photo reveal">
+
+
+<img
+src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
+alt="Aménagement intérieur technique et sur mesure">
+
+
+<div class="partner-caption">
+
+<span>
+
+ACTYROM // PROJET GLOBAL
+
+</span>
+
+<strong>
+
+Quand technique et intégration
+se rejoignent.
+
+</strong>
+
+</div>
+
+
+</div>
+
+
+
+<div class="partner-copy reveal">
 
 
 <div class="kicker">
 
-EXEMPLES D’INTERVENTIONS
+COMPÉTENCES COMPLÉMENTAIRES
 
 </div>
 
 
 <h2 class="section-title">
 
-Du dépannage immédiat
+Un projet peut demander
 
 <span class="green">
-au projet d’amélioration.
+plusieurs métiers.
 </span>
 
 </h2>
 
 
-</div>
-
-
-
-<div class="use-grid">
-
-
-
-<article class="use-card reveal">
-
-
-<img
-src="https://images.unsplash.com/photo-1748347568194-c8cd8edd27da?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
-alt="Diagnostic technique industriel">
-
-
-<div class="use-content">
-
-<span>
-DIAGNOSTIC // TERRAIN
-</span>
-
-<h3>
-Panne complexe ou récurrente
-</h3>
-
 <p>
 
-Reprendre le problème
-dans son ensemble
-pour comprendre ce qui se passe réellement
-avant de modifier l’installation.
+Certains projets Habitat
+ne se limitent pas
+à l’électronique
+ou au réseau.
+
+Ils peuvent nécessiter
+de la menuiserie,
+de l’agencement,
+de l’intégration physique,
+des finitions
+ou d’autres savoir-faire.
 
 </p>
 
-</div>
-
-
-</article>
-
-
-
-<article class="use-card reveal">
-
-
-<img
-src="https://images.unsplash.com/photo-1780034766243-044492794729?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
-alt="Installation industrielle automatisée">
-
-
-<div class="use-content">
-
-<span>
-AMÉLIORATION // FIABILITÉ
-</span>
-
-<h3>
-Équipement à fiabiliser
-</h3>
 
 <p>
 
-Identifier les points faibles,
-les défauts récurrents
-et les améliorations possibles
-avant d’engager des modifications.
+Dans ce cas,
+Actyrom peut s’appuyer
+sur un réseau
+de professionnels partenaires
+afin de construire
+une solution cohérente
+sans mélanger les responsabilités
+de chaque métier.
 
 </p>
 
-</div>
+
+<div class="partner-tags">
 
 
-</article>
-
-
-
-<article class="use-card reveal">
-
-
-<img
-src="https://images.unsplash.com/photo-1753153481105-7a979eabe5a9?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
-alt="Données et supervision industrielle">
-
-
-<div class="use-content">
-
-<span>
-DATA // SUPERVISION
+<span class="partner-tag">
+Menuiserie
 </span>
 
-<h3>
-Manque de visibilité
-</h3>
 
-<p>
-
-Collecter les informations utiles,
-créer des indicateurs
-et rendre le fonctionnement
-plus lisible.
-
-</p>
-
-</div>
-
-
-</article>
-
-
-
-<article class="use-card reveal">
-
-
-<img
-src="https://images.unsplash.com/photo-1748347568194-c8cd8edd27da?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
-alt="Étude et projet industriel">
-
-
-<div class="use-content">
-
-<span>
-PROJET // ÉTUDE
+<span class="partner-tag">
+Agencement
 </span>
 
-<h3>
-Évolution d’une installation
-</h3>
 
-<p>
+<span class="partner-tag">
+Intégration
+</span>
 
-Analyser le besoin,
-préparer les choix techniques
-et accompagner le projet
-jusqu’à sa réalisation.
 
-</p>
+<span class="partner-tag">
+Électricité
+</span>
+
+
+<span class="partner-tag">
+Informatique
+</span>
+
+
+<span class="partner-tag">
+Électronique
+</span>
+
+
+<span class="partner-tag">
+Aménagement technique
+</span>
+
 
 </div>
-
-
-</article>
 
 
 </div>
@@ -2866,193 +3703,10 @@ jusqu’à sa réalisation.
 
 
 <!-- =========================================================
-     DATA
+     POURQUOI
 ========================================================= -->
 
 <section class="section">
-
-
-<div class="container data-layout">
-
-
-
-<div class="data-copy reveal">
-
-
-<div class="kicker">
-
-INDUSTRIE 4.0
-
-</div>
-
-
-<h2 class="section-title">
-
-Transformer les données
-
-<span class="green">
-en décisions utiles.
-</span>
-
-</h2>
-
-
-<p>
-
-Lorsque cela apporte une réelle valeur,
-Actyrom peut intégrer
-la collecte,
-l’historisation
-et la visualisation
-de données techniques.
-
-</p>
-
-
-<p>
-
-L’objectif n’est pas
-de multiplier les données,
-mais de disposer
-des bonnes informations
-pour suivre l’état d’une installation,
-identifier des tendances
-et améliorer la maintenance.
-
-</p>
-
-
-<div class="data-tags">
-
-<span class="data-tag">
-KPI
-</span>
-
-<span class="data-tag">
-Historisation
-</span>
-
-<span class="data-tag">
-Supervision
-</span>
-
-<span class="data-tag">
-Alertes
-</span>
-
-<span class="data-tag">
-Analyse
-</span>
-
-<span class="data-tag">
-Prédictif
-</span>
-
-</div>
-
-
-<div class="hero-actions">
-
-
-<a
-href="industrie40.html"
-class="btn btn-primary">
-
-Découvrir Industrie 4.0
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-<div class="data-visual reveal">
-
-
-<div class="data-line">
-
-<span>
-État équipement
-</span>
-
-<span>
-ONLINE
-</span>
-
-</div>
-
-
-<div class="data-line">
-
-<span>
-Historisation
-</span>
-
-<span>
-ACTIVE
-</span>
-
-</div>
-
-
-<div class="data-line">
-
-<span>
-KPI maintenance
-</span>
-
-<span>
-AVAILABLE
-</span>
-
-</div>
-
-
-<div class="data-line">
-
-<span>
-Détection anomalies
-</span>
-
-<span>
-READY
-</span>
-
-</div>
-
-
-<div class="data-line">
-
-<span>
-Analyse tendances
-</span>
-
-<span>
-MONITORING
-</span>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-<!-- =========================================================
-     POURQUOI ACTYROM
-========================================================= -->
-
-<section class="section section-dark">
 
 
 <div class="container">
@@ -3070,10 +3724,10 @@ POURQUOI ACTYROM ?
 
 <h2 class="section-title">
 
-Une vision technique
+De la technique,
 
 <span class="green">
-globale.
+mais pensée pour les personnes.
 </span>
 
 </h2>
@@ -3089,19 +3743,25 @@ globale.
 
 <div class="why-card reveal">
 
+
 <h3>
-Expérience terrain
+
+Une vision globale
+
 </h3>
+
 
 <p>
 
-Une approche issue
-de situations industrielles réelles,
-de pannes,
-de maintenance
-et de projets.
+Réseau,
+informatique,
+automatismes,
+multimédia
+et intégration
+peuvent être réfléchis ensemble.
 
 </p>
+
 
 </div>
 
@@ -3109,21 +3769,23 @@ et de projets.
 
 <div class="why-card reveal">
 
+
 <h3>
-Analyse transversale
+
+Des solutions évolutives
+
 </h3>
+
 
 <p>
 
-Automatisme,
-électricité,
-réseaux,
-méthodes,
-maintenance
-et données
-peuvent être étudiés ensemble.
+Prévoir dès aujourd’hui
+les besoins futurs
+évite souvent
+de devoir tout recommencer demain.
 
 </p>
+
 
 </div>
 
@@ -3131,22 +3793,46 @@ peuvent être étudiés ensemble.
 
 <div class="why-card reveal">
 
+
 <h3>
-Solutions adaptées
+
+L’humain avant la technologie
+
 </h3>
+
 
 <p>
 
-L’objectif n’est pas
-de vendre une technologie,
-mais de sélectionner
-la solution pertinente
-pour le besoin réel.
+La bonne solution
+est celle que l’utilisateur
+comprend,
+utilise
+et apprécie réellement.
 
 </p>
 
+
 </div>
 
+
+</div>
+
+
+
+<div class="notice reveal">
+
+<strong>
+Cadre d’intervention :
+</strong>
+
+les travaux réglementés
+ou nécessitant une qualification,
+une habilitation
+ou une assurance spécifique
+sont réalisés uniquement
+lorsque le cadre nécessaire le permet,
+ou avec un professionnel
+disposant des qualifications adaptées.
 
 </div>
 
@@ -3162,7 +3848,7 @@ pour le besoin réel.
      CTA
 ========================================================= -->
 
-<section class="section">
+<section class="section section-dark">
 
 
 <div class="container">
@@ -3173,21 +3859,21 @@ pour le besoin réel.
 
 <div class="kicker">
 
-VOTRE BESOIN INDUSTRIEL
+VOTRE PROJET HABITAT
 
 </div>
 
 
 <h2>
 
-Une panne,
-une amélioration,
-une étude
-ou un projet ?
+Une idée,
+un besoin
+ou simplement l’envie
+d’améliorer votre maison ?
 
 <span class="green">
 
-Parlons-en.
+Parlons de votre projet.
 
 </span>
 
@@ -3196,13 +3882,11 @@ Parlons-en.
 
 <p>
 
-Présentez votre situation,
-vos contraintes
-et votre objectif.
-
-Le premier travail
+Du simple problème de Wi-Fi
+à un espace entièrement repensé,
+la première étape
 consiste à comprendre
-ce dont vous avez réellement besoin.
+ce que vous souhaitez réellement obtenir.
 
 </p>
 
@@ -3223,7 +3907,7 @@ Parler de votre projet
 href="qui-sommes-nous.html"
 class="btn btn-secondary">
 
-Découvrir notre expertise
+Découvrir Actyrom
 
 </a>
 
@@ -3297,7 +3981,9 @@ Contact
 <script>
 
 
-/* MENU MOBILE */
+/* =========================================================
+   MENU MOBILE
+========================================================= */
 
 const menuBtn =
 document.getElementById(
@@ -3364,7 +4050,9 @@ link => {
 );
 
 
-/* SCROLL REVEAL */
+/* =========================================================
+   REVEAL
+========================================================= */
 
 const observer =
 new IntersectionObserver(
