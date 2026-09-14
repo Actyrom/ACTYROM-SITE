@@ -1,0 +1,3698 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Actyrom Consulting | Expertise technique, Industrie & Habitat</title>
+
+<meta name="description" content="Actyrom Consulting accompagne les industriels, professionnels et particuliers en diagnostic, automatisme, maintenance, amélioration, réseaux, habitat, data et solutions techniques sur mesure.">
+
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#06130d">
+
+<link rel="canonical" href="https://actyrom.fr/">
+
+<style>
+
+:root{
+  --bg:#04100a;
+  --bg-deep:#020805;
+  --panel:#07170f;
+  --panel-2:#0a1d14;
+  --line:rgba(255,255,255,.12);
+  --line-green:rgba(143,255,61,.28);
+
+  --text:#f5f7f4;
+  --muted:#aeb9b1;
+  --soft:#7f9185;
+
+  --green:#89ef3f;
+  --green-2:#b3ff67;
+  --green-dark:#1d7d39;
+
+  --glow:rgba(118,255,67,.34);
+
+  --max:1180px;
+  --radius:24px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:
+  Arial,
+  Helvetica,
+  sans-serif;
+
+  background:
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(49,135,68,.12),
+      transparent 28%
+    ),
+    linear-gradient(
+      180deg,
+      #06110c 0%,
+      #030a06 60%,
+      #020704 100%
+    );
+
+  color:var(--text);
+
+  line-height:1.6;
+
+  overflow-x:hidden;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font:inherit;
+}
+
+img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.container{
+  width:min(var(--max),92%);
+  margin:auto;
+}
+
+.kicker{
+  color:var(--green-2);
+
+  text-transform:uppercase;
+
+  letter-spacing:4px;
+
+  font-size:.72rem;
+
+  font-weight:700;
+}
+
+.section-title{
+  margin-top:12px;
+
+  font-size:
+  clamp(
+    2rem,
+    4vw,
+    3.8rem
+  );
+
+  line-height:1.02;
+
+  letter-spacing:-2px;
+}
+
+.section-intro{
+  margin-top:16px;
+
+  max-width:760px;
+
+  color:var(--muted);
+}
+
+.green{
+  color:var(--green);
+}
+
+.mono{
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+  position:sticky;
+
+  top:0;
+
+  z-index:1000;
+
+  background:
+  rgba(3,11,7,.82);
+
+  backdrop-filter:
+  blur(18px);
+
+  border-bottom:
+  1px solid
+  rgba(255,255,255,.08);
+}
+
+.nav{
+  min-height:78px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:26px;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.brand{
+  display:flex;
+
+  align-items:center;
+
+  gap:11px;
+
+  white-space:nowrap;
+}
+
+.brand-logo{
+  width:46px;
+
+  height:46px;
+
+  flex:0 0 46px;
+
+  object-fit:contain;
+
+  border-radius:10px;
+
+  box-shadow:
+  0 0 18px
+  rgba(118,255,67,.12);
+}
+
+.brand-text{
+  display:flex;
+
+  align-items:baseline;
+
+  gap:5px;
+
+  line-height:1;
+}
+
+.brand-main{
+  font-size:1.52rem;
+
+  font-weight:900;
+
+  letter-spacing:-1px;
+}
+
+.brand-sub{
+  color:var(--green);
+
+  font-weight:800;
+
+  font-size:1.03rem;
+}
+
+
+/* =========================================================
+   MENU
+========================================================= */
+
+.nav-links{
+  list-style:none;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:20px;
+
+  color:#dce4dd;
+
+  font-size:.86rem;
+}
+
+.nav-links a{
+  transition:.22s ease;
+}
+
+.nav-links a:hover{
+  color:var(--green-2);
+}
+
+.connection{
+  padding:
+  10px 17px !important;
+
+  border:
+  1px solid
+  rgba(137,239,63,.44);
+
+  border-radius:
+  999px;
+
+  color:
+  #eaffdc !important;
+
+  background:
+  rgba(72,150,53,.08);
+
+  box-shadow:
+  0 0 22px
+  rgba(82,228,73,.10);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  font-weight:700;
+
+  letter-spacing:1px;
+}
+
+
+/* =========================================================
+   MENU MOBILE
+========================================================= */
+
+.menu-btn{
+  display:none;
+
+  border:
+  1px solid
+  rgba(255,255,255,.16);
+
+  background:
+  #07130d;
+
+  color:#fff;
+
+  border-radius:10px;
+
+  padding:
+  9px 12px;
+
+  cursor:pointer;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+  position:relative;
+
+  min-height:760px;
+
+  display:flex;
+
+  align-items:center;
+
+  overflow:hidden;
+
+  border-bottom:
+  1px solid
+  rgba(255,255,255,.08);
+}
+
+.hero-media{
+  position:absolute;
+
+  inset:0;
+
+  z-index:0;
+}
+
+.hero-media img{
+  object-position:center;
+
+  filter:
+  saturate(.76)
+  contrast(1.08)
+  brightness(.63);
+
+  transform:
+  scale(1.025);
+}
+
+.hero-media::after{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+
+  linear-gradient(
+    90deg,
+    rgba(2,9,5,.98) 0%,
+    rgba(3,11,7,.94) 35%,
+    rgba(4,17,10,.69) 62%,
+    rgba(3,14,8,.68) 100%
+  ),
+
+  linear-gradient(
+    180deg,
+    rgba(3,15,9,.08),
+    rgba(2,8,5,.72)
+  );
+}
+
+
+/* =========================================================
+   HERO HALO
+========================================================= */
+
+.hero-halo{
+  position:absolute;
+
+  z-index:1;
+
+  width:560px;
+
+  height:560px;
+
+  right:-120px;
+
+  top:-110px;
+
+  border-radius:50%;
+
+  background:
+  radial-gradient(
+    circle,
+    rgba(136,255,67,.15),
+    rgba(55,159,62,.06) 38%,
+    transparent 70%
+  );
+
+  filter:
+  blur(1px);
+
+  animation:
+  haloDrift
+  10s
+  ease-in-out
+  infinite
+  alternate;
+}
+
+@keyframes haloDrift{
+
+  from{
+    transform:
+    translate3d(
+      -18px,
+      10px,
+      0
+    )
+    scale(.96);
+
+    opacity:.7;
+  }
+
+  to{
+    transform:
+    translate3d(
+      22px,
+      -8px,
+      0
+    )
+    scale(1.06);
+
+    opacity:1;
+  }
+
+}
+
+
+/* =========================================================
+   HERO GRID
+========================================================= */
+
+.hero-grid{
+  position:relative;
+
+  z-index:2;
+
+  width:100%;
+
+  display:grid;
+
+  grid-template-columns:
+  minmax(0,760px)
+  1fr;
+
+  gap:70px;
+
+  align-items:end;
+
+  padding:
+  108px 0
+  80px;
+}
+
+.hero-copy{
+  max-width:760px;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.hero-eyebrow{
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:12px;
+
+  color:#dfe7df;
+
+  text-transform:uppercase;
+
+  letter-spacing:4px;
+
+  font-size:.72rem;
+
+  opacity:0;
+
+  transform:
+  translateY(18px);
+
+  animation:
+  introUp
+  .8s
+  .15s
+  ease
+  forwards;
+}
+
+.hero-eyebrow::before{
+  content:"";
+
+  width:40px;
+
+  height:2px;
+
+  background:
+  var(--green);
+
+  box-shadow:
+  0 0 16px
+  var(--glow);
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.hero-title{
+  position:relative;
+
+  margin-top:22px;
+
+  font-size:
+  clamp(
+    4.1rem,
+    8.2vw,
+    7.6rem
+  );
+
+  line-height:.84;
+
+  letter-spacing:-6px;
+
+  font-weight:900;
+
+  overflow:hidden;
+}
+
+.hero-title .line{
+  display:block;
+
+  transform:
+  translateY(115%);
+
+  filter:
+  blur(6px);
+
+  opacity:0;
+
+  animation:
+  titleReveal
+  1.05s
+  cubic-bezier(.16,.9,.2,1)
+  forwards;
+}
+
+.hero-title .line:nth-child(2){
+  animation-delay:.18s;
+
+  color:var(--green);
+}
+
+.hero-title::after{
+  content:"";
+
+  position:absolute;
+
+  left:-40%;
+
+  top:0;
+
+  width:28%;
+
+  height:100%;
+
+  transform:
+  skewX(-18deg);
+
+  background:
+  linear-gradient(
+    90deg,
+    transparent,
+    rgba(210,255,188,.34),
+    transparent
+  );
+
+  animation:
+  titleSweep
+  1.1s
+  1.05s
+  ease
+  forwards;
+}
+
+@keyframes titleReveal{
+
+  to{
+    transform:
+    translateY(0);
+
+    filter:
+    blur(0);
+
+    opacity:1;
+  }
+
+}
+
+@keyframes titleSweep{
+
+  to{
+    left:125%;
+  }
+
+}
+
+
+/* =========================================================
+   HERO TEXT
+========================================================= */
+
+.hero-tagline{
+  margin-top:28px;
+
+  color:
+  var(--green-2);
+
+  font-size:1rem;
+
+  letter-spacing:6px;
+
+  text-transform:uppercase;
+
+  opacity:0;
+
+  animation:
+  introUp
+  .8s
+  .65s
+  ease
+  forwards;
+}
+
+.hero-lead{
+  margin-top:24px;
+
+  max-width:690px;
+
+  color:#d5ded7;
+
+  font-size:1.08rem;
+
+  opacity:0;
+
+  animation:
+  introUp
+  .8s
+  .82s
+  ease
+  forwards;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.hero-actions{
+  margin-top:30px;
+
+  display:flex;
+
+  gap:12px;
+
+  flex-wrap:wrap;
+
+  opacity:0;
+
+  animation:
+  introUp
+  .8s
+  1s
+  ease
+  forwards;
+}
+
+@keyframes introUp{
+
+  to{
+    opacity:1;
+
+    transform:
+    translateY(0);
+  }
+
+}
+
+.btn{
+  min-height:50px;
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:
+  0 22px;
+
+  border-radius:12px;
+
+  font-weight:800;
+
+  border:
+  1px solid
+  transparent;
+
+  transition:.25s ease;
+}
+
+.btn-primary{
+  background:
+  linear-gradient(
+    180deg,
+    var(--green-2),
+    var(--green)
+  );
+
+  color:#092008;
+
+  box-shadow:
+  0 10px 32px
+  rgba(87,239,69,.18);
+}
+
+.btn-primary:hover{
+  transform:
+  translateY(-2px);
+
+  box-shadow:
+  0 14px 40px
+  rgba(87,239,69,.27);
+}
+
+.btn-secondary{
+  color:#eef4ef;
+
+  border-color:
+  rgba(255,255,255,.19);
+
+  background:
+  rgba(4,14,8,.52);
+
+  backdrop-filter:
+  blur(10px);
+}
+
+.btn-secondary:hover{
+  border-color:
+  var(--green);
+
+  color:
+  var(--green-2);
+}
+
+
+/* =========================================================
+   HERO SIDE NOTE
+========================================================= */
+
+.hero-note{
+  justify-self:end;
+
+  max-width:260px;
+
+  padding:
+  18px 0
+  8px 28px;
+
+  border-left:
+  1px solid
+  rgba(137,239,63,.55);
+
+  color:#d9e5dc;
+
+  text-transform:uppercase;
+
+  letter-spacing:3px;
+
+  font-size:.69rem;
+
+  line-height:1.75;
+}
+
+
+/* =========================================================
+   SYSTEM ONLINE
+========================================================= */
+
+.status{
+  margin-top:24px;
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:11px;
+
+  color:
+  var(--green-2);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  font-size:.77rem;
+
+  font-weight:700;
+
+  letter-spacing:1px;
+}
+
+.status-dot{
+  width:14px;
+
+  height:14px;
+
+  border-radius:50%;
+
+  background:
+  radial-gradient(
+    circle,
+    #fff 0 12%,
+    #bfff92 15% 30%,
+    #69f046 35% 50%,
+    rgba(105,240,70,.14) 56%
+  );
+
+  border:
+  1px solid
+  rgba(160,255,116,.75);
+
+  box-shadow:
+
+  0 0 7px
+  #75ff4d,
+
+  0 0 20px
+  rgba(104,255,72,.48);
+
+  animation:
+  pulse
+  2s
+  ease-in-out
+  infinite;
+}
+
+@keyframes pulse{
+
+  50%{
+
+    box-shadow:
+
+    0 0 10px
+    #9dff76,
+
+    0 0 34px
+    rgba(104,255,72,.65);
+
+    transform:
+    scale(1.08);
+
+  }
+
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.section{
+  padding:
+  86px 0;
+}
+
+.section-dark{
+  background:
+  rgba(2,8,5,.54);
+
+  border-top:
+  1px solid
+  rgba(255,255,255,.07);
+
+  border-bottom:
+  1px solid
+  rgba(255,255,255,.07);
+}
+
+
+/* =========================================================
+   PRINCIPLES
+========================================================= */
+
+.principles-wrap{
+  margin-top:36px;
+
+  border:
+  1px solid
+  var(--line-green);
+
+  border-radius:22px;
+
+  background:
+
+  linear-gradient(
+    90deg,
+    rgba(65,147,54,.11),
+    rgba(4,17,10,.74)
+  ),
+
+  rgba(7,23,15,.8);
+
+  box-shadow:
+
+  inset 0 0 45px
+  rgba(77,200,64,.04),
+
+  0 18px 60px
+  rgba(0,0,0,.18);
+
+  overflow:hidden;
+}
+
+.principles{
+  display:grid;
+
+  grid-template-columns:
+  repeat(
+    5,
+    1fr
+  );
+}
+
+.principle{
+  position:relative;
+
+  min-height:154px;
+
+  padding:
+  22px 18px;
+
+  border-right:
+  1px solid
+  rgba(255,255,255,.08);
+
+  opacity:0;
+
+  transform:
+  translateY(20px);
+
+  transition:
+
+  opacity .65s ease,
+
+  transform .65s ease,
+
+  background .25s ease;
+}
+
+.principle:last-child{
+  border-right:0;
+}
+
+.principle.show{
+  opacity:1;
+
+  transform:
+  translateY(0);
+}
+
+.principle:hover{
+  background:
+  rgba(102,216,71,.055);
+}
+
+.principle-icon{
+  width:42px;
+
+  height:42px;
+
+  display:grid;
+
+  place-items:center;
+
+  border-radius:50%;
+
+  border:
+  1px solid
+  rgba(137,239,63,.38);
+
+  color:
+  var(--green-2);
+
+  box-shadow:
+  inset 0 0 18px
+  rgba(89,208,47,.05);
+}
+
+.principle-icon svg{
+  width:21px;
+
+  height:21px;
+
+  stroke:
+  currentColor;
+
+  fill:none;
+
+  stroke-width:1.8;
+
+  stroke-linecap:round;
+
+  stroke-linejoin:round;
+}
+
+.principle h3{
+  margin-top:15px;
+
+  font-size:1rem;
+}
+
+.principle p{
+  margin-top:5px;
+
+  color:var(--soft);
+
+  font-size:.82rem;
+}
+
+
+/* =========================================================
+   UNIVERSES
+========================================================= */
+
+.universe-grid{
+  margin-top:38px;
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(
+    2,
+    minmax(0,1fr)
+  );
+
+  gap:18px;
+}
+
+.universe-card{
+  position:relative;
+
+  min-height:360px;
+
+  overflow:hidden;
+
+  border-radius:
+  var(--radius);
+
+  border:
+  1px solid
+  rgba(255,255,255,.13);
+
+  background:#07130d;
+
+  box-shadow:
+  0 22px 55px
+  rgba(0,0,0,.24);
+}
+
+.universe-card img{
+  position:absolute;
+
+  inset:0;
+
+  transition:
+
+  transform .7s
+  cubic-bezier(.2,.7,.2,1),
+
+  filter .7s ease;
+
+  filter:
+  saturate(.72)
+  brightness(.72);
+}
+
+.universe-card::after{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+
+  linear-gradient(
+    180deg,
+    rgba(2,10,6,.06) 0%,
+    rgba(2,10,6,.20) 28%,
+    rgba(2,10,6,.92) 100%
+  ),
+
+  linear-gradient(
+    90deg,
+    rgba(12,58,29,.26),
+    transparent 70%
+  );
+}
+
+.universe-card:hover img{
+  transform:
+  scale(1.06);
+
+  filter:
+  saturate(.9)
+  brightness(.8);
+}
+
+.universe-card:hover{
+  border-color:
+  rgba(137,239,63,.38);
+}
+
+.universe-content{
+  position:absolute;
+
+  inset:
+  auto 0 0 0;
+
+  z-index:2;
+
+  padding:28px;
+}
+
+.universe-num{
+  color:
+  var(--green-2);
+
+  font-family:
+  "Courier New",
+  monospace;
+
+  font-size:.76rem;
+
+  letter-spacing:2px;
+}
+
+.universe-card h3{
+  margin-top:8px;
+
+  font-size:1.85rem;
+
+  line-height:1;
+}
+
+.universe-card p{
+  margin-top:10px;
+
+  max-width:520px;
+
+  color:#cbd6ce;
+
+  font-size:.94rem;
+}
+
+.tags{
+  margin-top:15px;
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:7px;
+}
+
+.tag{
+  padding:
+  6px 9px;
+
+  border-radius:999px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.14);
+
+  background:
+  rgba(2,9,5,.5);
+
+  color:#d7e1d9;
+
+  font-size:.7rem;
+
+  backdrop-filter:
+  blur(8px);
+}
+
+.universe-link{
+  margin-top:17px;
+
+  display:inline-flex;
+
+  gap:8px;
+
+  color:
+  var(--green-2);
+
+  font-weight:800;
+
+  font-size:.88rem;
+}
+
+
+/* =========================================================
+   APPLICATIONS
+========================================================= */
+
+.application-grid{
+  margin-top:36px;
+
+  display:grid;
+
+  grid-template-columns:
+  1fr 1fr;
+
+  gap:18px;
+}
+
+.application-panel{
+  padding:28px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.1);
+
+  border-radius:20px;
+
+  background:
+
+  radial-gradient(
+    circle at 100% 0%,
+    rgba(70,170,66,.08),
+    transparent 32%
+  ),
+
+  #07130d;
+}
+
+.application-panel h3{
+  font-size:1.45rem;
+}
+
+.application-panel p{
+  margin-top:8px;
+
+  color:
+  var(--muted);
+}
+
+.chip-row{
+  margin-top:20px;
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:8px;
+}
+
+.chip{
+  padding:
+  9px 12px;
+
+  border-radius:9px;
+
+  border:
+  1px solid
+  rgba(137,239,63,.18);
+
+  color:#d8e6db;
+
+  background:
+  rgba(54,131,46,.055);
+
+  font-size:.82rem;
+}
+
+
+/* =========================================================
+   EXPERTISE
+========================================================= */
+
+.expertise{
+  display:grid;
+
+  grid-template-columns:
+  1.08fr
+  .92fr;
+
+  gap:22px;
+
+  align-items:stretch;
+}
+
+.expertise-card{
+  padding:38px;
+
+  border-radius:24px;
+
+  border:
+  1px solid
+  var(--line-green);
+
+  background:
+
+  radial-gradient(
+    circle at 80% 0%,
+    rgba(75,184,69,.11),
+    transparent 34%
+  ),
+
+  #07150e;
+}
+
+.expertise-card p{
+  margin-top:16px;
+
+  color:
+  var(--muted);
+
+  max-width:650px;
+}
+
+.network-list{
+  margin-top:26px;
+
+  display:grid;
+
+  grid-template-columns:
+  1fr 1fr;
+
+  gap:10px;
+}
+
+.network-item{
+  padding:
+  13px 14px;
+
+  border-radius:12px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.09);
+
+  color:#d7e1d9;
+
+  background:
+  rgba(3,10,6,.42);
+
+  font-size:.82rem;
+}
+
+.expertise-photo{
+  position:relative;
+
+  overflow:hidden;
+
+  min-height:440px;
+
+  border-radius:24px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.12);
+}
+
+.expertise-photo img{
+  filter:
+  saturate(.7)
+  brightness(.77);
+}
+
+.expertise-photo::after{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+  linear-gradient(
+    180deg,
+    transparent 40%,
+    rgba(3,10,6,.86)
+  );
+}
+
+.expertise-caption{
+  position:absolute;
+
+  z-index:2;
+
+  left:24px;
+
+  right:24px;
+
+  bottom:24px;
+}
+
+.expertise-caption span{
+  color:
+  var(--green-2);
+
+  font-family:
+  "Courier New",
+  monospace;
+
+  font-size:.76rem;
+}
+
+.expertise-caption strong{
+  display:block;
+
+  margin-top:5px;
+
+  font-size:1.15rem;
+}
+
+
+/* =========================================================
+   DATA
+========================================================= */
+
+.data-strip{
+  margin-top:34px;
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:8px;
+}
+
+.data-item{
+  padding:
+  10px 13px;
+
+  border-radius:9px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.10);
+
+  color:#c4d1c7;
+
+  background:
+  rgba(4,15,9,.6);
+
+  font-size:.79rem;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta{
+  position:relative;
+
+  overflow:hidden;
+
+  padding:52px;
+
+  border-radius:26px;
+
+  border:
+  1px solid
+  rgba(137,239,63,.26);
+
+  background:
+
+  radial-gradient(
+    circle at 88% 20%,
+    rgba(118,255,67,.14),
+    transparent 30%
+  ),
+
+  linear-gradient(
+    135deg,
+    #0a2115,
+    #06120c
+  );
+
+  box-shadow:
+  0 28px 70px
+  rgba(0,0,0,.24);
+}
+
+.cta::after{
+  content:"";
+
+  position:absolute;
+
+  width:300px;
+
+  height:300px;
+
+  right:-120px;
+
+  bottom:-140px;
+
+  border-radius:50%;
+
+  border:
+  1px solid
+  rgba(137,239,63,.18);
+
+  box-shadow:
+
+  0 0 0 45px
+  rgba(137,239,63,.025),
+
+  0 0 0 90px
+  rgba(137,239,63,.015);
+}
+
+.cta h2{
+  max-width:780px;
+
+  font-size:
+  clamp(
+    2.4rem,
+    5vw,
+    4.4rem
+  );
+
+  line-height:1;
+
+  letter-spacing:-3px;
+}
+
+.cta p{
+  margin-top:16px;
+
+  max-width:680px;
+
+  color:#b9c8bd;
+}
+
+
+/* =========================================================
+   REVEAL
+========================================================= */
+
+.reveal{
+  opacity:0;
+
+  transform:
+  translateY(26px);
+
+  transition:
+
+  opacity .75s ease,
+
+  transform .75s
+  cubic-bezier(.2,.7,.2,1);
+}
+
+.reveal.visible{
+  opacity:1;
+
+  transform:
+  translateY(0);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+  padding:
+  32px 0;
+
+  border-top:
+  1px solid
+  rgba(255,255,255,.08);
+
+  color:#718077;
+
+  font-size:.79rem;
+}
+
+.footer{
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+}
+
+.footer-links{
+  display:flex;
+
+  gap:14px;
+
+  flex-wrap:wrap;
+}
+
+.footer a:hover{
+  color:
+  var(--green-2);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:1060px){
+
+  .nav-links{
+    gap:13px;
+
+    font-size:.81rem;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero-note{
+    justify-self:start;
+
+    max-width:480px;
+  }
+
+  .expertise{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+@media(max-width:860px){
+
+  .menu-btn{
+    display:block;
+  }
+
+  .nav{
+    min-height:68px;
+  }
+
+  .nav-links{
+    display:none;
+
+    position:absolute;
+
+    top:68px;
+
+    left:0;
+
+    right:0;
+
+    padding:
+    14px 4%
+    18px;
+
+    background:
+    rgba(3,11,7,.98);
+
+    border-bottom:
+    1px solid
+    rgba(255,255,255,.10);
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+    gap:3px;
+  }
+
+  .nav-links.open{
+    display:flex;
+  }
+
+  .nav-links a{
+    display:block;
+
+    padding:
+    9px 0;
+  }
+
+  .connection{
+    text-align:center;
+
+    margin-top:4px;
+  }
+
+  .principles{
+    grid-template-columns:
+    1fr 1fr;
+  }
+
+  .principle{
+    border-right:0;
+
+    border-bottom:
+    1px solid
+    rgba(255,255,255,.08);
+  }
+
+  .principle:last-child{
+    grid-column:
+    1/-1;
+
+    border-bottom:0;
+  }
+
+  .universe-grid,
+  .application-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:620px){
+
+  .container{
+    width:94%;
+  }
+
+  .brand{
+    gap:8px;
+  }
+
+  .brand-logo{
+    width:38px;
+
+    height:38px;
+
+    flex-basis:38px;
+
+    border-radius:8px;
+  }
+
+  .brand-main{
+    font-size:1.18rem;
+  }
+
+  .brand-sub{
+    font-size:.88rem;
+  }
+
+  .hero{
+    min-height:auto;
+  }
+
+  .hero-grid{
+    padding:
+    78px 0
+    60px;
+
+    gap:44px;
+  }
+
+  .hero-title{
+    font-size:3.6rem;
+
+    letter-spacing:-3px;
+  }
+
+  .hero-tagline{
+    font-size:.76rem;
+
+    letter-spacing:3px;
+  }
+
+  .hero-lead{
+    font-size:.95rem;
+  }
+
+  .hero-actions{
+    display:grid;
+
+    grid-template-columns:1fr;
+  }
+
+  .hero-actions .btn{
+    width:100%;
+  }
+
+  .hero-note{
+    font-size:.63rem;
+
+    padding-left:18px;
+  }
+
+  .section{
+    padding:
+    64px 0;
+  }
+
+  .section-title{
+    font-size:2.15rem;
+
+    letter-spacing:-1px;
+  }
+
+  .principles{
+    grid-template-columns:1fr;
+  }
+
+  .principle:last-child{
+    grid-column:auto;
+  }
+
+  .universe-card{
+    min-height:330px;
+  }
+
+  .universe-content{
+    padding:22px;
+  }
+
+  .universe-card h3{
+    font-size:1.55rem;
+  }
+
+  .application-panel{
+    padding:22px;
+  }
+
+  .expertise-card{
+    padding:26px;
+  }
+
+  .network-list{
+    grid-template-columns:1fr;
+  }
+
+  .expertise-photo{
+    min-height:360px;
+  }
+
+  .cta{
+    padding:
+    32px 24px;
+  }
+
+  .cta h2{
+    font-size:2.5rem;
+
+    letter-spacing:-2px;
+  }
+
+  .footer{
+    display:block;
+
+    text-align:center;
+  }
+
+  .footer-links{
+    justify-content:center;
+
+    margin-top:10px;
+  }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITE ANIMATIONS
+========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+  *,
+  *::before,
+  *::after{
+    animation:none!important;
+
+    transition:none!important;
+
+    scroll-behavior:auto!important;
+  }
+
+  .hero-eyebrow,
+  .hero-title .line,
+  .hero-tagline,
+  .hero-lead,
+  .hero-actions,
+  .reveal,
+  .principle{
+    opacity:1!important;
+
+    transform:none!important;
+
+    filter:none!important;
+  }
+
+}
+
+</style>
+<!-- ACTYROM BRANDING ACCUEIL -->
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<meta property="og:site_name" content="Actyrom Consulting">
+<meta property="og:type" content="website">
+
+<meta
+property="og:title"
+content="Actyrom Consulting — Des solutions pour demain">
+
+<meta
+property="og:description"
+content="Expertise technique, industrie, habitat, data, supervision et solutions sur mesure.">
+
+<meta
+property="og:url"
+content="https://actyrom.fr/">
+
+<meta
+property="og:image"
+content="https://actyrom.fr/og-actyrom.png">
+
+<meta
+property="og:image:width"
+content="1200">
+
+<meta
+property="og:image:height"
+content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta
+name="twitter:title"
+content="Actyrom Consulting — Des solutions pour demain">
+
+<meta
+name="twitter:description"
+content="Expertise technique, industrie, habitat, data, supervision et solutions sur mesure.">
+
+<meta
+name="twitter:image"
+content="https://actyrom.fr/og-actyrom.png">
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
+
+<div class="container">
+
+<nav class="nav">
+
+
+<a
+class="brand"
+href="index.html">
+
+<img
+src="/apple-touch-icon.png"
+alt=""
+class="brand-logo"
+aria-hidden="true">
+
+<span class="brand-text">
+
+<span class="brand-main">
+Actyrom
+</span>
+
+<span class="brand-sub">
+Consulting
+</span>
+
+</span>
+
+</a>
+
+
+<button
+class="menu-btn"
+id="menuBtn"
+type="button"
+aria-label="Ouvrir le menu"
+aria-expanded="false">
+
+☰
+
+</button>
+
+
+<ul
+class="nav-links"
+id="navLinks">
+
+
+<li>
+<a href="index.html">
+Accueil
+</a>
+</li>
+
+
+<li>
+<a href="qui-sommes-nous.html">
+Qui sommes-nous ?
+</a>
+</li>
+
+
+<li>
+<a href="industrie.html">
+Industrie
+</a>
+</li>
+
+
+<li>
+<a href="habitat.html">
+Habitat
+</a>
+</li>
+
+
+<li>
+<a href="industrie40.html">
+Industrie 4.0
+</a>
+</li>
+
+
+<li>
+<a href="accompagnement.html">
+Accompagnement
+</a>
+</li>
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+<li>
+
+<a
+href="connexion.html"
+class="connection">
+
+CONNEXION
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<main>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+
+<div class="hero-media">
+
+
+<img
+src="https://images.unsplash.com/photo-1748347568194-c8cd8edd27da?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000"
+alt="Expertise technique et maintenance industrielle sur le terrain">
+
+
+</div>
+
+
+<div class="hero-halo">
+</div>
+
+
+<div class="container hero-grid">
+
+
+<div class="hero-copy">
+
+
+<div class="hero-eyebrow">
+
+L’expertise Actyrom
+
+</div>
+
+
+<h1 class="hero-title">
+
+
+<span class="line">
+
+Actyrom
+
+</span>
+
+
+<span class="line">
+
+Consulting
+
+</span>
+
+
+</h1>
+
+
+<div class="hero-tagline">
+
+DES SOLUTIONS POUR DEMAIN
+
+</div>
+
+
+<p class="hero-lead">
+
+Une expertise terrain,
+une méthode claire
+et des solutions concrètes
+pour l’industrie,
+l’habitat
+et les projets techniques
+sur mesure.
+
+</p>
+
+
+<div class="hero-actions">
+
+
+<a
+href="contact.html"
+class="btn btn-primary">
+
+Parler de votre projet
+
+</a>
+
+
+<a
+href="#domaines"
+class="btn btn-secondary">
+
+Découvrir nos domaines
+
+</a>
+
+
+</div>
+
+
+<div class="status">
+
+
+<span class="status-dot">
+</span>
+
+
+SYSTEM ONLINE
+
+
+</div>
+
+
+</div>
+
+
+<aside class="hero-note">
+
+DES COMPÉTENCES CONCRÈTES
+
+<br>
+
+POUR DES SOLUTIONS DURABLES
+
+</aside>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     PRINCIPES
+========================================================= -->
+
+<section class="section">
+
+
+<div class="container reveal">
+
+
+<div class="kicker">
+
+ACTYROM // PRINCIPES
+
+</div>
+
+
+<h2 class="section-title">
+
+Une méthode simple à comprendre.
+
+</h2>
+
+
+
+<div class="principles-wrap">
+
+
+<div class="principles">
+
+
+
+<!-- ACTION -->
+
+<article class="principle">
+
+
+<div class="principle-icon">
+
+
+<svg viewBox="0 0 24 24">
+
+<path
+d="M13 2L5 14h6l-1 8 9-13h-6z">
+</path>
+
+</svg>
+
+
+</div>
+
+
+<h3>
+
+Action
+
+</h3>
+
+
+<p>
+
+Intervenir concrètement
+et faire avancer
+les projets.
+
+</p>
+
+
+</article>
+
+
+
+<!-- ANALYSE -->
+
+<article class="principle">
+
+
+<div class="principle-icon">
+
+
+<svg viewBox="0 0 24 24">
+
+<circle
+cx="10"
+cy="10"
+r="6">
+</circle>
+
+<path
+d="M14.5 14.5L21 21">
+</path>
+
+</svg>
+
+
+</div>
+
+
+<h3>
+
+Analyse
+
+</h3>
+
+
+<p>
+
+Comprendre une panne,
+un besoin
+ou une situation
+avant d’agir.
+
+</p>
+
+
+</article>
+
+
+
+<!-- RESOLUTION -->
+
+<article class="principle">
+
+
+<div class="principle-icon">
+
+
+<svg viewBox="0 0 24 24">
+
+<path
+d="M12 3l7 3v5c0 5-3.2 8-7 10-3.8-2-7-5-7-10V6l7-3z">
+</path>
+
+<path
+d="M9 12l2 2 4-4">
+</path>
+
+</svg>
+
+
+</div>
+
+
+<h3>
+
+Résolution
+
+</h3>
+
+
+<p>
+
+Rechercher une solution
+efficace,
+fiable
+et adaptée.
+
+</p>
+
+
+</article>
+
+
+
+<!-- ORGANISATION -->
+
+<article class="principle">
+
+
+<div class="principle-icon">
+
+
+<svg viewBox="0 0 24 24">
+
+<rect
+x="4"
+y="4"
+width="6"
+height="5"
+rx="1">
+</rect>
+
+<rect
+x="14"
+y="4"
+width="6"
+height="5"
+rx="1">
+</rect>
+
+<rect
+x="9"
+y="15"
+width="6"
+height="5"
+rx="1">
+</rect>
+
+<path
+d="M7 9v3h10V9M12 12v3">
+</path>
+
+</svg>
+
+
+</div>
+
+
+<h3>
+
+Organisation
+
+</h3>
+
+
+<p>
+
+Structurer interventions,
+projets,
+maintenance
+et ressources.
+
+</p>
+
+
+</article>
+
+
+
+<!-- METHODE -->
+
+<article class="principle">
+
+
+<div class="principle-icon">
+
+
+<svg viewBox="0 0 24 24">
+
+<rect
+x="5"
+y="4"
+width="14"
+height="17"
+rx="2">
+</rect>
+
+<path
+d="M9 2h6v4H9zM8 11l2 2 4-4M8 17h8">
+</path>
+
+</svg>
+
+
+</div>
+
+
+<h3>
+
+Méthode
+
+</h3>
+
+
+<p>
+
+Rigueur,
+logique,
+traçabilité
+et amélioration continue.
+
+</p>
+
+
+</article>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     DOMAINES
+========================================================= -->
+
+<section
+class="section section-dark"
+id="domaines">
+
+
+<div class="container">
+
+
+<div class="reveal">
+
+
+<div class="kicker">
+
+LES DOMAINES D’ACTION
+
+</div>
+
+
+<h2 class="section-title">
+
+Quatre univers,
+une seule logique :
+
+<span class="green">
+
+apporter une solution claire,
+fiable
+et adaptée.
+
+</span>
+
+</h2>
+
+
+</div>
+
+
+
+<div class="universe-grid">
+
+
+
+<!-- INDUSTRIE -->
+
+<article class="universe-card reveal">
+
+
+<img
+src="https://images.unsplash.com/photo-1780034766243-044492794729?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000"
+alt="Automatisme et contrôle industriel">
+
+
+<div class="universe-content">
+
+
+<div class="universe-num">
+
+01 // INDUSTRIE
+
+</div>
+
+
+<h3>
+
+Industrie
+
+</h3>
+
+
+<p>
+
+Diagnostic,
+automatismes,
+maintenance,
+amélioration,
+méthodes,
+études
+et projets.
+
+</p>
+
+
+<div class="tags">
+
+<span class="tag">
+Dépannage
+</span>
+
+<span class="tag">
+Analyse
+</span>
+
+<span class="tag">
+Amélioration
+</span>
+
+<span class="tag">
+Projets
+</span>
+
+</div>
+
+
+<a
+class="universe-link"
+href="industrie.html">
+
+Découvrir l’Industrie →
+
+</a>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- HABITAT -->
+
+<article class="universe-card reveal">
+
+
+<img
+src="https://images.unsplash.com/photo-1774199616762-31d947dc7d35?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000"
+alt="Habitat moderne et solutions connectées">
+
+
+<div class="universe-content">
+
+
+<div class="universe-num">
+
+02 // HABITAT
+
+</div>
+
+
+<h3>
+
+Habitat
+
+</h3>
+
+
+<p>
+
+Des solutions techniques
+qui rendent le quotidien
+plus simple,
+confortable,
+connecté
+et maîtrisé.
+
+</p>
+
+
+<div class="tags">
+
+
+<span class="tag">
+Domotique
+</span>
+
+<span class="tag">
+Wi-Fi
+</span>
+
+<span class="tag">
+Multimédia
+</span>
+
+<span class="tag">
+Énergie
+</span>
+
+
+</div>
+
+
+<a
+class="universe-link"
+href="habitat.html">
+
+Découvrir l’Habitat →
+
+</a>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- EXPERTISE -->
+
+<article class="universe-card reveal">
+
+
+<img
+src="https://images.unsplash.com/photo-1748347568194-c8cd8edd27da?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000"
+alt="Expertise technique de terrain">
+
+
+<div class="universe-content">
+
+
+<div class="universe-num">
+
+03 // EXPERTISE
+
+</div>
+
+
+<h3>
+
+Expertise
+
+</h3>
+
+
+<p>
+
+Une expérience terrain
+mise au service
+du diagnostic,
+de la résolution,
+de la fiabilité
+et des projets.
+
+</p>
+
+
+<div class="tags">
+
+
+<span class="tag">
+Terrain
+</span>
+
+<span class="tag">
+Méthode
+</span>
+
+<span class="tag">
+Fiabilité
+</span>
+
+<span class="tag">
+Accompagnement
+</span>
+
+
+</div>
+
+
+<a
+class="universe-link"
+href="qui-sommes-nous.html">
+
+Découvrir notre expertise →
+
+</a>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- DATA -->
+
+<article class="universe-card reveal">
+
+
+<img
+src="https://images.unsplash.com/photo-1753153481105-7a979eabe5a9?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000"
+alt="Supervision et exploitation de données techniques">
+
+
+<div class="universe-content">
+
+
+<div class="universe-num">
+
+04 // DATA & SUPERVISION
+
+</div>
+
+
+<h3>
+
+Data & Supervision
+
+</h3>
+
+
+<p>
+
+Transformer les données techniques
+en informations utiles
+pour comprendre,
+suivre
+et anticiper.
+
+</p>
+
+
+<div class="tags">
+
+
+<span class="tag">
+KPI
+</span>
+
+<span class="tag">
+Historisation
+</span>
+
+<span class="tag">
+Alertes
+</span>
+
+<span class="tag">
+Prédictif
+</span>
+
+
+</div>
+
+
+<a
+class="universe-link"
+href="industrie40.html">
+
+Découvrir la Data →
+
+</a>
+
+
+</div>
+
+
+</article>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     APPLICATIONS
+========================================================= -->
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="reveal">
+
+
+<div class="kicker">
+
+CAPACITÉS CONCRÈTES
+
+</div>
+
+
+<h2 class="section-title">
+
+Du terrain
+aux réalisations
+sur mesure.
+
+</h2>
+
+
+</div>
+
+
+
+<div class="application-grid">
+
+
+
+<!-- INDUSTRIE -->
+
+<article class="application-panel reveal">
+
+
+<h3>
+
+Industrie
+
+</h3>
+
+
+<p>
+
+Intervenir sur les besoins
+qui font réellement avancer
+une installation
+ou un projet.
+
+</p>
+
+
+<div class="chip-row">
+
+
+<span class="chip">
+Dépannage
+</span>
+
+<span class="chip">
+Analyse
+</span>
+
+<span class="chip">
+Amélioration
+</span>
+
+<span class="chip">
+Étude
+</span>
+
+<span class="chip">
+Méthodes
+</span>
+
+<span class="chip">
+Projets
+</span>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- HABITAT -->
+
+<article class="application-panel reveal">
+
+
+<h3>
+
+Habitat
+
+</h3>
+
+
+<p>
+
+Associer technique,
+intégration
+et confort
+pour créer des solutions
+réellement adaptées
+au lieu de vie.
+
+</p>
+
+
+<div class="chip-row">
+
+
+<span class="chip">
+Domotique
+</span>
+
+<span class="chip">
+Réseau / Wi-Fi
+</span>
+
+<span class="chip">
+Mur TV
+</span>
+
+<span class="chip">
+Bureau connecté
+</span>
+
+<span class="chip">
+Home cinéma
+</span>
+
+<span class="chip">
+Gaming room
+</span>
+
+<span class="chip">
+Smart garage
+</span>
+
+<span class="chip">
+Énergie
+</span>
+
+
+</div>
+
+
+</article>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     EXPERTISE
+========================================================= -->
+
+<section class="section section-dark">
+
+
+<div class="container expertise">
+
+
+
+<article class="expertise-card reveal">
+
+
+<div class="kicker">
+
+EXPERTISE & RÉSEAU PROFESSIONNEL
+
+</div>
+
+
+<h2 class="section-title">
+
+Une expertise terrain centrale,
+
+<span class="green">
+
+complétée
+quand le projet l’exige.
+
+</span>
+
+</h2>
+
+
+<p>
+
+Actyrom s’appuie
+sur une expérience concrète
+de la maintenance,
+du diagnostic,
+des automatismes,
+des méthodes
+et des projets techniques.
+
+Lorsque la mission
+demande d’autres savoir-faire,
+un réseau de professionnels partenaires
+peut compléter l’intervention.
+
+</p>
+
+
+
+<div class="network-list">
+
+
+<div class="network-item">
+
+Automatisme & électricité
+
+</div>
+
+
+<div class="network-item">
+
+Méthodes & maintenance
+
+</div>
+
+
+<div class="network-item">
+
+Énergie
+
+</div>
+
+
+<div class="network-item">
+
+Intégration & aménagement
+
+</div>
+
+
+<div class="network-item">
+
+Informatique & électronique
+
+</div>
+
+
+<div class="network-item">
+
+Compétences complémentaires
+selon projet
+
+</div>
+
+
+</div>
+
+
+
+<div class="hero-actions">
+
+
+<a
+class="btn btn-primary"
+href="qui-sommes-nous.html">
+
+Qui sommes-nous ?
+
+</a>
+
+
+<a
+class="btn btn-secondary"
+href="accompagnement.html">
+
+Notre accompagnement
+
+</a>
+
+
+</div>
+
+
+</article>
+
+
+
+<div class="expertise-photo reveal">
+
+
+<img
+src="https://images.unsplash.com/photo-1748347568194-c8cd8edd27da?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000"
+alt="Professionnel intervenant sur un équipement technique">
+
+
+<div class="expertise-caption">
+
+
+<span>
+
+ACTYROM // EXPERTISE TERRAIN
+
+</span>
+
+
+<strong>
+
+De l’analyse à la solution.
+
+</strong>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     DATA
+========================================================= -->
+
+<section class="section">
+
+
+<div class="container reveal">
+
+
+<div class="kicker">
+
+DATA & SUPERVISION
+
+</div>
+
+
+<h2 class="section-title">
+
+Faire remonter
+
+<span class="green">
+
+l’information utile.
+
+</span>
+
+</h2>
+
+
+<p class="section-intro">
+
+Collecter,
+visualiser
+et exploiter
+les bonnes données
+pour mieux comprendre
+les installations
+et améliorer progressivement
+leur suivi.
+
+</p>
+
+
+
+<div class="data-strip">
+
+
+<span class="data-item">
+KPI
+</span>
+
+<span class="data-item">
+Historisation
+</span>
+
+<span class="data-item">
+Supervision
+</span>
+
+<span class="data-item">
+Alertes
+</span>
+
+<span class="data-item">
+Tendances
+</span>
+
+<span class="data-item">
+Analyse
+</span>
+
+<span class="data-item">
+Maintenance prédictive
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="section section-dark">
+
+
+<div class="container">
+
+
+<div class="cta reveal">
+
+
+<div class="kicker">
+
+VOTRE PROJET
+
+</div>
+
+
+<h2>
+
+Un besoin,
+une idée,
+un problème technique ?
+
+<span class="green">
+
+Parlons de votre projet.
+
+</span>
+
+</h2>
+
+
+<p>
+
+Industrie,
+habitat,
+expertise
+ou supervision :
+
+présentez votre situation
+et construisons une réponse
+adaptée à votre besoin réel.
+
+</p>
+
+
+<div class="hero-actions">
+
+
+<a
+class="btn btn-primary"
+href="contact.html">
+
+Parler de votre projet
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+
+<div class="container footer">
+
+
+<div>
+
+© 2026 Actyrom Consulting
+— Des solutions pour demain
+
+</div>
+
+
+<div class="footer-links">
+
+
+<a href="qui-sommes-nous.html">
+
+Qui sommes-nous ?
+
+</a>
+
+
+<a href="mentions-legales.html">
+
+Mentions légales
+
+</a>
+
+
+<a href="contact.html">
+
+Contact
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+
+/* =========================================================
+   MENU MOBILE
+========================================================= */
+
+const menuBtn =
+document.getElementById(
+"menuBtn"
+);
+
+const navLinks =
+document.getElementById(
+"navLinks"
+);
+
+
+menuBtn.addEventListener(
+"click",
+() => {
+
+  const open =
+  navLinks
+  .classList
+  .toggle(
+    "open"
+  );
+
+  menuBtn
+  .setAttribute(
+    "aria-expanded",
+    open
+    ? "true"
+    : "false"
+  );
+
+}
+);
+
+
+document
+.querySelectorAll(
+".nav-links a"
+)
+.forEach(
+link => {
+
+  link
+  .addEventListener(
+  "click",
+  () => {
+
+    navLinks
+    .classList
+    .remove(
+      "open"
+    );
+
+    menuBtn
+    .setAttribute(
+      "aria-expanded",
+      "false"
+    );
+
+  }
+  );
+
+}
+);
+
+
+/* =========================================================
+   APPARITION DES SECTIONS
+========================================================= */
+
+const revealObserver =
+new IntersectionObserver(
+
+(entries) => {
+
+  entries
+  .forEach(
+  entry => {
+
+    if(
+      entry.isIntersecting
+    ){
+
+      entry
+      .target
+      .classList
+      .add(
+        "visible"
+      );
+
+      revealObserver
+      .unobserve(
+        entry.target
+      );
+
+    }
+
+  }
+  );
+
+},
+
+{
+  threshold:.15
+}
+
+);
+
+
+document
+.querySelectorAll(
+".reveal"
+)
+.forEach(
+el => {
+
+  revealObserver
+  .observe(
+    el
+  );
+
+}
+);
+
+
+/* =========================================================
+   PRINCIPES ACTYROM
+========================================================= */
+
+const principles =
+[
+  ...document
+  .querySelectorAll(
+    ".principle"
+  )
+];
+
+const principleWrap =
+document
+.querySelector(
+  ".principles-wrap"
+);
+
+
+if(
+  principleWrap
+){
+
+  const principleObserver =
+  new IntersectionObserver(
+
+  (entries) => {
+
+    entries
+    .forEach(
+    entry => {
+
+      if(
+        entry.isIntersecting
+      ){
+
+        principles
+        .forEach(
+        (el,index) => {
+
+          setTimeout(
+          () => {
+
+            el
+            .classList
+            .add(
+              "show"
+            );
+
+          },
+          index * 125
+          );
+
+        }
+        );
+
+        principleObserver
+        .disconnect();
+
+      }
+
+    }
+    );
+
+  },
+
+  {
+    threshold:.22
+  }
+
+  );
+
+
+  principleObserver
+  .observe(
+    principleWrap
+  );
+
+}
+
+
+</script>
+
+
+</body>
+</html>
