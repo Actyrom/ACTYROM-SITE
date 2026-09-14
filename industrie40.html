@@ -6,20 +6,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Habitat | Actyrom Consulting</title>
+<title>Industrie 4.0 & Supervision | Actyrom Consulting</title>
 
 <meta
 name="description"
-content="Actyrom Consulting propose des solutions techniques pour l'habitat : domotique, réseau Wi-Fi, informatique, multimédia, mur TV, bureau connecté, home cinéma, gaming room, smart garage, énergie et projets sur mesure.">
+content="Actyrom Consulting développe des solutions de collecte de données, historisation, supervision, KPI, analyse de tendances et maintenance prédictive pour mieux comprendre les installations techniques.">
 
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#06130d">
 
 <link
 rel="canonical"
-href="https://actyrom.fr/habitat.html">
+href="https://actyrom.fr/industrie40.html">
 
 <style>
+
+/* =========================================================
+   VARIABLES
+========================================================= */
 
 :root{
 
@@ -68,8 +72,8 @@ body{
   background:
 
   radial-gradient(
-    circle at 80% 6%,
-    rgba(46,132,63,.10),
+    circle at 82% 5%,
+    rgba(46,132,63,.12),
     transparent 28%
   ),
 
@@ -99,12 +103,12 @@ button{
 
 img{
 
+  display:block;
+
   width:100%;
   height:100%;
 
   object-fit:cover;
-
-  display:block;
 
 }
 
@@ -156,7 +160,7 @@ img{
 
 .section-intro{
 
-  max-width:780px;
+  max-width:790px;
 
   margin-top:17px;
 
@@ -307,7 +311,7 @@ header{
 
 
 /* =========================================================
-   MOBILE MENU
+   MENU MOBILE
 ========================================================= */
 
 .menu-btn{
@@ -340,7 +344,7 @@ header{
 
   position:relative;
 
-  min-height:670px;
+  min-height:690px;
 
   display:flex;
 
@@ -364,12 +368,10 @@ header{
 
 .hero-media img{
 
-  object-position:center;
-
   filter:
-  saturate(.72)
+  saturate(.65)
   contrast(1.05)
-  brightness(.53);
+  brightness(.48);
 
 }
 
@@ -385,15 +387,15 @@ header{
 
   linear-gradient(
     90deg,
-    rgba(2,9,5,.98) 0%,
-    rgba(3,12,7,.92) 38%,
-    rgba(4,18,10,.60) 68%,
-    rgba(2,8,5,.62)
+    rgba(2,9,5,.99) 0%,
+    rgba(3,12,7,.94) 38%,
+    rgba(4,18,10,.68) 68%,
+    rgba(2,8,5,.72) 100%
   ),
 
   linear-gradient(
     180deg,
-    rgba(2,8,5,.08),
+    rgba(2,8,5,.04),
     rgba(2,8,5,.76)
   );
 
@@ -403,18 +405,18 @@ header{
 
   position:absolute;
 
-  width:600px;
-  height:600px;
+  width:620px;
+  height:620px;
 
-  top:-210px;
-  right:-140px;
+  top:-220px;
+  right:-150px;
 
   border-radius:50%;
 
   background:
   radial-gradient(
     circle,
-    rgba(137,239,63,.15),
+    rgba(137,239,63,.16),
     rgba(55,159,62,.05) 40%,
     transparent 70%
   );
@@ -490,7 +492,6 @@ header{
   content:"";
 
   width:40px;
-
   height:2px;
 
   background:var(--green);
@@ -528,7 +529,7 @@ header{
 
 .hero-text{
 
-  max-width:720px;
+  max-width:740px;
 
   margin-top:27px;
 
@@ -749,10 +750,10 @@ header{
 
 
 /* =========================================================
-   SERVICES
+   DATA CHAIN
 ========================================================= */
 
-.services-grid{
+.chain-grid{
 
   margin-top:40px;
 
@@ -760,222 +761,44 @@ header{
 
   grid-template-columns:
   repeat(
-    3,
-    minmax(0,1fr)
+    5,
+    1fr
   );
-
-  gap:15px;
-
-}
-
-.service-card{
-
-  padding:29px;
 
   border:
   1px solid
-  rgba(255,255,255,.11);
+  var(--green-line);
 
-  border-radius:20px;
-
-  background:
-
-  radial-gradient(
-    circle at 100% 0%,
-    rgba(70,170,66,.075),
-    transparent 32%
-  ),
-
-  #07130d;
-
-  transition:.25s ease;
-
-}
-
-.service-card:hover{
-
-  transform:
-  translateY(-4px);
-
-  border-color:
-  rgba(137,239,63,.36);
-
-}
-
-.service-num{
-
-  color:var(--green2);
-
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
-
-  font-size:.73rem;
-
-  letter-spacing:2px;
-
-}
-
-.service-icon{
-
-  width:48px;
-  height:48px;
-
-  margin-top:18px;
-
-  display:grid;
-
-  place-items:center;
-
-  border-radius:50%;
-
-  color:var(--green2);
-
-  border:
-  1px solid
-  rgba(137,239,63,.32);
-
-  background:
-  rgba(73,160,55,.05);
-
-}
-
-.service-icon svg{
-
-  width:24px;
-  height:24px;
-
-  fill:none;
-
-  stroke:currentColor;
-
-  stroke-width:1.8;
-
-  stroke-linecap:round;
-
-  stroke-linejoin:round;
-
-}
-
-.service-card h3{
-
-  margin-top:17px;
-
-  font-size:1.2rem;
-
-}
-
-.service-card p{
-
-  margin-top:8px;
-
-  color:var(--muted);
-
-  font-size:.91rem;
-
-}
-
-
-/* =========================================================
-   REALISATIONS
-========================================================= */
-
-.projects-grid{
-
-  margin-top:40px;
-
-  display:grid;
-
-  grid-template-columns:
-  repeat(
-    2,
-    minmax(0,1fr)
-  );
-
-  gap:18px;
-
-}
-
-.project-card{
-
-  position:relative;
-
-  min-height:390px;
+  border-radius:23px;
 
   overflow:hidden;
 
-  border-radius:24px;
+  background:#07150e;
 
-  border:
+}
+
+.chain-card{
+
+  min-height:210px;
+
+  padding:
+  25px 20px;
+
+  border-right:
   1px solid
-  rgba(255,255,255,.12);
+  rgba(255,255,255,.08);
 
-  background:#07130d;
-
-}
-
-.project-card img{
-
-  position:absolute;
-
-  inset:0;
-
-  filter:
-  saturate(.72)
-  brightness(.72);
-
-  transition:
-
-  transform .7s ease,
-
-  filter .7s ease;
+  position:relative;
 
 }
 
-.project-card:hover img{
+.chain-card:last-child{
 
-  transform:
-  scale(1.055);
-
-  filter:
-  saturate(.92)
-  brightness(.80);
+  border-right:0;
 
 }
 
-.project-card::after{
-
-  content:"";
-
-  position:absolute;
-
-  inset:0;
-
-  background:
-
-  linear-gradient(
-    180deg,
-    rgba(2,9,5,.02) 0%,
-    rgba(2,9,5,.18) 35%,
-    rgba(2,9,5,.93) 100%
-  );
-
-}
-
-.project-content{
-
-  position:absolute;
-
-  z-index:2;
-
-  left:27px;
-  right:27px;
-  bottom:27px;
-
-}
-
-.project-number{
+.chain-num{
 
   color:var(--green2);
 
@@ -990,67 +813,68 @@ header{
 
 }
 
-.project-card h3{
+.chain-icon{
 
-  margin-top:6px;
+  width:46px;
+  height:46px;
 
-  font-size:1.55rem;
+  display:grid;
 
-}
+  place-items:center;
 
-.project-card p{
+  margin-top:18px;
 
-  margin-top:8px;
-
-  max-width:560px;
-
-  color:#ced9d0;
-
-  font-size:.9rem;
-
-}
-
-.project-tags{
-
-  margin-top:14px;
-
-  display:flex;
-
-  flex-wrap:wrap;
-
-  gap:7px;
-
-}
-
-.project-tag{
-
-  padding:
-  6px 9px;
-
-  border-radius:999px;
+  border-radius:50%;
 
   border:
   1px solid
-  rgba(255,255,255,.14);
+  rgba(137,239,63,.34);
 
-  background:
-  rgba(3,10,6,.52);
+  color:var(--green2);
 
-  backdrop-filter:
-  blur(9px);
+}
 
-  color:#d8e4da;
+.chain-icon svg{
 
-  font-size:.7rem;
+  width:23px;
+  height:23px;
+
+  stroke:currentColor;
+
+  fill:none;
+
+  stroke-width:1.8;
+
+  stroke-linecap:round;
+
+  stroke-linejoin:round;
+
+}
+
+.chain-card h3{
+
+  margin-top:15px;
+
+  font-size:1.06rem;
+
+}
+
+.chain-card p{
+
+  margin-top:7px;
+
+  color:var(--soft);
+
+  font-size:.81rem;
 
 }
 
 
 /* =========================================================
-   SMART HOUSE
+   DASHBOARD
 ========================================================= */
 
-.smart-layout{
+.dashboard-layout{
 
   display:grid;
 
@@ -1060,9 +884,11 @@ header{
 
   gap:22px;
 
+  align-items:stretch;
+
 }
 
-.smart-copy{
+.dashboard-copy{
 
   padding:39px;
 
@@ -1084,7 +910,7 @@ header{
 
 }
 
-.smart-copy p{
+.dashboard-copy p{
 
   margin-top:16px;
 
@@ -1092,304 +918,9 @@ header{
 
 }
 
-.smart-list{
+.dashboard-tags{
 
   margin-top:25px;
-
-  display:grid;
-
-  grid-template-columns:
-  1fr 1fr;
-
-  gap:10px;
-
-}
-
-.smart-item{
-
-  padding:
-  13px 14px;
-
-  border-radius:11px;
-
-  border:
-  1px solid
-  rgba(255,255,255,.09);
-
-  background:
-  rgba(3,10,6,.42);
-
-  color:#d7e3d9;
-
-  font-size:.82rem;
-
-}
-
-.smart-panel{
-
-  padding:31px;
-
-  border-radius:24px;
-
-  border:
-  1px solid
-  rgba(255,255,255,.10);
-
-  background:#07130d;
-
-}
-
-.smart-line{
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:space-between;
-
-  gap:20px;
-
-  padding:
-  16px 0;
-
-  border-bottom:
-  1px solid
-  rgba(255,255,255,.08);
-
-}
-
-.smart-line:last-child{
-
-  border-bottom:0;
-
-}
-
-.smart-line span:first-child{
-
-  color:var(--muted);
-
-}
-
-.smart-line span:last-child{
-
-  color:var(--green2);
-
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
-
-  font-size:.79rem;
-
-}
-
-
-/* =========================================================
-   PROCESS
-========================================================= */
-
-.process-grid{
-
-  margin-top:38px;
-
-  display:grid;
-
-  grid-template-columns:
-  repeat(
-    5,
-    1fr
-  );
-
-  overflow:hidden;
-
-  border:
-  1px solid
-  var(--green-line);
-
-  border-radius:22px;
-
-  background:#07150e;
-
-}
-
-.process-card{
-
-  min-height:185px;
-
-  padding:
-  25px 20px;
-
-  border-right:
-  1px solid
-  rgba(255,255,255,.08);
-
-}
-
-.process-card:last-child{
-
-  border-right:0;
-
-}
-
-.process-num{
-
-  color:var(--green2);
-
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
-
-  font-size:.73rem;
-
-  letter-spacing:2px;
-
-}
-
-.process-card h3{
-
-  margin-top:14px;
-
-  font-size:1.05rem;
-
-}
-
-.process-card p{
-
-  margin-top:8px;
-
-  color:var(--soft);
-
-  font-size:.81rem;
-
-}
-
-
-/* =========================================================
-   PARTENAIRES
-========================================================= */
-
-.partner-layout{
-
-  display:grid;
-
-  grid-template-columns:
-  .95fr
-  1.05fr;
-
-  gap:22px;
-
-}
-
-.partner-photo{
-
-  position:relative;
-
-  min-height:470px;
-
-  overflow:hidden;
-
-  border-radius:24px;
-
-  border:
-  1px solid
-  rgba(255,255,255,.12);
-
-}
-
-.partner-photo img{
-
-  filter:
-  saturate(.72)
-  brightness(.72);
-
-}
-
-.partner-photo::after{
-
-  content:"";
-
-  position:absolute;
-
-  inset:0;
-
-  background:
-  linear-gradient(
-    180deg,
-    transparent 35%,
-    rgba(2,9,5,.90)
-  );
-
-}
-
-.partner-caption{
-
-  position:absolute;
-
-  z-index:2;
-
-  left:25px;
-  right:25px;
-  bottom:25px;
-
-}
-
-.partner-caption span{
-
-  color:var(--green2);
-
-  font-family:
-  "Courier New",
-  Consolas,
-  monospace;
-
-  font-size:.75rem;
-
-}
-
-.partner-caption strong{
-
-  display:block;
-
-  margin-top:5px;
-
-  font-size:1.2rem;
-
-}
-
-.partner-copy{
-
-  padding:39px;
-
-  border:
-  1px solid
-  var(--green-line);
-
-  border-radius:24px;
-
-  background:
-
-  radial-gradient(
-    circle at 90% 0%,
-    rgba(70,180,66,.10),
-    transparent 35%
-  ),
-
-  #07150e;
-
-}
-
-.partner-copy p{
-
-  margin-top:16px;
-
-  color:var(--muted);
-
-}
-
-.partner-tags{
-
-  margin-top:24px;
 
   display:flex;
 
@@ -1399,7 +930,7 @@ header{
 
 }
 
-.partner-tag{
+.dashboard-tag{
 
   padding:
   9px 12px;
@@ -1421,12 +952,527 @@ header{
 
 
 /* =========================================================
-   POURQUOI
+   SIMULATED DASHBOARD
 ========================================================= */
 
-.why-grid{
+.dashboard-panel{
 
-  margin-top:38px;
+  position:relative;
+
+  padding:27px;
+
+  border-radius:24px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.11);
+
+  background:
+
+  radial-gradient(
+    circle at 100% 0%,
+    rgba(80,190,70,.08),
+    transparent 30%
+  ),
+
+  #06120c;
+
+  overflow:hidden;
+
+}
+
+.dashboard-top{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  gap:15px;
+
+  padding-bottom:18px;
+
+  border-bottom:
+  1px solid
+  rgba(255,255,255,.08);
+
+}
+
+.dashboard-title{
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  color:#dfe8e0;
+
+  font-size:.79rem;
+
+}
+
+.dashboard-state{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  color:var(--green2);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  font-size:.71rem;
+
+}
+
+.mini-dot{
+
+  width:9px;
+  height:9px;
+
+  border-radius:50%;
+
+  background:var(--green);
+
+  box-shadow:
+  0 0 12px
+  rgba(137,239,63,.65);
+
+}
+
+.kpi-grid{
+
+  margin-top:18px;
+
+  display:grid;
+
+  grid-template-columns:
+  1fr 1fr;
+
+  gap:10px;
+
+}
+
+.kpi{
+
+  padding:
+  16px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.08);
+
+  border-radius:13px;
+
+  background:
+  rgba(255,255,255,.018);
+
+}
+
+.kpi span{
+
+  color:var(--soft);
+
+  font-size:.72rem;
+
+}
+
+.kpi strong{
+
+  display:block;
+
+  margin-top:5px;
+
+  color:#edf5ee;
+
+  font-size:1.25rem;
+
+}
+
+.kpi small{
+
+  display:block;
+
+  margin-top:4px;
+
+  color:var(--green2);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  font-size:.66rem;
+
+}
+
+.chart{
+
+  margin-top:18px;
+
+  height:170px;
+
+  position:relative;
+
+  border:
+  1px solid
+  rgba(255,255,255,.08);
+
+  border-radius:13px;
+
+  background:
+
+  linear-gradient(
+    rgba(255,255,255,.03) 1px,
+    transparent 1px
+  ),
+
+  linear-gradient(
+    90deg,
+    rgba(255,255,255,.03) 1px,
+    transparent 1px
+  );
+
+  background-size:
+  100% 34px,
+  52px 100%;
+
+  overflow:hidden;
+
+}
+
+.chart svg{
+
+  position:absolute;
+
+  inset:15px;
+
+  width:calc(100% - 30px);
+
+  height:calc(100% - 30px);
+
+}
+
+.chart-line{
+
+  fill:none;
+
+  stroke:var(--green);
+
+  stroke-width:2.3;
+
+  filter:
+  drop-shadow(
+    0 0 5px
+    rgba(137,239,63,.55)
+  );
+
+}
+
+.chart-line-soft{
+
+  fill:none;
+
+  stroke:
+  rgba(255,255,255,.24);
+
+  stroke-width:1.5;
+
+}
+
+
+/* =========================================================
+   ARCHITECTURE
+========================================================= */
+
+.architecture{
+
+  margin-top:40px;
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(
+    4,
+    1fr
+  );
+
+  gap:14px;
+
+}
+
+.arch-card{
+
+  padding:26px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.10);
+
+  border-radius:19px;
+
+  background:#07130d;
+
+}
+
+.arch-num{
+
+  color:var(--green2);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  font-size:.72rem;
+
+  letter-spacing:2px;
+
+}
+
+.arch-card h3{
+
+  margin-top:12px;
+
+  font-size:1.08rem;
+
+}
+
+.arch-card p{
+
+  margin-top:8px;
+
+  color:var(--muted);
+
+  font-size:.86rem;
+
+}
+
+
+/* =========================================================
+   DEDICATED NETWORK
+========================================================= */
+
+.network-layout{
+
+  display:grid;
+
+  grid-template-columns:
+  .95fr
+  1.05fr;
+
+  gap:22px;
+
+}
+
+.network-visual{
+
+  min-height:470px;
+
+  padding:32px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.10);
+
+  border-radius:24px;
+
+  background:
+
+  radial-gradient(
+    circle at 50% 50%,
+    rgba(70,180,66,.09),
+    transparent 50%
+  ),
+
+  #06120c;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+}
+
+.diagram{
+
+  width:100%;
+
+  max-width:420px;
+
+}
+
+.diagram-row{
+
+  display:grid;
+
+  grid-template-columns:
+  1fr auto 1fr;
+
+  align-items:center;
+
+  gap:12px;
+
+  margin-bottom:17px;
+
+}
+
+.diagram-box{
+
+  min-height:66px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:13px;
+
+  text-align:center;
+
+  border:
+  1px solid
+  rgba(137,239,63,.24);
+
+  border-radius:13px;
+
+  background:
+  rgba(47,120,44,.06);
+
+  color:#d9e5db;
+
+  font-size:.77rem;
+
+}
+
+.diagram-link{
+
+  color:var(--green2);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+}
+
+.diagram-center{
+
+  margin:
+  22px auto;
+
+  width:150px;
+  height:150px;
+
+  display:grid;
+
+  place-items:center;
+
+  text-align:center;
+
+  border-radius:50%;
+
+  border:
+  1px solid
+  rgba(137,239,63,.35);
+
+  background:
+
+  radial-gradient(
+    circle,
+    rgba(137,239,63,.10),
+    rgba(7,21,14,.85)
+  );
+
+  color:var(--green2);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  box-shadow:
+  0 0 40px
+  rgba(90,210,60,.07);
+
+}
+
+.network-copy{
+
+  padding:39px;
+
+  border:
+  1px solid
+  var(--green-line);
+
+  border-radius:24px;
+
+  background:
+
+  radial-gradient(
+    circle at 90% 0%,
+    rgba(70,180,66,.10),
+    transparent 35%
+  ),
+
+  #07150e;
+
+}
+
+.network-copy p{
+
+  margin-top:16px;
+
+  color:var(--muted);
+
+}
+
+.network-points{
+
+  margin-top:24px;
+
+  display:grid;
+
+  gap:10px;
+
+}
+
+.network-point{
+
+  padding:
+  14px;
+
+  border-radius:11px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.09);
+
+  background:
+  rgba(3,10,6,.42);
+
+  color:#d7e3d9;
+
+  font-size:.84rem;
+
+}
+
+
+/* =========================================================
+   USE CASES
+========================================================= */
+
+.use-grid{
+
+  margin-top:40px;
 
   display:grid;
 
@@ -1440,62 +1486,242 @@ header{
 
 }
 
-.why-card{
+.use-card{
 
-  padding:28px;
+  padding:29px;
 
   border:
   1px solid
   rgba(255,255,255,.10);
 
-  border-radius:18px;
+  border-radius:20px;
 
-  background:#07130d;
+  background:
+
+  radial-gradient(
+    circle at 100% 0%,
+    rgba(70,170,66,.075),
+    transparent 32%
+  ),
+
+  #07130d;
 
 }
 
-.why-card h3{
+.use-number{
 
-  font-size:1.12rem;
+  color:var(--green2);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+  font-size:.72rem;
+
+  letter-spacing:2px;
 
 }
 
-.why-card p{
+.use-card h3{
+
+  margin-top:15px;
+
+  font-size:1.16rem;
+
+}
+
+.use-card p{
 
   margin-top:8px;
 
   color:var(--muted);
 
-}
-
-
-/* =========================================================
-   CADRE INTERVENTION
-========================================================= */
-
-.notice{
-
-  margin-top:30px;
-
-  padding:
-  21px 24px;
-
-  border-left:
-  3px solid
-  var(--green);
-
-  background:
-  rgba(7,23,15,.70);
-
-  color:#aebcb2;
-
   font-size:.88rem;
 
 }
 
-.notice strong{
 
-  color:#eef5ef;
+/* =========================================================
+   PREDICTIVE
+========================================================= */
+
+.predictive-layout{
+
+  display:grid;
+
+  grid-template-columns:
+  1fr
+  1fr;
+
+  gap:22px;
+
+}
+
+.predictive-copy{
+
+  padding:39px;
+
+  border:
+  1px solid
+  var(--green-line);
+
+  border-radius:24px;
+
+  background:
+
+  radial-gradient(
+    circle at 85% 0%,
+    rgba(70,180,66,.11),
+    transparent 35%
+  ),
+
+  #07150e;
+
+}
+
+.predictive-copy p{
+
+  margin-top:16px;
+
+  color:var(--muted);
+
+}
+
+.predictive-steps{
+
+  padding:31px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.10);
+
+  border-radius:24px;
+
+  background:#07130d;
+
+}
+
+.pred-step{
+
+  display:grid;
+
+  grid-template-columns:
+  48px
+  1fr;
+
+  gap:14px;
+
+  padding:
+  15px 0;
+
+  border-bottom:
+  1px solid
+  rgba(255,255,255,.08);
+
+}
+
+.pred-step:last-child{
+
+  border-bottom:0;
+
+}
+
+.pred-num{
+
+  width:44px;
+  height:44px;
+
+  display:grid;
+
+  place-items:center;
+
+  border-radius:50%;
+
+  border:
+  1px solid
+  rgba(137,239,63,.26);
+
+  color:var(--green2);
+
+  font-family:
+  "Courier New",
+  Consolas,
+  monospace;
+
+}
+
+.pred-step h3{
+
+  font-size:1rem;
+
+}
+
+.pred-step p{
+
+  margin-top:4px;
+
+  color:var(--soft);
+
+  font-size:.8rem;
+
+}
+
+
+/* =========================================================
+   PRINCIPLE
+========================================================= */
+
+.principle-box{
+
+  padding:48px;
+
+  border:
+  1px solid
+  var(--green-line);
+
+  border-radius:26px;
+
+  background:
+
+  radial-gradient(
+    circle at 88% 15%,
+    rgba(117,255,69,.13),
+    transparent 30%
+  ),
+
+  linear-gradient(
+    135deg,
+    #0a2115,
+    #06120c
+  );
+
+}
+
+.principle-box h2{
+
+  max-width:850px;
+
+  font-size:
+  clamp(
+    2.5rem,
+    5vw,
+    4.5rem
+  );
+
+  line-height:1;
+
+  letter-spacing:-3px;
+
+}
+
+.principle-box p{
+
+  max-width:760px;
+
+  margin-top:18px;
+
+  color:#b8c6bc;
 
 }
 
@@ -1649,25 +1875,32 @@ footer{
 
   }
 
-  .services-grid{
-
-    grid-template-columns:
-    repeat(2,1fr);
-
-  }
-
-  .process-grid{
+  .chain-grid{
 
     grid-template-columns:
     repeat(3,1fr);
 
   }
 
-  .process-card{
+  .chain-card{
 
     border-bottom:
     1px solid
     rgba(255,255,255,.08);
+
+  }
+
+  .architecture{
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+  }
+
+  .use-grid{
+
+    grid-template-columns:
+    repeat(2,1fr);
 
   }
 
@@ -1728,29 +1961,15 @@ footer{
   }
 
   .connection{
-
     text-align:center;
-
   }
 
   .intro-grid,
-  .smart-layout,
-  .partner-layout{
+  .dashboard-layout,
+  .network-layout,
+  .predictive-layout{
 
     grid-template-columns:1fr;
-
-  }
-
-  .projects-grid{
-
-    grid-template-columns:1fr;
-
-  }
-
-  .why-grid{
-
-    grid-template-columns:
-    1fr 1fr;
 
   }
 
@@ -1826,40 +2045,59 @@ footer{
 
   }
 
-  .services-grid,
-  .why-grid,
-  .process-grid,
-  .smart-list{
+  .chain-grid,
+  .architecture,
+  .use-grid{
 
     grid-template-columns:1fr;
 
   }
 
-  .process-card{
+  .chain-card{
 
     border-right:0;
 
   }
 
-  .project-card{
-
-    min-height:350px;
-
-  }
-
-  .smart-copy,
-  .partner-copy{
+  .dashboard-copy,
+  .network-copy,
+  .predictive-copy{
 
     padding:27px;
 
   }
 
-  .partner-photo{
+  .kpi-grid{
 
-    min-height:360px;
+    grid-template-columns:1fr;
 
   }
 
+  .network-visual{
+
+    min-height:auto;
+
+    padding:
+    28px 18px;
+
+  }
+
+  .diagram-row{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .diagram-link{
+
+    transform:
+    rotate(90deg);
+
+    text-align:center;
+
+  }
+
+  .principle-box,
   .cta{
 
     padding:
@@ -1867,6 +2105,7 @@ footer{
 
   }
 
+  .principle-box h2,
   .cta h2{
 
     font-size:2.6rem;
@@ -1994,19 +2233,19 @@ Industrie
 
 
 <li>
-<a
-href="habitat.html"
-class="active">
-
+<a href="habitat.html">
 Habitat
-
 </a>
 </li>
 
 
 <li>
-<a href="industrie40.html">
+<a
+href="industrie40.html"
+class="active">
+
 Industrie 4.0
+
 </a>
 </li>
 
@@ -2064,8 +2303,8 @@ CONNEXION
 
 
 <img
-src="https://images.unsplash.com/photo-1774199616762-31d947dc7d35?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=2400"
-alt="Habitat moderne et solutions techniques intégrées">
+src="https://images.unsplash.com/photo-1753153481105-7a979eabe5a9?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=2400"
+alt="Données techniques et supervision industrielle">
 
 
 </div>
@@ -2083,36 +2322,34 @@ alt="Habitat moderne et solutions techniques intégrées">
 
 <div class="hero-label">
 
-ACTYROM // HABITAT
+ACTYROM // INDUSTRIE 4.0
 
 </div>
 
 
 <h1>
 
-La technologie
+Voir.
 
 <span>
-intégrée au quotidien.
+Comprendre.
 </span>
+
+Anticiper.
 
 </h1>
 
 
 <p class="hero-text">
 
-Réseau,
-domotique,
-informatique,
-multimédia,
-automatismes,
-énergie
-et aménagement technique :
-
-des solutions pensées
-autour de votre logement,
-de vos usages
-et de vos projets.
+Collecter les bonnes données,
+les historiser,
+les rendre lisibles
+et les transformer
+en informations utiles
+pour la maintenance,
+le suivi
+et la prise de décision.
 
 </p>
 
@@ -2130,10 +2367,10 @@ Parler de votre projet
 
 
 <a
-href="#realisations"
+href="#fonctionnement"
 class="btn btn-secondary">
 
-Découvrir les possibilités
+Découvrir le principe
 
 </a>
 
@@ -2146,7 +2383,7 @@ Découvrir les possibilités
 <span class="status-dot">
 </span>
 
-HOME SYSTEM ONLINE
+DATA SYSTEM ONLINE
 
 </div>
 
@@ -2183,10 +2420,10 @@ NOTRE APPROCHE
 
 <h2 class="section-title">
 
-La technologie doit
+La donnée n’a de valeur
 
 <span class="green">
-simplifier la maison.
+que si elle sert à agir.
 </span>
 
 </h2>
@@ -2201,38 +2438,37 @@ simplifier la maison.
 
 <p class="lead">
 
-Une maison connectée
-ne doit pas devenir
-plus compliquée à utiliser.
-
-La technique doit rester discrète,
-compréhensible
-et réellement utile.
-
-</p>
-
-
-<p>
-
-Actyrom peut intervenir
-sur un besoin précis
-comme un problème de réseau Wi-Fi,
-une installation informatique
-ou une automatisation,
-mais aussi sur un projet plus global
-mêlant plusieurs compétences.
+Ajouter des capteurs,
+des graphiques
+ou des tableaux de bord
+n’a d’intérêt
+que si les informations obtenues
+permettent réellement
+de mieux comprendre
+une installation.
 
 </p>
 
 
 <p>
 
-L’objectif est de construire
-une solution adaptée
-à la maison,
-aux habitudes,
-aux équipements existants
-et au niveau d’automatisation souhaité.
+Actyrom aborde l’Industrie 4.0
+à partir du besoin terrain :
+quelles informations manquent aujourd’hui ?
+Que cherche-t-on à surveiller ?
+Quels événements veut-on comprendre ?
+Quelles dérives pourrait-on détecter plus tôt ?
+
+</p>
+
+
+<p>
+
+La technologie vient ensuite,
+pour collecter uniquement
+les données nécessaires
+et les rendre accessibles
+sous une forme claire.
 
 </p>
 
@@ -2248,10 +2484,12 @@ et au niveau d’automatisation souhaité.
 
 
 <!-- =========================================================
-     SERVICES
+     CHAINE DATA
 ========================================================= -->
 
-<section class="section section-dark">
+<section
+class="section section-dark"
+id="fonctionnement">
 
 
 <div class="container">
@@ -2262,17 +2500,17 @@ et au niveau d’automatisation souhaité.
 
 <div class="kicker">
 
-SOLUTIONS HABITAT
+DU TERRAIN À L’INFORMATION
 
 </div>
 
 
 <h2 class="section-title">
 
-Des solutions techniques
+Cinq étapes.
 
 <span class="green">
-utiles et concrètes.
+Une seule chaîne de valeur.
 </span>
 
 </h2>
@@ -2282,29 +2520,29 @@ utiles et concrètes.
 
 
 
-<div class="services-grid">
+<div class="chain-grid reveal">
 
 
 
-<!-- DOMOTIQUE -->
+<!-- COLLECTER -->
 
-<article class="service-card reveal">
+<div class="chain-card">
 
 
-<div class="service-num">
+<div class="chain-num">
 
-01 // DOMOTIQUE
+01 // COLLECTER
 
 </div>
 
 
-<div class="service-icon">
+<div class="chain-icon">
 
 <svg viewBox="0 0 24 24">
 
-<path d="M3 11.5L12 4l9 7.5"></path>
-<path d="M5 10.5V20h14v-9.5"></path>
-<path d="M9 20v-5h6v5"></path>
+<circle cx="12" cy="12" r="3"></circle>
+<path d="M4 12h5M15 12h5"></path>
+<path d="M12 4v5M12 15v5"></path>
 
 </svg>
 
@@ -2313,282 +2551,85 @@ utiles et concrètes.
 
 <h3>
 
-Domotique
+Collecter
 
 </h3>
 
 
 <p>
 
-Éclairage,
-scénarios,
-commandes,
-automatismes
-et centralisation
-de fonctions de la maison.
-
-</p>
-
-
-</article>
-
-
-
-<!-- RESEAU -->
-
-<article class="service-card reveal">
-
-
-<div class="service-num">
-
-02 // RÉSEAU
-
-</div>
-
-
-<div class="service-icon">
-
-<svg viewBox="0 0 24 24">
-
-<path d="M4 10c5-4 11-4 16 0"></path>
-<path d="M7 14c3-2.5 7-2.5 10 0"></path>
-<path d="M10 18c1.4-1 2.6-1 4 0"></path>
-<circle cx="12" cy="21" r="1"></circle>
-
-</svg>
-
-</div>
-
-
-<h3>
-
-Réseau & Wi-Fi
-
-</h3>
-
-
-<p>
-
-Couverture Wi-Fi,
-réseau Ethernet,
-baie,
-équipements connectés
-et optimisation
-de la connectivité.
-
-</p>
-
-
-</article>
-
-
-
-<!-- INFORMATIQUE -->
-
-<article class="service-card reveal">
-
-
-<div class="service-num">
-
-03 // INFORMATIQUE
-
-</div>
-
-
-<div class="service-icon">
-
-<svg viewBox="0 0 24 24">
-
-<rect x="3" y="4" width="18" height="13" rx="2"></rect>
-<path d="M8 21h8"></path>
-<path d="M12 17v4"></path>
-
-</svg>
-
-</div>
-
-
-<h3>
-
-Informatique
-
-</h3>
-
-
-<p>
-
-Postes,
-équipements réseau,
-stockage,
-sauvegarde,
-connexion
-et intégration
-dans l’environnement de la maison.
-
-</p>
-
-
-</article>
-
-
-
-<!-- MULTIMEDIA -->
-
-<article class="service-card reveal">
-
-
-<div class="service-num">
-
-04 // MULTIMÉDIA
-
-</div>
-
-
-<div class="service-icon">
-
-<svg viewBox="0 0 24 24">
-
-<rect x="3" y="5" width="18" height="13" rx="2"></rect>
-<path d="M9 22h6"></path>
-<path d="M12 18v4"></path>
-<path d="M10 9l5 2.5-5 2.5z"></path>
-
-</svg>
-
-</div>
-
-
-<h3>
-
-Multimédia
-
-</h3>
-
-
-<p>
-
-TV,
-audio,
-streaming,
-réseau,
-éclairage
-et intégration esthétique
-dans les espaces de vie.
-
-</p>
-
-
-</article>
-
-
-
-<!-- ENERGIE -->
-
-<article class="service-card reveal">
-
-
-<div class="service-num">
-
-05 // ÉNERGIE
-
-</div>
-
-
-<div class="service-icon">
-
-<svg viewBox="0 0 24 24">
-
-<path d="M13 2L5 14h6l-1 8 9-13h-6z"></path>
-
-</svg>
-
-</div>
-
-
-<h3>
-
-Énergie & suivi
-
-</h3>
-
-
-<p>
-
-Mesures,
-suivi des consommations,
-visualisation
-et automatisations
-pour mieux comprendre
-les usages.
-
-</p>
-
-
-</article>
-
-
-
-<!-- AUTOMATISME -->
-
-<article class="service-card reveal">
-
-
-<div class="service-num">
-
-06 // AUTOMATISME
-
-</div>
-
-
-<div class="service-icon">
-
-<svg viewBox="0 0 24 24">
-
-<path d="M4 12h16"></path>
-<circle cx="8" cy="12" r="3"></circle>
-<circle cx="17" cy="12" r="3"></circle>
-
-</svg>
-
-</div>
-
-
-<h3>
-
-Automatismes
-
-</h3>
-
-
-<p>
-
-Portes,
-équipements,
-commandes,
+Récupérer les informations utiles
+depuis les équipements,
 capteurs
-et solutions automatisées
-adaptées au projet.
+ou systèmes existants.
 
 </p>
 
 
-</article>
+</div>
 
 
 
-<!-- SUPERVISION -->
+<!-- HISTORISER -->
 
-<article class="service-card reveal">
+<div class="chain-card">
 
 
-<div class="service-num">
+<div class="chain-num">
 
-07 // SUPERVISION
+02 // HISTORISER
 
 </div>
 
 
-<div class="service-icon">
+<div class="chain-icon">
+
+<svg viewBox="0 0 24 24">
+
+<ellipse cx="12" cy="6" rx="7" ry="3"></ellipse>
+<path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6"></path>
+<path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path>
+
+</svg>
+
+</div>
+
+
+<h3>
+
+Historiser
+
+</h3>
+
+
+<p>
+
+Conserver l’évolution
+dans le temps
+pour retrouver
+les événements
+et les tendances.
+
+</p>
+
+
+</div>
+
+
+
+<!-- VISUALISER -->
+
+<div class="chain-card">
+
+
+<div class="chain-num">
+
+03 // VISUALISER
+
+</div>
+
+
+<div class="chain-icon">
 
 <svg viewBox="0 0 24 24">
 
@@ -2604,46 +2645,44 @@ adaptées au projet.
 
 <h3>
 
-Supervision
-
-</h3>
-
-
-<p>
-
 Visualiser
-les états,
-les consommations
-ou certaines informations
-depuis une interface claire.
+
+</h3>
+
+
+<p>
+
+Transformer les données
+en indicateurs,
+graphiques,
+états
+et tableaux de bord compréhensibles.
 
 </p>
 
 
-</article>
+</div>
 
 
 
-<!-- DEPANNAGE -->
+<!-- ANALYSER -->
 
-<article class="service-card reveal">
+<div class="chain-card">
 
 
-<div class="service-num">
+<div class="chain-num">
 
-08 // DÉPANNAGE
+04 // ANALYSER
 
 </div>
 
 
-<div class="service-icon">
+<div class="chain-icon">
 
 <svg viewBox="0 0 24 24">
 
-<path d="M14 6l4 4"></path>
-<path d="M5 19l5-5"></path>
-<path d="M14 6l3-3 4 4-3 3"></path>
-<path d="M3 21l4-1-3-3z"></path>
+<circle cx="10" cy="10" r="6"></circle>
+<path d="M14.5 14.5L21 21"></path>
 
 </svg>
 
@@ -2652,49 +2691,43 @@ depuis une interface claire.
 
 <h3>
 
-Dépannage technique
+Analyser
 
 </h3>
 
 
 <p>
 
-Recherche de panne
-sur réseau,
-informatique,
-automatismes
-ou équipements techniques
-dans le périmètre d’intervention.
+Comparer,
+chercher les corrélations
+et comprendre
+ce qui se passe réellement.
 
 </p>
 
 
-</article>
+</div>
 
 
 
-<!-- SUR MESURE -->
+<!-- ANTICIPER -->
 
-<article class="service-card reveal">
+<div class="chain-card">
 
 
-<div class="service-num">
+<div class="chain-num">
 
-09 // SUR MESURE
+05 // ANTICIPER
 
 </div>
 
 
-<div class="service-icon">
+<div class="chain-icon">
 
 <svg viewBox="0 0 24 24">
 
-<circle cx="5" cy="12" r="2"></circle>
-<circle cx="19" cy="6" r="2"></circle>
-<circle cx="19" cy="18" r="2"></circle>
-
-<path d="M7 12l10-6"></path>
-<path d="M7 12l10 6"></path>
+<path d="M4 18l5-5 4 3 7-8"></path>
+<path d="M15 8h5v5"></path>
 
 </svg>
 
@@ -2703,23 +2736,22 @@ dans le périmètre d’intervention.
 
 <h3>
 
-Solutions sur mesure
+Anticiper
 
 </h3>
 
 
 <p>
 
-Associer plusieurs technologies
-et compétences
-pour construire
-une solution qui n’existe pas
-sous forme standard.
+Repérer progressivement
+certaines dérives
+avant qu’elles
+ne deviennent critiques.
 
 </p>
 
 
-</article>
+</div>
 
 
 </div>
@@ -2733,12 +2765,278 @@ sous forme standard.
 
 
 <!-- =========================================================
-     REALISATIONS
+     DASHBOARD
 ========================================================= -->
 
-<section
-class="section"
-id="realisations">
+<section class="section">
+
+
+<div class="container dashboard-layout">
+
+
+
+<div class="dashboard-copy reveal">
+
+
+<div class="kicker">
+
+SUPERVISION
+
+</div>
+
+
+<h2 class="section-title">
+
+L’information importante
+
+<span class="green">
+au bon endroit.
+</span>
+
+</h2>
+
+
+<p>
+
+Une interface peut regrouper
+les informations utiles
+à la maintenance,
+à la production
+ou au suivi d’une installation.
+
+</p>
+
+
+<p>
+
+Le but n’est pas
+de montrer tout ce qui peut être mesuré,
+mais de faire ressortir
+ce qui aide réellement
+à comprendre l’état du système.
+
+</p>
+
+
+<div class="dashboard-tags">
+
+
+<span class="dashboard-tag">
+État machine
+</span>
+
+
+<span class="dashboard-tag">
+Disponibilité
+</span>
+
+
+<span class="dashboard-tag">
+Défauts
+</span>
+
+
+<span class="dashboard-tag">
+Température
+</span>
+
+
+<span class="dashboard-tag">
+Énergie
+</span>
+
+
+<span class="dashboard-tag">
+Temps de fonctionnement
+</span>
+
+
+<span class="dashboard-tag">
+Compteurs
+</span>
+
+
+<span class="dashboard-tag">
+Alertes
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="dashboard-panel reveal">
+
+
+<div class="dashboard-top">
+
+
+<div class="dashboard-title">
+
+ACTYROM // MONITORING
+
+</div>
+
+
+<div class="dashboard-state">
+
+<span class="mini-dot">
+</span>
+
+LIVE
+
+</div>
+
+
+</div>
+
+
+
+<div class="kpi-grid">
+
+
+<div class="kpi">
+
+<span>
+Disponibilité
+</span>
+
+<strong>
+97.4 %
+</strong>
+
+<small>
++ 1.8 %
+</small>
+
+</div>
+
+
+<div class="kpi">
+
+<span>
+État système
+</span>
+
+<strong>
+NORMAL
+</strong>
+
+<small>
+ONLINE
+</small>
+
+</div>
+
+
+<div class="kpi">
+
+<span>
+Alertes actives
+</span>
+
+<strong>
+02
+</strong>
+
+<small>
+LOW PRIORITY
+</small>
+
+</div>
+
+
+<div class="kpi">
+
+<span>
+Tendance
+</span>
+
+<strong>
+STABLE
+</strong>
+
+<small>
+24 H
+</small>
+
+</div>
+
+
+</div>
+
+
+
+<div class="chart">
+
+
+<svg
+viewBox="0 0 500 150"
+preserveAspectRatio="none">
+
+
+<polyline
+class="chart-line-soft"
+points="
+0,100
+40,96
+80,98
+120,85
+160,89
+200,80
+240,75
+280,82
+320,70
+360,72
+400,58
+450,63
+500,48">
+</polyline>
+
+
+<polyline
+class="chart-line"
+points="
+0,120
+40,115
+80,108
+120,110
+160,96
+200,90
+240,94
+280,75
+320,78
+360,64
+400,69
+450,50
+500,55">
+</polyline>
+
+
+</svg>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     ARCHITECTURE
+========================================================= -->
+
+<section class="section section-dark">
 
 
 <div class="container">
@@ -2749,17 +3047,17 @@ id="realisations">
 
 <div class="kicker">
 
-RÉALISATIONS POSSIBLES
+ARCHITECTURE
 
 </div>
 
 
 <h2 class="section-title">
 
-Imaginer un espace
+Une solution construite
 
 <span class="green">
-autour de vos usages.
+autour de l’installation existante.
 </span>
 
 </h2>
@@ -2767,14 +3065,12 @@ autour de vos usages.
 
 <p class="section-intro">
 
-Ces exemples peuvent associer
-réseau,
-éclairage,
-informatique,
-multimédia,
-domotique
-et intégration physique
-selon le projet.
+L’acquisition de données
+peut être pensée
+comme une couche supplémentaire,
+sans chercher à remplacer
+les systèmes existants
+lorsqu’ils remplissent correctement leur fonction.
 
 </p>
 
@@ -2783,413 +3079,102 @@ selon le projet.
 
 
 
-<div class="projects-grid">
+<div class="architecture">
 
 
 
-<!-- MUR TV -->
+<div class="arch-card reveal">
 
-<article class="project-card reveal">
-
-
-<img
-src="https://images.unsplash.com/photo-1774199616762-31d947dc7d35?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
-alt="Salon moderne avec intégration TV et éclairage">
-
-
-<div class="project-content">
-
-
-<div class="project-number">
-
-01 // MUR TV CONNECTÉ
-
+<div class="arch-num">
+01 // TERRAIN
 </div>
 
-
 <h3>
-
-Mur TV intégré
-
+Équipements
 </h3>
-
 
 <p>
 
-Meuble,
-écran,
-câblage invisible,
-réseau,
-éclairage LED
-et scénarios
-dans une réalisation cohérente.
+Machines,
+capteurs,
+automates,
+variateurs,
+compteurs
+ou systèmes existants.
 
 </p>
 
-
-<div class="project-tags">
-
-<span class="project-tag">
-Multimédia
-</span>
-
-<span class="project-tag">
-Réseau
-</span>
-
-<span class="project-tag">
-Éclairage
-</span>
-
-<span class="project-tag">
-Intégration
-</span>
-
 </div>
 
 
+
+<div class="arch-card reveal">
+
+<div class="arch-num">
+02 // ACQUISITION
 </div>
-
-
-</article>
-
-
-
-<!-- BUREAU -->
-
-<article class="project-card reveal">
-
-
-<img
-src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
-alt="Bureau moderne connecté">
-
-
-<div class="project-content">
-
-
-<div class="project-number">
-
-02 // BUREAU CONNECTÉ
-
-</div>
-
 
 <h3>
-
-Bureau sur mesure
-
+Collecte
 </h3>
-
 
 <p>
 
-Réseau,
-Wi-Fi,
-écrans,
-éclairage,
-équipements informatiques
-et intégration propre
-des câbles et périphériques.
+Récupération
+des données nécessaires
+sans multiplier
+les informations inutiles.
 
 </p>
 
-
-<div class="project-tags">
-
-<span class="project-tag">
-Réseau
-</span>
-
-<span class="project-tag">
-Informatique
-</span>
-
-<span class="project-tag">
-Ergonomie
-</span>
-
-<span class="project-tag">
-Automatisation
-</span>
-
 </div>
 
 
+
+<div class="arch-card reveal">
+
+<div class="arch-num">
+03 // TRAITEMENT
 </div>
-
-
-</article>
-
-
-
-<!-- HOME CINEMA -->
-
-<article class="project-card reveal">
-
-
-<img
-src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
-alt="Salle home cinéma">
-
-
-<div class="project-content">
-
-
-<div class="project-number">
-
-03 // HOME CINÉMA
-
-</div>
-
 
 <h3>
-
-Home cinéma
-
+Historisation
 </h3>
-
 
 <p>
 
-Vidéo,
-réseau,
-audio,
-éclairage,
-scénarios
-et intégration des équipements
-dans un espace dédié.
+Stockage,
+mise en forme
+et conservation
+des événements
+dans le temps.
 
 </p>
 
-
-<div class="project-tags">
-
-<span class="project-tag">
-Vidéo
-</span>
-
-<span class="project-tag">
-Audio
-</span>
-
-<span class="project-tag">
-Éclairage
-</span>
-
-<span class="project-tag">
-Domotique
-</span>
-
 </div>
 
 
+
+<div class="arch-card reveal">
+
+<div class="arch-num">
+04 // UTILISATION
 </div>
-
-
-</article>
-
-
-
-<!-- GAMING -->
-
-<article class="project-card reveal">
-
-
-<img
-src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
-alt="Gaming room avec bureau et éclairage">
-
-
-<div class="project-content">
-
-
-<div class="project-number">
-
-04 // GAMING ROOM
-
-</div>
-
 
 <h3>
-
-Gaming room
-
-</h3>
-
-
-<p>
-
-Réseau performant,
-poste informatique,
-écrans,
-éclairage,
-intégration
-et organisation complète
-de l’espace.
-
-</p>
-
-
-<div class="project-tags">
-
-<span class="project-tag">
-Gaming
-</span>
-
-<span class="project-tag">
-Réseau
-</span>
-
-<span class="project-tag">
-LED
-</span>
-
-<span class="project-tag">
-Multimédia
-</span>
-
-</div>
-
-
-</div>
-
-
-</article>
-
-
-
-<!-- SMART GARAGE -->
-
-<article class="project-card reveal">
-
-
-<img
-src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
-alt="Garage atelier moderne et organisé">
-
-
-<div class="project-content">
-
-
-<div class="project-number">
-
-05 // SMART GARAGE
-
-</div>
-
-
-<h3>
-
-Garage connecté
-
-</h3>
-
-
-<p>
-
-Éclairage,
-réseau,
-établi,
-équipements,
-automatismes,
-suivi énergétique
-et organisation technique.
-
-</p>
-
-
-<div class="project-tags">
-
-<span class="project-tag">
-Atelier
-</span>
-
-<span class="project-tag">
-Automatisme
-</span>
-
-<span class="project-tag">
-Réseau
-</span>
-
-<span class="project-tag">
-Énergie
-</span>
-
-</div>
-
-
-</div>
-
-
-</article>
-
-
-
-<!-- RESEAU MAISON -->
-
-<article class="project-card reveal">
-
-
-<img
-src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
-alt="Maison connectée et réseau domestique">
-
-
-<div class="project-content">
-
-
-<div class="project-number">
-
-06 // MAISON CONNECTÉE
-
-</div>
-
-
-<h3>
-
-Infrastructure réseau & domotique
-
-</h3>
-
-
-<p>
-
-Construire une base réseau
-fiable
-pour connecter correctement
-les équipements
-et préparer les évolutions futures.
-
-</p>
-
-
-<div class="project-tags">
-
-<span class="project-tag">
-Ethernet
-</span>
-
-<span class="project-tag">
-Wi-Fi
-</span>
-
-<span class="project-tag">
-Domotique
-</span>
-
-<span class="project-tag">
 Supervision
-</span>
+</h3>
+
+<p>
+
+Tableaux de bord,
+indicateurs,
+alertes
+et accès aux informations utiles.
+
+</p>
 
 </div>
-
-
-</div>
-
-
-</article>
 
 
 </div>
@@ -3203,32 +3188,96 @@ Supervision
 
 
 <!-- =========================================================
-     SMART HOME
+     NETWORK SEPARATION
 ========================================================= -->
 
-<section class="section section-dark">
+<section class="section">
 
 
-<div class="container smart-layout">
+<div class="container network-layout">
 
 
 
-<div class="smart-copy reveal">
+<div class="network-visual reveal">
+
+
+<div class="diagram">
+
+
+<div class="diagram-row">
+
+
+<div class="diagram-box">
+MACHINES<br>& CAPTEURS
+</div>
+
+
+<div class="diagram-link">
+→
+</div>
+
+
+<div class="diagram-box">
+ACQUISITION<br>ACTYROM
+</div>
+
+
+</div>
+
+
+<div class="diagram-center">
+
+RÉSEAU<br>
+TECHNIQUE<br>
+DÉDIÉ
+
+</div>
+
+
+<div class="diagram-row">
+
+
+<div class="diagram-box">
+HISTORISATION<br>& KPI
+</div>
+
+
+<div class="diagram-link">
+→
+</div>
+
+
+<div class="diagram-box">
+SUPERVISION<br>& ACCÈS
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="network-copy reveal">
 
 
 <div class="kicker">
 
-MAISON CONNECTÉE
+RÉSEAU DÉDIÉ
 
 </div>
 
 
 <h2 class="section-title">
 
-Tout connecter ?
+Collecter sans
 
 <span class="green">
-Seulement si cela a du sens.
+perturber l’existant.
 </span>
 
 </h2>
@@ -3236,12 +3285,297 @@ Seulement si cela a du sens.
 
 <p>
 
-La domotique doit répondre
-à un usage réel :
-simplifier une action,
-améliorer le confort,
-centraliser une information
-ou automatiser une tâche répétitive.
+Selon l’environnement,
+une architecture dédiée
+peut être mise en place
+pour séparer la collecte
+et la supervision
+du réseau informatique principal du client.
+
+</p>
+
+
+<p>
+
+Cette approche permet
+de construire progressivement
+une infrastructure technique
+dédiée aux données,
+aux capteurs
+et aux équipements connectés.
+
+</p>
+
+
+<div class="network-points">
+
+
+<div class="network-point">
+Séparation logique ou physique selon le besoin
+</div>
+
+
+<div class="network-point">
+Acquisition indépendante des usages bureautiques
+</div>
+
+
+<div class="network-point">
+Évolutivité pour de nouveaux capteurs ou équipements
+</div>
+
+
+<div class="network-point">
+Accès local ou distant lorsque le contexte le permet
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     USE CASES
+========================================================= -->
+
+<section class="section section-dark">
+
+
+<div class="container">
+
+
+<div class="reveal">
+
+
+<div class="kicker">
+
+APPLICATIONS
+
+</div>
+
+
+<h2 class="section-title">
+
+Que peut-on
+
+<span class="green">
+réellement surveiller ?
+</span>
+
+</h2>
+
+
+</div>
+
+
+
+<div class="use-grid">
+
+
+
+<div class="use-card reveal">
+
+<div class="use-number">
+01 // DISPONIBILITÉ
+</div>
+
+<h3>
+Temps de fonctionnement
+</h3>
+
+<p>
+
+Mesurer les périodes de marche,
+d’arrêt
+et certains événements
+pour mieux comprendre
+la disponibilité réelle.
+
+</p>
+
+</div>
+
+
+
+<div class="use-card reveal">
+
+<div class="use-number">
+02 // DÉFAUTS
+</div>
+
+<h3>
+Historique des pannes
+</h3>
+
+<p>
+
+Conserver les défauts,
+leur fréquence
+et leur contexte
+pour faciliter l’analyse.
+
+</p>
+
+</div>
+
+
+
+<div class="use-card reveal">
+
+<div class="use-number">
+03 // ÉNERGIE
+</div>
+
+<h3>
+Consommations
+</h3>
+
+<p>
+
+Visualiser certains usages
+et repérer
+des évolutions
+ou comportements inhabituels.
+
+</p>
+
+</div>
+
+
+
+<div class="use-card reveal">
+
+<div class="use-number">
+04 // PROCESS
+</div>
+
+<h3>
+Variables techniques
+</h3>
+
+<p>
+
+Température,
+pression,
+vitesse,
+compteurs
+ou autres valeurs utiles
+au fonctionnement.
+
+</p>
+
+</div>
+
+
+
+<div class="use-card reveal">
+
+<div class="use-number">
+05 // KPI
+</div>
+
+<h3>
+Indicateurs maintenance
+</h3>
+
+<p>
+
+Construire
+des indicateurs simples
+pour suivre
+la fiabilité
+et les événements importants.
+
+</p>
+
+</div>
+
+
+
+<div class="use-card reveal">
+
+<div class="use-number">
+06 // ALERTES
+</div>
+
+<h3>
+Détection de dérives
+</h3>
+
+<p>
+
+Identifier certaines valeurs
+ou évolutions anormales
+avant qu’elles
+ne deviennent critiques.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     PREDICTIVE
+========================================================= -->
+
+<section class="section">
+
+
+<div class="container predictive-layout">
+
+
+
+<div class="predictive-copy reveal">
+
+
+<div class="kicker">
+
+MAINTENANCE PRÉDICTIVE
+
+</div>
+
+
+<h2 class="section-title">
+
+Anticiper commence
+
+<span class="green">
+par comprendre.
+</span>
+
+</h2>
+
+
+<p>
+
+La maintenance prédictive
+ne commence pas par l’intelligence artificielle.
+
+Elle commence
+par des données fiables,
+un historique suffisant
+et une bonne compréhension
+du fonctionnement réel
+de l’équipement.
 
 </p>
 
@@ -3249,46 +3583,44 @@ ou automatiser une tâche répétitive.
 <p>
 
 Actyrom privilégie
-une architecture compréhensible,
-évolutive
-et adaptée
-au niveau de technologie souhaité.
+une montée en puissance progressive :
+observer,
+mesurer,
+comprendre,
+puis automatiser certaines analyses
+lorsque cela devient pertinent.
 
 </p>
 
 
-<div class="smart-list">
-
-
-<div class="smart-item">
-Éclairage & scénarios
 </div>
 
 
-<div class="smart-item">
-Suivi énergétique
+
+<div class="predictive-steps reveal">
+
+
+
+<div class="pred-step">
+
+
+<div class="pred-num">
+01
 </div>
 
 
-<div class="smart-item">
-Commandes centralisées
-</div>
+<div>
 
+<h3>
+Mesurer
+</h3>
 
-<div class="smart-item">
-Réseau domestique
-</div>
+<p>
 
+Identifier les données
+réellement utiles.
 
-<div class="smart-item">
-Multimédia
-</div>
-
-
-<div class="smart-item">
-Capteurs & automatismes
-</div>
-
+</p>
 
 </div>
 
@@ -3297,90 +3629,118 @@ Capteurs & automatismes
 
 
 
-<div class="smart-panel reveal">
+<div class="pred-step">
 
 
-<div class="kicker">
+<div class="pred-num">
+02
+</div>
 
-HOME // STATUS
+
+<div>
+
+<h3>
+Construire l’historique
+</h3>
+
+<p>
+
+Observer suffisamment longtemps
+pour disposer
+d’une base exploitable.
+
+</p>
 
 </div>
 
 
-<div class="smart-line">
+</div>
 
-<span>
-Réseau principal
-</span>
 
-<span>
-ONLINE
-</span>
+
+<div class="pred-step">
+
+
+<div class="pred-num">
+03
+</div>
+
+
+<div>
+
+<h3>
+Comprendre les tendances
+</h3>
+
+<p>
+
+Comparer
+les comportements normaux
+et les dérives.
+
+</p>
 
 </div>
 
 
-<div class="smart-line">
+</div>
 
-<span>
-Wi-Fi
-</span>
 
-<span>
-CONNECTED
-</span>
+
+<div class="pred-step">
+
+
+<div class="pred-num">
+04
+</div>
+
+
+<div>
+
+<h3>
+Détecter les anomalies
+</h3>
+
+<p>
+
+Mettre en évidence
+certains écarts
+ou comportements inhabituels.
+
+</p>
 
 </div>
 
 
-<div class="smart-line">
-
-<span>
-Éclairage
-</span>
-
-<span>
-AUTOMATED
-</span>
-
 </div>
 
 
-<div class="smart-line">
 
-<span>
-Énergie
-</span>
+<div class="pred-step">
 
-<span>
-MONITORING
-</span>
 
+<div class="pred-num">
+05
 </div>
 
 
-<div class="smart-line">
+<div>
 
-<span>
-Multimédia
-</span>
+<h3>
+Anticiper
+</h3>
 
-<span>
-READY
-</span>
+<p>
+
+Développer progressivement
+des alertes
+ou modèles prédictifs
+lorsque les données le permettent.
+
+</p>
 
 </div>
 
-
-<div class="smart-line">
-
-<span>
-Évolutivité
-</span>
-
-<span>
-ENABLED
-</span>
 
 </div>
 
@@ -3396,443 +3756,52 @@ ENABLED
 
 
 <!-- =========================================================
-     PROCESS
-========================================================= -->
-
-<section class="section">
-
-
-<div class="container">
-
-
-<div class="reveal">
-
-
-<div class="kicker">
-
-DU BESOIN À LA RÉALISATION
-
-</div>
-
-
-<h2 class="section-title">
-
-Un projet construit
-
-<span class="green">
-étape par étape.
-</span>
-
-</h2>
-
-
-</div>
-
-
-
-<div class="process-grid reveal">
-
-
-
-<div class="process-card">
-
-<div class="process-num">
-01 // ÉCHANGE
-</div>
-
-<h3>
-Votre idée
-</h3>
-
-<p>
-
-Comprendre
-le besoin,
-les habitudes
-et le résultat attendu.
-
-</p>
-
-</div>
-
-
-
-<div class="process-card">
-
-<div class="process-num">
-02 // VISITE
-</div>
-
-<h3>
-Le lieu
-</h3>
-
-<p>
-
-Observer
-les contraintes,
-l’existant
-et les possibilités.
-
-</p>
-
-</div>
-
-
-
-<div class="process-card">
-
-<div class="process-num">
-03 // CONCEPTION
-</div>
-
-<h3>
-La solution
-</h3>
-
-<p>
-
-Choisir
-les technologies
-et définir
-l’intégration.
-
-</p>
-
-</div>
-
-
-
-<div class="process-card">
-
-<div class="process-num">
-04 // RÉALISATION
-</div>
-
-<h3>
-Le projet
-</h3>
-
-<p>
-
-Préparer,
-installer,
-coordonner
-et mettre en service.
-
-</p>
-
-</div>
-
-
-
-<div class="process-card">
-
-<div class="process-num">
-05 // ÉVOLUTION
-</div>
-
-<h3>
-La suite
-</h3>
-
-<p>
-
-Documenter,
-adapter
-et permettre
-les évolutions futures.
-
-</p>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-<!-- =========================================================
-     PARTENAIRES
+     PRINCIPLE
 ========================================================= -->
 
 <section class="section section-dark">
 
 
-<div class="container partner-layout">
-
-
-
-<div class="partner-photo reveal">
-
-
-<img
-src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1800"
-alt="Aménagement intérieur technique et sur mesure">
-
-
-<div class="partner-caption">
-
-<span>
-
-ACTYROM // PROJET GLOBAL
-
-</span>
-
-<strong>
-
-Quand technique et intégration
-se rejoignent.
-
-</strong>
-
-</div>
-
-
-</div>
-
-
-
-<div class="partner-copy reveal">
-
-
-<div class="kicker">
-
-COMPÉTENCES COMPLÉMENTAIRES
-
-</div>
-
-
-<h2 class="section-title">
-
-Un projet peut demander
-
-<span class="green">
-plusieurs métiers.
-</span>
-
-</h2>
-
-
-<p>
-
-Certains projets Habitat
-ne se limitent pas
-à l’électronique
-ou au réseau.
-
-Ils peuvent nécessiter
-de la menuiserie,
-de l’agencement,
-de l’intégration physique,
-des finitions
-ou d’autres savoir-faire.
-
-</p>
-
-
-<p>
-
-Dans ce cas,
-Actyrom peut s’appuyer
-sur un réseau
-de professionnels partenaires
-afin de construire
-une solution cohérente
-sans mélanger les responsabilités
-de chaque métier.
-
-</p>
-
-
-<div class="partner-tags">
-
-
-<span class="partner-tag">
-Menuiserie
-</span>
-
-
-<span class="partner-tag">
-Agencement
-</span>
-
-
-<span class="partner-tag">
-Intégration
-</span>
-
-
-<span class="partner-tag">
-Électricité
-</span>
-
-
-<span class="partner-tag">
-Informatique
-</span>
-
-
-<span class="partner-tag">
-Électronique
-</span>
-
-
-<span class="partner-tag">
-Aménagement technique
-</span>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-<!-- =========================================================
-     POURQUOI
-========================================================= -->
-
-<section class="section">
-
-
 <div class="container">
 
 
-<div class="reveal">
+<div class="principle-box reveal">
 
 
 <div class="kicker">
 
-POURQUOI ACTYROM ?
+ACTYROM // DATA PHILOSOPHY
 
 </div>
 
 
-<h2 class="section-title">
+<h2>
 
-De la technique,
+Moins de données inutiles.
 
 <span class="green">
-mais pensée pour les personnes.
+
+Plus d’informations utiles.
+
 </span>
 
 </h2>
 
 
-</div>
-
-
-
-<div class="why-grid">
-
-
-
-<div class="why-card reveal">
-
-
-<h3>
-
-Une vision globale
-
-</h3>
-
-
 <p>
 
-Réseau,
-informatique,
-automatismes,
-multimédia
-et intégration
-peuvent être réfléchis ensemble.
+L’objectif n’est pas
+de connecter chaque équipement
+simplement parce que la technologie le permet.
+
+L’objectif est d’obtenir
+les informations nécessaires
+pour mieux comprendre,
+mieux décider
+et mieux intervenir.
 
 </p>
 
-
-</div>
-
-
-
-<div class="why-card reveal">
-
-
-<h3>
-
-Des solutions évolutives
-
-</h3>
-
-
-<p>
-
-Prévoir dès aujourd’hui
-les besoins futurs
-évite souvent
-de devoir tout recommencer demain.
-
-</p>
-
-
-</div>
-
-
-
-<div class="why-card reveal">
-
-
-<h3>
-
-L’humain avant la technologie
-
-</h3>
-
-
-<p>
-
-La bonne solution
-est celle que l’utilisateur
-comprend,
-utilise
-et apprécie réellement.
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-
-<div class="notice reveal">
-
-<strong>
-Cadre d’intervention :
-</strong>
-
-les travaux réglementés
-ou nécessitant une qualification,
-une habilitation
-ou une assurance spécifique
-sont réalisés uniquement
-lorsque le cadre nécessaire le permet,
-ou avec un professionnel
-disposant des qualifications adaptées.
 
 </div>
 
@@ -3848,7 +3817,7 @@ disposant des qualifications adaptées.
      CTA
 ========================================================= -->
 
-<section class="section section-dark">
+<section class="section">
 
 
 <div class="container">
@@ -3859,21 +3828,19 @@ disposant des qualifications adaptées.
 
 <div class="kicker">
 
-VOTRE PROJET HABITAT
+VOTRE PROJET DATA
 
 </div>
 
 
 <h2>
 
-Une idée,
-un besoin
-ou simplement l’envie
-d’améliorer votre maison ?
+Vous manquez de visibilité
+sur vos installations ?
 
 <span class="green">
 
-Parlons de votre projet.
+Construisons l’information utile.
 
 </span>
 
@@ -3882,11 +3849,16 @@ Parlons de votre projet.
 
 <p>
 
-Du simple problème de Wi-Fi
-à un espace entièrement repensé,
-la première étape
-consiste à comprendre
-ce que vous souhaitez réellement obtenir.
+Historisation,
+KPI,
+supervision,
+alertes,
+analyse de tendances
+ou réflexion autour
+de la maintenance prédictive :
+
+le projet commence
+par définir ce que vous souhaitez réellement comprendre.
 
 </p>
 
@@ -3904,10 +3876,10 @@ Parler de votre projet
 
 
 <a
-href="qui-sommes-nous.html"
+href="industrie.html"
 class="btn btn-secondary">
 
-Découvrir Actyrom
+Voir les prestations Industrie
 
 </a>
 
