@@ -919,6 +919,23 @@ footer{
   }
 }
 
+
+.priority-links{
+  margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:15px
+}
+.priority-link{
+  padding:27px;border:1px solid rgba(255,255,255,.10);border-radius:19px;
+  background:#07130d;transition:.22s ease
+}
+.priority-link:hover{transform:translateY(-3px);border-color:rgba(137,239,63,.34)}
+.priority-link span{
+  color:var(--green2);font-family:"Courier New",Consolas,monospace;
+  font-size:.68rem;letter-spacing:2px
+}
+.priority-link h3{margin-top:10px;font-size:1.15rem}
+.priority-link p{margin-top:7px;color:var(--muted);font-size:.82rem}
+@media(max-width:860px){.priority-links{grid-template-columns:1fr}}
+
 </style>
 
 </head>
@@ -1722,6 +1739,51 @@ Demande libre
 </div>
 
 </section>
+
+
+<section class="section">
+
+<div class="container">
+
+<div class="reveal">
+
+<div class="kicker">
+ACCÈS RAPIDES
+</div>
+
+<h2 class="section-title">
+Un besoin maintenant ?
+<span class="green">Choisissez le bon point d’entrée.</span>
+</h2>
+
+</div>
+
+<div class="priority-links">
+
+<a href="devis-express.html" class="priority-link reveal">
+<span>01 // DEVIS</span>
+<h3>Demande de devis express</h3>
+<p>Structurez votre besoin et préparez une demande complète en quelques étapes.</p>
+</a>
+
+<a href="depannage.html" class="priority-link reveal">
+<span>02 // DÉPANNAGE</span>
+<h3>J’ai une panne</h3>
+<p>Accédez directement au parcours diagnostic et intervention technique.</p>
+</a>
+
+<a href="realisations.html" class="priority-link reveal">
+<span>03 // PROJETS</span>
+<h3>Voir les projets</h3>
+<p>Découvrez la logique Actyrom : besoin, analyse, solution et résultat.</p>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
 
 </main>
 
