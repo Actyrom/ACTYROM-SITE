@@ -936,6 +936,129 @@ footer{
 .priority-link p{margin-top:7px;color:var(--muted);font-size:.82rem}
 @media(max-width:860px){.priority-links{grid-template-columns:1fr}}
 
+
+/* OS ACTYROM */
+.os-section{
+  padding:84px 0;
+  background:
+    radial-gradient(circle at 88% 8%,rgba(137,239,63,.09),transparent 30%),
+    rgba(2,8,5,.58);
+  border-top:1px solid rgba(255,255,255,.07);
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+.os-hero-box{
+  margin-top:34px;
+  padding:34px;
+  border:1px solid rgba(137,239,63,.28);
+  border-radius:24px;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(137,239,63,.10),transparent 35%),
+    #07150e;
+}
+.os-hero-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:30px;
+  align-items:center;
+}
+.os-hero-box h3{
+  font-size:clamp(1.8rem,3vw,2.8rem);
+  line-height:1;
+  letter-spacing:-1.5px;
+}
+.os-hero-box p{
+  margin-top:14px;
+  color:var(--muted);
+}
+.os-points{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+}
+.os-point{
+  padding:12px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:11px;
+  background:rgba(2,9,5,.32);
+  color:#d8e2da;
+  font-size:.76rem;
+}
+.os-comparison{
+  margin-top:34px;
+  overflow-x:auto;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:20px;
+  background:#07130d;
+}
+.os-table{
+  width:100%;
+  min-width:900px;
+  border-collapse:collapse;
+}
+.os-table th,
+.os-table td{
+  padding:15px 14px;
+  border-bottom:1px solid rgba(255,255,255,.07);
+  border-right:1px solid rgba(255,255,255,.055);
+  text-align:center;
+  vertical-align:middle;
+  font-size:.76rem;
+}
+.os-table th:first-child,
+.os-table td:first-child{
+  text-align:left;
+  width:235px;
+}
+.os-table th{
+  color:var(--green2);
+  background:#08180f;
+  font-family:"Courier New",Consolas,monospace;
+  font-size:.68rem;
+}
+.os-table td{color:#d7e2da}
+.os-table th:last-child,
+.os-table td:last-child{border-right:0}
+.os-yes{color:var(--green2);font-weight:900}
+.os-no{color:#647168}
+.os-detail-grid{
+  margin-top:34px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+.os-detail{
+  padding:25px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:18px;
+  background:#07130d;
+}
+.os-detail span{
+  color:var(--green2);
+  font-family:"Courier New",Consolas,monospace;
+  font-size:.66rem;
+  letter-spacing:2px;
+}
+.os-detail h3{margin-top:10px;font-size:1.08rem}
+.os-detail p{margin-top:8px;color:var(--muted);font-size:.82rem}
+.os-note{
+  margin-top:26px;
+  padding:19px 21px;
+  border:1px solid rgba(255,214,107,.18);
+  border-radius:14px;
+  background:rgba(255,214,107,.03);
+  color:var(--muted);
+  font-size:.78rem;
+}
+.os-note strong{color:#ffd66b}
+@media(max-width:900px){
+  .os-hero-grid{grid-template-columns:1fr}
+  .os-detail-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .os-hero-box{padding:25px 20px}
+  .os-points,.os-detail-grid{grid-template-columns:1fr}
+}
+
 </style>
 
 </head>
@@ -1083,6 +1206,7 @@ et construisez une première estimation de votre projet.
 <div class="filters">
 <button class="filter-btn active" data-filter="all">Tout</button>
 <button class="filter-btn" data-filter="web">Web</button>
+<button class="filter-btn" data-filter="os">OS ACTYROM</button>
 <button class="filter-btn" data-filter="artisans">Artisans / TPE</button>
 <button class="filter-btn" data-filter="it">Informatique</button>
 <button class="filter-btn" data-filter="reseau">Réseau</button>
@@ -1285,6 +1409,160 @@ Mon projet
 </ul>
 <div class="product-actions">
 <button class="add-btn" data-name="Signature e-mail professionnelle" data-price="29" data-period="once">Ajouter au projet</button>
+</div>
+</article>
+
+
+
+<!-- OS ACTYROM -->
+
+<article class="product featured reveal" data-category="os">
+<span class="product-badge">PRIX D’APPEL</span>
+<div class="product-code">OS ACTYROM // LITE</div>
+<h3>OS ACTYROM Lite</h3>
+<div class="price">79 €<small>tarif de lancement • version standard</small></div>
+<p>
+La version la plus simple pour centraliser clients,
+demandes et interventions sans logiciel lourd.
+</p>
+<ul>
+<li>Clients & prospects</li>
+<li>Fiches de demandes</li>
+<li>Devis simples</li>
+<li>Suivi des interventions</li>
+<li>Historique de base</li>
+<li>Tableau de bord simple</li>
+<li>Installation locale</li>
+</ul>
+<div class="product-actions">
+<button class="add-btn" data-name="OS ACTYROM Lite" data-price="79" data-period="once">Ajouter au projet</button>
+</div>
+</article>
+
+<article class="product featured reveal" data-category="os">
+<span class="product-badge">RECOMMANDÉ</span>
+<div class="product-code">OS ACTYROM // ESSENTIEL</div>
+<h3>OS ACTYROM Essentiel</h3>
+<div class="price">149 €<small>tarif de lancement • parcours complet</small></div>
+<p>
+Le cœur du système ACTYROM :
+du prospect jusqu’au paiement et au SAV.
+</p>
+<ul>
+<li>Prospects & clients</li>
+<li>Qualification des demandes</li>
+<li>Devis</li>
+<li>Commandes</li>
+<li>Préparation</li>
+<li>Interventions</li>
+<li>Rapports</li>
+<li>Factures</li>
+<li>Suivi des paiements</li>
+<li>SAV & historique</li>
+<li>KPI simples</li>
+</ul>
+<div class="product-actions">
+<button class="add-btn" data-name="OS ACTYROM Essentiel" data-price="149" data-period="once">Ajouter au projet</button>
+</div>
+</article>
+
+<article class="product reveal" data-category="os">
+<div class="product-code">OS ACTYROM // PRO</div>
+<h3>OS ACTYROM Pro</h3>
+<div class="price">249 €<small>tarif de lancement • suivi avancé</small></div>
+<p>
+Pour les artisans,
+techniciens et petites entreprises
+qui veulent mieux piloter affaires et interventions.
+</p>
+<ul>
+<li>Tout Essentiel</li>
+<li>Pipeline commercial complet</li>
+<li>Planning d’interventions</li>
+<li>Suivi temps / actions</li>
+<li>Documents liés au dossier</li>
+<li>Recherche & filtres avancés</li>
+<li>KPI commerciaux</li>
+<li>KPI interventions</li>
+<li>SAV renforcé</li>
+<li>Exports de données</li>
+</ul>
+<div class="product-actions">
+<button class="add-btn" data-name="OS ACTYROM Pro" data-price="249" data-period="once">Ajouter au projet</button>
+</div>
+</article>
+
+<article class="product reveal" data-category="os">
+<div class="product-code">OS ACTYROM // BUSINESS</div>
+<h3>OS ACTYROM Business</h3>
+<div class="price">399 €<small>tarif de lancement • petite équipe</small></div>
+<p>
+Pour suivre plusieurs intervenants,
+plusieurs projets
+et disposer d’une vision globale de l’activité.
+</p>
+<ul>
+<li>Tout Pro</li>
+<li>Gestion multi-intervenants</li>
+<li>Attribution des dossiers</li>
+<li>Planning équipe</li>
+<li>Suivi charge / activité</li>
+<li>Bibliothèque documentaire</li>
+<li>Historique détaillé</li>
+<li>KPI consolidés</li>
+<li>Vue direction / pilotage</li>
+<li>Paramétrage renforcé</li>
+</ul>
+<div class="product-actions">
+<button class="add-btn" data-name="OS ACTYROM Business" data-price="399" data-period="once">Ajouter au projet</button>
+</div>
+</article>
+
+<article class="product reveal" data-category="os">
+<div class="product-code">OS ACTYROM // PERSONNALISÉ</div>
+<h3>OS ACTYROM personnalisé</h3>
+<div class="price">590 €<small>à partir de • adaptation métier</small></div>
+<p>
+La base ACTYROM est adaptée aux étapes,
+documents,
+statuts et indicateurs propres à l’entreprise.
+</p>
+<ul>
+<li>Étude du fonctionnement existant</li>
+<li>Workflow personnalisé</li>
+<li>Champs & statuts spécifiques</li>
+<li>Documents adaptés</li>
+<li>KPI métier</li>
+<li>Tableaux de bord adaptés</li>
+<li>Modules activés selon besoin</li>
+<li>Identité / logo possible</li>
+<li>Accompagnement au démarrage</li>
+</ul>
+<div class="product-actions">
+<button class="add-btn" data-name="OS ACTYROM personnalisé" data-price="590" data-period="once">Ajouter au projet</button>
+</div>
+</article>
+
+<article class="product reveal" data-category="os">
+<div class="product-code">OS ACTYROM // SUR MESURE</div>
+<h3>OS métier sur mesure</h3>
+<div class="price">990 €<small>à partir de • conception spécifique</small></div>
+<p>
+Pour aller au-delà d’une personnalisation
+et créer une logique de gestion propre à l’activité.
+</p>
+<ul>
+<li>Analyse du processus métier</li>
+<li>Architecture spécifique</li>
+<li>Modules dédiés</li>
+<li>Automatisations adaptées</li>
+<li>Tableaux de bord sur mesure</li>
+<li>Imports / exports spécifiques</li>
+<li>Évolutions prévues dès la conception</li>
+<li>Accompagnement au déploiement</li>
+</ul>
+<div class="product-actions">
+<button class="add-btn" data-name="OS métier sur mesure" data-price="990" data-period="once">Ajouter au projet</button>
 </div>
 </article>
 
@@ -1646,6 +1924,214 @@ Mon projet
 </div>
 </article>
 
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="os-section" id="os-actyrom">
+
+<div class="container">
+
+<div class="reveal">
+
+<div class="kicker">
+OS ACTYROM // LOGICIEL DE GESTION
+</div>
+
+<h2 class="section-title">
+Du premier prospect
+<span class="green">
+jusqu’au paiement et au SAV.
+</span>
+</h2>
+
+<p class="section-intro">
+OS ACTYROM est pensé comme un système de gestion simple,
+visuel et modulaire pour artisans,
+techniciens,
+indépendants et petites entreprises.
+L’objectif est de centraliser le parcours d’une affaire
+sans imposer une usine à gaz.
+</p>
+
+</div>
+
+<div class="os-hero-box reveal">
+
+<div class="os-hero-grid">
+
+<div>
+
+<h3>
+Un seul endroit pour suivre toute l’activité.
+</h3>
+
+<p>
+Le principe est de réunir les informations
+souvent dispersées entre carnet,
+tableur,
+mails,
+dossiers,
+PDF
+et mémoire personnelle.
+</p>
+
+<p>
+Le cycle cible est :
+<strong>
+Prospect → qualification → devis → commande → préparation → intervention → rapport → facture → paiement → SAV → historique & KPI.
+</strong>
+</p>
+
+</div>
+
+<div class="os-points">
+<div class="os-point">Clients & prospects</div>
+<div class="os-point">Devis & commandes</div>
+<div class="os-point">Planning & interventions</div>
+<div class="os-point">Rapports techniques</div>
+<div class="os-point">Factures & paiements</div>
+<div class="os-point">SAV & historique</div>
+<div class="os-point">Documents</div>
+<div class="os-point">KPI & pilotage</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="os-comparison reveal">
+
+<table class="os-table">
+
+<thead>
+<tr>
+<th>Fonction</th>
+<th>Lite<br>79 €</th>
+<th>Essentiel<br>149 €</th>
+<th>Pro<br>249 €</th>
+<th>Business<br>399 €</th>
+<th>Personnalisé<br>590 €+</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>Clients & prospects</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td class="os-yes">✓</td></tr>
+<tr><td>Qualification des demandes</td><td>Simple</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td>Adaptée</td></tr>
+<tr><td>Devis</td><td>Simple</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td>Adaptés</td></tr>
+<tr><td>Commandes</td><td class="os-no">—</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td class="os-yes">✓</td></tr>
+<tr><td>Interventions</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td>Adaptées</td></tr>
+<tr><td>Rapports</td><td>Simple</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td>Personnalisés</td></tr>
+<tr><td>Factures / paiements</td><td class="os-no">—</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td>Adaptés</td></tr>
+<tr><td>SAV</td><td>Historique</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td>Adapté</td></tr>
+<tr><td>Planning</td><td class="os-no">—</td><td>Simple</td><td class="os-yes">✓</td><td>Équipe</td><td>Personnalisé</td></tr>
+<tr><td>Documents dossier</td><td class="os-no">—</td><td>Base</td><td class="os-yes">✓</td><td class="os-yes">✓</td><td class="os-yes">✓</td></tr>
+<tr><td>KPI</td><td>Base</td><td>Base</td><td>Avancés</td><td>Consolidés</td><td>Métier</td></tr>
+<tr><td>Multi-intervenants</td><td class="os-no">—</td><td class="os-no">—</td><td>Limité</td><td class="os-yes">✓</td><td class="os-yes">✓</td></tr>
+<tr><td>Workflow personnalisé</td><td class="os-no">—</td><td class="os-no">—</td><td>Limité</td><td>Paramétrage</td><td class="os-yes">✓</td></tr>
+</tbody>
+
+</table>
+
+</div>
+
+<div class="os-detail-grid">
+
+<article class="os-detail reveal">
+<span>01 // SIMPLE</span>
+<h3>Installation locale</h3>
+<p>
+La logique de base peut fonctionner localement,
+sans imposer un abonnement SaaS lourd.
+Le déploiement exact dépend de la version retenue.
+</p>
+</article>
+
+<article class="os-detail reveal">
+<span>02 // MODULAIRE</span>
+<h3>Seulement les fonctions utiles</h3>
+<p>
+Les versions supérieures ajoutent progressivement
+planning,
+documents,
+KPI,
+équipe
+et personnalisation.
+</p>
+</article>
+
+<article class="os-detail reveal">
+<span>03 // MÉTIER</span>
+<h3>Adaptable à l’entreprise</h3>
+<p>
+Dans les versions personnalisées,
+les étapes,
+libellés,
+statuts,
+documents
+et indicateurs peuvent être adaptés au fonctionnement réel.
+</p>
+</article>
+
+<article class="os-detail reveal">
+<span>04 // HISTORIQUE</span>
+<h3>Créer une mémoire de l’activité</h3>
+<p>
+Retrouver plus facilement un client,
+un devis,
+une intervention,
+une facture,
+un incident SAV
+ou l’historique d’un dossier.
+</p>
+</article>
+
+<article class="os-detail reveal">
+<span>05 // KPI</span>
+<h3>Piloter sans multiplier les tableaux</h3>
+<p>
+Les versions Pro et Business peuvent intégrer
+des indicateurs simples :
+affaires,
+devis,
+interventions,
+facturation,
+paiements
+et activité.
+</p>
+</article>
+
+<article class="os-detail reveal">
+<span>06 // ÉVOLUTION</span>
+<h3>Commencer petit</h3>
+<p>
+Une entreprise peut débuter avec Lite ou Essentiel
+puis faire évoluer l’outil
+si son activité ou son équipe se développent.
+</p>
+</article>
+
+</div>
+
+<div class="os-note reveal">
+<strong>Tarifs de lancement :</strong>
+les prix affichés correspondent à des bases standardisées.
+La reprise de données,
+les intégrations spécifiques,
+la personnalisation graphique avancée,
+l’hébergement,
+les sauvegardes externes
+ou les développements complémentaires
+font l’objet d’une proposition adaptée lorsqu’ils sont nécessaires.
+</div>
+
+<div class="actions reveal">
+<a href="devis-express.html" class="btn btn-primary">Étudier mon besoin OS ACTYROM</a>
+<a href="#boutique" class="btn btn-secondary">Comparer dans la boutique</a>
 </div>
 
 </div>
