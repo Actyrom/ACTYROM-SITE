@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Réalisations & projets | Actyrom Consulting</title>
-
-<meta
-name="description"
-content="Découvrez les projets, concepts et réalisations possibles avec Actyrom Consulting : industrie, habitat, automatisme, réseau, domotique, supervision, data et solutions techniques sur mesure.">
-
+<meta name="description" content="Découvrez les projets, concepts et futures réalisations Actyrom Consulting en industrie, habitat, web, réseau, data et supervision.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#06130d">
-
-<link
-rel="canonical"
-href="https://actyrom.fr/realisations.html">
-
+<link rel="canonical" href="https://actyrom.fr/realisations.html">
 <style>
-
 :root{
   --bg:#04100a;
   --deep:#020805;
@@ -33,63 +21,26 @@ href="https://actyrom.fr/realisations.html">
   --soft:#7d8d82;
   --green:#89ef3f;
   --green2:#b3ff67;
+  --warning:#ffd66b;
+  --danger:#ff8e75;
   --max:1180px;
 }
-
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{
   font-family:Arial,Helvetica,sans-serif;
   background:
-    radial-gradient(
-      circle at 85% 5%,
-      rgba(46,132,63,.11),
-      transparent 28%
-    ),
-    linear-gradient(
-      180deg,
-      #06110c,
-      #030a06 60%,
-      #020704
-    );
+    radial-gradient(circle at 85% 3%,rgba(55,150,65,.12),transparent 27%),
+    linear-gradient(180deg,#06110c,#030a06 58%,#020704);
   color:var(--text);
-  line-height:1.65;
+  line-height:1.62;
   overflow-x:hidden;
 }
-
-a{
-  color:inherit;
-  text-decoration:none;
-}
-
-button{
-  font:inherit;
-}
-
-img{
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-.container{
-  width:min(var(--max),92%);
-  margin:auto;
-}
-
-.green{
-  color:var(--green);
-}
-
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+.container{width:min(var(--max),92%);margin:auto}
+.green{color:var(--green)}
 .kicker{
   color:var(--green2);
   text-transform:uppercase;
@@ -97,2115 +48,425 @@ img{
   font-weight:700;
   letter-spacing:4px;
 }
-
 .section-title{
   margin-top:12px;
   font-size:clamp(2.1rem,4vw,3.8rem);
   line-height:1.03;
   letter-spacing:-2px;
 }
-
-.section-intro{
-  max-width:790px;
-  margin-top:17px;
-  color:var(--muted);
-}
-
-
-/* =========================================================
-   HEADER
-========================================================= */
-
+.section-intro{max-width:820px;margin-top:17px;color:var(--muted)}
 header{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(3,11,7,.84);
+  position:sticky;top:0;z-index:1000;
+  background:rgba(3,11,7,.86);
   backdrop-filter:blur(18px);
   border-bottom:1px solid rgba(255,255,255,.08);
 }
-
 .nav{
   min-height:78px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:25px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
 }
-
-.brand{
-  display:flex;
-  align-items:baseline;
-  gap:5px;
-  white-space:nowrap;
-}
-
-.brand-main{
-  font-size:1.52rem;
-  font-weight:900;
-  letter-spacing:-1px;
-}
-
-.brand-sub{
-  color:var(--green);
-  font-size:1.03rem;
-  font-weight:800;
-}
-
+.brand{display:flex;align-items:baseline;gap:5px;white-space:nowrap}
+.brand-main{font-size:1.52rem;font-weight:900;letter-spacing:-1px}
+.brand-sub{color:var(--green);font-size:1.03rem;font-weight:800}
 .nav-links{
-  list-style:none;
-  display:flex;
-  align-items:center;
-  gap:20px;
-  color:#dce4dd;
-  font-size:.86rem;
+  list-style:none;display:flex;align-items:center;gap:15px;
+  color:#dce4dd;font-size:.82rem
 }
-
-.nav-links a{
-  transition:.22s ease;
-}
-
-.nav-links a:hover{
-  color:var(--green2);
-}
-
+.nav-links a{transition:.22s ease}
+.nav-links a:hover,.nav-links .active{color:var(--green2)}
 .connection{
-  padding:10px 17px !important;
-  border:1px solid rgba(137,239,63,.44);
+  padding:10px 15px!important;
+  border:1px solid rgba(137,239,63,.45);
   border-radius:999px;
   background:rgba(72,150,53,.08);
-  color:#eaffdc !important;
+  color:#eaffdc!important;
   font-family:"Courier New",Consolas,monospace;
-  font-weight:700;
-  letter-spacing:1px;
+  font-weight:700;letter-spacing:1px;
 }
-
 .menu-btn{
-  display:none;
-  padding:9px 12px;
+  display:none;padding:9px 12px;
   border:1px solid rgba(255,255,255,.16);
-  border-radius:10px;
-  background:#07130d;
-  color:#fff;
-  cursor:pointer;
+  border-radius:10px;background:#07130d;color:#fff
 }
-
-
-/* =========================================================
-   HERO
-========================================================= */
-
 .hero{
-  position:relative;
-  min-height:680px;
-  display:flex;
-  align-items:center;
-  overflow:hidden;
-  border-bottom:1px solid rgba(255,255,255,.08);
+  position:relative;min-height:610px;display:flex;align-items:center;
+  overflow:hidden;border-bottom:1px solid rgba(255,255,255,.08)
 }
-
-.hero-media{
-  position:absolute;
-  inset:0;
-}
-
-.hero-media img{
-  filter:
-    saturate(.70)
-    contrast(1.06)
-    brightness(.47);
-}
-
-.hero-media::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(2,9,5,.99),
-      rgba(3,12,7,.94) 40%,
-      rgba(4,18,10,.62) 72%,
-      rgba(2,8,5,.74)
-    ),
-    linear-gradient(
-      180deg,
-      transparent,
-      rgba(2,8,5,.78)
-    );
-}
-
-.hero::after{
-  content:"";
-  position:absolute;
-  width:650px;
-  height:650px;
-  right:-200px;
-  top:-230px;
-  border-radius:50%;
-  background:
-    radial-gradient(
-      circle,
-      rgba(137,239,63,.16),
-      rgba(55,159,62,.05) 40%,
-      transparent 70%
-    );
+.hero::before{
+  content:"";position:absolute;width:780px;height:780px;
+  right:-260px;top:-330px;border-radius:50%;
+  background:radial-gradient(circle,rgba(137,239,63,.18),rgba(55,159,62,.05) 40%,transparent 70%);
   animation:halo 10s ease-in-out infinite alternate;
 }
-
+.hero::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(2,8,5,.98),rgba(3,12,7,.88) 58%,rgba(3,13,8,.56));
+  pointer-events:none;
+}
 @keyframes halo{
-  from{
-    transform:translate(-20px,12px) scale(.96);
-  }
-  to{
-    transform:translate(22px,-12px) scale(1.05);
-  }
+  from{transform:translate(-18px,12px) scale(.97)}
+  to{transform:translate(20px,-10px) scale(1.05)}
 }
-
-.hero-content{
-  position:relative;
-  z-index:2;
-  max-width:920px;
-  padding:110px 0 90px;
-}
-
+.hero-content{position:relative;z-index:2;max-width:960px;padding:100px 0 82px}
 .hero-label{
-  display:inline-flex;
-  align-items:center;
-  gap:12px;
-  color:#dfe7df;
-  text-transform:uppercase;
-  letter-spacing:4px;
-  font-size:.72rem;
+  display:inline-flex;align-items:center;gap:12px;color:#dfe7df;
+  text-transform:uppercase;letter-spacing:4px;font-size:.72rem
 }
-
 .hero-label::before{
-  content:"";
-  width:40px;
-  height:2px;
-  background:var(--green);
-  box-shadow:0 0 14px rgba(137,239,63,.55);
+  content:"";width:40px;height:2px;background:var(--green);
+  box-shadow:0 0 14px rgba(137,239,63,.55)
 }
-
 .hero h1{
-  margin-top:23px;
-  font-size:clamp(4rem,8vw,7rem);
-  line-height:.88;
-  letter-spacing:-5px;
+  margin-top:23px;font-size:clamp(4rem,8vw,7.1rem);
+  line-height:.87;letter-spacing:-5px
 }
-
-.hero h1 span{
-  display:block;
-  color:var(--green);
-}
-
-.hero-text{
-  max-width:760px;
-  margin-top:27px;
-  color:#d2ddd5;
-  font-size:1.08rem;
-}
-
-
-/* =========================================================
-   STATUS
-========================================================= */
-
-.status{
-  margin-top:25px;
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  color:var(--green2);
-  font-family:"Courier New",Consolas,monospace;
-  font-size:.75rem;
-  font-weight:700;
-}
-
-.status-dot{
-  width:13px;
-  height:13px;
-  border-radius:50%;
-  background:#78f452;
-  box-shadow:
-    0 0 6px #78f452,
-    0 0 20px rgba(120,244,82,.6);
-  animation:pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse{
-  50%{
-    transform:scale(1.1);
-    box-shadow:
-      0 0 10px #a8ff85,
-      0 0 32px rgba(120,244,82,.72);
-  }
-}
-
-
-/* =========================================================
-   BUTTONS
-========================================================= */
-
-.actions{
-  margin-top:29px;
-  display:flex;
-  gap:11px;
-  flex-wrap:wrap;
-}
-
+.hero h1 span{display:block;color:var(--green)}
+.hero-text{max-width:800px;margin-top:26px;color:#d2ddd5;font-size:1.05rem}
+.actions{margin-top:29px;display:flex;gap:11px;flex-wrap:wrap}
 .btn{
-  min-height:50px;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:0 22px;
-  border-radius:12px;
-  font-weight:800;
-  transition:.25s ease;
+  min-height:50px;display:inline-flex;align-items:center;justify-content:center;
+  padding:0 22px;border-radius:12px;border:1px solid transparent;
+  font-weight:800;transition:.25s ease
 }
-
-.btn-primary{
-  background:linear-gradient(180deg,var(--green2),var(--green));
-  color:#092008;
+.btn-primary{background:linear-gradient(180deg,var(--green2),var(--green));color:#092008}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(100,230,70,.18)}
+.btn-secondary{border-color:rgba(255,255,255,.18);background:rgba(3,10,6,.45);color:#eef4ef}
+.btn-secondary:hover{border-color:var(--green);color:var(--green2)}
+.status{
+  margin-top:24px;display:inline-flex;align-items:center;gap:10px;
+  color:var(--green2);font-family:"Courier New",Consolas,monospace;
+  font-size:.72rem;letter-spacing:1px
 }
-
-.btn-primary:hover{
-  transform:translateY(-2px);
+.status-dot{
+  width:12px;height:12px;border-radius:50%;background:#78f452;
+  box-shadow:0 0 7px #78f452,0 0 20px rgba(120,244,82,.55)
 }
-
-.btn-secondary{
-  border:1px solid rgba(255,255,255,.18);
-  background:rgba(3,10,6,.45);
-}
-
-.btn-secondary:hover{
-  border-color:var(--green);
-  color:var(--green2);
-}
-
-
-/* =========================================================
-   SECTIONS
-========================================================= */
-
-.section{
-  padding:88px 0;
-}
-
+.section{padding:84px 0}
 .section-dark{
-  background:rgba(2,8,5,.52);
+  background:rgba(2,8,5,.50);
   border-top:1px solid rgba(255,255,255,.07);
-  border-bottom:1px solid rgba(255,255,255,.07);
+  border-bottom:1px solid rgba(255,255,255,.07)
 }
-
-
-/* =========================================================
-   EXPLANATION
-========================================================= */
-
 .notice{
-  padding:28px;
-  border:1px solid var(--green-line);
-  border-radius:20px;
-  background:
-    radial-gradient(
-      circle at 90% 0%,
-      rgba(90,190,70,.09),
-      transparent 35%
-    ),
-    #07150e;
+  padding:24px 27px;border:1px solid var(--green-line);border-radius:18px;
+  background:radial-gradient(circle at 100% 0%,rgba(137,239,63,.08),transparent 35%),#07150e
 }
-
-.notice strong{
-  color:var(--green2);
-}
-
-.notice p{
-  color:var(--muted);
-}
-
-
-/* =========================================================
-   FILTER
-========================================================= */
-
-.filters{
-  margin-top:32px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:9px;
-}
-
-.filter-btn{
-  padding:10px 15px;
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:999px;
-  background:#07130d;
-  color:#d2ddd5;
-  cursor:pointer;
-  transition:.2s ease;
-}
-
-.filter-btn:hover,
-.filter-btn.active{
-  border-color:rgba(137,239,63,.45);
-  color:#0b2208;
-  background:var(--green);
-}
-
-
-/* =========================================================
-   PROJECT GRID
-========================================================= */
-
-.projects{
-  margin-top:32px;
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:18px;
-}
-
-.project{
-  position:relative;
-  min-height:440px;
-  overflow:hidden;
-  border-radius:24px;
-  border:1px solid rgba(255,255,255,.11);
-  background:#07130d;
-}
-
-.project img{
-  position:absolute;
-  inset:0;
-  transition:transform .7s ease,filter .7s ease;
-  filter:
-    saturate(.72)
-    brightness(.65);
-}
-
-.project:hover img{
-  transform:scale(1.055);
-  filter:
-    saturate(.90)
-    brightness(.72);
-}
-
-.project::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(2,8,5,.02),
-      rgba(2,8,5,.18) 30%,
-      rgba(2,8,5,.96) 100%
-    );
-}
-
-.project-content{
-  position:absolute;
-  z-index:2;
-  left:27px;
-  right:27px;
-  bottom:27px;
-}
-
-.project-category{
-  color:var(--green2);
-  font-family:"Courier New",Consolas,monospace;
-  font-size:.71rem;
-  letter-spacing:2px;
-}
-
-.project h3{
-  margin-top:7px;
-  font-size:1.55rem;
-}
-
-.project p{
-  margin-top:8px;
-  max-width:590px;
-  color:#ced9d0;
-  font-size:.89rem;
-}
-
-.tags{
-  margin-top:14px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:7px;
-}
-
-.tag{
-  padding:6px 9px;
-  border:1px solid rgba(255,255,255,.14);
-  border-radius:999px;
-  background:rgba(3,10,6,.55);
-  backdrop-filter:blur(8px);
-  color:#dce5de;
-  font-size:.69rem;
-}
-
-
-/* =========================================================
-   METHOD
-========================================================= */
-
-.method-grid{
-  margin-top:38px;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  overflow:hidden;
-  border:1px solid var(--green-line);
-  border-radius:22px;
-  background:#07150e;
-}
-
-.method{
-  padding:26px 22px;
-  border-right:1px solid rgba(255,255,255,.08);
-}
-
-.method:last-child{
-  border-right:0;
-}
-
-.method-num{
-  color:var(--green2);
-  font-family:"Courier New",Consolas,monospace;
-  font-size:.72rem;
-  letter-spacing:2px;
-}
-
-.method h3{
-  margin-top:13px;
-}
-
-.method p{
-  margin-top:7px;
-  color:var(--soft);
-  font-size:.83rem;
-}
-
-
-/* =========================================================
-   PROJECT DETAIL EXAMPLE
-========================================================= */
-
-.case{
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:22px;
-}
-
-.case-visual{
-  position:relative;
-  min-height:520px;
-  overflow:hidden;
-  border-radius:24px;
-  border:1px solid rgba(255,255,255,.11);
-}
-
-.case-visual img{
-  filter:saturate(.72) brightness(.70);
-}
-
-.case-visual::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(
-      180deg,
-      transparent 35%,
-      rgba(2,9,5,.92)
-    );
-}
-
-.case-caption{
-  position:absolute;
-  z-index:2;
-  left:26px;
-  right:26px;
-  bottom:25px;
-}
-
-.case-caption span{
-  color:var(--green2);
-  font-family:"Courier New",Consolas,monospace;
-  font-size:.73rem;
-}
-
-.case-caption strong{
-  display:block;
-  margin-top:5px;
-  font-size:1.25rem;
-}
-
-.case-content{
-  padding:39px;
-  border:1px solid var(--green-line);
-  border-radius:24px;
-  background:
-    radial-gradient(
-      circle at 90% 0%,
-      rgba(70,180,66,.10),
-      transparent 35%
-    ),
-    #07150e;
-}
-
-.case-content p{
-  margin-top:16px;
-  color:var(--muted);
-}
-
-.case-step{
-  margin-top:17px;
-  padding:15px 0;
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.case-step:last-child{
-  border-bottom:0;
-}
-
-.case-step span{
-  color:var(--green2);
-  font-family:"Courier New",Consolas,monospace;
-  font-size:.69rem;
-}
-
-.case-step strong{
-  display:block;
-  margin-top:4px;
-}
-
-.case-step p{
-  margin-top:4px;
-  font-size:.82rem;
-}
-
-
-/* =========================================================
-   FUTURE CLIENT PROJECTS
-========================================================= */
-
-.future-grid{
-  margin-top:38px;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
-}
-
-.future{
-  padding:28px;
-  border:1px solid rgba(255,255,255,.10);
-  border-radius:18px;
-  background:#07130d;
-}
-
-.future h3{
-  font-size:1.1rem;
-}
-
-.future p{
-  margin-top:8px;
-  color:var(--muted);
-  font-size:.86rem;
-}
-
-
-/* =========================================================
-   CTA
-========================================================= */
-
-.cta{
-  padding:50px;
-  border:1px solid var(--green-line);
-  border-radius:26px;
-  background:
-    radial-gradient(
-      circle at 90% 15%,
-      rgba(117,255,69,.13),
-      transparent 30%
-    ),
-    linear-gradient(
-      135deg,
-      #0a2115,
-      #06120c
-    );
-}
-
-.cta h2{
-  max-width:850px;
-  font-size:clamp(2.5rem,5vw,4.5rem);
-  line-height:1;
-  letter-spacing:-3px;
-}
-
-.cta p{
-  max-width:760px;
-  margin-top:18px;
-  color:#b8c6bc;
-}
-
-
-/* =========================================================
-   REVEAL
-========================================================= */
-
-.reveal{
-  opacity:0;
-  transform:translateY(26px);
-  transition:
-    opacity .75s ease,
-    transform .75s ease;
-}
-
-.reveal.visible{
-  opacity:1;
-  transform:translateY(0);
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
+.notice p{color:var(--muted)}
+.notice strong{color:var(--green2)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
 footer{
-  padding:32px 0;
-  border-top:1px solid rgba(255,255,255,.08);
-  color:#718077;
-  font-size:.79rem;
+  padding:32px 0;border-top:1px solid rgba(255,255,255,.08);
+  color:#718077;font-size:.79rem
 }
-
-.footer{
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  flex-wrap:wrap;
+.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-links{display:flex;gap:14px;flex-wrap:wrap}
+.footer a:hover{color:var(--green2)}
+@media(max-width:1080px){
+  .nav-links{gap:10px;font-size:.77rem}
 }
-
-.footer-links{
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
-}
-
-.footer a:hover{
-  color:var(--green2);
-}
-
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
-@media(max-width:1050px){
-
-  .nav-links{
-    gap:13px;
-    font-size:.81rem;
-  }
-
-  .method-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .method{
-    border-bottom:1px solid rgba(255,255,255,.08);
-  }
-
-  .future-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-}
-
 @media(max-width:860px){
-
-  .menu-btn{
-    display:block;
-  }
-
-  .nav{
-    min-height:68px;
-  }
-
+  .menu-btn{display:block}
+  .nav{min-height:68px}
   .nav-links{
-    display:none;
-    position:absolute;
-    top:68px;
-    left:0;
-    right:0;
-    padding:14px 4% 18px;
-    background:rgba(3,11,7,.98);
+    display:none;position:absolute;top:68px;left:0;right:0;
+    padding:14px 4% 18px;background:rgba(3,11,7,.98);
     border-bottom:1px solid rgba(255,255,255,.10);
-    flex-direction:column;
-    align-items:stretch;
-    gap:3px;
+    flex-direction:column;align-items:stretch;gap:3px
   }
-
-  .nav-links.open{
-    display:flex;
-  }
-
-  .nav-links a{
-    display:block;
-    padding:9px 0;
-  }
-
-  .connection{
-    text-align:center;
-  }
-
-  .projects,
-  .case{
-    grid-template-columns:1fr;
-  }
-
+  .nav-links.open{display:flex}
+  .nav-links a{display:block;padding:9px 0}
+  .connection{text-align:center}
 }
-
 @media(max-width:620px){
-
-  .container{
-    width:94%;
-  }
-
-  .brand-main{
-    font-size:1.18rem;
-  }
-
-  .brand-sub{
-    font-size:.88rem;
-  }
-
-  .hero{
-    min-height:auto;
-  }
-
-  .hero-content{
-    padding:78px 0 64px;
-  }
-
-  .hero h1{
-    font-size:3.55rem;
-    letter-spacing:-3px;
-  }
-
-  .hero-text{
-    font-size:.95rem;
-  }
-
-  .actions{
-    display:grid;
-    grid-template-columns:1fr;
-  }
-
-  .btn{
-    width:100%;
-  }
-
-  .section{
-    padding:64px 0;
-  }
-
-  .section-title{
-    font-size:2.15rem;
-    letter-spacing:-1px;
-  }
-
-  .project{
-    min-height:390px;
-  }
-
-  .method-grid,
-  .future-grid{
-    grid-template-columns:1fr;
-  }
-
-  .method{
-    border-right:0;
-  }
-
-  .case-content{
-    padding:27px;
-  }
-
-  .case-visual{
-    min-height:380px;
-  }
-
-  .cta{
-    padding:34px 25px;
-  }
-
-  .cta h2{
-    font-size:2.6rem;
-    letter-spacing:-2px;
-  }
-
-  .footer{
-    display:block;
-    text-align:center;
-  }
-
-  .footer-links{
-    justify-content:center;
-    margin-top:10px;
-  }
-
+  .container{width:94%}
+  .brand-main{font-size:1.18rem}
+  .brand-sub{font-size:.88rem}
+  .hero{min-height:auto}
+  .hero-content{padding:74px 0 62px}
+  .hero h1{font-size:3.55rem;letter-spacing:-3px}
+  .hero-text{font-size:.94rem}
+  .actions{display:grid;grid-template-columns:1fr}
+  .btn{width:100%}
+  .section{padding:62px 0}
+  .section-title{font-size:2.15rem;letter-spacing:-1px}
+  .footer{display:block;text-align:center}
+  .footer-links{justify-content:center;margin-top:10px}
 }
-
 @media(prefers-reduced-motion:reduce){
-
-  *,
-  *::before,
-  *::after{
-    animation:none!important;
-    transition:none!important;
-  }
-
-  .reveal{
-    opacity:1!important;
-    transform:none!important;
-  }
-
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1!important;transform:none!important}
 }
 
+.filters{margin-top:30px;display:flex;flex-wrap:wrap;gap:8px}
+.filter-btn{
+  padding:9px 13px;border:1px solid rgba(255,255,255,.11);border-radius:999px;
+  background:#07130d;color:#dce4dd
+}
+.filter-btn:hover,.filter-btn.active{background:var(--green);border-color:var(--green);color:#092008}
+.projects{
+  margin-top:32px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px
+}
+.project{
+  padding:29px;border:1px solid rgba(255,255,255,.10);border-radius:22px;
+  background:radial-gradient(circle at 100% 0%,rgba(137,239,63,.07),transparent 34%),#07130d
+}
+.project-meta{
+  display:flex;justify-content:space-between;gap:15px;align-items:center;
+  color:var(--green2);font-family:"Courier New",Consolas,monospace;font-size:.68rem
+}
+.project-badge{
+  padding:5px 8px;border:1px solid rgba(137,239,63,.25);border-radius:999px
+}
+.project h3{margin-top:16px;font-size:1.4rem}
+.project-intro{margin-top:9px;color:var(--muted);font-size:.86rem}
+.case-grid{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.case-box{
+  padding:14px;border:1px solid rgba(255,255,255,.08);border-radius:11px;background:#06120c
+}
+.case-box span{
+  display:block;color:var(--green2);font-family:"Courier New",Consolas,monospace;
+  font-size:.65rem;letter-spacing:1px
+}
+.case-box p{margin-top:5px;color:#d6e1d8;font-size:.78rem}
+.tech{margin-top:16px;display:flex;flex-wrap:wrap;gap:7px}
+.tech span{
+  padding:6px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.10);
+  color:#cedbd0;font-size:.68rem
+}
+.future{
+  margin-top:36px;display:grid;grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--green-line);border-radius:20px;overflow:hidden
+}
+.future-item{padding:22px;background:#07150e;border-right:1px solid rgba(255,255,255,.08)}
+.future-item:last-child{border-right:0}
+.future-item h3{font-size:.95rem}
+.future-item p{margin-top:7px;color:var(--soft);font-size:.76rem}
+@media(max-width:900px){
+  .projects{grid-template-columns:1fr}
+  .future{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .case-grid,.future{grid-template-columns:1fr}
+  .future-item{border-right:0;border-bottom:1px solid rgba(255,255,255,.08)}
+}
 </style>
-
 </head>
-
 <body>
 
-
 <header>
-
 <div class="container">
-
 <nav class="nav">
-
 <a href="index.html" class="brand">
-
-<span class="brand-main">
-Actyrom
-</span>
-
-<span class="brand-sub">
-Consulting
-</span>
-
+<span class="brand-main">Actyrom</span>
+<span class="brand-sub">Consulting</span>
 </a>
-
-
-<button
-id="menuBtn"
-class="menu-btn"
-type="button"
-aria-label="Ouvrir le menu"
-aria-expanded="false">
-
-☰
-
-</button>
-
-
+<button id="menuBtn" class="menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
 <ul id="navLinks" class="nav-links">
-
 <li><a href="index.html">Accueil</a></li>
-
-<li>
-<a href="qui-sommes-nous.html">
-Qui sommes-nous ?
-</a>
-</li>
-
+<li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
 <li><a href="industrie.html">Industrie</a></li>
-
 <li><a href="habitat.html">Habitat</a></li>
-
-<li>
-<a href="industrie40.html">
-Industrie 4.0
-</a>
-</li>
-
-<li>
-<a href="accompagnement.html">
-Accompagnement
-</a>
-</li>
-
+<li><a href="industrie40.html">Industrie 4.0</a></li>
+<li><a href="accompagnement.html">Accompagnement</a></li>
+<li><a href="boutique.html">Boutique</a></li>
 <li><a href="contact.html">Contact</a></li>
-
-<li>
-<a
-href="connexion.html"
-class="connection">
-CONNEXION
-</a>
-</li>
-
+<li><a href="connexion.html" class="connection">CONNEXION</a></li>
 </ul>
-
 </nav>
-
 </div>
-
 </header>
 
-
 <main>
-
-
 <section class="hero">
-
-<div class="hero-media">
-
-<img
-src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=2400"
-alt="Projet technique et expertise Actyrom">
-
-</div>
-
-
-<div class="container">
-
-<div class="hero-content">
-
-<div class="hero-label">
-
-ACTYROM // PROJETS
-
-</div>
-
-
-<h1>
-
-Des idées.
-
-<span>
-Des solutions concrètes.
-</span>
-
-</h1>
-
-
-<p class="hero-text">
-
-Industrie,
-habitat,
-réseaux,
-automatismes,
-data,
-supervision
-ou intégration sur mesure :
-
-découvrez ce qu’un projet Actyrom
-peut devenir.
-
-</p>
-
-
+<div class="container"><div class="hero-content">
+<div class="hero-label">ACTYROM // PROJETS & RÉALISATIONS</div>
+<h1>Du besoin.<span>À la solution.</span></h1>
+<p class="hero-text">Cette page présente la logique de projet Actyrom et des exemples d’applications possibles. Les véritables réalisations clients seront ajoutées progressivement lorsqu’elles seront publiables et autorisées.</p>
 <div class="actions">
-
-<a
-href="#projets"
-class="btn btn-primary">
-
-Découvrir les projets
-
-</a>
-
-<a
-href="contact.html"
-class="btn btn-secondary">
-
-Parler de votre idée
-
-</a>
-
+<a href="#projets" class="btn btn-primary">Découvrir les projets</a>
+<a href="devis-express.html" class="btn btn-secondary">Présenter mon projet</a>
 </div>
-
-
-<div class="status">
-
-<span class="status-dot"></span>
-
-PROJECT SYSTEM ONLINE
-
-</div>
-
-</div>
-
-</div>
-
+<div class="status"><span class="status-dot"></span>PROBLÈME // ANALYSE // SOLUTION // RÉSULTAT</div>
+</div></div>
 </section>
-
 
 <section class="section">
-
 <div class="container">
-
 <div class="notice reveal">
-
-<p>
-
-<strong>
-Important :
-</strong>
-
-Actyrom étant en phase de lancement,
-cette page présente actuellement
-des <strong>concepts, exemples d’applications
-et réalisations possibles</strong>.
-
-Elle sera progressivement enrichie
-avec des projets réellement réalisés,
-lorsque leur publication sera autorisée.
-
-</p>
-
+<p><strong>Transparence :</strong> Actyrom étant en phase de lancement, les cartes ci-dessous sont identifiées comme exemples de démarche ou concepts de projet. Elles ne sont pas présentées comme des chantiers clients réalisés. Les études de cas réelles viendront les remplacer ou les compléter au fur et à mesure.</p>
 </div>
-
 </div>
-
 </section>
 
-
-<section
-class="section section-dark"
-id="projets">
-
+<section class="section section-dark" id="projets">
 <div class="container">
-
 <div class="reveal">
-
-<div class="kicker">
-
-PROJETS & POSSIBILITÉS
-
+<div class="kicker">EXEMPLES DE DÉMARCHE</div>
+<h2 class="section-title">Avant → analyse → solution.<span class="green">Le résultat doit être compréhensible.</span></h2>
 </div>
-
-<h2 class="section-title">
-
-Un besoin différent ?
-
-<span class="green">
-Construisons la solution.
-</span>
-
-</h2>
-
-<p class="section-intro">
-
-Les exemples ci-dessous illustrent
-la manière dont plusieurs compétences Actyrom
-peuvent être associées
-dans un même projet.
-
-</p>
-
-</div>
-
-
 <div class="filters reveal">
-
-<button
-class="filter-btn active"
-data-filter="all">
-Tous
-</button>
-
-<button
-class="filter-btn"
-data-filter="industrie">
-Industrie
-</button>
-
-<button
-class="filter-btn"
-data-filter="habitat">
-Habitat
-</button>
-
-<button
-class="filter-btn"
-data-filter="data">
-Data & Supervision
-</button>
-
+<button class="filter-btn active" data-filter="all">Tout</button>
+<button class="filter-btn" data-filter="industrie">Industrie</button>
+<button class="filter-btn" data-filter="habitat">Habitat</button>
+<button class="filter-btn" data-filter="web">Web & numérique</button>
+<button class="filter-btn" data-filter="data">Data & supervision</button>
 </div>
-
 
 <div class="projects">
 
-
-<article
-class="project reveal"
-data-category="industrie">
-
-<img
-src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=1800"
-alt="Diagnostic et maintenance industrielle">
-
-<div class="project-content">
-
-<div class="project-category">
-INDUSTRIE // DIAGNOSTIC
+<article class="project reveal" data-category="industrie">
+<div class="project-meta"><span>INDUSTRIE</span><span class="project-badge">EXEMPLE</span></div>
+<h3>Panne récurrente sur équipement</h3>
+<p class="project-intro">Une intervention utile ne consiste pas seulement à acquitter le défaut : elle cherche pourquoi il revient.</p>
+<div class="case-grid">
+<div class="case-box"><span>AVANT</span><p>Panne répétitive, symptômes connus, cause non identifiée.</p></div>
+<div class="case-box"><span>ANALYSE</span><p>Historique, mesures, logique automatisme, capteurs, actionneurs et réseau.</p></div>
+<div class="case-box"><span>SOLUTION</span><p>Correction ciblée ou plan d’action selon la cause identifiée.</p></div>
+<div class="case-box"><span>RÉSULTAT VISÉ</span><p>Réduire les récidives et améliorer la compréhension de l’équipement.</p></div>
 </div>
-
-<h3>
-Panne industrielle complexe
-</h3>
-
-<p>
-
-Reprendre une panne récurrente
-avec une approche structurée :
-symptômes,
-mesures,
-automatismes,
-capteurs,
-réseau
-et historique.
-
-</p>
-
-<div class="tags">
-
-<span class="tag">Diagnostic</span>
-<span class="tag">Automatisme</span>
-<span class="tag">Maintenance</span>
-<span class="tag">Méthode</span>
-
-</div>
-
-</div>
-
+<div class="tech"><span>Diagnostic</span><span>Automatisme</span><span>Maintenance</span><span>Méthode</span></div>
 </article>
 
-
-<article
-class="project reveal"
-data-category="industrie">
-
-<img
-src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=1800"
-alt="Projet d'amélioration industrielle">
-
-<div class="project-content">
-
-<div class="project-category">
-INDUSTRIE // FIABILISATION
+<article class="project reveal" data-category="industrie">
+<div class="project-meta"><span>INDUSTRIE</span><span class="project-badge">CONCEPT</span></div>
+<h3>Fiabilisation d’un équipement</h3>
+<p class="project-intro">Transformer une suite d’incidents en plan d’amélioration structuré.</p>
+<div class="case-grid">
+<div class="case-box"><span>AVANT</span><p>Arrêts, réglages fréquents, maintenance essentiellement corrective.</p></div>
+<div class="case-box"><span>ANALYSE</span><p>Défaillances, criticité, historique et contraintes d’exploitation.</p></div>
+<div class="case-box"><span>SOLUTION</span><p>Actions techniques, préventif, documentation et indicateurs utiles.</p></div>
+<div class="case-box"><span>RÉSULTAT VISÉ</span><p>Amélioration progressive de la disponibilité et de la maintenabilité.</p></div>
 </div>
-
-<h3>
-Amélioration d’un équipement
-</h3>
-
-<p>
-
-Analyser les défaillances,
-identifier les points faibles
-et construire une amélioration
-fiable et maintenable.
-
-</p>
-
-<div class="tags">
-
-<span class="tag">Fiabilité</span>
-<span class="tag">Méthodes</span>
-<span class="tag">Étude</span>
-<span class="tag">Projet</span>
-
-</div>
-
-</div>
-
+<div class="tech"><span>Fiabilité</span><span>Méthodes</span><span>Préventif</span><span>KPI</span></div>
 </article>
 
-
-<article
-class="project reveal"
-data-category="habitat">
-
-<img
-src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=1800"
-alt="Mur TV moderne et intégré">
-
-<div class="project-content">
-
-<div class="project-category">
-HABITAT // MUR TV
+<article class="project reveal" data-category="habitat">
+<div class="project-meta"><span>HABITAT</span><span class="project-badge">CONCEPT</span></div>
+<h3>Mur TV connecté sur mesure</h3>
+<p class="project-intro">Faire travailler ensemble intégration physique, réseau, multimédia et éclairage.</p>
+<div class="case-grid">
+<div class="case-box"><span>AVANT</span><p>Câbles visibles, équipements dispersés, connectivité imparfaite.</p></div>
+<div class="case-box"><span>ANALYSE</span><p>Écran, usages, réseau, alimentation, équipements et évolution future.</p></div>
+<div class="case-box"><span>SOLUTION</span><p>Architecture technique intégrée avec métiers partenaires lorsque nécessaire.</p></div>
+<div class="case-box"><span>RÉSULTAT VISÉ</span><p>Installation propre, maintenable et cohérente avec la pièce.</p></div>
 </div>
-
-<h3>
-Mur TV connecté sur mesure
-</h3>
-
-<p>
-
-Associer agencement,
-multimédia,
-réseau,
-éclairage
-et câblage invisible
-dans une réalisation intégrée.
-
-</p>
-
-<div class="tags">
-
-<span class="tag">TV</span>
-<span class="tag">Réseau</span>
-<span class="tag">LED</span>
-<span class="tag">Agencement</span>
-
-</div>
-
-</div>
-
+<div class="tech"><span>Réseau</span><span>Multimédia</span><span>LED</span><span>Intégration</span></div>
 </article>
 
-
-<article
-class="project reveal"
-data-category="habitat">
-
-<img
-src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1800"
-alt="Bureau moderne connecté">
-
-<div class="project-content">
-
-<div class="project-category">
-HABITAT // BUREAU CONNECTÉ
+<article class="project reveal" data-category="habitat">
+<div class="project-meta"><span>HABITAT</span><span class="project-badge">CONCEPT</span></div>
+<h3>Bureau connecté</h3>
+<p class="project-intro">Créer un poste cohérent plutôt qu’un empilement de matériel.</p>
+<div class="case-grid">
+<div class="case-box"><span>AVANT</span><p>Wi-Fi variable, câbles, périphériques et écrans mal organisés.</p></div>
+<div class="case-box"><span>ANALYSE</span><p>Usages, débit, ergonomie, équipements et besoins futurs.</p></div>
+<div class="case-box"><span>SOLUTION</span><p>Réseau, docking, écrans, câblage et intégration propre.</p></div>
+<div class="case-box"><span>RÉSULTAT VISÉ</span><p>Un espace plus simple à utiliser, dépanner et faire évoluer.</p></div>
 </div>
-
-<h3>
-Home office technique
-</h3>
-
-<p>
-
-Créer un espace
-avec réseau fiable,
-informatique,
-écrans,
-éclairage,
-rangement
-et intégration propre des équipements.
-
-</p>
-
-<div class="tags">
-
-<span class="tag">Wi-Fi</span>
-<span class="tag">Ethernet</span>
-<span class="tag">Informatique</span>
-<span class="tag">Intégration</span>
-
-</div>
-
-</div>
-
+<div class="tech"><span>Ethernet</span><span>Wi-Fi</span><span>Informatique</span><span>Organisation</span></div>
 </article>
 
-
-<article
-class="project reveal"
-data-category="habitat">
-
-<img
-src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&q=80&w=1800"
-alt="Salle home cinéma">
-
-<div class="project-content">
-
-<div class="project-category">
-HABITAT // HOME CINÉMA
+<article class="project reveal" data-category="web">
+<div class="project-meta"><span>WEB & NUMÉRIQUE</span><span class="project-badge">EXEMPLE</span></div>
+<h3>Présence numérique pour artisan</h3>
+<p class="project-intro">Donner à une petite entreprise une vitrine simple, professionnelle et facile à maintenir.</p>
+<div class="case-grid">
+<div class="case-box"><span>AVANT</span><p>Pas de site ou présence éclatée entre réseaux et coordonnées.</p></div>
+<div class="case-box"><span>ANALYSE</span><p>Activité, zones, prestations, réalisations et moyens de contact.</p></div>
+<div class="case-box"><span>SOLUTION</span><p>Site vitrine, présence locale, e-mail pro et QR code selon besoin.</p></div>
+<div class="case-box"><span>RÉSULTAT VISÉ</span><p>Être trouvable et donner immédiatement une image professionnelle.</p></div>
 </div>
-
-<h3>
-Espace cinéma intégré
-</h3>
-
-<p>
-
-Vidéo,
-audio,
-réseau,
-éclairage,
-scénarios
-et intégration technique
-dans un espace pensé comme un ensemble.
-
-</p>
-
-<div class="tags">
-
-<span class="tag">Vidéo</span>
-<span class="tag">Audio</span>
-<span class="tag">Domotique</span>
-<span class="tag">Éclairage</span>
-
-</div>
-
-</div>
-
+<div class="tech"><span>Site web</span><span>SEO local</span><span>Google</span><span>QR code</span></div>
 </article>
 
-
-<article
-class="project reveal"
-data-category="habitat">
-
-<img
-src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&q=80&w=1800"
-alt="Gaming room et bureau connecté">
-
-<div class="project-content">
-
-<div class="project-category">
-HABITAT // GAMING ROOM
+<article class="project reveal" data-category="data">
+<div class="project-meta"><span>DATA & SUPERVISION</span><span class="project-badge">CONCEPT</span></div>
+<h3>Tableau de bord technique</h3>
+<p class="project-intro">Passer de données dispersées à quelques informations réellement exploitables.</p>
+<div class="case-grid">
+<div class="case-box"><span>AVANT</span><p>Données disponibles mais peu exploitées ou difficiles à comparer.</p></div>
+<div class="case-box"><span>ANALYSE</span><p>Identifier les variables et indicateurs utiles au besoin réel.</p></div>
+<div class="case-box"><span>SOLUTION</span><p>Collecte, historisation, visualisation et alertes ciblées selon architecture.</p></div>
+<div class="case-box"><span>RÉSULTAT VISÉ</span><p>Mieux comprendre les tendances et faciliter les décisions techniques.</p></div>
 </div>
-
-<h3>
-Gaming room
-</h3>
-
-<p>
-
-Réseau performant,
-poste informatique,
-écrans,
-éclairage dynamique,
-rangement
-et intégration sur mesure.
-
-</p>
-
-<div class="tags">
-
-<span class="tag">Gaming</span>
-<span class="tag">Réseau</span>
-<span class="tag">PC</span>
-<span class="tag">LED</span>
-
-</div>
-
-</div>
-
+<div class="tech"><span>KPI</span><span>Historisation</span><span>Supervision</span><span>Tendances</span></div>
 </article>
 
-
-<article
-class="project reveal"
-data-category="data">
-
-<img
-src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1800"
-alt="Tableau de bord et supervision">
-
-<div class="project-content">
-
-<div class="project-category">
-DATA // SUPERVISION
 </div>
-
-<h3>
-Tableau de bord technique
-</h3>
-
-<p>
-
-Collecter les informations utiles
-et les transformer
-en états,
-graphiques,
-KPI
-et historique exploitable.
-
-</p>
-
-<div class="tags">
-
-<span class="tag">KPI</span>
-<span class="tag">Historisation</span>
-<span class="tag">Supervision</span>
-<span class="tag">Alertes</span>
-
 </div>
-
-</div>
-
-</article>
-
-
-<article
-class="project reveal"
-data-category="data">
-
-<img
-src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1800"
-alt="Électronique, capteurs et acquisition de données">
-
-<div class="project-content">
-
-<div class="project-category">
-DATA // ACQUISITION
-</div>
-
-<h3>
-Réseau technique dédié
-</h3>
-
-<p>
-
-Créer une architecture dédiée
-pour capteurs,
-collecte,
-historisation
-et supervision,
-séparée de l’informatique classique lorsque nécessaire.
-
-</p>
-
-<div class="tags">
-
-<span class="tag">Capteurs</span>
-<span class="tag">Réseau</span>
-<span class="tag">Data</span>
-<span class="tag">Architecture</span>
-
-</div>
-
-</div>
-
-</article>
-
-
-</div>
-
-</div>
-
 </section>
-
 
 <section class="section">
-
 <div class="container">
-
 <div class="reveal">
-
-<div class="kicker">
-
-MÉTHODE ACTYROM
-
+<div class="kicker">FUTURES ÉTUDES DE CAS</div>
+<h2 class="section-title">Ce que nous publierons<span class="green">sur les vrais projets.</span></h2>
 </div>
-
-<h2 class="section-title">
-
-Du problème
-
-<span class="green">
-au résultat.
-</span>
-
-</h2>
-
-</div>
-
-
-<div class="method-grid reveal">
-
-
-<div class="method">
-
-<div class="method-num">
-01 // BESOIN
-</div>
-
-<h3>
-Comprendre
-</h3>
-
-<p>
-
-Définir le problème,
-l’objectif
-et les contraintes réelles.
-
-</p>
-
-</div>
-
-
-<div class="method">
-
-<div class="method-num">
-02 // ANALYSE
-</div>
-
-<h3>
-Étudier
-</h3>
-
-<p>
-
-Observer l’existant
-et rechercher
-les solutions possibles.
-
-</p>
-
-</div>
-
-
-<div class="method">
-
-<div class="method-num">
-03 // SOLUTION
-</div>
-
-<h3>
-Concevoir
-</h3>
-
-<p>
-
-Choisir une réponse
-adaptée,
-maintenable
-et évolutive.
-
-</p>
-
-</div>
-
-
-<div class="method">
-
-<div class="method-num">
-04 // RÉSULTAT
-</div>
-
-<h3>
-Réaliser
-</h3>
-
-<p>
-
-Mettre en œuvre,
-tester,
-documenter
-et accompagner.
-
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="section section-dark">
-
-<div class="container case">
-
-
-<div class="case-visual reveal">
-
-<img
-src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=1800"
-alt="Concept d'aménagement technique pour habitat">
-
-<div class="case-caption">
-
-<span>
-EXEMPLE // CONCEPT HABITAT
-</span>
-
-<strong>
-Mur TV connecté et intégré
-</strong>
-
-</div>
-
-</div>
-
-
-<div class="case-content reveal">
-
-<div class="kicker">
-
-EXEMPLE DE DÉMARCHE
-
-</div>
-
-<h2 class="section-title">
-
-Un projet,
-
-<span class="green">
-plusieurs compétences.
-</span>
-
-</h2>
-
-
-<div class="case-step">
-
-<span>
-01 // BESOIN
-</span>
-
-<strong>
-Créer un mur TV propre et intégré
-</strong>
-
-<p>
-
-Éviter les câbles visibles
-et intégrer les équipements
-dans la pièce.
-
-</p>
-
-</div>
-
-
-<div class="case-step">
-
-<span>
-02 // ANALYSE
-</span>
-
-<strong>
-Étudier l’espace et les usages
-</strong>
-
-<p>
-
-Position de l’écran,
-réseau,
-électricité,
-multimédia,
-éclairage
-et évolution future.
-
-</p>
-
-</div>
-
-
-<div class="case-step">
-
-<span>
-03 // SOLUTION
-</span>
-
-<strong>
-Associer technique et agencement
-</strong>
-
-<p>
-
-Structure,
-niches,
-câblage,
-Ethernet,
-LED
-et commandes.
-
-</p>
-
-</div>
-
-
-<div class="case-step">
-
-<span>
-04 // RÉALISATION
-</span>
-
-<strong>
-Mobiliser les compétences adaptées
-</strong>
-
-<p>
-
-Actyrom pour la partie technique
-et professionnels partenaires
-pour les métiers complémentaires lorsque nécessaire.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="section">
-
-<div class="container">
-
-<div class="reveal">
-
-<div class="kicker">
-
-DEMAIN
-
-</div>
-
-<h2 class="section-title">
-
-Cette page évoluera
-
-<span class="green">
-avec Actyrom.
-</span>
-
-</h2>
-
-<p class="section-intro">
-
-À mesure que les projets seront réalisés,
-cette page pourra devenir
-une véritable bibliothèque
-de retours d’expérience.
-
-</p>
-
-</div>
-
-
-<div class="future-grid">
-
-
 <div class="future reveal">
-
-<h3>
-Photos avant / après
-</h3>
-
-<p>
-
-Montrer concrètement
-la transformation
-d’une installation ou d’un espace.
-
-</p>
-
+<div class="future-item"><h3>Photos avant / après</h3><p>Lorsque leur publication est autorisée.</p></div>
+<div class="future-item"><h3>Contexte</h3><p>Le problème réel, sans exposer d’informations confidentielles.</p></div>
+<div class="future-item"><h3>Solution</h3><p>La logique technique et les compétences mobilisées.</p></div>
+<div class="future-item"><h3>Résultat</h3><p>Effets mesurables ou bénéfices observables lorsque disponibles.</p></div>
 </div>
-
-
-<div class="future reveal">
-
-<h3>
-Problème → solution
-</h3>
-
-<p>
-
-Présenter le besoin initial,
-l’analyse
-et la solution retenue.
-
-</p>
-
+<div class="actions reveal">
+<a href="devis-express.html" class="btn btn-primary">Présenter mon projet</a>
+<a href="boutique.html" class="btn btn-secondary">Voir la boutique</a>
 </div>
-
-
-<div class="future reveal">
-
-<h3>
-Résultats mesurables
-</h3>
-
-<p>
-
-Lorsque possible :
-fiabilité,
-temps gagné,
-visibilité,
-confort
-ou amélioration technique.
-
-</p>
-
 </div>
-
-
-</div>
-
-</div>
-
 </section>
-
-
-<section class="section section-dark">
-
-<div class="container">
-
-<div class="cta reveal">
-
-<div class="kicker">
-
-VOTRE PROJET
-
-</div>
-
-<h2>
-
-Vous avez une idée
-qui ne rentre pas
-dans une case ?
-
-<span class="green">
-C’est justement intéressant.
-</span>
-
-</h2>
-
-<p>
-
-Présentez votre besoin,
-vos contraintes
-et ce que vous aimeriez obtenir.
-
-Actyrom étudiera
-la manière de transformer l’idée
-en solution technique concrète.
-
-</p>
-
-
-<div class="actions">
-
-<a
-href="contact.html"
-class="btn btn-primary">
-
-Parler de votre projet
-
-</a>
-
-<a
-href="qui-sommes-nous.html"
-class="btn btn-secondary">
-
-Découvrir notre expertise
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
 </main>
 
-
 <footer>
-
 <div class="container footer">
-
-<div>
-
-© 2026 Actyrom Consulting
-— Des solutions pour demain
-
-</div>
-
+<div>© 2026 Actyrom Consulting — Des solutions pour demain</div>
 <div class="footer-links">
-
-<a href="index.html">Accueil</a>
-
+<a href="devis-express.html">Devis express</a>
+<a href="depannage.html">Dépannage</a>
 <a href="realisations.html">Réalisations</a>
-
-<a href="mentions-legales.html">
-Mentions légales
-</a>
-
+<a href="boutique.html">Boutique</a>
+<a href="mentions-legales.html">Mentions légales</a>
 <a href="contact.html">Contact</a>
-
 </div>
-
 </div>
-
 </footer>
-
 
 <script>
 
-/* MENU MOBILE */
-
-const menuBtn =
-document.getElementById("menuBtn");
-
-const navLinks =
-document.getElementById("navLinks");
-
-menuBtn.addEventListener(
-"click",
-() => {
-
-  const open =
-  navLinks.classList.toggle("open");
-
-  menuBtn.setAttribute(
-    "aria-expanded",
-    open ? "true" : "false"
-  );
-
-}
-);
-
-document
-.querySelectorAll(".nav-links a")
-.forEach(
-link => {
-
-  link.addEventListener(
-  "click",
-  () => {
-
+const menuBtn=document.getElementById("menuBtn");
+const navLinks=document.getElementById("navLinks");
+menuBtn.addEventListener("click",()=>{
+  const opened=navLinks.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded",opened?"true":"false");
+});
+document.querySelectorAll(".nav-links a").forEach(link=>{
+  link.addEventListener("click",()=>{
     navLinks.classList.remove("open");
-
-    menuBtn.setAttribute(
-      "aria-expanded",
-      "false"
-    );
-
-  }
-  );
-
-}
-);
-
-
-/* REVEAL */
-
-const observer =
-new IntersectionObserver(
-
-(entries) => {
-
-  entries.forEach(
-  entry => {
-
-    if(entry.isIntersecting){
-
-      entry.target.classList.add(
-        "visible"
-      );
-
-      observer.unobserve(
-        entry.target
-      );
-
-    }
-
+    menuBtn.setAttribute("aria-expanded","false");
   });
+});
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+},{threshold:.10});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 
-},
-
-{
-  threshold:.12
-}
-
-);
-
-document
-.querySelectorAll(".reveal")
-.forEach(
-el => observer.observe(el)
-);
-
-
-/* FILTER */
-
-const filterButtons =
-document.querySelectorAll(
-".filter-btn"
-);
-
-const projects =
-document.querySelectorAll(
-".project"
-);
-
-filterButtons.forEach(
-button => {
-
-  button.addEventListener(
-  "click",
-  () => {
-
-    filterButtons.forEach(
-    btn => btn.classList.remove(
-      "active"
-    )
-    );
-
-    button.classList.add(
-      "active"
-    );
-
-    const filter =
-    button.dataset.filter;
-
-    projects.forEach(
-    project => {
-
-      const category =
-      project.dataset.category;
-
-      if(
-        filter === "all"
-        ||
-        category === filter
-      ){
-
-        project.style.display =
-        "block";
-
-      }else{
-
-        project.style.display =
-        "none";
-
-      }
-
+const filterButtons=document.querySelectorAll(".filter-btn");
+const projects=document.querySelectorAll(".project");
+filterButtons.forEach(button=>{
+  button.addEventListener("click",()=>{
+    filterButtons.forEach(btn=>btn.classList.remove("active"));
+    button.classList.add("active");
+    const filter=button.dataset.filter;
+    projects.forEach(project=>{
+      project.style.display=(filter==="all"||project.dataset.category===filter)?"block":"none";
     });
-
-  }
-  );
-
-}
-);
-
+  });
+});
 </script>
-
 </body>
-
 </html>
