@@ -2006,6 +2006,438 @@ footer{
 
 }
 
+
+
+/* =========================================================
+   COMMERCIAL CONVERSION LAYER
+========================================================= */
+
+.action-bar{
+  border-top:1px solid rgba(255,255,255,.055);
+  background:rgba(3,11,7,.94);
+}
+
+.action-bar-inner{
+  min-height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.action-bar a{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:7px 12px;
+  border-radius:999px;
+  color:#dce6df;
+  font-size:.73rem;
+  font-weight:800;
+  transition:.2s ease;
+}
+
+.action-bar a:hover{
+  color:#081d08;
+  background:var(--green);
+}
+
+.action-bar a.primary{
+  color:#081d08;
+  background:linear-gradient(180deg,var(--green-2),var(--green));
+}
+
+.hero-actions-commercial{
+  margin-top:29px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.btn-emergency{
+  border-color:rgba(137,239,63,.58);
+  background:rgba(137,239,63,.09);
+  color:var(--green-2);
+}
+
+.btn-emergency:hover{
+  border-color:var(--green);
+  background:rgba(137,239,63,.15);
+}
+
+.hero-reassurance{
+  margin-top:20px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.hero-reassurance span{
+  padding:7px 10px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:999px;
+  background:rgba(4,14,8,.45);
+  color:#cbd7cd;
+  font-size:.7rem;
+}
+
+.commercial-hub{
+  padding:46px 0 70px;
+  background:
+    radial-gradient(circle at 15% 0%,rgba(137,239,63,.07),transparent 28%),
+    #030b07;
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+
+.commercial-hub-head{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.commercial-hub-head p{
+  max-width:610px;
+  color:var(--muted);
+}
+
+.commercial-grid{
+  margin-top:28px;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:13px;
+}
+
+.commercial-card{
+  position:relative;
+  min-height:250px;
+  display:flex;
+  flex-direction:column;
+  padding:24px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:19px;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(137,239,63,.075),transparent 38%),
+    #07130d;
+  transition:.24s ease;
+}
+
+.commercial-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(137,239,63,.40);
+  box-shadow:0 18px 45px rgba(0,0,0,.18);
+}
+
+.commercial-card-code{
+  color:var(--green-2);
+  font-family:"Courier New",Consolas,monospace;
+  font-size:.65rem;
+  letter-spacing:2px;
+}
+
+.commercial-card h3{
+  margin-top:14px;
+  font-size:1.25rem;
+  line-height:1.15;
+}
+
+.commercial-card p{
+  margin-top:10px;
+  color:var(--muted);
+  font-size:.82rem;
+}
+
+.commercial-card strong{
+  margin-top:auto;
+  padding-top:20px;
+  color:var(--green-2);
+  font-size:.79rem;
+}
+
+.commercial-card.featured{
+  border-color:rgba(137,239,63,.40);
+  background:
+    radial-gradient(circle at 100% 0%,rgba(137,239,63,.12),transparent 40%),
+    #08180f;
+}
+
+.value-section{
+  padding:82px 0;
+  background:
+    linear-gradient(180deg,rgba(2,8,5,.40),rgba(4,13,8,.25));
+}
+
+.value-grid{
+  margin-top:36px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:13px;
+}
+
+.value-card{
+  padding:24px;
+  border-left:2px solid rgba(137,239,63,.38);
+  background:rgba(7,19,13,.58);
+}
+
+.value-card span{
+  color:var(--green-2);
+  font-family:"Courier New",Consolas,monospace;
+  font-size:.66rem;
+  letter-spacing:2px;
+}
+
+.value-card h3{
+  margin-top:10px;
+  font-size:1.05rem;
+}
+
+.value-card p{
+  margin-top:8px;
+  color:var(--muted);
+  font-size:.8rem;
+}
+
+.customer-path{
+  padding:84px 0;
+  border-top:1px solid rgba(255,255,255,.07);
+  border-bottom:1px solid rgba(255,255,255,.07);
+  background:#020905;
+}
+
+.path-grid{
+  margin-top:36px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--line-green);
+  border-radius:22px;
+  overflow:hidden;
+}
+
+.path-step{
+  min-height:205px;
+  padding:25px;
+  background:#07150e;
+  border-right:1px solid rgba(255,255,255,.08);
+}
+
+.path-step:last-child{
+  border-right:0;
+}
+
+.path-num{
+  color:var(--green-2);
+  font-family:"Courier New",Consolas,monospace;
+  font-size:.68rem;
+  letter-spacing:2px;
+}
+
+.path-step h3{
+  margin-top:12px;
+  font-size:1.08rem;
+}
+
+.path-step p{
+  margin-top:8px;
+  color:var(--muted);
+  font-size:.8rem;
+}
+
+.atypical-box{
+  margin-top:42px;
+  padding:36px;
+  display:grid;
+  grid-template-columns:1.2fr auto;
+  gap:30px;
+  align-items:center;
+  border:1px solid rgba(137,239,63,.30);
+  border-radius:22px;
+  background:
+    radial-gradient(circle at 92% 15%,rgba(137,239,63,.12),transparent 28%),
+    #07150e;
+}
+
+.atypical-box h3{
+  font-size:clamp(1.8rem,3vw,2.8rem);
+  line-height:1;
+  letter-spacing:-1.5px;
+}
+
+.atypical-box p{
+  max-width:720px;
+  margin-top:13px;
+  color:var(--muted);
+}
+
+.final-commercial{
+  padding:84px 0;
+  background:
+    radial-gradient(circle at 80% 10%,rgba(137,239,63,.11),transparent 30%),
+    #030b07;
+}
+
+.final-commercial-box{
+  padding:48px;
+  border:1px solid var(--line-green);
+  border-radius:28px;
+  background:linear-gradient(135deg,#0a2115,#06120c);
+}
+
+.final-commercial-box h2{
+  max-width:900px;
+  font-size:clamp(2.7rem,5.3vw,5rem);
+  line-height:.96;
+  letter-spacing:-3px;
+}
+
+.final-commercial-box p{
+  max-width:780px;
+  margin-top:18px;
+  color:#bdc9c0;
+}
+
+.final-options{
+  margin-top:28px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:11px;
+}
+
+.final-option{
+  min-height:78px;
+  padding:15px 17px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  border:1px solid rgba(255,255,255,.11);
+  border-radius:14px;
+  background:rgba(2,9,5,.32);
+  transition:.22s ease;
+}
+
+.final-option:hover{
+  transform:translateY(-2px);
+  border-color:var(--green);
+}
+
+.final-option strong{
+  font-size:.88rem;
+}
+
+.final-option span{
+  margin-top:3px;
+  color:var(--muted);
+  font-size:.72rem;
+}
+
+.mobile-conversion-dock{
+  display:none;
+}
+
+@media(max-width:1050px){
+  .commercial-grid,
+  .value-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .path-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .path-step{
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+
+  .atypical-box{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:720px){
+  .action-bar{
+    overflow-x:auto;
+  }
+
+  .action-bar-inner{
+    width:max-content;
+    min-width:100%;
+    padding:0 3%;
+    justify-content:flex-start;
+    flex-wrap:nowrap;
+  }
+
+  .action-bar a{
+    white-space:nowrap;
+  }
+
+  .hero-actions-commercial{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
+  .commercial-hub-head{
+    display:block;
+  }
+
+  .commercial-grid,
+  .value-grid,
+  .path-grid,
+  .final-options{
+    grid-template-columns:1fr;
+  }
+
+  .path-step{
+    border-right:0;
+  }
+
+  .atypical-box,
+  .final-commercial-box{
+    padding:28px 22px;
+  }
+
+  .mobile-conversion-dock{
+    position:fixed;
+    z-index:1800;
+    left:10px;
+    right:10px;
+    bottom:10px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:7px;
+    padding:7px;
+    border:1px solid rgba(137,239,63,.22);
+    border-radius:15px;
+    background:rgba(3,11,7,.94);
+    backdrop-filter:blur(14px);
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+  }
+
+  .mobile-conversion-dock a{
+    min-height:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    font-size:.76rem;
+    font-weight:900;
+  }
+
+  .mobile-conversion-dock a:first-child{
+    background:linear-gradient(180deg,var(--green-2),var(--green));
+    color:#082008;
+  }
+
+  .mobile-conversion-dock a:last-child{
+    border:1px solid rgba(255,255,255,.14);
+    color:#eef4ef;
+  }
+
+  body{
+    padding-bottom:72px;
+  }
+}
+
 </style>
 <!-- ACTYROM BRANDING ACCUEIL -->
 
@@ -2179,6 +2611,29 @@ CONNEXION
 
 </div>
 
+
+<div class="action-bar">
+<div class="container action-bar-inner">
+
+<a href="depannage.html" class="primary">
+⚡ J’ai une panne
+</a>
+
+<a href="devis-express.html">
+Obtenir une estimation
+</a>
+
+<a href="boutique.html">
+Voir les tarifs
+</a>
+
+<a href="realisations.html">
+Voir les projets
+</a>
+
+</div>
+</div>
+
 </header>
 
 
@@ -2262,26 +2717,41 @@ sur mesure.
 </p>
 
 
-<div class="hero-actions">
-
+<div class="hero-actions-commercial">
 
 <a
-href="contact.html"
+href="devis-express.html"
 class="btn btn-primary">
 
-Parler de votre projet
+Obtenir une estimation
 
 </a>
-
 
 <a
-href="#domaines"
-class="btn btn-secondary">
+href="depannage.html"
+class="btn btn-secondary btn-emergency">
 
-Découvrir nos domaines
+J’ai une panne
 
 </a>
 
+<a
+href="boutique.html"
+class="btn btn-secondary">
+
+Voir les tarifs
+
+</a>
+
+</div>
+
+
+<div class="hero-reassurance">
+
+<span>Tarifs de lancement</span>
+<span>Demande sans engagement</span>
+<span>Industrie • Pro • Habitat</span>
+<span>Normandie • déplacements selon mission</span>
 
 </div>
 
@@ -2315,6 +2785,151 @@ POUR DES SOLUTIONS DURABLES
 
 </div>
 
+
+</section>
+
+
+<!-- =========================================================
+     COMMERCIAL HUB
+========================================================= -->
+
+<section class="commercial-hub">
+
+<div class="container">
+
+<div class="commercial-hub-head reveal">
+
+<div>
+
+<div class="kicker">
+QUE POUVONS-NOUS FAIRE POUR VOUS ?
+</div>
+
+<h2 class="section-title">
+Allez directement
+<span class="green">
+à votre besoin.
+</span>
+</h2>
+
+</div>
+
+<p>
+Pas besoin de connaître la solution avant de nous contacter.
+Choisissez simplement votre situation :
+Actyrom vous oriente vers le bon parcours.
+</p>
+
+</div>
+
+
+<div class="commercial-grid">
+
+<a href="depannage.html" class="commercial-card featured reveal">
+
+<div class="commercial-card-code">
+01 // PANNE
+</div>
+
+<h3>
+J’ai un problème technique
+</h3>
+
+<p>
+Machine,
+équipement professionnel,
+réseau,
+informatique
+ou habitat connecté :
+commencez par décrire les symptômes.
+</p>
+
+<strong>
+Accéder au dépannage →
+</strong>
+
+</a>
+
+
+<a href="devis-express.html" class="commercial-card reveal">
+
+<div class="commercial-card-code">
+02 // PROJET
+</div>
+
+<h3>
+Je veux une estimation
+</h3>
+
+<p>
+Indiquez le domaine,
+le besoin,
+l’urgence
+et les informations utiles
+dans un formulaire rapide.
+</p>
+
+<strong>
+Demande de devis express →
+</strong>
+
+</a>
+
+
+<a href="boutique.html" class="commercial-card reveal">
+
+<div class="commercial-card-code">
+03 // TARIFS
+</div>
+
+<h3>
+Je veux voir les prix
+</h3>
+
+<p>
+Sites web,
+informatique,
+réseau,
+habitat connecté
+et services professionnels
+avec tarifs de lancement.
+</p>
+
+<strong>
+Ouvrir la boutique →
+</strong>
+
+</a>
+
+
+<a href="realisations.html" class="commercial-card reveal">
+
+<div class="commercial-card-code">
+04 // EXEMPLES
+</div>
+
+<h3>
+Je veux voir la méthode
+</h3>
+
+<p>
+Découvrez comment Actyrom structure
+un besoin :
+avant,
+analyse,
+solution
+et résultat recherché.
+</p>
+
+<strong>
+Voir les projets →
+</strong>
+
+</a>
+
+</div>
+
+</div>
 
 </section>
 
@@ -3265,9 +3880,9 @@ Voir la boutique Actyrom
 </a>
 
 <a
-href="contact.html"
+href="devis-express.html"
 class="btn btn-secondary">
-Demander un devis
+Obtenir une estimation
 </a>
 
 </div>
@@ -3284,6 +3899,210 @@ et services tiers sont précisés avant validation.
 </div>
 
 </section>
+
+
+
+
+<!-- =========================================================
+     VALEUR COMMERCIALE
+========================================================= -->
+
+<section class="value-section">
+
+<div class="container">
+
+<div class="reveal">
+
+<div class="kicker">
+POURQUOI ACTYROM ?
+</div>
+
+<h2 class="section-title">
+Une réponse technique
+<span class="green">
+avant une vente.
+</span>
+</h2>
+
+<p class="section-intro">
+L’objectif n’est pas de pousser un produit,
+mais de comprendre le besoin,
+identifier la solution pertinente
+et rendre le projet lisible.
+</p>
+
+</div>
+
+
+<div class="value-grid">
+
+<article class="value-card reveal">
+<span>01 // ANALYSE</span>
+<h3>Comprendre avant de remplacer</h3>
+<p>
+Lorsqu’un diagnostic est possible,
+la recherche de cause précède
+le remplacement systématique.
+</p>
+</article>
+
+<article class="value-card reveal">
+<span>02 // LISIBILITÉ</span>
+<h3>Des tarifs visibles quand c’est possible</h3>
+<p>
+Les prestations standardisables
+affichent un prix de départ.
+Les projets complexes restent étudiés sur devis.
+</p>
+</article>
+
+<article class="value-card reveal">
+<span>03 // TRANSVERSAL</span>
+<h3>Plusieurs compétences, un même projet</h3>
+<p>
+Technique,
+réseau,
+informatique,
+data,
+habitat
+ou partenaires complémentaires
+peuvent être coordonnés selon le besoin.
+</p>
+</article>
+
+<article class="value-card reveal">
+<span>04 // MÉTHODE</span>
+<h3>Une suite claire</h3>
+<p>
+Besoin,
+analyse,
+proposition,
+intervention
+et historique :
+chaque étape doit rester compréhensible.
+</p>
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     PARCOURS CLIENT
+========================================================= -->
+
+<section class="customer-path">
+
+<div class="container">
+
+<div class="reveal">
+
+<div class="kicker">
+DU PREMIER CONTACT À LA SOLUTION
+</div>
+
+<h2 class="section-title">
+Un parcours
+<span class="green">
+simple et concret.
+</span>
+</h2>
+
+</div>
+
+
+<div class="path-grid reveal">
+
+<article class="path-step">
+<div class="path-num">01 // BESOIN</div>
+<h3>Vous expliquez</h3>
+<p>
+Panne,
+projet,
+amélioration
+ou idée :
+vous donnez les informations disponibles.
+</p>
+</article>
+
+<article class="path-step">
+<div class="path-num">02 // ANALYSE</div>
+<h3>Actyrom qualifie</h3>
+<p>
+Le besoin est clarifié,
+le périmètre est défini
+et les contraintes utiles sont identifiées.
+</p>
+</article>
+
+<article class="path-step">
+<div class="path-num">03 // PROPOSITION</div>
+<h3>La solution devient lisible</h3>
+<p>
+Tarif de départ,
+devis
+ou étude complémentaire
+selon la complexité réelle.
+</p>
+</article>
+
+<article class="path-step">
+<div class="path-num">04 // ACTION</div>
+<h3>On passe au concret</h3>
+<p>
+Préparation,
+intervention,
+compte rendu
+et suite du projet
+selon la prestation retenue.
+</p>
+</article>
+
+</div>
+
+
+<div class="atypical-box reveal">
+
+<div>
+
+<div class="kicker">
+PROJET ATYPIQUE ?
+</div>
+
+<h3>
+Votre besoin ne rentre dans aucune case ?
+</h3>
+
+<p>
+C’est précisément là qu’une approche transversale peut être utile.
+Présentez le problème :
+Actyrom étudie comment combiner
+technique,
+réseau,
+informatique,
+automatisation,
+data,
+habitat
+ou compétences partenaires.
+</p>
+
+</div>
+
+<a
+href="devis-express.html"
+class="btn btn-primary">
+Présenter mon besoin
+</a>
+
+</div>
+
+</div>
+
+</section>
+
 
 
 <!-- =========================================================
@@ -3544,74 +4363,71 @@ Maintenance prédictive
 
 
 <!-- =========================================================
-     CTA
+     FINAL COMMERCIAL
 ========================================================= -->
 
-<section class="section section-dark">
-
+<section class="final-commercial">
 
 <div class="container">
 
-
-<div class="cta reveal">
-
+<div class="final-commercial-box reveal">
 
 <div class="kicker">
-
-VOTRE PROJET
-
+ON COMMENCE PAR QUOI ?
 </div>
 
-
 <h2>
-
-Un besoin,
-une idée,
-un problème technique ?
-
+Un problème,
+un projet
+ou simplement une idée ?
 <span class="green">
-
-Parlons de votre projet.
-
+Choisissez votre prochaine action.
 </span>
-
 </h2>
 
-
 <p>
-
-Industrie,
-habitat,
-expertise
-ou supervision :
-
-présentez votre situation
-et construisons une réponse
-adaptée à votre besoin réel.
-
+Vous n’avez pas besoin de préparer un cahier des charges complet.
+Commencez par le niveau d’information que vous avez aujourd’hui.
 </p>
 
+<div class="final-options">
+
+<a href="depannage.html" class="final-option">
+<strong>⚡ J’ai une panne</strong>
+<span>Diagnostic & intervention technique</span>
+</a>
+
+<a href="devis-express.html" class="final-option">
+<strong>Obtenir une estimation</strong>
+<span>Décrire le besoin en quelques étapes</span>
+</a>
+
+<a href="boutique.html" class="final-option">
+<strong>Voir les tarifs</strong>
+<span>Prestations standardisées & packs</span>
+</a>
+
+</div>
 
 <div class="hero-actions">
 
-
 <a
 class="btn btn-primary"
-href="contact.html">
-
-Parler de votre projet
-
+href="devis-express.html">
+Démarrer ma demande
 </a>
 
+<a
+class="btn btn-secondary"
+href="contact.html">
+Simplement nous contacter
+</a>
 
 </div>
 
-
 </div>
 
-
 </div>
-
 
 </section>
 
@@ -3682,6 +4498,20 @@ Contact
 <!-- =========================================================
      JAVASCRIPT
 ========================================================= -->
+
+
+<div class="mobile-conversion-dock" aria-label="Accès rapides">
+
+<a href="devis-express.html">
+DEVIS EXPRESS
+</a>
+
+<a href="depannage.html">
+J’AI UNE PANNE
+</a>
+
+</div>
+
 
 <script>
 
