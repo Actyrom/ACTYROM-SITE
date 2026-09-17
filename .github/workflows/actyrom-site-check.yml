@@ -1,0 +1,56 @@
+name: Actyrom Site Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  site-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f index.html
+          test -f robots.txt
+          test -f sitemap.xml
+          test -f assets/style.css
+          test -f assets/app.js
+
+      - name: Detect obvious broken local HTML links
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          root = Path(".")
+          pages = list(root.glob("*.html"))
+          missing = []
+
+          for page in pages:
+              text = page.read_text(encoding="utf-8", errors="ignore")
+              for href in re.findall(r'href=["\']([^"\']+)["\']', text):
+                  if href.startswith(("http://","https://","mailto:","tel:","#","javascript:")):
+                      continue
+                  target = href.split("#",1)[0].split("?",1)[0]
+                  if not target:
+                      continue
+                  if not (root / target).exists():
+                      missing.append(f"{page}: {href}")
+
+          if missing:
+              print("\n".join(missing))
+              raise SystemExit("Broken local links detected")
+
+          print(f"Checked {len(pages)} HTML pages: no obvious broken local links.")
