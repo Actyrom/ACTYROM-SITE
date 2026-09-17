@@ -3,470 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Réalisations & projets | Actyrom Consulting</title>
-<meta name="description" content="Découvrez les projets, concepts et futures réalisations Actyrom Consulting en industrie, habitat, web, réseau, data et supervision.">
+<title>Réalisations &amp; projets | Actyrom Consulting</title>
+<meta name="description" content="Découvrez des exemples de projets, concepts et applications Actyrom Consulting en industrie, habitat, réseau, data, web et logiciels.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#06130d">
 <link rel="canonical" href="https://actyrom.fr/realisations.html">
-<style>
-:root{
-  --bg:#04100a;
-  --deep:#020805;
-  --panel:#07170f;
-  --panel2:#0a1d14;
-  --line:rgba(255,255,255,.11);
-  --green-line:rgba(143,255,61,.27);
-  --text:#f5f7f4;
-  --muted:#adb8b0;
-  --soft:#7d8d82;
-  --green:#89ef3f;
-  --green2:#b3ff67;
-  --warning:#ffd66b;
-  --danger:#ff8e75;
-  --max:1180px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:
-    radial-gradient(circle at 85% 3%,rgba(55,150,65,.12),transparent 27%),
-    linear-gradient(180deg,#06110c,#030a06 58%,#020704);
-  color:var(--text);
-  line-height:1.62;
-  overflow-x:hidden;
-}
-a{color:inherit;text-decoration:none}
-button,input,select,textarea{font:inherit}
-button{cursor:pointer}
-.container{width:min(var(--max),92%);margin:auto}
-.green{color:var(--green)}
-.kicker{
-  color:var(--green2);
-  text-transform:uppercase;
-  font-size:.72rem;
-  font-weight:700;
-  letter-spacing:4px;
-}
-.section-title{
-  margin-top:12px;
-  font-size:clamp(2.1rem,4vw,3.8rem);
-  line-height:1.03;
-  letter-spacing:-2px;
-}
-.section-intro{max-width:820px;margin-top:17px;color:var(--muted)}
-header{
-  position:sticky;top:0;z-index:1000;
-  background:rgba(3,11,7,.86);
-  backdrop-filter:blur(18px);
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-.nav{
-  min-height:78px;
-  display:flex;align-items:center;justify-content:space-between;gap:20px;
-}
-.brand{display:flex;align-items:baseline;gap:5px;white-space:nowrap}
-.brand-main{font-size:1.52rem;font-weight:900;letter-spacing:-1px}
-.brand-sub{color:var(--green);font-size:1.03rem;font-weight:800}
-.nav-links{
-  list-style:none;display:flex;align-items:center;gap:15px;
-  color:#dce4dd;font-size:.82rem
-}
-.nav-links a{transition:.22s ease}
-.nav-links a:hover,.nav-links .active{color:var(--green2)}
-.connection{
-  padding:10px 15px!important;
-  border:1px solid rgba(137,239,63,.45);
-  border-radius:999px;
-  background:rgba(72,150,53,.08);
-  color:#eaffdc!important;
-  font-family:"Courier New",Consolas,monospace;
-  font-weight:700;letter-spacing:1px;
-}
-.menu-btn{
-  display:none;padding:9px 12px;
-  border:1px solid rgba(255,255,255,.16);
-  border-radius:10px;background:#07130d;color:#fff
-}
-.hero{
-  position:relative;min-height:610px;display:flex;align-items:center;
-  overflow:hidden;border-bottom:1px solid rgba(255,255,255,.08)
-}
-.hero::before{
-  content:"";position:absolute;width:780px;height:780px;
-  right:-260px;top:-330px;border-radius:50%;
-  background:radial-gradient(circle,rgba(137,239,63,.18),rgba(55,159,62,.05) 40%,transparent 70%);
-  animation:halo 10s ease-in-out infinite alternate;
-}
-.hero::after{
-  content:"";position:absolute;inset:0;
-  background:linear-gradient(90deg,rgba(2,8,5,.98),rgba(3,12,7,.88) 58%,rgba(3,13,8,.56));
-  pointer-events:none;
-}
-@keyframes halo{
-  from{transform:translate(-18px,12px) scale(.97)}
-  to{transform:translate(20px,-10px) scale(1.05)}
-}
-.hero-content{position:relative;z-index:2;max-width:960px;padding:100px 0 82px}
-.hero-label{
-  display:inline-flex;align-items:center;gap:12px;color:#dfe7df;
-  text-transform:uppercase;letter-spacing:4px;font-size:.72rem
-}
-.hero-label::before{
-  content:"";width:40px;height:2px;background:var(--green);
-  box-shadow:0 0 14px rgba(137,239,63,.55)
-}
-.hero h1{
-  margin-top:23px;font-size:clamp(4rem,8vw,7.1rem);
-  line-height:.87;letter-spacing:-5px
-}
-.hero h1 span{display:block;color:var(--green)}
-.hero-text{max-width:800px;margin-top:26px;color:#d2ddd5;font-size:1.05rem}
-.actions{margin-top:29px;display:flex;gap:11px;flex-wrap:wrap}
-.btn{
-  min-height:50px;display:inline-flex;align-items:center;justify-content:center;
-  padding:0 22px;border-radius:12px;border:1px solid transparent;
-  font-weight:800;transition:.25s ease
-}
-.btn-primary{background:linear-gradient(180deg,var(--green2),var(--green));color:#092008}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(100,230,70,.18)}
-.btn-secondary{border-color:rgba(255,255,255,.18);background:rgba(3,10,6,.45);color:#eef4ef}
-.btn-secondary:hover{border-color:var(--green);color:var(--green2)}
-.status{
-  margin-top:24px;display:inline-flex;align-items:center;gap:10px;
-  color:var(--green2);font-family:"Courier New",Consolas,monospace;
-  font-size:.72rem;letter-spacing:1px
-}
-.status-dot{
-  width:12px;height:12px;border-radius:50%;background:#78f452;
-  box-shadow:0 0 7px #78f452,0 0 20px rgba(120,244,82,.55)
-}
-.section{padding:84px 0}
-.section-dark{
-  background:rgba(2,8,5,.50);
-  border-top:1px solid rgba(255,255,255,.07);
-  border-bottom:1px solid rgba(255,255,255,.07)
-}
-.notice{
-  padding:24px 27px;border:1px solid var(--green-line);border-radius:18px;
-  background:radial-gradient(circle at 100% 0%,rgba(137,239,63,.08),transparent 35%),#07150e
-}
-.notice p{color:var(--muted)}
-.notice strong{color:var(--green2)}
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-footer{
-  padding:32px 0;border-top:1px solid rgba(255,255,255,.08);
-  color:#718077;font-size:.79rem
-}
-.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.footer-links{display:flex;gap:14px;flex-wrap:wrap}
-.footer a:hover{color:var(--green2)}
-@media(max-width:1080px){
-  .nav-links{gap:10px;font-size:.77rem}
-}
-@media(max-width:860px){
-  .menu-btn{display:block}
-  .nav{min-height:68px}
-  .nav-links{
-    display:none;position:absolute;top:68px;left:0;right:0;
-    padding:14px 4% 18px;background:rgba(3,11,7,.98);
-    border-bottom:1px solid rgba(255,255,255,.10);
-    flex-direction:column;align-items:stretch;gap:3px
-  }
-  .nav-links.open{display:flex}
-  .nav-links a{display:block;padding:9px 0}
-  .connection{text-align:center}
-}
-@media(max-width:620px){
-  .container{width:94%}
-  .brand-main{font-size:1.18rem}
-  .brand-sub{font-size:.88rem}
-  .hero{min-height:auto}
-  .hero-content{padding:74px 0 62px}
-  .hero h1{font-size:3.55rem;letter-spacing:-3px}
-  .hero-text{font-size:.94rem}
-  .actions{display:grid;grid-template-columns:1fr}
-  .btn{width:100%}
-  .section{padding:62px 0}
-  .section-title{font-size:2.15rem;letter-spacing:-1px}
-  .footer{display:block;text-align:center}
-  .footer-links{justify-content:center;margin-top:10px}
-}
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important}
-  .reveal{opacity:1!important;transform:none!important}
-}
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="assets/style.css">
+<meta property="og:site_name" content="Actyrom Consulting">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Réalisations &amp; projets | Actyrom Consulting">
+<meta property="og:description" content="Découvrez des exemples de projets, concepts et applications Actyrom Consulting en industrie, habitat, réseau, data, web et logiciels.">
+<meta property="og:url" content="https://actyrom.fr/realisations.html">
+<meta property="og:image" content="https://actyrom.fr/og-actyrom.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Réalisations &amp; projets | Actyrom Consulting">
+<meta name="twitter:description" content="Découvrez des exemples de projets, concepts et applications Actyrom Consulting en industrie, habitat, réseau, data, web et logiciels.">
+<meta name="twitter:image" content="https://actyrom.fr/og-actyrom.png">
 
-.filters{margin-top:30px;display:flex;flex-wrap:wrap;gap:8px}
-.filter-btn{
-  padding:9px 13px;border:1px solid rgba(255,255,255,.11);border-radius:999px;
-  background:#07130d;color:#dce4dd
-}
-.filter-btn:hover,.filter-btn.active{background:var(--green);border-color:var(--green);color:#092008}
-.projects{
-  margin-top:32px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px
-}
-.project{
-  padding:29px;border:1px solid rgba(255,255,255,.10);border-radius:22px;
-  background:radial-gradient(circle at 100% 0%,rgba(137,239,63,.07),transparent 34%),#07130d
-}
-.project-meta{
-  display:flex;justify-content:space-between;gap:15px;align-items:center;
-  color:var(--green2);font-family:"Courier New",Consolas,monospace;font-size:.68rem
-}
-.project-badge{
-  padding:5px 8px;border:1px solid rgba(137,239,63,.25);border-radius:999px
-}
-.project h3{margin-top:16px;font-size:1.4rem}
-.project-intro{margin-top:9px;color:var(--muted);font-size:.86rem}
-.case-grid{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.case-box{
-  padding:14px;border:1px solid rgba(255,255,255,.08);border-radius:11px;background:#06120c
-}
-.case-box span{
-  display:block;color:var(--green2);font-family:"Courier New",Consolas,monospace;
-  font-size:.65rem;letter-spacing:1px
-}
-.case-box p{margin-top:5px;color:#d6e1d8;font-size:.78rem}
-.tech{margin-top:16px;display:flex;flex-wrap:wrap;gap:7px}
-.tech span{
-  padding:6px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.10);
-  color:#cedbd0;font-size:.68rem
-}
-.future{
-  margin-top:36px;display:grid;grid-template-columns:repeat(4,1fr);
-  border:1px solid var(--green-line);border-radius:20px;overflow:hidden
-}
-.future-item{padding:22px;background:#07150e;border-right:1px solid rgba(255,255,255,.08)}
-.future-item:last-child{border-right:0}
-.future-item h3{font-size:.95rem}
-.future-item p{margin-top:7px;color:var(--soft);font-size:.76rem}
-@media(max-width:900px){
-  .projects{grid-template-columns:1fr}
-  .future{grid-template-columns:1fr 1fr}
-}
-@media(max-width:620px){
-  .case-grid,.future{grid-template-columns:1fr}
-  .future-item{border-right:0;border-bottom:1px solid rgba(255,255,255,.08)}
-}
-</style>
 </head>
-<body>
+<body class="">
 
-<header>
-<div class="container">
-<nav class="nav">
-<a href="index.html" class="brand">
-<span class="brand-main">Actyrom</span>
-<span class="brand-sub">Consulting</span>
-</a>
-<button id="menuBtn" class="menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-<ul id="navLinks" class="nav-links">
-<li><a href="index.html">Accueil</a></li>
-<li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
-<li><a href="industrie.html">Industrie</a></li>
-<li><a href="habitat.html">Habitat</a></li>
-<li><a href="industrie40.html">Industrie 4.0</a></li>
-<li><a href="accompagnement.html">Accompagnement</a></li>
-<li><a href="boutique.html">Boutique</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="connexion.html" class="connection">CONNEXION</a></li>
-</ul>
-</nav>
-</div>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Actyrom Consulting - Accueil">
+      <span class="brand-main">Actyrom</span><span class="brand-sub">Consulting</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Accueil</a></li><li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li><li><a href="industrie.html">Industrie</a></li><li><a href="habitat.html">Habitat</a></li><li><a href="industrie40.html">Industrie 4.0</a></li><li><a href="accompagnement.html">Accompagnement</a></li><li><a href="boutique.html">Boutique</a></li><li><a href="contact.html">Contact</a></li><li><a href="connexion.html" class="connection">CONNEXION</a></li>
+    </ul>
+  </div>
+  <div class="quickbar">
+    <div class="container quickbar-inner">
+      <a href="depannage.html" class="quick-primary">⚡ Dépannage</a>
+      <a href="devis-express.html">Devis express</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="prestations-tarifs.html">Prestations & tarifs</a>
+    </div>
+  </div>
 </header>
 
 <main>
-<section class="hero">
-<div class="container"><div class="hero-content">
-<div class="hero-label">ACTYROM // PROJETS & RÉALISATIONS</div>
-<h1>Du besoin.<span>À la solution.</span></h1>
-<p class="hero-text">Cette page présente la logique de projet Actyrom et des exemples d’applications possibles. Les véritables réalisations clients seront ajoutées progressivement lorsqu’elles seront publiables et autorisées.</p>
-<div class="actions">
-<a href="#projets" class="btn btn-primary">Découvrir les projets</a>
-<a href="devis-express.html" class="btn btn-secondary">Présenter mon projet</a>
-</div>
-<div class="status"><span class="status-dot"></span>PROBLÈME // ANALYSE // SOLUTION // RÉSULTAT</div>
-</div></div>
+
+
+<section class="hero hero-compact">
+  <div class="hero-overlay"></div>
+  <div class="hero-halo"></div>
+  <div class="container hero-content">
+    <div class="hero-label">ACTYROM // RÉALISATIONS</div>
+    <h1>Des idées concrètes.<span>Des projets lisibles.</span></h1>
+    <p class="hero-text">Cette page présente des exemples de concepts, d’applications et de réalisations possibles. Les projets clients publiés seront distingués explicitement lorsqu’ils pourront être présentés.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="contact.html">Parler de votre projet</a>
+      <a class="btn btn-secondary" href="devis-express.html">Devis express</a>
+    </div>
+    
+  </div>
 </section>
 
-<section class="section">
-<div class="container">
-<div class="notice reveal">
-<p><strong>Transparence :</strong> Actyrom étant en phase de lancement, les cartes ci-dessous sont identifiées comme exemples de démarche ou concepts de projet. Elles ne sont pas présentées comme des chantiers clients réalisés. Les études de cas réelles viendront les remplacer ou les compléter au fur et à mesure.</p>
-</div>
-</div>
-</section>
+<section class="section"><div class="container">
+<div class="section-head reveal">
+  <div class="kicker">EXEMPLES</div>
+  <h2 class="section-title">Des solutions qui combinent plusieurs compétences.</h2>
+  
+</div><div class="visual-grid">
+<div class="visual-card reveal" style="--card-photo:url('https://images.unsplash.com/photo-1780034766243-044492794729?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=76&w=2200')"><div class="visual-content"><span>INDUSTRIE</span><h3>Diagnostic & fiabilisation</h3><p>Analyser une panne récurrente, structurer les mesures et mettre en place les actions de fiabilisation.</p></div></div>
+<div class="visual-card reveal" style="--card-photo:url('https://images.unsplash.com/photo-1753153481105-7a979eabe5a9?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=76&w=2200')"><div class="visual-content"><span>DATA</span><h3>Supervision locale</h3><p>Collecter quelques données critiques, créer des KPI et historiser les événements importants.</p></div></div>
+<div class="visual-card reveal" style="--card-photo:url('https://images.unsplash.com/photo-1774199616762-31d947dc7d35?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=76&w=2200')"><div class="visual-content"><span>HABITAT</span><h3>Bureau connecté</h3><p>Réseau, station d’accueil, écrans, éclairage, prises et intégration propre dans l’aménagement.</p></div></div>
+<div class="visual-card reveal no-photo"><div class="visual-content"><span>HABITAT</span><h3>Smart garage / atelier</h3><p>Réseau, accès, automatismes, capteurs, éclairage et supervision de fonctions utiles.</p></div></div>
+<div class="visual-card reveal no-photo"><div class="visual-content"><span>NUMÉRIQUE</span><h3>Site professionnel</h3><p>Présenter clairement une activité et créer des passerelles entre partenaires et prestations.</p></div></div>
+<div class="visual-card reveal no-photo"><div class="visual-content"><span>LOGICIEL</span><h3>OS ACTYROM</h3><p>Centraliser le parcours prospect, devis, intervention, facture et suivi dans une interface locale.</p></div></div>
+</div></div></section>
+<section class="section section-dark"><div class="container"><div class="notice reveal"><strong>Transparence :</strong> une idée, un prototype, une démonstration et une réalisation client ne sont pas présentés comme la même chose. Les futurs cas clients seront publiés avec un statut clair et uniquement lorsque leur diffusion est autorisée.</div></div></section>
 
-<section class="section section-dark" id="projets">
-<div class="container">
-<div class="reveal">
-<div class="kicker">EXEMPLES DE DÉMARCHE</div>
-<h2 class="section-title">Avant → analyse → solution.<span class="green">Le résultat doit être compréhensible.</span></h2>
-</div>
-<div class="filters reveal">
-<button class="filter-btn active" data-filter="all">Tout</button>
-<button class="filter-btn" data-filter="industrie">Industrie</button>
-<button class="filter-btn" data-filter="habitat">Habitat</button>
-<button class="filter-btn" data-filter="web">Web & numérique</button>
-<button class="filter-btn" data-filter="data">Data & supervision</button>
-</div>
-
-<div class="projects">
-
-<article class="project reveal" data-category="industrie">
-<div class="project-meta"><span>INDUSTRIE</span><span class="project-badge">EXEMPLE</span></div>
-<h3>Panne récurrente sur équipement</h3>
-<p class="project-intro">Une intervention utile ne consiste pas seulement à acquitter le défaut : elle cherche pourquoi il revient.</p>
-<div class="case-grid">
-<div class="case-box"><span>AVANT</span><p>Panne répétitive, symptômes connus, cause non identifiée.</p></div>
-<div class="case-box"><span>ANALYSE</span><p>Historique, mesures, logique automatisme, capteurs, actionneurs et réseau.</p></div>
-<div class="case-box"><span>SOLUTION</span><p>Correction ciblée ou plan d’action selon la cause identifiée.</p></div>
-<div class="case-box"><span>RÉSULTAT VISÉ</span><p>Réduire les récidives et améliorer la compréhension de l’équipement.</p></div>
-</div>
-<div class="tech"><span>Diagnostic</span><span>Automatisme</span><span>Maintenance</span><span>Méthode</span></div>
-</article>
-
-<article class="project reveal" data-category="industrie">
-<div class="project-meta"><span>INDUSTRIE</span><span class="project-badge">CONCEPT</span></div>
-<h3>Fiabilisation d’un équipement</h3>
-<p class="project-intro">Transformer une suite d’incidents en plan d’amélioration structuré.</p>
-<div class="case-grid">
-<div class="case-box"><span>AVANT</span><p>Arrêts, réglages fréquents, maintenance essentiellement corrective.</p></div>
-<div class="case-box"><span>ANALYSE</span><p>Défaillances, criticité, historique et contraintes d’exploitation.</p></div>
-<div class="case-box"><span>SOLUTION</span><p>Actions techniques, préventif, documentation et indicateurs utiles.</p></div>
-<div class="case-box"><span>RÉSULTAT VISÉ</span><p>Amélioration progressive de la disponibilité et de la maintenabilité.</p></div>
-</div>
-<div class="tech"><span>Fiabilité</span><span>Méthodes</span><span>Préventif</span><span>KPI</span></div>
-</article>
-
-<article class="project reveal" data-category="habitat">
-<div class="project-meta"><span>HABITAT</span><span class="project-badge">CONCEPT</span></div>
-<h3>Mur TV connecté sur mesure</h3>
-<p class="project-intro">Faire travailler ensemble intégration physique, réseau, multimédia et éclairage.</p>
-<div class="case-grid">
-<div class="case-box"><span>AVANT</span><p>Câbles visibles, équipements dispersés, connectivité imparfaite.</p></div>
-<div class="case-box"><span>ANALYSE</span><p>Écran, usages, réseau, alimentation, équipements et évolution future.</p></div>
-<div class="case-box"><span>SOLUTION</span><p>Architecture technique intégrée avec métiers partenaires lorsque nécessaire.</p></div>
-<div class="case-box"><span>RÉSULTAT VISÉ</span><p>Installation propre, maintenable et cohérente avec la pièce.</p></div>
-</div>
-<div class="tech"><span>Réseau</span><span>Multimédia</span><span>LED</span><span>Intégration</span></div>
-</article>
-
-<article class="project reveal" data-category="habitat">
-<div class="project-meta"><span>HABITAT</span><span class="project-badge">CONCEPT</span></div>
-<h3>Bureau connecté</h3>
-<p class="project-intro">Créer un poste cohérent plutôt qu’un empilement de matériel.</p>
-<div class="case-grid">
-<div class="case-box"><span>AVANT</span><p>Wi-Fi variable, câbles, périphériques et écrans mal organisés.</p></div>
-<div class="case-box"><span>ANALYSE</span><p>Usages, débit, ergonomie, équipements et besoins futurs.</p></div>
-<div class="case-box"><span>SOLUTION</span><p>Réseau, docking, écrans, câblage et intégration propre.</p></div>
-<div class="case-box"><span>RÉSULTAT VISÉ</span><p>Un espace plus simple à utiliser, dépanner et faire évoluer.</p></div>
-</div>
-<div class="tech"><span>Ethernet</span><span>Wi-Fi</span><span>Informatique</span><span>Organisation</span></div>
-</article>
-
-<article class="project reveal" data-category="web">
-<div class="project-meta"><span>WEB & NUMÉRIQUE</span><span class="project-badge">EXEMPLE</span></div>
-<h3>Présence numérique pour artisan</h3>
-<p class="project-intro">Donner à une petite entreprise une vitrine simple, professionnelle et facile à maintenir.</p>
-<div class="case-grid">
-<div class="case-box"><span>AVANT</span><p>Pas de site ou présence éclatée entre réseaux et coordonnées.</p></div>
-<div class="case-box"><span>ANALYSE</span><p>Activité, zones, prestations, réalisations et moyens de contact.</p></div>
-<div class="case-box"><span>SOLUTION</span><p>Site vitrine, présence locale, e-mail pro et QR code selon besoin.</p></div>
-<div class="case-box"><span>RÉSULTAT VISÉ</span><p>Être trouvable et donner immédiatement une image professionnelle.</p></div>
-</div>
-<div class="tech"><span>Site web</span><span>SEO local</span><span>Google</span><span>QR code</span></div>
-</article>
-
-<article class="project reveal" data-category="data">
-<div class="project-meta"><span>DATA & SUPERVISION</span><span class="project-badge">CONCEPT</span></div>
-<h3>Tableau de bord technique</h3>
-<p class="project-intro">Passer de données dispersées à quelques informations réellement exploitables.</p>
-<div class="case-grid">
-<div class="case-box"><span>AVANT</span><p>Données disponibles mais peu exploitées ou difficiles à comparer.</p></div>
-<div class="case-box"><span>ANALYSE</span><p>Identifier les variables et indicateurs utiles au besoin réel.</p></div>
-<div class="case-box"><span>SOLUTION</span><p>Collecte, historisation, visualisation et alertes ciblées selon architecture.</p></div>
-<div class="case-box"><span>RÉSULTAT VISÉ</span><p>Mieux comprendre les tendances et faciliter les décisions techniques.</p></div>
-</div>
-<div class="tech"><span>KPI</span><span>Historisation</span><span>Supervision</span><span>Tendances</span></div>
-</article>
-
-</div>
-</div>
-</section>
-
-<section class="section">
-<div class="container">
-<div class="reveal">
-<div class="kicker">FUTURES ÉTUDES DE CAS</div>
-<h2 class="section-title">Ce que nous publierons<span class="green">sur les vrais projets.</span></h2>
-</div>
-<div class="future reveal">
-<div class="future-item"><h3>Photos avant / après</h3><p>Lorsque leur publication est autorisée.</p></div>
-<div class="future-item"><h3>Contexte</h3><p>Le problème réel, sans exposer d’informations confidentielles.</p></div>
-<div class="future-item"><h3>Solution</h3><p>La logique technique et les compétences mobilisées.</p></div>
-<div class="future-item"><h3>Résultat</h3><p>Effets mesurables ou bénéfices observables lorsque disponibles.</p></div>
-</div>
-<div class="actions reveal">
-<a href="devis-express.html" class="btn btn-primary">Présenter mon projet</a>
-<a href="boutique.html" class="btn btn-secondary">Voir la boutique</a>
-</div>
-</div>
-</section>
 </main>
 
-<footer>
-<div class="container footer">
-<div>© 2026 Actyrom Consulting — Des solutions pour demain</div>
-<div class="footer-links">
-<a href="devis-express.html">Devis express</a>
-<a href="depannage.html">Dépannage</a>
-<a href="realisations.html">Réalisations</a>
-<a href="boutique.html">Boutique</a>
-<a href="mentions-legales.html">Mentions légales</a>
-<a href="contact.html">Contact</a>
-</div>
-</div>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-main">Actyrom</span><span class="brand-sub">Consulting</span>
+      </a>
+      <p>Action • Analyse • Résolution • Organisation • Méthode</p>
+      <p class="footer-muted">Expertise technique, industrie, habitat, data et solutions sur mesure.</p>
+    </div>
+    <div>
+      <strong>Accès rapide</strong>
+      <a href="industrie.html">Industrie</a>
+      <a href="habitat.html">Habitat</a>
+      <a href="industrie40.html">Industrie 4.0</a>
+      <a href="boutique.html">Boutique</a>
+    </div>
+    <div>
+      <strong>Projet</strong>
+      <a href="devis-express.html">Demander un devis</a>
+      <a href="depannage.html">Dépannage</a>
+      <a href="contact.html">Contact</a>
+      <a href="connexion.html">Espace client</a>
+    </div>
+    <div>
+      <strong>Informations</strong>
+      <a href="qui-sommes-nous.html">Qui sommes-nous ?</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="sitemap.xml">Plan du site XML</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Actyrom Consulting</span>
+    <span>Des solutions pour demain</span>
+  </div>
 </footer>
 
-<script>
-
-const menuBtn=document.getElementById("menuBtn");
-const navLinks=document.getElementById("navLinks");
-menuBtn.addEventListener("click",()=>{
-  const opened=navLinks.classList.toggle("open");
-  menuBtn.setAttribute("aria-expanded",opened?"true":"false");
-});
-document.querySelectorAll(".nav-links a").forEach(link=>{
-  link.addEventListener("click",()=>{
-    navLinks.classList.remove("open");
-    menuBtn.setAttribute("aria-expanded","false");
-  });
-});
-const observer=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
-  });
-},{threshold:.10});
-document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
-
-const filterButtons=document.querySelectorAll(".filter-btn");
-const projects=document.querySelectorAll(".project");
-filterButtons.forEach(button=>{
-  button.addEventListener("click",()=>{
-    filterButtons.forEach(btn=>btn.classList.remove("active"));
-    button.classList.add("active");
-    const filter=button.dataset.filter;
-    projects.forEach(project=>{
-      project.style.display=(filter==="all"||project.dataset.category===filter)?"block":"none";
-    });
-  });
-});
-</script>
+<script src="assets/app.js"></script>
 </body>
 </html>
