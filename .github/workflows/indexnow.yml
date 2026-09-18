@@ -10,6 +10,7 @@ on:
       - "robots.txt"
       - "site.webmanifest"
       - "assets/**"
+      - "77ef20bc4ed988f647cbd69e6f4cf34c.txt"
       - ".github/workflows/indexnow.yml"
   workflow_dispatch:
 
