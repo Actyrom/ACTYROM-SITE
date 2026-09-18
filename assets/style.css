@@ -74,3 +74,5 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .shop-detail-link{margin-top:22px}
 .shop-detail-link a{color:var(--green2);font-weight:850}
 @media(max-width:620px){.local-panel{padding:28px 23px}}
+
+.footer-bottom .official-domain,.site-footer .official-domain{color:var(--green2);font-weight:700}

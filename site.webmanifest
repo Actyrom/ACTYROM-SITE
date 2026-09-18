@@ -1,20 +1,22 @@
 {
   "name": "Actyrom Consulting",
   "short_name": "Actyrom",
-  "start_url": "/",
+  "start_url": "https://actyrom.fr/",
   "display": "standalone",
   "background_color": "#030a06",
   "theme_color": "#06130d",
   "icons": [
     {
-      "src": "/favicon-32x32.png",
+      "src": "https://actyrom.fr/favicon-32x32.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "/apple-touch-icon.png",
+      "src": "https://actyrom.fr/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     }
-  ]
+  ],
+  "id": "https://actyrom.fr/",
+  "scope": "https://actyrom.fr/"
 }

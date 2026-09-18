@@ -54,3 +54,37 @@ jobs:
               raise SystemExit("Broken local links detected")
 
           print(f"Checked {len(pages)} HTML pages: no obvious broken local links.")
+
+      - name: Verify official Actyrom.fr references
+        shell: python
+        run: |
+          from pathlib import Path
+
+          forbidden = ("actyrom.github.io", "actyrom.com")
+          errors = []
+
+          if Path("CNAME").read_text(encoding="utf-8").strip().lower() != "actyrom.fr":
+              errors.append("CNAME must contain actyrom.fr")
+
+          for page in Path(".").glob("*.html"):
+              text = page.read_text(encoding="utf-8", errors="ignore")
+              lower = text.lower()
+
+              if 'href="https://actyrom.fr/' not in text:
+                  errors.append(f"{page}: missing official Actyrom.fr link")
+
+              if page.name != "404.html":
+                  if 'rel="canonical" href="https://actyrom.fr/' not in text:
+                      errors.append(f"{page}: missing Actyrom.fr canonical")
+                  if 'property="og:url" content="https://actyrom.fr/' not in text:
+                      errors.append(f"{page}: missing Actyrom.fr Open Graph URL")
+
+              for old_domain in forbidden:
+                  if old_domain in lower:
+                      errors.append(f"{page}: forbidden legacy domain {old_domain}")
+
+          if errors:
+              print("\n".join(errors))
+              raise SystemExit("Official domain validation failed")
+
+          print("Official domain references validated: https://actyrom.fr/")
