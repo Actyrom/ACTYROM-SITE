@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Verify required files
         shell: bash
@@ -41,7 +41,7 @@ jobs:
           for page in pages:
               text = page.read_text(encoding="utf-8", errors="ignore")
               for href in re.findall(r'href=["\']([^"\']+)["\']', text):
-                  if href.startswith(("http://","https://","mailto:","tel:","#","javascript:")):
+                  if href.startswith(("//","http://","https://","mailto:","tel:","#","javascript:")):
                       continue
                   target = href.split("#",1)[0].split("?",1)[0]
                   if not target:
