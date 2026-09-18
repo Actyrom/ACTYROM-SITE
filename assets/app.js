@@ -87,6 +87,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const setOpen = v => {
       cartPanel.classList.toggle("open",v); backdrop.classList.toggle("open",v);
       cartPanel.setAttribute("aria-hidden", v ? "false" : "true");
+      openBtn?.setAttribute("aria-expanded", v ? "true" : "false");
+      if(v) closeBtn?.focus();
     };
     document.querySelectorAll(".add-btn").forEach(btn => btn.addEventListener("click", () => {
       const item = btn.dataset.item;
@@ -99,4 +101,40 @@ document.addEventListener("DOMContentLoaded", () => {
     clearBtn?.addEventListener("click", () => { cart=[]; save(); render(); });
     render();
   }
+});
+
+
+// ACTYROM_A11Y_V4
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
+
+  document.addEventListener("keydown", e => {
+    if(e.key !== "Escape") return;
+
+    if(navLinks?.classList.contains("open")){
+      navLinks.classList.remove("open");
+      menuBtn?.setAttribute("aria-expanded","false");
+      menuBtn?.focus();
+    }
+
+    const cartPanel = document.getElementById("cartPanel");
+    const backdrop = document.getElementById("cartBackdrop");
+    const cartOpen = document.getElementById("cartOpen");
+
+    if(cartPanel?.classList.contains("open")){
+      cartPanel.classList.remove("open");
+      backdrop?.classList.remove("open");
+      cartPanel.setAttribute("aria-hidden","true");
+      cartOpen?.setAttribute("aria-expanded","false");
+      cartOpen?.focus();
+    }
+  });
+
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const syncFilters = () => filterButtons.forEach(btn =>
+    btn.setAttribute("aria-pressed", btn.classList.contains("active") ? "true" : "false")
+  );
+  filterButtons.forEach(btn => btn.addEventListener("click", syncFilters));
+  syncFilters();
 });
