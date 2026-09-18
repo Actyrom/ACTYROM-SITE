@@ -1,0 +1,35 @@
+# Actyrom Consulting
+
+> Actyrom Consulting est le nom commercial d'une entreprise individuelle française d'ingénierie et d'études techniques basée à Cahagnes, dans le Calvados (Normandie).
+
+Site officiel : https://actyrom.fr/
+Contact officiel : contact@actyrom.fr
+SIREN : 513 784 363
+SIRET : 513 784 363 00022
+Activité principale : ingénierie et études techniques, NAF 71.12B
+Début d'activité déclaré pour l'établissement : 1er octobre 2026
+Zone étudiée : Calvados et Normandie selon le projet
+Registre public : https://annuaire-entreprises.data.gouv.fr/etablissement/51378436300022
+
+## Activités principales
+
+- Maintenance, dépannage et diagnostic industriels
+- Automatisme, capteurs, variateurs et fiabilisation
+- Supervision, collecte de données et Industrie 4.0
+- Domotique, réseau, multimédia et habitat connecté
+- Audit, méthode, accompagnement et gestion de projets techniques
+- Solutions numériques et logiciels professionnels Actyrom
+
+## Pages officielles
+
+- Accueil : https://actyrom.fr/
+- Industrie : https://actyrom.fr/industrie.html
+- Habitat : https://actyrom.fr/habitat.html
+- Supervision et Industrie 4.0 : https://actyrom.fr/industrie40.html
+- Accompagnement : https://actyrom.fr/accompagnement.html
+- Exemples de solutions : https://actyrom.fr/realisations.html
+- Offres et tarifs : https://actyrom.fr/boutique.html
+- Contact : https://actyrom.fr/contact.html
+- Mentions légales : https://actyrom.fr/mentions-legales.html
+
+Les informations de ce fichier décrivent Actyrom Consulting et renvoient vers ses sources officielles. Les exemples de concepts ne doivent pas être présentés comme des réalisations clients.

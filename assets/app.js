@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if(!reduced && "IntersectionObserver" in window){
+  const revealItems = [...document.querySelectorAll(".reveal,.reveal-seq")];
+  if(!reduced && "IntersectionObserver" in window && revealItems.length){
+    document.documentElement.classList.add("reveal-enabled");
     const obs = new IntersectionObserver(entries => {
       entries.forEach(e => {
         if(e.isIntersecting){ e.target.classList.add("visible"); obs.unobserve(e.target); }
@@ -31,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, {threshold:.12});
     if(seq[0]) seqObs.observe(seq[0]);
   } else {
-    document.querySelectorAll(".reveal,.reveal-seq").forEach(el => el.classList.add("visible"));
+    revealItems.forEach(el => el.classList.add("visible"));
   }
 
   document.querySelectorAll(".mailto-form").forEach(form => {
@@ -44,8 +46,51 @@ document.addEventListener("DOMContentLoaded", () => {
         if(key === "Objet" && String(val).trim()) subject += " " + String(val).trim();
         lines.push(`${key} : ${val}`);
       }
-      const mail = `mailto:contact@actyrom.fr?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
-      window.location.href = mail;
+      const body = lines.join("\n");
+      const mail = `mailto:contact@actyrom.fr?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      form.querySelector(".form-result")?.remove();
+      const result = document.createElement("div");
+      result.className = "form-result";
+      result.setAttribute("role", "status");
+      result.tabIndex = -1;
+
+      const title = document.createElement("strong");
+      title.textContent = "Votre demande est prête.";
+      const help = document.createElement("p");
+      help.textContent = "Envoyez-la avec votre messagerie ou copiez le contenu pour l’utiliser dans le service de votre choix.";
+      const preview = document.createElement("pre");
+      preview.textContent = `${subject}\n\n${body}`;
+      const actions = document.createElement("div");
+      actions.className = "form-result-actions";
+      const send = document.createElement("a");
+      send.className = "btn btn-primary";
+      send.href = mail;
+      send.textContent = "Envoyer par e-mail";
+      const copy = document.createElement("button");
+      copy.className = "btn btn-secondary";
+      copy.type = "button";
+      copy.textContent = "Copier la demande";
+      copy.addEventListener("click", async () => {
+        const message = `${subject}\n\n${body}`;
+        try {
+          await navigator.clipboard.writeText(message);
+        } catch {
+          const field = document.createElement("textarea");
+          field.value = message;
+          field.style.position = "fixed";
+          field.style.opacity = "0";
+          document.body.appendChild(field);
+          field.select();
+          document.execCommand("copy");
+          field.remove();
+        }
+        copy.textContent = "Demande copiée";
+      });
+      actions.append(send, copy);
+      result.append(title, help, preview, actions);
+      form.appendChild(result);
+      result.focus();
     });
   });
 

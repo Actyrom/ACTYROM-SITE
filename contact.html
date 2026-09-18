@@ -35,6 +35,12 @@
       "@type": "ProfessionalService",
       "@id": "https://actyrom.fr/#organization",
       "name": "Actyrom Consulting",
+      "alternateName": "ACTYROM",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SIRET",
+        "value": "51378436300022"
+      },
       "url": "https://actyrom.fr/",
       "image": "https://actyrom.fr/og-actyrom.png",
       "email": "contact@actyrom.fr",
@@ -112,15 +118,14 @@
     </a>
     <button class="menu-btn" id="menuBtn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="https://actyrom.fr/">Accueil</a></li><li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li><li><a href="industrie.html">Industrie</a></li><li><a href="habitat.html">Habitat</a></li><li><a href="industrie40.html">Industrie 4.0</a></li><li><a href="accompagnement.html">Accompagnement</a></li><li><a href="boutique.html">Boutique</a></li><li><a href="contact.html" class="active" aria-current="page">Contact</a></li><li><a href="connexion.html" class="connection">CONNEXION</a></li>
+      <li><a href="https://actyrom.fr/">Accueil</a></li><li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li><li><a href="industrie.html">Industrie</a></li><li><a href="habitat.html">Habitat</a></li><li><a href="industrie40.html">Industrie 4.0</a></li><li><a href="accompagnement.html">Accompagnement</a></li><li><a href="boutique.html">Offres & tarifs</a></li><li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
     </ul>
   </div>
   <div class="quickbar">
     <div class="container quickbar-inner">
       <a href="depannage.html" class="quick-primary">⚡ Dépannage</a>
       <a href="devis-express.html">Devis express</a>
-      <a href="realisations.html">Réalisations</a>
-      <a href="prestations-tarifs.html">Prestations & tarifs</a>
+      <a href="realisations.html">Exemples de solutions</a>
     </div>
   </div>
 </header>
@@ -157,13 +162,14 @@
       <a href="devis-express.html"><strong>Devis express</strong><span>Préparer une demande structurée</span></a>
     </div>
   </div>
-  <form class="form-card reveal mailto-form" data-subject-prefix="[Contact Actyrom]">
-    <div class="field-row"><label>Nom / entreprise<input name="Nom / entreprise" required></label><label>E-mail<input name="E-mail" type="email" required></label></div>
+  <form class="form-card reveal mailto-form" action="mailto:contact@actyrom.fr" method="post" enctype="text/plain" data-subject-prefix="[Contact Actyrom]">
+    <div class="field-row"><label>Nom<input name="Nom" autocomplete="name" required></label><label>Entreprise <span class="optional">(facultatif)</span><input name="Entreprise" autocomplete="organization"></label></div>
+    <div class="field-row"><label>E-mail<input name="E-mail" type="email" autocomplete="email" required></label><label>Téléphone <span class="optional">(facultatif)</span><input name="Téléphone" type="tel" autocomplete="tel"></label></div>
     <label>Type de demande<select name="Type de demande"><option>Industrie</option><option>Habitat</option><option>Data / Supervision</option><option>Accompagnement</option><option>Site web / numérique</option><option>OS ACTYROM / logiciel</option><option>Partenariat</option><option>Autre</option></select></label>
     <label>Objet<input name="Objet" required></label>
     <label>Message<textarea name="Message" required></textarea></label>
-    <button class="btn btn-primary" type="submit">Préparer l’e-mail</button>
-    <p class="form-note">Le site ne transmet pas directement le formulaire : votre messagerie s’ouvre avec le message préparé.</p>
+    <button class="btn btn-primary" type="submit">Préparer ma demande</button>
+    <p class="form-note">Après validation, vous pourrez envoyer la demande par e-mail ou la copier. Aucune donnée n’est stockée sur Actyrom.fr. <a href="mentions-legales.html#donnees-personnelles">Données personnelles</a>.</p>
   </form>
 </div>
 </section>
@@ -185,21 +191,19 @@
       <a href="industrie.html">Industrie</a>
       <a href="habitat.html">Habitat</a>
       <a href="industrie40.html">Industrie 4.0</a>
-      <a href="boutique.html">Boutique</a>
+      <a href="boutique.html">Offres & tarifs</a>
     </div>
     <div>
       <strong>Projet</strong>
       <a href="devis-express.html">Demander un devis</a>
       <a href="depannage.html">Dépannage</a>
       <a href="contact.html">Contact</a>
-      <a href="connexion.html">Espace client</a>
     </div>
     <div>
       <strong>Informations</strong>
       <a href="qui-sommes-nous.html">Qui sommes-nous ?</a>
-      <a href="realisations.html">Réalisations</a>
+      <a href="realisations.html">Exemples de solutions</a>
       <a href="mentions-legales.html">Mentions légales</a>
-      <a href="prestations-tarifs.html">Prestations & tarifs</a>
     </div>
   </div>
   <div class="container footer-bottom">

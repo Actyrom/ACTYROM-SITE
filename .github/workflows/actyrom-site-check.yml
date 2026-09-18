@@ -25,8 +25,13 @@ jobs:
           test -f index.html
           test -f robots.txt
           test -f sitemap.xml
+          test -f llms.txt
           test -f assets/style.css
           test -f assets/app.js
+          test -f assets/actyrom-expertise.webp
+          test -f assets/actyrom-industrie.webp
+          test -f assets/actyrom-habitat.webp
+          test -f assets/actyrom-supervision.webp
 
       - name: Detect obvious broken local HTML links
         shell: python
@@ -88,3 +93,46 @@ jobs:
               raise SystemExit("Official domain validation failed")
 
           print("Official domain references validated: https://actyrom.fr/")
+
+      - name: Validate structured identity and local assets
+        shell: python
+        run: |
+          from pathlib import Path
+          import json
+          import re
+
+          errors = []
+          required_identity = ("Actyrom Consulting", "513 784 363 00022", "Cahagnes")
+
+          index = Path("index.html").read_text(encoding="utf-8")
+          llms = Path("llms.txt").read_text(encoding="utf-8")
+          for value in required_identity:
+              if value not in index:
+                  errors.append(f"index.html: missing identity value {value}")
+              if value not in llms:
+                  errors.append(f"llms.txt: missing identity value {value}")
+
+          for page in Path(".").glob("*.html"):
+              text = page.read_text(encoding="utf-8", errors="ignore")
+              if "images.unsplash.com" in text:
+                  errors.append(f"{page}: third-party image URL must be self-hosted")
+              if 'href="connexion.html"' in text:
+                  errors.append(f"{page}: unfinished client portal must not be promoted")
+              if 'href="prestations-tarifs.html"' in text:
+                  errors.append(f"{page}: retired duplicate tariff page must not be promoted")
+
+              for payload in re.findall(
+                  r'<script type="application/ld\+json"[^>]*>(.*?)</script>',
+                  text,
+                  flags=re.DOTALL,
+              ):
+                  try:
+                      json.loads(payload)
+                  except json.JSONDecodeError as exc:
+                      errors.append(f"{page}: invalid JSON-LD: {exc}")
+
+          if errors:
+              print("\n".join(errors))
+              raise SystemExit("Structured identity validation failed")
+
+          print("Structured identity and local assets validated.")
