@@ -121,6 +121,16 @@ jobs:
               if 'href="prestations-tarifs.html"' in text:
                   errors.append(f"{page}: retired duplicate tariff page must not be promoted")
 
+              for photo in re.findall(
+                  r"--(?:hero|card|panel)-photo:url\(['\"]?([^'\")]+)",
+                  text,
+              ):
+                  if not photo.startswith("/assets/"):
+                      errors.append(f"{page}: photo path must start with /assets/: {photo}")
+                      continue
+                  if not Path(photo.lstrip("/")).exists():
+                      errors.append(f"{page}: missing local photo {photo}")
+
               for payload in re.findall(
                   r'<script type="application/ld\+json"[^>]*>(.*?)</script>',
                   text,
