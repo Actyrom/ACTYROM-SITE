@@ -121,6 +121,53 @@ jobs:
               if 'href="prestations-tarifs.html"' in text:
                   errors.append(f"{page}: retired duplicate tariff page must not be promoted")
 
+              if page.name != "404.html":
+                  title = re.search(r"<title>(.*?)</title>", text, flags=re.DOTALL)
+                  description = re.search(
+                      r'<meta\s+name=["\']description["\']\s+content=["\']([^"\']+)',
+                      text,
+                      flags=re.IGNORECASE,
+                  )
+                  hero_label = re.search(
+                      r'<div\s+class=["\']hero-label["\']>(.*?)</div>',
+                      text,
+                      flags=re.DOTALL | re.IGNORECASE,
+                  )
+                  social_values = {
+                      "Open Graph title": re.search(
+                          r'<meta\s+property=["\']og:title["\']\s+content=["\']([^"\']+)',
+                          text,
+                          flags=re.IGNORECASE,
+                      ),
+                      "Open Graph description": re.search(
+                          r'<meta\s+property=["\']og:description["\']\s+content=["\']([^"\']+)',
+                          text,
+                          flags=re.IGNORECASE,
+                      ),
+                      "Twitter title": re.search(
+                          r'<meta\s+name=["\']twitter:title["\']\s+content=["\']([^"\']+)',
+                          text,
+                          flags=re.IGNORECASE,
+                      ),
+                      "Twitter description": re.search(
+                          r'<meta\s+name=["\']twitter:description["\']\s+content=["\']([^"\']+)',
+                          text,
+                          flags=re.IGNORECASE,
+                      ),
+                  }
+
+                  if not title or "Actyrom Consulting" not in title.group(1):
+                      errors.append(f"{page}: title must name Actyrom Consulting")
+                  if not description or "Actyrom Consulting" not in description.group(1):
+                      errors.append(f"{page}: description must name Actyrom Consulting")
+                  if not hero_label or "ACTYROM CONSULTING" not in hero_label.group(1):
+                      errors.append(f"{page}: hero label must name ACTYROM CONSULTING")
+                  if '"name": "Actyrom Consulting"' not in text:
+                      errors.append(f"{page}: structured data must name Actyrom Consulting")
+                  for label, match in social_values.items():
+                      if not match or "Actyrom Consulting" not in match.group(1):
+                          errors.append(f"{page}: {label} must name Actyrom Consulting")
+
               for photo in re.findall(
                   r"--(?:hero|card|panel)-photo:url\(['\"]?([^'\")]+)",
                   text,
