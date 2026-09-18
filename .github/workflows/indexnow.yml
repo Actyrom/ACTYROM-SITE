@@ -1,0 +1,86 @@
+name: IndexNow URL submission
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**.html"
+      - "sitemap.xml"
+      - "robots.txt"
+      - "site.webmanifest"
+      - "assets/**"
+      - ".github/workflows/indexnow.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-main
+  cancel-in-progress: true
+
+jobs:
+  submit:
+    name: Notify search engines
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v4
+
+      - name: Submit sitemap URLs to IndexNow
+        env:
+          INDEXNOW_KEY: "77ef20bc4ed988f647cbd69e6f4cf34c"
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.error
+          import urllib.request
+          import xml.etree.ElementTree as ET
+
+          key = os.environ["INDEXNOW_KEY"]
+          namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+          root = ET.parse("sitemap.xml").getroot()
+          urls = [
+              node.text.strip()
+              for node in root.findall(".//sm:loc", namespace)
+              if node.text and node.text.strip()
+          ]
+
+          if not urls:
+              raise SystemExit("No URLs found in sitemap.xml")
+
+          payload = json.dumps(
+              {
+                  "host": "actyrom.fr",
+                  "key": key,
+                  "keyLocation": f"https://actyrom.fr/{key}.txt",
+                  "urlList": urls,
+              }
+          ).encode("utf-8")
+
+          request = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=payload,
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST",
+          )
+
+          try:
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  status = response.status
+                  body = response.read().decode("utf-8", errors="replace")
+          except urllib.error.HTTPError as error:
+              status = error.code
+              body = error.read().decode("utf-8", errors="replace")
+
+          print(f"IndexNow status: {status}; submitted URLs: {len(urls)}")
+          if body:
+              print(body[:1000])
+
+          if status not in {200, 202}:
+              raise SystemExit(f"IndexNow rejected the submission with HTTP {status}")
+          PY
