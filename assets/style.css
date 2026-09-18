@@ -76,3 +76,18 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(max-width:620px){.local-panel{padding:28px 23px}}
 
 .footer-bottom .official-domain,.site-footer .official-domain{color:var(--green2);font-weight:700}
+
+/* SEO content, authority and FAQ */
+.authority-grid{margin-top:34px}
+.authority-grid .card-num{display:block;margin-bottom:6px}
+.faq-grid{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.faq-grid details{border:1px solid var(--line);border-radius:16px;background:#07130d;padding:0 18px}
+.faq-grid summary{cursor:pointer;padding:18px 28px 18px 0;font-weight:800;color:#edf4ee;position:relative}
+.faq-grid summary::after{content:"+";position:absolute;right:2px;top:16px;color:var(--green2);font-size:1.25rem}
+.faq-grid details[open] summary::after{content:"–"}
+.faq-grid details p{padding:0 0 18px;color:var(--muted);font-size:.88rem}
+.crosslinks{margin-top:22px;display:flex;gap:9px;flex-wrap:wrap}
+.crosslinks a{padding:9px 12px;border:1px solid rgba(137,239,63,.2);border-radius:999px;color:var(--green2);font-size:.79rem;font-weight:800;background:rgba(77,164,58,.04)}
+.crosslinks a:hover{border-color:var(--green)}
+.commercial-note{border-left-color:var(--green2)}
+@media(max-width:760px){.faq-grid{grid-template-columns:1fr}}
