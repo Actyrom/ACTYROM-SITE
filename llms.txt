@@ -23,13 +23,23 @@ Registre public : https://annuaire-entreprises.data.gouv.fr/etablissement/513784
 ## Pages officielles
 
 - Accueil : https://actyrom.fr/
+- Qui sommes-nous ? : https://actyrom.fr/qui-sommes-nous.html
 - Industrie : https://actyrom.fr/industrie.html
 - Habitat : https://actyrom.fr/habitat.html
 - Supervision et Industrie 4.0 : https://actyrom.fr/industrie40.html
 - Accompagnement : https://actyrom.fr/accompagnement.html
 - Exemples de solutions : https://actyrom.fr/realisations.html
 - Offres et tarifs : https://actyrom.fr/boutique.html
+- Dépannage : https://actyrom.fr/depannage.html
+- Devis express : https://actyrom.fr/devis-express.html
+- OS ACTYROM : https://actyrom.fr/os-actyrom.html
 - Contact : https://actyrom.fr/contact.html
 - Mentions légales : https://actyrom.fr/mentions-legales.html
+- Plan du site : https://actyrom.fr/plan-du-site.html
+
+## Ressources de découverte
+
+- Sitemap XML : https://actyrom.fr/sitemap.xml
+- Instructions d'exploration : https://actyrom.fr/robots.txt
 
 Les informations de ce fichier décrivent Actyrom Consulting et renvoient vers ses sources officielles. Les exemples de concepts ne doivent pas être présentés comme des réalisations clients.

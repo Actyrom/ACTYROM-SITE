@@ -26,6 +26,7 @@ jobs:
           test -f robots.txt
           test -f sitemap.xml
           test -f llms.txt
+          test -f plan-du-site.html
           test -f assets/style.css
           test -f assets/app.js
           test -f assets/actyrom-expertise.webp
@@ -93,6 +94,84 @@ jobs:
               raise SystemExit("Official domain validation failed")
 
           print("Official domain references validated: https://actyrom.fr/")
+
+      - name: Validate crawl discovery
+        shell: python
+        run: |
+          from pathlib import Path
+          from urllib.parse import urljoin
+          import re
+          import xml.etree.ElementTree as ET
+
+          root = Path(".")
+          namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+          sitemap = ET.parse("sitemap.xml").getroot()
+          sitemap_urls = [
+              node.text.strip()
+              for node in sitemap.findall(".//sm:loc", namespace)
+              if node.text and node.text.strip()
+          ]
+          errors = []
+
+          if len(sitemap_urls) != len(set(sitemap_urls)):
+              errors.append("sitemap.xml: duplicate URL")
+
+          for url in sitemap_urls:
+              if not url.startswith("https://actyrom.fr/"):
+                  errors.append(f"sitemap.xml: non-official URL {url}")
+                  continue
+              relative = url.removeprefix("https://actyrom.fr/")
+              target = root / (relative or "index.html")
+              if not target.is_file():
+                  errors.append(f"sitemap.xml: missing local target for {url}")
+
+          indexable_urls = set()
+          for page in root.glob("*.html"):
+              text = page.read_text(encoding="utf-8", errors="ignore")
+              if page.name == "404.html" or re.search(
+                  r'<meta\s+name=["\']robots["\']\s+content=["\'][^"\']*noindex',
+                  text,
+                  flags=re.IGNORECASE,
+              ):
+                  continue
+              canonical = re.search(
+                  r'<link\s+rel=["\']canonical["\']\s+href=["\']([^"\']+)',
+                  text,
+                  flags=re.IGNORECASE,
+              )
+              if not canonical:
+                  errors.append(f"{page}: missing canonical URL")
+                  continue
+              indexable_urls.add(canonical.group(1))
+              if 'href="plan-du-site.html"' not in text:
+                  errors.append(f"{page}: missing HTML sitemap link")
+
+          if set(sitemap_urls) != indexable_urls:
+              missing = sorted(indexable_urls - set(sitemap_urls))
+              extra = sorted(set(sitemap_urls) - indexable_urls)
+              if missing:
+                  errors.append(f"sitemap.xml: missing indexable URLs: {missing}")
+              if extra:
+                  errors.append(f"sitemap.xml: non-indexable URLs: {extra}")
+
+          plan_text = Path("plan-du-site.html").read_text(encoding="utf-8")
+          plan_links = {
+              urljoin("https://actyrom.fr/plan-du-site.html", href.split("#", 1)[0])
+              for href in re.findall(r'href=["\']([^"\']+)["\']', plan_text)
+          }
+          for url in sitemap_urls:
+              if url not in plan_links:
+                  errors.append(f"plan-du-site.html: missing link to {url}")
+
+          robots = Path("robots.txt").read_text(encoding="utf-8")
+          if "Sitemap: https://actyrom.fr/sitemap.xml" not in robots:
+              errors.append("robots.txt: missing official sitemap declaration")
+
+          if errors:
+              print("\n".join(errors))
+              raise SystemExit("Crawl discovery validation failed")
+
+          print(f"Validated {len(sitemap_urls)} indexable URLs and their discovery links.")
 
       - name: Validate structured identity and local assets
         shell: python
