@@ -25,6 +25,7 @@ Registre public : https://annuaire-entreprises.data.gouv.fr/etablissement/513784
 - Accueil : https://actyrom.fr/
 - Qui sommes-nous ? : https://actyrom.fr/qui-sommes-nous.html
 - Industrie : https://actyrom.fr/industrie.html
+- Automatisme industriel : https://actyrom.fr/automatisme-industriel.html
 - Habitat : https://actyrom.fr/habitat.html
 - Supervision et Industrie 4.0 : https://actyrom.fr/industrie40.html
 - Accompagnement : https://actyrom.fr/accompagnement.html
